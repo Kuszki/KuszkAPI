@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>KuszkAPI: Plik źródłowy KuszkAPI/Containers/Base/Container.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">KuszkAPI
+   &#160;<span id="projectnumber">2.1b</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="pages.html"><span>Dodatkowe&#160;strony</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje typów</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Definicje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Strony</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6f7fa3ee7946af07f3c30f8c4eea207f.html">KuszkAPI</a></li><li class="navelem"><a class="el" href="dir_f746e1e67071bcc9516e83976125cf5b.html">Containers</a></li><li class="navelem"><a class="el" href="dir_47166c10c1a14fecbd4c29a2f21f1471.html">Base</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Container.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_container_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using namespace </span>KuszkAPI;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_containers_1_1_container.html#aac7252e60d6b6e1e1ccf2e5e9ed0d65d">    3</a></span>&#160;<a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_container.html#aac7252e60d6b6e1e1ccf2e5e9ed0d65d">KuszkAPI::Containers::Container::Container</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;      uIlosc = 0;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;      uMode = <a class="code" href="_containers_2_base_8h.html#a86a625a123d2e6cb33ef3c1d20c34553">MODE_QUEUE</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;}</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_containers_1_1_container.html#a81bb7a7f900690668a75d7eabb0194a1">    9</a></span>&#160;<a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_container.html#a81bb7a7f900690668a75d7eabb0194a1">KuszkAPI::Containers::Container::~Container</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;      uIlosc = 0;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;      uMode = 0;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_containers_1_1_container.html#a378e21dde84b19b1a9a10fed9234aefa">   15</a></span>&#160;<span class="keywordtype">unsigned</span> <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_container.html#a378e21dde84b19b1a9a10fed9234aefa">KuszkAPI::Containers::Container::Capacity</a>(<span class="keywordtype">void</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      <span class="keywordflow">return</span> uIlosc;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_containers_1_1_container.html#ae270907e66f6b03e079abfc8d2312d30">   20</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_container.html#ae270907e66f6b03e079abfc8d2312d30">KuszkAPI::Containers::Container::Empty</a>(<span class="keywordtype">void</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <span class="keywordflow">return</span> !(bool) uIlosc;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_containers_1_1_container.html#a668c06f87e1ff2a0308ae48ba12c05f8">   25</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_container.html#a668c06f87e1ff2a0308ae48ba12c05f8">KuszkAPI::Containers::Container::SetMode</a>(<span class="keywordtype">unsigned</span> uNewMode)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      uMode = uNewMode;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_containers_1_1_container.html#a4a2ac99d90acfaf1acb0c25b3bc93210">   30</a></span>&#160;<span class="keywordtype">unsigned</span> <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_container.html#a4a2ac99d90acfaf1acb0c25b3bc93210">KuszkAPI::Containers::Container::GetMode</a>(<span class="keywordtype">void</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="keywordflow">return</span> uMode;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_containers_1_1_container.html#a588e341b092d681532e038650a9527f4">   35</a></span>&#160;KuszkAPI::Containers::Container::operator bool (<span class="keywordtype">void</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keywordflow">return</span> !Empty();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> tnData&gt;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_containers_1_1_container.html#abe0081533cd58fe2ecc164675c73667d">   41</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_container.html#abe0081533cd58fe2ecc164675c73667d">KuszkAPI::Containers::Container::Change</a>(tnData&amp; tOne, tnData&amp; tTwo)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keywordflow">if</span> (&amp;tOne == &amp;tTwo) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      tnData tTmp = tOne;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      tOne = tTwo;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      tTwo = tTmp;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> tnData&gt;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_containers_1_1_container.html#a9e276496ca489d6868149277fab7ce67">   51</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_container.html#a9e276496ca489d6868149277fab7ce67">KuszkAPI::Containers::Container::Copy</a>(<span class="keyword">const</span> tnData&amp; tSource, tnData&amp; tDestonation)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      memcpy(&amp;tDestonation, &amp;tSource, <span class="keyword">sizeof</span>(tnData));</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_container_html_aac7252e60d6b6e1e1ccf2e5e9ed0d65d"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_container.html#aac7252e60d6b6e1e1ccf2e5e9ed0d65d">KuszkAPI::Containers::Container::Container</a></div><div class="ttdeci">Container(void)</div><div class="ttdoc">Domyślny konstruktor. </div><div class="ttdef"><b>Definition:</b> <a href="_container_8cpp_source.html#l00003">Container.cpp:3</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_container_html_ae270907e66f6b03e079abfc8d2312d30"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_container.html#ae270907e66f6b03e079abfc8d2312d30">KuszkAPI::Containers::Container::Empty</a></div><div class="ttdeci">bool Empty(void) const </div><div class="ttdoc">Sprawdza, czy kontener jest pusty. </div><div class="ttdef"><b>Definition:</b> <a href="_container_8cpp_source.html#l00020">Container.cpp:20</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_container_html_a81bb7a7f900690668a75d7eabb0194a1"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_container.html#a81bb7a7f900690668a75d7eabb0194a1">KuszkAPI::Containers::Container::~Container</a></div><div class="ttdeci">virtual ~Container(void)</div><div class="ttdoc">Dekonstruktor. </div><div class="ttdef"><b>Definition:</b> <a href="_container_8cpp_source.html#l00009">Container.cpp:9</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_container_html_a9e276496ca489d6868149277fab7ce67"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_container.html#a9e276496ca489d6868149277fab7ce67">KuszkAPI::Containers::Container::Copy</a></div><div class="ttdeci">static void Copy(const tnData &amp;tSource, tnData &amp;tDestonation)</div><div class="ttdoc">Kopiuje obiekt. </div><div class="ttdef"><b>Definition:</b> <a href="_container_8cpp_source.html#l00051">Container.cpp:51</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_container_html_a668c06f87e1ff2a0308ae48ba12c05f8"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_container.html#a668c06f87e1ff2a0308ae48ba12c05f8">KuszkAPI::Containers::Container::SetMode</a></div><div class="ttdeci">void SetMode(unsigned uNewMode)</div><div class="ttdoc">Ustala nowy tryb pracy kontenera. </div><div class="ttdef"><b>Definition:</b> <a href="_container_8cpp_source.html#l00025">Container.cpp:25</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_container_html_a378e21dde84b19b1a9a10fed9234aefa"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_container.html#a378e21dde84b19b1a9a10fed9234aefa">KuszkAPI::Containers::Container::Capacity</a></div><div class="ttdeci">unsigned Capacity(void) const </div><div class="ttdoc">Zwraca ilość przechowywanych obiektów. </div><div class="ttdef"><b>Definition:</b> <a href="_container_8cpp_source.html#l00015">Container.cpp:15</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_container_html_abe0081533cd58fe2ecc164675c73667d"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_container.html#abe0081533cd58fe2ecc164675c73667d">KuszkAPI::Containers::Container::Change</a></div><div class="ttdeci">static bool Change(tnData &amp;tOne, tnData &amp;tTwo)</div><div class="ttdoc">Zamienia wartości obiektów. </div><div class="ttdef"><b>Definition:</b> <a href="_container_8cpp_source.html#l00041">Container.cpp:41</a></div></div>
+<div class="ttc" id="_containers_2_base_8h_html_a86a625a123d2e6cb33ef3c1d20c34553"><div class="ttname"><a href="_containers_2_base_8h.html#a86a625a123d2e6cb33ef3c1d20c34553">MODE_QUEUE</a></div><div class="ttdeci">#define MODE_QUEUE</div><div class="ttdef"><b>Definition:</b> <a href="_containers_2_base_8h_source.html#l00013">Base.h:13</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_container_html_a4a2ac99d90acfaf1acb0c25b3bc93210"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_container.html#a4a2ac99d90acfaf1acb0c25b3bc93210">KuszkAPI::Containers::Container::GetMode</a></div><div class="ttdeci">unsigned GetMode(void) const </div><div class="ttdoc">Zwraca tryb pracy kontenera. </div><div class="ttdef"><b>Definition:</b> <a href="_container_8cpp_source.html#l00030">Container.cpp:30</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano So, 12 lip 2014 21:18:51 dla KuszkAPI programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

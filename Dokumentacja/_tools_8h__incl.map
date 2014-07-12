@@ -1,0 +1,10 @@
+<map id="KuszkAPI/Forms/Tools.h" name="KuszkAPI/Forms/Tools.h">
+<area shape="rect" id="node2" href="$_forms_2_tools_2_declarations_8h.html" title="Tools\\Declarations.h" alt="" coords="5,80,144,107"/>
+<area shape="rect" id="node3" href="$_gdi_object_8cpp.html" title="Tools\\GdiObject.cpp" alt="" coords="169,80,308,107"/>
+<area shape="rect" id="node4" href="$_bitmap_8cpp.html" title="Tools\\Bitmap.cpp" alt="" coords="333,80,456,107"/>
+<area shape="rect" id="node5" href="$_icon_8cpp.html" title="Tools\\Icon.cpp" alt="" coords="480,80,587,107"/>
+<area shape="rect" id="node6" href="$_cursor_8cpp.html" title="Tools\\Cursor.cpp" alt="" coords="611,80,731,107"/>
+<area shape="rect" id="node7" href="$_brush_8cpp.html" title="Tools\\Brush.cpp" alt="" coords="755,80,871,107"/>
+<area shape="rect" id="node8" href="$_region_8cpp.html" title="Tools\\Region.cpp" alt="" coords="896,80,1019,107"/>
+<area shape="rect" id="node9" href="$_images_8cpp.html" title="Tools\\Images.cpp" alt="" coords="1043,80,1167,107"/>
+</map>

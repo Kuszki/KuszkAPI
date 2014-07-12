@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>KuszkAPI: Plik źródłowy KuszkAPI/Forms/Form/Form.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">KuszkAPI
+   &#160;<span id="projectnumber">2.1b</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="pages.html"><span>Dodatkowe&#160;strony</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje typów</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Definicje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Strony</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6f7fa3ee7946af07f3c30f8c4eea207f.html">KuszkAPI</a></li><li class="navelem"><a class="el" href="dir_24955163cd35c8a7f8a84f0221855978.html">Forms</a></li><li class="navelem"><a class="el" href="dir_65cd46d0b51d8434d8398607d780ceea.html">Form</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Form.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_form_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#a975ce997ebfa01f871528e2e1f91e14f">    3</a></span>&#160;<a class="code" href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#a975ce997ebfa01f871528e2e1f91e14f">KuszkAPI::Forms::Form::Form</a>(<span class="keyword">const</span> HWND&amp; hOwn)</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;: <a class="code" href="class_kuszk_a_p_i_1_1_forms_1_1_window.html">Window</a>(hOwn), <a class="code" href="class_kuszk_a_p_i_1_1_forms_1_1_control.html">Control</a>(hUchwyt)</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;      memset(&amp;<a class="code" href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#a984d66627a7640c84d258de7b1fd5da7">Class</a>, 0, <span class="keyword">sizeof</span>(WNDCLASSEX));</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;      <a class="code" href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#a830db507e0cffc76ccde881ac1a9c1de">hMenu</a> = NULL;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;}</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#a56c8e8a7395e58b154ca0e78df4ca033">   10</a></span>&#160;<a class="code" href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#a56c8e8a7395e58b154ca0e78df4ca033">KuszkAPI::Forms::Form::~Form</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;      Destroy();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#a8504fa967ccb79624127c1a31e8afd00">   15</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#a8504fa967ccb79624127c1a31e8afd00">KuszkAPI::Forms::Form::New</a>(<span class="keyword">const</span> <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html">Containers::String</a>&amp; sNazwaKlasy, <span class="keyword">const</span> <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html">Containers::String</a>&amp; sNazwaOkna, WNDPROC pfProc, <span class="keywordtype">unsigned</span> uStyl, HBRUSH hKolor)</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      Destroy();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      sClassName = sNazwaKlasy;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      sWindowName = sNazwaOkna;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      Class.hInstance = GetModuleHandle(NULL);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      Class.lpszClassName = sClassName.Str();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      Class.lpfnWndProc = pfProc;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      Class.style = uStyl;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      Class.cbSize = <span class="keyword">sizeof</span>(WNDCLASSEX);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      Class.hIcon = LoadIcon(NULL, IDI_APPLICATION);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      Class.hIconSm = LoadIcon(NULL, IDI_APPLICATION);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      Class.hCursor = LoadCursor(NULL, IDC_ARROW);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      Class.lpszMenuName = NULL;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      Class.cbClsExtra = 0;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      Class.cbWndExtra = 0;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      Class.hbrBackground = hKolor;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#a789a30ac9e35638abfb0dcc199351011">   34</a></span>&#160;HWND <a class="code" href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#a789a30ac9e35638abfb0dcc199351011">KuszkAPI::Forms::Form::Create</a>(<span class="keywordtype">unsigned</span> uExStyl, <span class="keywordtype">unsigned</span> uStyl, HMENU hMenuGl, <span class="keywordtype">int</span> iSzerokosc, <span class="keywordtype">int</span> iWysokosc, <span class="keywordtype">int</span> iXPos, <span class="keywordtype">int</span> iYPos)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      hMenu = hMenuGl;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keywordflow">if</span> (hUchwyt) DestroyWindow(hUchwyt);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      hUchwyt = CreateWindowEx(uExStyl, sClassName.Str(), sWindowName.Str(), uStyl, iXPos, iYPos, iSzerokosc, iWysokosc, HWND_DESKTOP, hMenuGl, GetModuleHandle(NULL), NULL);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      SendMessage(hUchwyt, <a class="code" href="_forms_2_base_8h.html#adf4c0a20cbb5caed3187161a7763e00c">WM_CREATEWINDOW</a>, 0, 0);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keywordflow">return</span> hUchwyt;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#a20a844e930e3ea76ae545f05fcefcb2c">   43</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#a20a844e930e3ea76ae545f05fcefcb2c">KuszkAPI::Forms::Form::Register</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      UnregisterClass(sClassName.Str(), GetModuleHandle(NULL));</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="keywordflow">return</span> RegisterClassEx(&amp;Class);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#ab6e11d7b5a8ebc05e2907ab766588126">   49</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#ab6e11d7b5a8ebc05e2907ab766588126">KuszkAPI::Forms::Form::SetTitle</a>(<span class="keyword">const</span> <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html">Containers::String</a>&amp; sTekst)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <a class="code" href="class_kuszk_a_p_i_1_1_forms_1_1_window.html#a090e4ad81daa521d3e76b56ab56234d4">Window::SetWndName</a>(hUchwyt, sTekst);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#a10802921083b31f5f6ac2b2694901d5e">   54</a></span>&#160;<a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html">Containers::String</a> <a class="code" href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#a10802921083b31f5f6ac2b2694901d5e">KuszkAPI::Forms::Form::GetTitle</a>(<span class="keywordtype">void</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="class_kuszk_a_p_i_1_1_forms_1_1_window.html#a99f1980deabe20dcb80f4a5289b366c4">Window::GetWndName</a>(hUchwyt);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#af38c416aac9872684b71cc766e29a8c6">   59</a></span>&#160;HMENU <a class="code" href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#af38c416aac9872684b71cc766e29a8c6">KuszkAPI::Forms::Form::GetMenu</a>(<span class="keywordtype">void</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="keywordflow">return</span> hMenu;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#a64db9c9d9b410ad8f0882648e2477450">   64</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#a64db9c9d9b410ad8f0882648e2477450">KuszkAPI::Forms::Form::Destroy</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keywordflow">if</span> (hUchwyt){</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;              Clean();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;              DestroyWindow(hUchwyt);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;              hUchwyt = NULL;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#adde0ad15aa02857a20b58e0b4efa3c2f">   73</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#adde0ad15aa02857a20b58e0b4efa3c2f">KuszkAPI::Forms::Form::Clean</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <a class="code" href="class_kuszk_a_p_i_1_1_forms_1_1_control.html">Control</a>.<a class="code" href="class_kuszk_a_p_i_1_1_forms_1_1_control.html#aad8c0098389a04efd1748f2590b2d1c6">Clean</a>();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_forms_1_1_control_html"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_forms_1_1_control.html">KuszkAPI::Forms::Control</a></div><div class="ttdef"><b>Definition:</b> <a href="_forms_2_base_2_declarations_8h_source.html#l00081">Declarations.h:81</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_forms_1_1_form_html_a8504fa967ccb79624127c1a31e8afd00"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#a8504fa967ccb79624127c1a31e8afd00">KuszkAPI::Forms::Form::New</a></div><div class="ttdeci">void New(const Containers::String &amp;sNazwaKlasy, const Containers::String &amp;sNazwaOkna, WNDPROC pfProc, unsigned uStyl=CS_DBLCLKS, HBRUSH hKolor=(HBRUSH) COLOR_WINDOW)</div><div class="ttdef"><b>Definition:</b> <a href="_form_8cpp_source.html#l00015">Form.cpp:15</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_forms_1_1_form_html_a984d66627a7640c84d258de7b1fd5da7"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#a984d66627a7640c84d258de7b1fd5da7">KuszkAPI::Forms::Form::Class</a></div><div class="ttdeci">WNDCLASSEX Class</div><div class="ttdef"><b>Definition:</b> <a href="_forms_2_form_2_declarations_8h_source.html#l00018">Declarations.h:18</a></div></div>
+<div class="ttc" id="_forms_2_base_8h_html_adf4c0a20cbb5caed3187161a7763e00c"><div class="ttname"><a href="_forms_2_base_8h.html#adf4c0a20cbb5caed3187161a7763e00c">WM_CREATEWINDOW</a></div><div class="ttdeci">#define WM_CREATEWINDOW</div><div class="ttdef"><b>Definition:</b> <a href="_forms_2_base_8h_source.html#l00005">Base.h:5</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_forms_1_1_window_html_a99f1980deabe20dcb80f4a5289b366c4"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_forms_1_1_window.html#a99f1980deabe20dcb80f4a5289b366c4">KuszkAPI::Forms::Window::GetWndName</a></div><div class="ttdeci">static Containers::String GetWndName(HWND hWnd)</div><div class="ttdef"><b>Definition:</b> <a href="_window_8cpp_source.html#l00176">Window.cpp:176</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_forms_1_1_form_html_a56c8e8a7395e58b154ca0e78df4ca033"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#a56c8e8a7395e58b154ca0e78df4ca033">KuszkAPI::Forms::Form::~Form</a></div><div class="ttdeci">~Form(void)</div><div class="ttdef"><b>Definition:</b> <a href="_form_8cpp_source.html#l00010">Form.cpp:10</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_forms_1_1_form_html_a64db9c9d9b410ad8f0882648e2477450"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#a64db9c9d9b410ad8f0882648e2477450">KuszkAPI::Forms::Form::Destroy</a></div><div class="ttdeci">void Destroy(void)</div><div class="ttdef"><b>Definition:</b> <a href="_form_8cpp_source.html#l00064">Form.cpp:64</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_string_html"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_string.html">KuszkAPI::Containers::String</a></div><div class="ttdef"><b>Definition:</b> <a href="_containers_2_string_2_declarations_8h_source.html#l00010">Declarations.h:10</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_forms_1_1_control_html_aad8c0098389a04efd1748f2590b2d1c6"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_forms_1_1_control.html#aad8c0098389a04efd1748f2590b2d1c6">KuszkAPI::Forms::Control::Clean</a></div><div class="ttdeci">void Clean(void)</div><div class="ttdef"><b>Definition:</b> <a href="_control_8cpp_source.html#l00107">Control.cpp:107</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_forms_1_1_form_html_a10802921083b31f5f6ac2b2694901d5e"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#a10802921083b31f5f6ac2b2694901d5e">KuszkAPI::Forms::Form::GetTitle</a></div><div class="ttdeci">Containers::String GetTitle(void) const </div><div class="ttdef"><b>Definition:</b> <a href="_form_8cpp_source.html#l00054">Form.cpp:54</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_forms_1_1_window_html_a090e4ad81daa521d3e76b56ab56234d4"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_forms_1_1_window.html#a090e4ad81daa521d3e76b56ab56234d4">KuszkAPI::Forms::Window::SetWndName</a></div><div class="ttdeci">static void SetWndName(HWND hWnd, const Containers::String &amp;sName)</div><div class="ttdef"><b>Definition:</b> <a href="_window_8cpp_source.html#l00171">Window.cpp:171</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_forms_1_1_form_html_a975ce997ebfa01f871528e2e1f91e14f"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#a975ce997ebfa01f871528e2e1f91e14f">KuszkAPI::Forms::Form::Form</a></div><div class="ttdeci">Form(const HWND &amp;hOwn=HWND_DESKTOP)</div><div class="ttdef"><b>Definition:</b> <a href="_form_8cpp_source.html#l00003">Form.cpp:3</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_forms_1_1_form_html_adde0ad15aa02857a20b58e0b4efa3c2f"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#adde0ad15aa02857a20b58e0b4efa3c2f">KuszkAPI::Forms::Form::Clean</a></div><div class="ttdeci">void Clean(void)</div><div class="ttdef"><b>Definition:</b> <a href="_form_8cpp_source.html#l00073">Form.cpp:73</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_forms_1_1_form_html_a20a844e930e3ea76ae545f05fcefcb2c"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#a20a844e930e3ea76ae545f05fcefcb2c">KuszkAPI::Forms::Form::Register</a></div><div class="ttdeci">bool Register(void)</div><div class="ttdef"><b>Definition:</b> <a href="_form_8cpp_source.html#l00043">Form.cpp:43</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_forms_1_1_form_html_a789a30ac9e35638abfb0dcc199351011"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#a789a30ac9e35638abfb0dcc199351011">KuszkAPI::Forms::Form::Create</a></div><div class="ttdeci">HWND Create(unsigned uExStyl=0, unsigned uStyl=WS_OVERLAPPEDWINDOW, HMENU hMenuGl=NULL, int iSzerokosc=CW_USEDEFAULT, int iWysokosc=CW_USEDEFAULT, int iXPos=CW_USEDEFAULT, int iYPos=CW_USEDEFAULT)</div><div class="ttdef"><b>Definition:</b> <a href="_form_8cpp_source.html#l00034">Form.cpp:34</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_forms_1_1_form_html_ab6e11d7b5a8ebc05e2907ab766588126"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#ab6e11d7b5a8ebc05e2907ab766588126">KuszkAPI::Forms::Form::SetTitle</a></div><div class="ttdeci">void SetTitle(const Containers::String &amp;sNazwa)</div><div class="ttdef"><b>Definition:</b> <a href="_form_8cpp_source.html#l00049">Form.cpp:49</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_forms_1_1_form_html_af38c416aac9872684b71cc766e29a8c6"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#af38c416aac9872684b71cc766e29a8c6">KuszkAPI::Forms::Form::GetMenu</a></div><div class="ttdeci">HMENU GetMenu(void) const </div><div class="ttdef"><b>Definition:</b> <a href="_form_8cpp_source.html#l00059">Form.cpp:59</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_forms_1_1_window_html"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_forms_1_1_window.html">KuszkAPI::Forms::Window</a></div><div class="ttdef"><b>Definition:</b> <a href="_forms_2_base_2_declarations_8h_source.html#l00015">Declarations.h:15</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_forms_1_1_form_html_a830db507e0cffc76ccde881ac1a9c1de"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_forms_1_1_form.html#a830db507e0cffc76ccde881ac1a9c1de">KuszkAPI::Forms::Form::hMenu</a></div><div class="ttdeci">HMENU hMenu</div><div class="ttdef"><b>Definition:</b> <a href="_forms_2_form_2_declarations_8h_source.html#l00013">Declarations.h:13</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano So, 12 lip 2014 21:18:51 dla KuszkAPI programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

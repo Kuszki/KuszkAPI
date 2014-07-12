@@ -1,0 +1,13 @@
+<map id="KuszkAPI::Containers::Strings::Add" name="KuszkAPI::Containers::Strings::Add">
+<area shape="rect" id="node2" href="$class_kuszk_a_p_i_1_1_forms_1_1_edit_box.html#a79e3ff534b41bd0724e77766b6ddd248" title="KuszkAPI::Forms::EditBox\l::AddLine" alt="" coords="215,5,393,46"/>
+<area shape="rect" id="node3" href="$class_kuszk_a_p_i_1_1_forms_1_1_table_box.html#a591dd077c40df16ef559706357fc5ba5" title="KuszkAPI::Forms::TableBox\l::GetColumn" alt="" coords="211,70,397,111"/>
+<area shape="rect" id="node4" href="$class_kuszk_a_p_i_1_1_forms_1_1_list_box.html#a6a28db85058610a3d57cc445cd5ff746" title="KuszkAPI::Forms::ListBox\l::GetItems" alt="" coords="215,135,393,177"/>
+<area shape="rect" id="node5" href="$class_kuszk_a_p_i_1_1_forms_1_1_combo_box.html#a5bb4447a9a712967c01fbed2719cca2d" title="KuszkAPI::Forms::ComboBox\l::GetItems" alt="" coords="205,201,403,242"/>
+<area shape="rect" id="node6" href="$class_kuszk_a_p_i_1_1_forms_1_1_table_box.html#afe16920a713ba1cfad66443cc9bf8030" title="KuszkAPI::Forms::TableBox\l::GetItems" alt="" coords="211,266,397,307"/>
+<area shape="rect" id="node7" href="$class_kuszk_a_p_i_1_1_forms_1_1_tab_box.html#a89e58110675f0a2d6f632328fa782d45" title="KuszkAPI::Forms::TabBox\l::GetItems" alt="" coords="215,331,393,373"/>
+<area shape="rect" id="node8" href="$class_kuszk_a_p_i_1_1_forms_1_1_table_box.html#ab49a3916d6e1f49c4db6809c09b4a201" title="KuszkAPI::Forms::TableBox\l::GetItemStruct" alt="" coords="211,397,397,438"/>
+<area shape="rect" id="node9" href="$class_kuszk_a_p_i_1_1_core_1_1_console.html#a4117149e814f6819b8e592ba2efcb473" title="KuszkAPI::Core::Console\l::GetLines" alt="" coords="219,462,389,503"/>
+<area shape="rect" id="node10" href="$class_kuszk_a_p_i_1_1_forms_1_1_edit_box.html#ae3e0f39c6a2ffa9ab23af30005b7f0b3" title="KuszkAPI::Forms::EditBox\l::GetLines" alt="" coords="215,527,393,569"/>
+<area shape="rect" id="node11" href="$class_kuszk_a_p_i_1_1_forms_1_1_combo_box.html#acd08c06092a749a67c6c419580ace7e3" title="KuszkAPI::Forms::ComboBox\l::Sort" alt="" coords="205,593,403,634"/>
+<area shape="rect" id="node12" href="$class_kuszk_a_p_i_1_1_forms_1_1_table_box.html#a17a5957c6b5ec94902d7c969f35b149a" title="KuszkAPI::Forms::TableBox\l::Sort" alt="" coords="211,658,397,699"/>
+</map>

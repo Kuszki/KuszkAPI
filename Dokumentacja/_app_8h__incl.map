@@ -1,0 +1,9 @@
+<map id="KuszkAPI/App.h" name="KuszkAPI/App.h">
+<area shape="rect" id="node3" href="$_app_2_base_8h.html" title="Dołącza bazowe składniki modułu App.h. " alt="" coords="175,80,265,107"/>
+<area shape="rect" id="node6" href="$_types_8h.html" title="Dołącza wyszczególnione składniki modułu App.h. " alt="" coords="402,80,496,107"/>
+<area shape="rect" id="node4" href="$_app_2_base_2_declarations_8h.html" title="Deklaracje dla pliku App.cpp. " alt="" coords="5,155,144,181"/>
+<area shape="rect" id="node5" href="$_app_8cpp.html" title="Zawiera implementacje klasy App. " alt="" coords="168,155,272,181"/>
+<area shape="rect" id="node7" href="$_app_2_types_2_declarations_8h.html" title="Deklaracje dla plików DllApp.cpp i WinApp.cpp. " alt="" coords="296,155,440,181"/>
+<area shape="rect" id="node8" href="$_win_app_8cpp.html" title="Zawiera implementacje klasy WinApp. " alt="" coords="465,155,596,181"/>
+<area shape="rect" id="node9" href="$_dll_app_8cpp.html" title="Zawiera implementacje klasy DllApp. " alt="" coords="621,155,744,181"/>
+</map>

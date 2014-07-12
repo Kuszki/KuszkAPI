@@ -1,0 +1,5 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="node1" href="$class_kuszk_a_p_i_1_1_sockets_1_1_socket.html" title="KuszkAPI::Sockets::\lSocket" alt="" coords="5,38,149,79"/>
+<area shape="rect" id="node2" href="$class_kuszk_a_p_i_1_1_sockets_1_1_client.html" title="KuszkAPI::Sockets::\lClient" alt="" coords="197,5,341,46"/>
+<area shape="rect" id="node3" href="$class_kuszk_a_p_i_1_1_sockets_1_1_server.html" title="KuszkAPI::Sockets::\lServer" alt="" coords="197,70,341,111"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="KuszkAPI::Forms::Window::GetWndName" name="KuszkAPI::Forms::Window::GetWndName">
+<area shape="rect" id="node2" href="$class_kuszk_a_p_i_1_1_forms_1_1_text_control.html#a505f5b6c6dcff6bd3bd233506afe1952" title="KuszkAPI::Forms::TextControl\l::GetText" alt="" coords="233,5,431,46"/>
+<area shape="rect" id="node3" href="$class_kuszk_a_p_i_1_1_forms_1_1_user_dialog.html#a5646a17c5401eaacdf61fcc823b1c0d7" title="KuszkAPI::Forms::UserDialog\l::GetTitle" alt="" coords="234,70,430,111"/>
+<area shape="rect" id="node4" href="$class_kuszk_a_p_i_1_1_forms_1_1_form.html#a10802921083b31f5f6ac2b2694901d5e" title="KuszkAPI::Forms::Form\l::GetTitle" alt="" coords="251,135,413,177"/>
+</map>

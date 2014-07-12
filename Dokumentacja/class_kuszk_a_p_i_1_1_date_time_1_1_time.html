@@ -1,0 +1,1024 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>KuszkAPI: Dokumentacja klasy KuszkAPI::DateTime::Time</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">KuszkAPI
+   &#160;<span id="projectnumber">2.1b</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="pages.html"><span>Dodatkowe&#160;strony</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Klasy</span></a></li>
+      <li><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;klas</span></a></li>
+      <li><a href="classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="inherits.html"><span>Hierarchia&#160;klas</span></a></li>
+      <li><a href="functions.html"><span>Składowe&#160;klas</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje typów</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Definicje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Strony</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_kuszk_a_p_i.html">KuszkAPI</a></li><li class="navelem"><a class="el" href="namespace_kuszk_a_p_i_1_1_date_time.html">DateTime</a></li><li class="navelem"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html">Time</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Komponenty</a> &#124;
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pri-methods">Metody prywatne</a> &#124;
+<a href="#pri-attribs">Atrybuty prywatne</a> &#124;
+<a href="class_kuszk_a_p_i_1_1_date_time_1_1_time-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy KuszkAPI::DateTime::Time</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_time_2_time_2_declarations_8h_source.html">Declarations.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagram współpracy dla KuszkAPI::DateTime::Time:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_kuszk_a_p_i_1_1_date_time_1_1_time__coll__graph.svg" width="182" height="158"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Komponenty</h2></td></tr>
+<tr class="memitem:struct_kuszk_a_p_i_1_1_date_time_1_1_time_1_1_t_time"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#struct_kuszk_a_p_i_1_1_date_time_1_1_time_1_1_t_time">TTime</a></td></tr>
+<tr class="separator:struct_kuszk_a_p_i_1_1_date_time_1_1_time_1_1_t_time"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:ab5a1f06d369f0fd30c0f039603f46e5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ab5a1f06d369f0fd30c0f039603f46e5f">Time</a> (const <a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#struct_kuszk_a_p_i_1_1_date_time_1_1_time_1_1_t_time">TTime</a> &amp;tTime)</td></tr>
+<tr class="separator:ab5a1f06d369f0fd30c0f039603f46e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3a75fb0b888a651b1a8ad947828ebb7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#af3a75fb0b888a651b1a8ad947828ebb7">Time</a> (<a class="el" href="namespace_3global_scope_4.html#classunsigned">unsigned</a> uHour, <a class="el" href="namespace_3global_scope_4.html#classunsigned">unsigned</a> uMin, <a class="el" href="namespace_3global_scope_4.html#classunsigned">unsigned</a> uSec)</td></tr>
+<tr class="separator:af3a75fb0b888a651b1a8ad947828ebb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5542c04f7ff35301d41d5d1e7807f1fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a5542c04f7ff35301d41d5d1e7807f1fc">Time</a> (bool bNow=true)</td></tr>
+<tr class="separator:a5542c04f7ff35301d41d5d1e7807f1fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52000846f40d1c883df769672faca363"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a52000846f40d1c883df769672faca363">~Time</a> (void)</td></tr>
+<tr class="separator:a52000846f40d1c883df769672faca363"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af863ecbd91a27114025441ae1c26d5cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#af863ecbd91a27114025441ae1c26d5cd">Set</a> (<a class="el" href="namespace_3global_scope_4.html#classunsigned">unsigned</a> uHour, <a class="el" href="namespace_3global_scope_4.html#classunsigned">unsigned</a> uMin, <a class="el" href="namespace_3global_scope_4.html#classunsigned">unsigned</a> uSec)</td></tr>
+<tr class="separator:af863ecbd91a27114025441ae1c26d5cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa982fc9bd73c7fed2ac9c5c7757117eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#aa982fc9bd73c7fed2ac9c5c7757117eb">Refresh</a> (void)</td></tr>
+<tr class="separator:aa982fc9bd73c7fed2ac9c5c7757117eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cd6732b7f8b9e04a9f6a96fdf1a27f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#struct_kuszk_a_p_i_1_1_date_time_1_1_time_1_1_t_time">TTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a8cd6732b7f8b9e04a9f6a96fdf1a27f9">GetTime</a> (void) const </td></tr>
+<tr class="separator:a8cd6732b7f8b9e04a9f6a96fdf1a27f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92fd986676425c69eed8eaa385dbaf1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_3global_scope_4.html#classunsigned">unsigned</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a92fd986676425c69eed8eaa385dbaf1b">GetSeconds</a> (void) const </td></tr>
+<tr class="separator:a92fd986676425c69eed8eaa385dbaf1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad13faba4853dd70fa2021fcd48ed7a96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_3global_scope_4.html#classunsigned">unsigned</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ad13faba4853dd70fa2021fcd48ed7a96">GetMinutes</a> (void) const </td></tr>
+<tr class="separator:ad13faba4853dd70fa2021fcd48ed7a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac82ad9431aa88feebf2d5d2d2b490206"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_3global_scope_4.html#classunsigned">unsigned</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ac82ad9431aa88feebf2d5d2d2b490206">GetHours</a> (void) const </td></tr>
+<tr class="separator:ac82ad9431aa88feebf2d5d2d2b490206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa41d388b885a918ddbdcae62ec5483cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html">Containers::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#aa41d388b885a918ddbdcae62ec5483cb">Str</a> (<a class="el" href="_string_8h.html#a65c91f8d7af3c67b8a21e089fdddd0fe">TCHAR</a> cFormat=0, <a class="el" href="namespace_3global_scope_4.html#classunsigned">unsigned</a> uFlags=0) const </td></tr>
+<tr class="separator:aa41d388b885a918ddbdcae62ec5483cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adce2cfd1848dd39bc281fca7d8135f41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#adce2cfd1848dd39bc281fca7d8135f41">SetFormat</a> (<a class="el" href="_string_8h.html#a65c91f8d7af3c67b8a21e089fdddd0fe">TCHAR</a> cFormat=0, <a class="el" href="namespace_3global_scope_4.html#classunsigned">unsigned</a> uFlags=0)</td></tr>
+<tr class="separator:adce2cfd1848dd39bc281fca7d8135f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1b671beaec10c0e5b1a417e444f9df3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_string_8h.html#a65c91f8d7af3c67b8a21e089fdddd0fe">TCHAR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ab1b671beaec10c0e5b1a417e444f9df3">GetFormat</a> (void) const </td></tr>
+<tr class="separator:ab1b671beaec10c0e5b1a417e444f9df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a387eb933b66b011c1da610a4a0240fc0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a387eb933b66b011c1da610a4a0240fc0">operator==</a> (const <a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html">Time</a> &amp;tCzas) const </td></tr>
+<tr class="separator:a387eb933b66b011c1da610a4a0240fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a908e54b717dffe112ba475b6d0e33619"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a908e54b717dffe112ba475b6d0e33619">operator!=</a> (const <a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html">Time</a> &amp;tCzas) const </td></tr>
+<tr class="separator:a908e54b717dffe112ba475b6d0e33619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a454b60fec3554be4a1b7ef154bc213e4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a454b60fec3554be4a1b7ef154bc213e4">operator&gt;</a> (const <a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html">Time</a> &amp;tCzas) const </td></tr>
+<tr class="separator:a454b60fec3554be4a1b7ef154bc213e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a434be042ed2e57b9d968157e2a743add"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a434be042ed2e57b9d968157e2a743add">operator&lt;</a> (const <a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html">Time</a> &amp;tCzas) const </td></tr>
+<tr class="separator:a434be042ed2e57b9d968157e2a743add"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a661b15543bd40868616f02c4b15c9cac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a661b15543bd40868616f02c4b15c9cac">operator+</a> (const <a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html">Time</a> &amp;tCzas) const </td></tr>
+<tr class="separator:a661b15543bd40868616f02c4b15c9cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a19dd908e3ba4f01a5ebf463884dbf0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a5a19dd908e3ba4f01a5ebf463884dbf0">operator-</a> (const <a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html">Time</a> &amp;tCzas) const </td></tr>
+<tr class="separator:a5a19dd908e3ba4f01a5ebf463884dbf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a459dabbb3b23d7e661d81960a16297d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html">Time</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a459dabbb3b23d7e661d81960a16297d8">operator++</a> (void)</td></tr>
+<tr class="separator:a459dabbb3b23d7e661d81960a16297d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4698744bc9c80e70562170c4a5d9aacb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html">Time</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a4698744bc9c80e70562170c4a5d9aacb">operator--</a> (void)</td></tr>
+<tr class="separator:a4698744bc9c80e70562170c4a5d9aacb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa105fbc43a1aafeb489a9308dfe35a43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#aa105fbc43a1aafeb489a9308dfe35a43">operator++</a> (int)</td></tr>
+<tr class="separator:aa105fbc43a1aafeb489a9308dfe35a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a908b43ccc7b80c0e264b9cf0975b1505"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a908b43ccc7b80c0e264b9cf0975b1505">operator--</a> (int)</td></tr>
+<tr class="separator:a908b43ccc7b80c0e264b9cf0975b1505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1132675a87ab1c27acad0f98103e4db7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a1132675a87ab1c27acad0f98103e4db7">operator TTime</a> (void) const </td></tr>
+<tr class="separator:a1132675a87ab1c27acad0f98103e4db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa513825334e8649ab5e26b5c6cfd6d21"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#aa513825334e8649ab5e26b5c6cfd6d21">operator Containers::String</a> (void) const </td></tr>
+<tr class="separator:aa513825334e8649ab5e26b5c6cfd6d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Metody prywatne</h2></td></tr>
+<tr class="memitem:ab256dd8041f7ccf5386e2d59966323ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ab256dd8041f7ccf5386e2d59966323ef">Convert</a> (void)</td></tr>
+<tr class="separator:ab256dd8041f7ccf5386e2d59966323ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:a7a6aac6c6b2cd0123a9a893724d253db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_3global_scope_4.html#classunsigned">unsigned</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">uCzas</a></td></tr>
+<tr class="separator:a7a6aac6c6b2cd0123a9a893724d253db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4d2eed71f8558f7fa1793bf9cc28bf5"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ac4d2eed71f8558f7fa1793bf9cc28bf5">cSeparator</a></td></tr>
+<tr class="separator:ac4d2eed71f8558f7fa1793bf9cc28bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af038cdd296843b3e675b40c2c0a0bbe6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_3global_scope_4.html#classunsigned">unsigned</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#af038cdd296843b3e675b40c2c0a0bbe6">uShowFlag</a></td></tr>
+<tr class="separator:af038cdd296843b3e675b40c2c0a0bbe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock">
+<p>Definicja w linii <a class="el" href="_time_2_time_2_declarations_8h_source.html#l00010">10</a> pliku <a class="el" href="_time_2_time_2_declarations_8h_source.html">Declarations.h</a>.</p>
+</div><hr/><h2 class="groupheader">Dokumentacja klas</h2>
+<a name="struct_kuszk_a_p_i_1_1_date_time_1_1_time_1_1_t_time" id="struct_kuszk_a_p_i_1_1_date_time_1_1_time_1_1_t_time"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct KuszkAPI::DateTime::Time::TTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p>Definicja w linii <a class="el" href="_time_2_time_2_declarations_8h_source.html#l00018">18</a> pliku <a class="el" href="_time_2_time_2_declarations_8h_source.html">Declarations.h</a>.</p>
+</div><div class="dynheader">
+Diagram współpracy dla KuszkAPI::DateTime::Time::TTime:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_kuszk_a_p_i_1_1_date_time_1_1_time_1_1_t_time__coll__graph.svg" width="152" height="174"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">Składowe klas</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a5f70568de529bff614266aca51f579bc"></a><a class="el" href="namespace_3global_scope_4.html#classunsigned">unsigned</a></td>
+<td class="fieldname">
+Hour</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ad7990e9920ac2aaae4fcf82bbc277680"></a><a class="el" href="namespace_3global_scope_4.html#classunsigned">unsigned</a></td>
+<td class="fieldname">
+Min</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ae999c9b5cdbab5d6e450aa9b9edae09f"></a><a class="el" href="namespace_3global_scope_4.html#classunsigned">unsigned</a></td>
+<td class="fieldname">
+Sec</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a class="anchor" id="ab5a1f06d369f0fd30c0f039603f46e5f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KuszkAPI::DateTime::Time::Time </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#struct_kuszk_a_p_i_1_1_date_time_1_1_time_1_1_t_time">TTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>tTime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_time_8cpp_source.html#l00003">3</a> pliku <a class="el" href="_time_8cpp_source.html">Time.cpp</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="_time_2_time_2_declarations_8h_source.html#l00020">KuszkAPI::DateTime::Time::TTime::Hour</a>, <a class="el" href="_time_2_time_8h_source.html#l00005">HOURS</a>, <a class="el" href="_time_2_time_2_declarations_8h_source.html#l00021">KuszkAPI::DateTime::Time::TTime::Min</a>, <a class="el" href="_time_2_time_8h_source.html#l00006">MINUTES</a>, <a class="el" href="_time_2_time_2_declarations_8h_source.html#l00022">KuszkAPI::DateTime::Time::TTime::Sec</a>, <a class="el" href="_time_2_time_8h_source.html#l00007">SECONDS</a> i <a class="el" href="_time_8h_source.html#l00017">ZERO</a>.</p>
+<div class="fragment"><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;      <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ac4d2eed71f8558f7fa1793bf9cc28bf5">cSeparator</a> = TEXT(<span class="charliteral">&#39;:&#39;</span>);</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;      <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#af038cdd296843b3e675b40c2c0a0bbe6">uShowFlag</a> = <a class="code" href="_time_2_time_8h.html#a212d0f839f6f7ca43ccde311f93d5892">HOURS</a> | <a class="code" href="_time_2_time_8h.html#a84be9dcfa5a172ee83121620d15c8e29">MINUTES</a> | <a class="code" href="_time_2_time_8h.html#a48fcf4f2eeef6769d588168d4ac2ab0e">SECONDS</a> | <a class="code" href="_time_8h.html#ac328e551bde3d39b6d7b8cc9e048d941">ZERO</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;      <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">uCzas</a> = tTime.Hour * 3600 + tTime.Min * 60 + tTime.Sec;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;      <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ab256dd8041f7ccf5386e2d59966323ef">Convert</a>();</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;}</div>
+<div class="ttc" id="_time_2_time_8h_html_a48fcf4f2eeef6769d588168d4ac2ab0e"><div class="ttname"><a href="_time_2_time_8h.html#a48fcf4f2eeef6769d588168d4ac2ab0e">SECONDS</a></div><div class="ttdeci">#define SECONDS</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_8h_source.html#l00007">Time.h:7</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_ac4d2eed71f8558f7fa1793bf9cc28bf5"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ac4d2eed71f8558f7fa1793bf9cc28bf5">KuszkAPI::DateTime::Time::cSeparator</a></div><div class="ttdeci">char cSeparator</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_2_declarations_8h_source.html#l00014">Declarations.h:14</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_ab256dd8041f7ccf5386e2d59966323ef"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ab256dd8041f7ccf5386e2d59966323ef">KuszkAPI::DateTime::Time::Convert</a></div><div class="ttdeci">void Convert(void)</div><div class="ttdef"><b>Definition:</b> <a href="_time_8cpp_source.html#l00031">Time.cpp:31</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_a7a6aac6c6b2cd0123a9a893724d253db"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">KuszkAPI::DateTime::Time::uCzas</a></div><div class="ttdeci">unsigned uCzas</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_2_declarations_8h_source.html#l00013">Declarations.h:13</a></div></div>
+<div class="ttc" id="_time_2_time_8h_html_a212d0f839f6f7ca43ccde311f93d5892"><div class="ttname"><a href="_time_2_time_8h.html#a212d0f839f6f7ca43ccde311f93d5892">HOURS</a></div><div class="ttdeci">#define HOURS</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_8h_source.html#l00005">Time.h:5</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_af038cdd296843b3e675b40c2c0a0bbe6"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#af038cdd296843b3e675b40c2c0a0bbe6">KuszkAPI::DateTime::Time::uShowFlag</a></div><div class="ttdeci">unsigned uShowFlag</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_2_declarations_8h_source.html#l00015">Declarations.h:15</a></div></div>
+<div class="ttc" id="_time_2_time_8h_html_a84be9dcfa5a172ee83121620d15c8e29"><div class="ttname"><a href="_time_2_time_8h.html#a84be9dcfa5a172ee83121620d15c8e29">MINUTES</a></div><div class="ttdeci">#define MINUTES</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_8h_source.html#l00006">Time.h:6</a></div></div>
+<div class="ttc" id="_time_8h_html_ac328e551bde3d39b6d7b8cc9e048d941"><div class="ttname"><a href="_time_8h.html#ac328e551bde3d39b6d7b8cc9e048d941">ZERO</a></div><div class="ttdeci">#define ZERO</div><div class="ttdef"><b>Definition:</b> <a href="_time_8h_source.html#l00017">Time.h:17</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="af3a75fb0b888a651b1a8ad947828ebb7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KuszkAPI::DateTime::Time::Time </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_3global_scope_4.html#classunsigned">unsigned</a>&#160;</td>
+          <td class="paramname"><em>uHour</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_3global_scope_4.html#classunsigned">unsigned</a>&#160;</td>
+          <td class="paramname"><em>uMin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_3global_scope_4.html#classunsigned">unsigned</a>&#160;</td>
+          <td class="paramname"><em>uSec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_time_8cpp_source.html#l00011">11</a> pliku <a class="el" href="_time_8cpp_source.html">Time.cpp</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="_time_2_time_8h_source.html#l00005">HOURS</a>, <a class="el" href="_time_2_time_8h_source.html#l00006">MINUTES</a>, <a class="el" href="_time_2_time_8h_source.html#l00007">SECONDS</a> i <a class="el" href="_time_8h_source.html#l00017">ZERO</a>.</p>
+<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;      <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ac4d2eed71f8558f7fa1793bf9cc28bf5">cSeparator</a> = TEXT(<span class="charliteral">&#39;:&#39;</span>);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;      <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#af038cdd296843b3e675b40c2c0a0bbe6">uShowFlag</a> = <a class="code" href="_time_2_time_8h.html#a212d0f839f6f7ca43ccde311f93d5892">HOURS</a> | <a class="code" href="_time_2_time_8h.html#a84be9dcfa5a172ee83121620d15c8e29">MINUTES</a> | <a class="code" href="_time_2_time_8h.html#a48fcf4f2eeef6769d588168d4ac2ab0e">SECONDS</a> | <a class="code" href="_time_8h.html#ac328e551bde3d39b6d7b8cc9e048d941">ZERO</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;      <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">uCzas</a> = uHour * 3600 + uMin * 60 + uSec;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ab256dd8041f7ccf5386e2d59966323ef">Convert</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
+<div class="ttc" id="_time_2_time_8h_html_a48fcf4f2eeef6769d588168d4ac2ab0e"><div class="ttname"><a href="_time_2_time_8h.html#a48fcf4f2eeef6769d588168d4ac2ab0e">SECONDS</a></div><div class="ttdeci">#define SECONDS</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_8h_source.html#l00007">Time.h:7</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_ac4d2eed71f8558f7fa1793bf9cc28bf5"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ac4d2eed71f8558f7fa1793bf9cc28bf5">KuszkAPI::DateTime::Time::cSeparator</a></div><div class="ttdeci">char cSeparator</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_2_declarations_8h_source.html#l00014">Declarations.h:14</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_ab256dd8041f7ccf5386e2d59966323ef"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ab256dd8041f7ccf5386e2d59966323ef">KuszkAPI::DateTime::Time::Convert</a></div><div class="ttdeci">void Convert(void)</div><div class="ttdef"><b>Definition:</b> <a href="_time_8cpp_source.html#l00031">Time.cpp:31</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_a7a6aac6c6b2cd0123a9a893724d253db"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">KuszkAPI::DateTime::Time::uCzas</a></div><div class="ttdeci">unsigned uCzas</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_2_declarations_8h_source.html#l00013">Declarations.h:13</a></div></div>
+<div class="ttc" id="_time_2_time_8h_html_a212d0f839f6f7ca43ccde311f93d5892"><div class="ttname"><a href="_time_2_time_8h.html#a212d0f839f6f7ca43ccde311f93d5892">HOURS</a></div><div class="ttdeci">#define HOURS</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_8h_source.html#l00005">Time.h:5</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_af038cdd296843b3e675b40c2c0a0bbe6"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#af038cdd296843b3e675b40c2c0a0bbe6">KuszkAPI::DateTime::Time::uShowFlag</a></div><div class="ttdeci">unsigned uShowFlag</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_2_declarations_8h_source.html#l00015">Declarations.h:15</a></div></div>
+<div class="ttc" id="_time_2_time_8h_html_a84be9dcfa5a172ee83121620d15c8e29"><div class="ttname"><a href="_time_2_time_8h.html#a84be9dcfa5a172ee83121620d15c8e29">MINUTES</a></div><div class="ttdeci">#define MINUTES</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_8h_source.html#l00006">Time.h:6</a></div></div>
+<div class="ttc" id="_time_8h_html_ac328e551bde3d39b6d7b8cc9e048d941"><div class="ttname"><a href="_time_8h.html#ac328e551bde3d39b6d7b8cc9e048d941">ZERO</a></div><div class="ttdeci">#define ZERO</div><div class="ttdef"><b>Definition:</b> <a href="_time_8h_source.html#l00017">Time.h:17</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a5542c04f7ff35301d41d5d1e7807f1fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KuszkAPI::DateTime::Time::Time </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bNow</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_time_8cpp_source.html#l00019">19</a> pliku <a class="el" href="_time_8cpp_source.html">Time.cpp</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="_time_2_time_8h_source.html#l00005">HOURS</a>, <a class="el" href="_time_2_time_8h_source.html#l00006">MINUTES</a>, <a class="el" href="_time_2_time_8h_source.html#l00007">SECONDS</a> i <a class="el" href="_time_8h_source.html#l00017">ZERO</a>.</p>
+<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ac4d2eed71f8558f7fa1793bf9cc28bf5">cSeparator</a> = TEXT(<span class="charliteral">&#39;:&#39;</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#af038cdd296843b3e675b40c2c0a0bbe6">uShowFlag</a> = <a class="code" href="_time_2_time_8h.html#a212d0f839f6f7ca43ccde311f93d5892">HOURS</a> | <a class="code" href="_time_2_time_8h.html#a84be9dcfa5a172ee83121620d15c8e29">MINUTES</a> | <a class="code" href="_time_2_time_8h.html#a48fcf4f2eeef6769d588168d4ac2ab0e">SECONDS</a> | <a class="code" href="_time_8h.html#ac328e551bde3d39b6d7b8cc9e048d941">ZERO</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      <span class="keywordflow">if</span> (bNow) <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#aa982fc9bd73c7fed2ac9c5c7757117eb">Refresh</a>(); <span class="keywordflow">else</span> <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">uCzas</a> = 0;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="ttc" id="_time_2_time_8h_html_a48fcf4f2eeef6769d588168d4ac2ab0e"><div class="ttname"><a href="_time_2_time_8h.html#a48fcf4f2eeef6769d588168d4ac2ab0e">SECONDS</a></div><div class="ttdeci">#define SECONDS</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_8h_source.html#l00007">Time.h:7</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_ac4d2eed71f8558f7fa1793bf9cc28bf5"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ac4d2eed71f8558f7fa1793bf9cc28bf5">KuszkAPI::DateTime::Time::cSeparator</a></div><div class="ttdeci">char cSeparator</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_2_declarations_8h_source.html#l00014">Declarations.h:14</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_aa982fc9bd73c7fed2ac9c5c7757117eb"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#aa982fc9bd73c7fed2ac9c5c7757117eb">KuszkAPI::DateTime::Time::Refresh</a></div><div class="ttdeci">void Refresh(void)</div><div class="ttdef"><b>Definition:</b> <a href="_time_8cpp_source.html#l00042">Time.cpp:42</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_a7a6aac6c6b2cd0123a9a893724d253db"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">KuszkAPI::DateTime::Time::uCzas</a></div><div class="ttdeci">unsigned uCzas</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_2_declarations_8h_source.html#l00013">Declarations.h:13</a></div></div>
+<div class="ttc" id="_time_2_time_8h_html_a212d0f839f6f7ca43ccde311f93d5892"><div class="ttname"><a href="_time_2_time_8h.html#a212d0f839f6f7ca43ccde311f93d5892">HOURS</a></div><div class="ttdeci">#define HOURS</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_8h_source.html#l00005">Time.h:5</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_af038cdd296843b3e675b40c2c0a0bbe6"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#af038cdd296843b3e675b40c2c0a0bbe6">KuszkAPI::DateTime::Time::uShowFlag</a></div><div class="ttdeci">unsigned uShowFlag</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_2_declarations_8h_source.html#l00015">Declarations.h:15</a></div></div>
+<div class="ttc" id="_time_2_time_8h_html_a84be9dcfa5a172ee83121620d15c8e29"><div class="ttname"><a href="_time_2_time_8h.html#a84be9dcfa5a172ee83121620d15c8e29">MINUTES</a></div><div class="ttdeci">#define MINUTES</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_8h_source.html#l00006">Time.h:6</a></div></div>
+<div class="ttc" id="_time_8h_html_ac328e551bde3d39b6d7b8cc9e048d941"><div class="ttname"><a href="_time_8h.html#ac328e551bde3d39b6d7b8cc9e048d941">ZERO</a></div><div class="ttdeci">#define ZERO</div><div class="ttdef"><b>Definition:</b> <a href="_time_8h_source.html#l00017">Time.h:17</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a52000846f40d1c883df769672faca363"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KuszkAPI::DateTime::Time::~Time </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_time_8cpp_source.html#l00026">26</a> pliku <a class="el" href="_time_8cpp_source.html">Time.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">uCzas</a> = 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_a7a6aac6c6b2cd0123a9a893724d253db"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">KuszkAPI::DateTime::Time::uCzas</a></div><div class="ttdeci">unsigned uCzas</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_2_declarations_8h_source.html#l00013">Declarations.h:13</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="ab256dd8041f7ccf5386e2d59966323ef"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KuszkAPI::DateTime::Time::Convert </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_time_8cpp_source.html#l00031">31</a> pliku <a class="el" href="_time_8cpp_source.html">Time.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <span class="keywordflow">while</span> (<a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">uCzas</a> &gt; 86400) <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">uCzas</a> -= 86400;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_a7a6aac6c6b2cd0123a9a893724d253db"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">KuszkAPI::DateTime::Time::uCzas</a></div><div class="ttdeci">unsigned uCzas</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_2_declarations_8h_source.html#l00013">Declarations.h:13</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ab1b671beaec10c0e5b1a417e444f9df3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_string_8h.html#a65c91f8d7af3c67b8a21e089fdddd0fe">TCHAR</a> KuszkAPI::DateTime::Time::GetFormat </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_time_8cpp_source.html#l00102">102</a> pliku <a class="el" href="_time_8cpp_source.html">Time.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;{</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ac4d2eed71f8558f7fa1793bf9cc28bf5">cSeparator</a>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_ac4d2eed71f8558f7fa1793bf9cc28bf5"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ac4d2eed71f8558f7fa1793bf9cc28bf5">KuszkAPI::DateTime::Time::cSeparator</a></div><div class="ttdeci">char cSeparator</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_2_declarations_8h_source.html#l00014">Declarations.h:14</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ac82ad9431aa88feebf2d5d2d2b490206"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_3global_scope_4.html#classunsigned">unsigned</a> KuszkAPI::DateTime::Time::GetHours </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_time_8cpp_source.html#l00068">68</a> pliku <a class="el" href="_time_8cpp_source.html">Time.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">uCzas</a> / 3600;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_a7a6aac6c6b2cd0123a9a893724d253db"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">KuszkAPI::DateTime::Time::uCzas</a></div><div class="ttdeci">unsigned uCzas</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_2_declarations_8h_source.html#l00013">Declarations.h:13</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ad13faba4853dd70fa2021fcd48ed7a96"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_3global_scope_4.html#classunsigned">unsigned</a> KuszkAPI::DateTime::Time::GetMinutes </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_time_8cpp_source.html#l00063">63</a> pliku <a class="el" href="_time_8cpp_source.html">Time.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">uCzas</a> / 60;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_a7a6aac6c6b2cd0123a9a893724d253db"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">KuszkAPI::DateTime::Time::uCzas</a></div><div class="ttdeci">unsigned uCzas</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_2_declarations_8h_source.html#l00013">Declarations.h:13</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a92fd986676425c69eed8eaa385dbaf1b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_3global_scope_4.html#classunsigned">unsigned</a> KuszkAPI::DateTime::Time::GetSeconds </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_time_8cpp_source.html#l00058">58</a> pliku <a class="el" href="_time_8cpp_source.html">Time.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">uCzas</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_a7a6aac6c6b2cd0123a9a893724d253db"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">KuszkAPI::DateTime::Time::uCzas</a></div><div class="ttdeci">unsigned uCzas</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_2_declarations_8h_source.html#l00013">Declarations.h:13</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a8cd6732b7f8b9e04a9f6a96fdf1a27f9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#struct_kuszk_a_p_i_1_1_date_time_1_1_time_1_1_t_time">KuszkAPI::DateTime::Time::TTime</a> KuszkAPI::DateTime::Time::GetTime </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_time_8cpp_source.html#l00049">49</a> pliku <a class="el" href="_time_8cpp_source.html">Time.cpp</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="_time_2_time_2_declarations_8h_source.html#l00020">KuszkAPI::DateTime::Time::TTime::Hour</a>, <a class="el" href="_time_2_time_2_declarations_8h_source.html#l00021">KuszkAPI::DateTime::Time::TTime::Min</a> i <a class="el" href="_time_2_time_2_declarations_8h_source.html#l00022">KuszkAPI::DateTime::Time::TTime::Sec</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      TTime tWynik;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      tWynik.Hour = <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">uCzas</a> / 3600;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      tWynik.Min = <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">uCzas</a> % 3600 / 60;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      tWynik.Sec = <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">uCzas</a> % 3600 % 60;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="keywordflow">return</span> tWynik;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_a7a6aac6c6b2cd0123a9a893724d253db"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">KuszkAPI::DateTime::Time::uCzas</a></div><div class="ttdeci">unsigned uCzas</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_2_declarations_8h_source.html#l00013">Declarations.h:13</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aa513825334e8649ab5e26b5c6cfd6d21"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KuszkAPI::DateTime::Time::operator <a class="el" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html">Containers::String</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_time_8cpp_source.html#l00158">158</a> pliku <a class="el" href="_time_8cpp_source.html">Time.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;{</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#aa41d388b885a918ddbdcae62ec5483cb">Str</a>();</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;}</div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_aa41d388b885a918ddbdcae62ec5483cb"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#aa41d388b885a918ddbdcae62ec5483cb">KuszkAPI::DateTime::Time::Str</a></div><div class="ttdeci">Containers::String Str(TCHAR cFormat=0, unsigned uFlags=0) const </div><div class="ttdef"><b>Definition:</b> <a href="_time_8cpp_source.html#l00073">Time.cpp:73</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a1132675a87ab1c27acad0f98103e4db7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KuszkAPI::DateTime::Time::operator <a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#struct_kuszk_a_p_i_1_1_date_time_1_1_time_1_1_t_time">TTime</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_time_8cpp_source.html#l00153">153</a> pliku <a class="el" href="_time_8cpp_source.html">Time.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;{</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a8cd6732b7f8b9e04a9f6a96fdf1a27f9">GetTime</a>();</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;}</div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_a8cd6732b7f8b9e04a9f6a96fdf1a27f9"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a8cd6732b7f8b9e04a9f6a96fdf1a27f9">KuszkAPI::DateTime::Time::GetTime</a></div><div class="ttdeci">TTime GetTime(void) const </div><div class="ttdef"><b>Definition:</b> <a href="_time_8cpp_source.html#l00049">Time.cpp:49</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a908e54b717dffe112ba475b6d0e33619"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KuszkAPI::DateTime::Time::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html">Time</a> &amp;&#160;</td>
+          <td class="paramname"><em>tCzas</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_time_8cpp_source.html#l00112">112</a> pliku <a class="el" href="_time_8cpp_source.html">Time.cpp</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="_time_2_time_2_declarations_8h_source.html#l00013">uCzas</a>.</p>
+<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;{</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">uCzas</a> != tCzas.uCzas;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_a7a6aac6c6b2cd0123a9a893724d253db"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">KuszkAPI::DateTime::Time::uCzas</a></div><div class="ttdeci">unsigned uCzas</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_2_declarations_8h_source.html#l00013">Declarations.h:13</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a661b15543bd40868616f02c4b15c9cac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html">DateTime::Time</a> KuszkAPI::DateTime::Time::operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html">Time</a> &amp;&#160;</td>
+          <td class="paramname"><em>tCzas</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_time_8cpp_source.html#l00117">117</a> pliku <a class="el" href="_time_8cpp_source.html">Time.cpp</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="_time_2_time_2_declarations_8h_source.html#l00013">uCzas</a>.</p>
+<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;{</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ab5a1f06d369f0fd30c0f039603f46e5f">Time</a>(0, 0, <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">uCzas</a> + tCzas.uCzas);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_a7a6aac6c6b2cd0123a9a893724d253db"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">KuszkAPI::DateTime::Time::uCzas</a></div><div class="ttdeci">unsigned uCzas</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_2_declarations_8h_source.html#l00013">Declarations.h:13</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_ab5a1f06d369f0fd30c0f039603f46e5f"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ab5a1f06d369f0fd30c0f039603f46e5f">KuszkAPI::DateTime::Time::Time</a></div><div class="ttdeci">Time(const TTime &amp;tTime)</div><div class="ttdef"><b>Definition:</b> <a href="_time_8cpp_source.html#l00003">Time.cpp:3</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a459dabbb3b23d7e661d81960a16297d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html">DateTime::Time</a> &amp; KuszkAPI::DateTime::Time::operator++ </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_time_8cpp_source.html#l00127">127</a> pliku <a class="el" href="_time_8cpp_source.html">Time.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;{</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">uCzas</a>++;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ab256dd8041f7ccf5386e2d59966323ef">Convert</a>();</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_ab256dd8041f7ccf5386e2d59966323ef"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ab256dd8041f7ccf5386e2d59966323ef">KuszkAPI::DateTime::Time::Convert</a></div><div class="ttdeci">void Convert(void)</div><div class="ttdef"><b>Definition:</b> <a href="_time_8cpp_source.html#l00031">Time.cpp:31</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_a7a6aac6c6b2cd0123a9a893724d253db"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">KuszkAPI::DateTime::Time::uCzas</a></div><div class="ttdeci">unsigned uCzas</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_2_declarations_8h_source.html#l00013">Declarations.h:13</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aa105fbc43a1aafeb489a9308dfe35a43"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html">DateTime::Time</a> KuszkAPI::DateTime::Time::operator++ </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_time_8cpp_source.html#l00141">141</a> pliku <a class="el" href="_time_8cpp_source.html">Time.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;{</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;      <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ab5a1f06d369f0fd30c0f039603f46e5f">Time</a> tTmp(0, 0, <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">uCzas</a>++);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;      <span class="keywordflow">return</span> tTmp;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;}</div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_a7a6aac6c6b2cd0123a9a893724d253db"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">KuszkAPI::DateTime::Time::uCzas</a></div><div class="ttdeci">unsigned uCzas</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_2_declarations_8h_source.html#l00013">Declarations.h:13</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_ab5a1f06d369f0fd30c0f039603f46e5f"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ab5a1f06d369f0fd30c0f039603f46e5f">KuszkAPI::DateTime::Time::Time</a></div><div class="ttdeci">Time(const TTime &amp;tTime)</div><div class="ttdef"><b>Definition:</b> <a href="_time_8cpp_source.html#l00003">Time.cpp:3</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a5a19dd908e3ba4f01a5ebf463884dbf0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html">DateTime::Time</a> KuszkAPI::DateTime::Time::operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html">Time</a> &amp;&#160;</td>
+          <td class="paramname"><em>tCzas</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_time_8cpp_source.html#l00122">122</a> pliku <a class="el" href="_time_8cpp_source.html">Time.cpp</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="_time_2_time_2_declarations_8h_source.html#l00013">uCzas</a>.</p>
+<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;{</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ab5a1f06d369f0fd30c0f039603f46e5f">Time</a>(0, 0, <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">uCzas</a> - tCzas.uCzas);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_a7a6aac6c6b2cd0123a9a893724d253db"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">KuszkAPI::DateTime::Time::uCzas</a></div><div class="ttdeci">unsigned uCzas</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_2_declarations_8h_source.html#l00013">Declarations.h:13</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_ab5a1f06d369f0fd30c0f039603f46e5f"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ab5a1f06d369f0fd30c0f039603f46e5f">KuszkAPI::DateTime::Time::Time</a></div><div class="ttdeci">Time(const TTime &amp;tTime)</div><div class="ttdef"><b>Definition:</b> <a href="_time_8cpp_source.html#l00003">Time.cpp:3</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a4698744bc9c80e70562170c4a5d9aacb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html">DateTime::Time</a> &amp; KuszkAPI::DateTime::Time::operator-- </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_time_8cpp_source.html#l00134">134</a> pliku <a class="el" href="_time_8cpp_source.html">Time.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;{</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;      <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">uCzas</a>--;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ab256dd8041f7ccf5386e2d59966323ef">Convert</a>();</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;      <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_ab256dd8041f7ccf5386e2d59966323ef"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ab256dd8041f7ccf5386e2d59966323ef">KuszkAPI::DateTime::Time::Convert</a></div><div class="ttdeci">void Convert(void)</div><div class="ttdef"><b>Definition:</b> <a href="_time_8cpp_source.html#l00031">Time.cpp:31</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_a7a6aac6c6b2cd0123a9a893724d253db"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">KuszkAPI::DateTime::Time::uCzas</a></div><div class="ttdeci">unsigned uCzas</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_2_declarations_8h_source.html#l00013">Declarations.h:13</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a908b43ccc7b80c0e264b9cf0975b1505"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html">DateTime::Time</a> KuszkAPI::DateTime::Time::operator-- </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_time_8cpp_source.html#l00147">147</a> pliku <a class="el" href="_time_8cpp_source.html">Time.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;{</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ab5a1f06d369f0fd30c0f039603f46e5f">Time</a> tTmp(0, 0, <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">uCzas</a>--);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      <span class="keywordflow">return</span> tTmp;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;}</div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_a7a6aac6c6b2cd0123a9a893724d253db"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">KuszkAPI::DateTime::Time::uCzas</a></div><div class="ttdeci">unsigned uCzas</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_2_declarations_8h_source.html#l00013">Declarations.h:13</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_ab5a1f06d369f0fd30c0f039603f46e5f"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ab5a1f06d369f0fd30c0f039603f46e5f">KuszkAPI::DateTime::Time::Time</a></div><div class="ttdeci">Time(const TTime &amp;tTime)</div><div class="ttdef"><b>Definition:</b> <a href="_time_8cpp_source.html#l00003">Time.cpp:3</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a434be042ed2e57b9d968157e2a743add"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KuszkAPI::DateTime::Time::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html">Time</a> &amp;&#160;</td>
+          <td class="paramname"><em>tCzas</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a387eb933b66b011c1da610a4a0240fc0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KuszkAPI::DateTime::Time::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html">Time</a> &amp;&#160;</td>
+          <td class="paramname"><em>tCzas</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_time_8cpp_source.html#l00107">107</a> pliku <a class="el" href="_time_8cpp_source.html">Time.cpp</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="_time_2_time_2_declarations_8h_source.html#l00013">uCzas</a>.</p>
+<div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;{</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">uCzas</a> == tCzas.uCzas;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_a7a6aac6c6b2cd0123a9a893724d253db"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">KuszkAPI::DateTime::Time::uCzas</a></div><div class="ttdeci">unsigned uCzas</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_2_declarations_8h_source.html#l00013">Declarations.h:13</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a454b60fec3554be4a1b7ef154bc213e4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KuszkAPI::DateTime::Time::operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html">Time</a> &amp;&#160;</td>
+          <td class="paramname"><em>tCzas</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa982fc9bd73c7fed2ac9c5c7757117eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KuszkAPI::DateTime::Time::Refresh </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_time_8cpp_source.html#l00042">42</a> pliku <a class="el" href="_time_8cpp_source.html">Time.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      time_t lCzas = time(NULL);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      tm tCzas = *localtime(&amp;lCzas);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">uCzas</a> = tCzas.tm_hour * 3600 + tCzas.tm_min * 60 + tCzas.tm_sec;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_a7a6aac6c6b2cd0123a9a893724d253db"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">KuszkAPI::DateTime::Time::uCzas</a></div><div class="ttdeci">unsigned uCzas</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_2_declarations_8h_source.html#l00013">Declarations.h:13</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="af863ecbd91a27114025441ae1c26d5cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KuszkAPI::DateTime::Time::Set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_3global_scope_4.html#classunsigned">unsigned</a>&#160;</td>
+          <td class="paramname"><em>uHour</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_3global_scope_4.html#classunsigned">unsigned</a>&#160;</td>
+          <td class="paramname"><em>uMin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_3global_scope_4.html#classunsigned">unsigned</a>&#160;</td>
+          <td class="paramname"><em>uSec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_time_8cpp_source.html#l00036">36</a> pliku <a class="el" href="_time_8cpp_source.html">Time.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">uCzas</a> = uHour * 3600 + uMin * 60 + uSec;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ab256dd8041f7ccf5386e2d59966323ef">Convert</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_ab256dd8041f7ccf5386e2d59966323ef"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ab256dd8041f7ccf5386e2d59966323ef">KuszkAPI::DateTime::Time::Convert</a></div><div class="ttdeci">void Convert(void)</div><div class="ttdef"><b>Definition:</b> <a href="_time_8cpp_source.html#l00031">Time.cpp:31</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_a7a6aac6c6b2cd0123a9a893724d253db"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a7a6aac6c6b2cd0123a9a893724d253db">KuszkAPI::DateTime::Time::uCzas</a></div><div class="ttdeci">unsigned uCzas</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_2_declarations_8h_source.html#l00013">Declarations.h:13</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="adce2cfd1848dd39bc281fca7d8135f41"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KuszkAPI::DateTime::Time::SetFormat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_string_8h.html#a65c91f8d7af3c67b8a21e089fdddd0fe">TCHAR</a>&#160;</td>
+          <td class="paramname"><em>cFormat</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_3global_scope_4.html#classunsigned">unsigned</a>&#160;</td>
+          <td class="paramname"><em>uFlags</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_time_8cpp_source.html#l00096">96</a> pliku <a class="el" href="_time_8cpp_source.html">Time.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;{</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <span class="keywordflow">if</span> (cFormat) <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ac4d2eed71f8558f7fa1793bf9cc28bf5">cSeparator</a> = cFormat;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      <span class="keywordflow">if</span> (uFlags) <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#af038cdd296843b3e675b40c2c0a0bbe6">uShowFlag</a> = uFlags;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_ac4d2eed71f8558f7fa1793bf9cc28bf5"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ac4d2eed71f8558f7fa1793bf9cc28bf5">KuszkAPI::DateTime::Time::cSeparator</a></div><div class="ttdeci">char cSeparator</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_2_declarations_8h_source.html#l00014">Declarations.h:14</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_af038cdd296843b3e675b40c2c0a0bbe6"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#af038cdd296843b3e675b40c2c0a0bbe6">KuszkAPI::DateTime::Time::uShowFlag</a></div><div class="ttdeci">unsigned uShowFlag</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_2_declarations_8h_source.html#l00015">Declarations.h:15</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aa41d388b885a918ddbdcae62ec5483cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html">Containers::String</a> KuszkAPI::DateTime::Time::Str </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_string_8h.html#a65c91f8d7af3c67b8a21e089fdddd0fe">TCHAR</a>&#160;</td>
+          <td class="paramname"><em>cFormat</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_3global_scope_4.html#classunsigned">unsigned</a>&#160;</td>
+          <td class="paramname"><em>uFlags</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_time_8cpp_source.html#l00073">73</a> pliku <a class="el" href="_time_8cpp_source.html">Time.cpp</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="_time_2_time_2_declarations_8h_source.html#l00020">KuszkAPI::DateTime::Time::TTime::Hour</a>, <a class="el" href="_time_2_time_8h_source.html#l00005">HOURS</a>, <a class="el" href="_time_2_time_2_declarations_8h_source.html#l00021">KuszkAPI::DateTime::Time::TTime::Min</a>, <a class="el" href="_time_2_time_8h_source.html#l00006">MINUTES</a>, <a class="el" href="_time_2_time_2_declarations_8h_source.html#l00022">KuszkAPI::DateTime::Time::TTime::Sec</a>, <a class="el" href="_time_2_time_8h_source.html#l00007">SECONDS</a> i <a class="el" href="_time_8h_source.html#l00017">ZERO</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html">Containers::String</a> sBufor;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      TTime tTmp = <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a8cd6732b7f8b9e04a9f6a96fdf1a27f9">GetTime</a>();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keywordflow">if</span> (!cFormat) cFormat = <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ac4d2eed71f8558f7fa1793bf9cc28bf5">cSeparator</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="keywordflow">if</span> (!uFlags) uFlags = <a class="code" href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#af038cdd296843b3e675b40c2c0a0bbe6">uShowFlag</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keywordflow">if</span> (uFlags &amp; <a class="code" href="_time_2_time_8h.html#a212d0f839f6f7ca43ccde311f93d5892">HOURS</a>){</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                 <span class="keywordflow">if</span> (uFlags &amp; <a class="code" href="_time_8h.html#ac328e551bde3d39b6d7b8cc9e048d941">ZERO</a>) <span class="keywordflow">if</span> (tTmp.Hour &lt; 10) sBufor += TEXT(<span class="charliteral">&#39;0&#39;</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                 sBufor += <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html">Containers::String</a>((<span class="keywordtype">int</span>) tTmp.Hour);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                 <span class="keywordflow">if</span> (uFlags &amp; (<a class="code" href="_time_2_time_8h.html#a84be9dcfa5a172ee83121620d15c8e29">MINUTES</a> | <a class="code" href="_time_2_time_8h.html#a48fcf4f2eeef6769d588168d4ac2ab0e">SECONDS</a>)) sBufor += cFormat;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keywordflow">if</span> (uFlags &amp; <a class="code" href="_time_2_time_8h.html#a84be9dcfa5a172ee83121620d15c8e29">MINUTES</a>){</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                 <span class="keywordflow">if</span> (uFlags &amp; ZERO) <span class="keywordflow">if</span> (tTmp.Min &lt; 10) sBufor += TEXT(<span class="charliteral">&#39;0&#39;</span>);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                 sBufor += <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html">Containers::String</a>((<span class="keywordtype">int</span>) tTmp.Min);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                 <span class="keywordflow">if</span> (uFlags &amp; <a class="code" href="_time_2_time_8h.html#a48fcf4f2eeef6769d588168d4ac2ab0e">SECONDS</a>) sBufor += cFormat;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <span class="keywordflow">if</span> (uFlags &amp; <a class="code" href="_time_2_time_8h.html#a48fcf4f2eeef6769d588168d4ac2ab0e">SECONDS</a>){</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                 <span class="keywordflow">if</span> (uFlags &amp; ZERO) <span class="keywordflow">if</span> (tTmp.Sec &lt; 10) sBufor += TEXT(<span class="charliteral">&#39;0&#39;</span>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                 sBufor += <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html">Containers::String</a>((<span class="keywordtype">int</span>) tTmp.Sec);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <span class="keywordflow">return</span> sBufor;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+<div class="ttc" id="_time_2_time_8h_html_a48fcf4f2eeef6769d588168d4ac2ab0e"><div class="ttname"><a href="_time_2_time_8h.html#a48fcf4f2eeef6769d588168d4ac2ab0e">SECONDS</a></div><div class="ttdeci">#define SECONDS</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_8h_source.html#l00007">Time.h:7</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_string_html"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_string.html">KuszkAPI::Containers::String</a></div><div class="ttdef"><b>Definition:</b> <a href="_containers_2_string_2_declarations_8h_source.html#l00010">Declarations.h:10</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_ac4d2eed71f8558f7fa1793bf9cc28bf5"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#ac4d2eed71f8558f7fa1793bf9cc28bf5">KuszkAPI::DateTime::Time::cSeparator</a></div><div class="ttdeci">char cSeparator</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_2_declarations_8h_source.html#l00014">Declarations.h:14</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_a8cd6732b7f8b9e04a9f6a96fdf1a27f9"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#a8cd6732b7f8b9e04a9f6a96fdf1a27f9">KuszkAPI::DateTime::Time::GetTime</a></div><div class="ttdeci">TTime GetTime(void) const </div><div class="ttdef"><b>Definition:</b> <a href="_time_8cpp_source.html#l00049">Time.cpp:49</a></div></div>
+<div class="ttc" id="_time_2_time_8h_html_a212d0f839f6f7ca43ccde311f93d5892"><div class="ttname"><a href="_time_2_time_8h.html#a212d0f839f6f7ca43ccde311f93d5892">HOURS</a></div><div class="ttdeci">#define HOURS</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_8h_source.html#l00005">Time.h:5</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_date_time_1_1_time_html_af038cdd296843b3e675b40c2c0a0bbe6"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_date_time_1_1_time.html#af038cdd296843b3e675b40c2c0a0bbe6">KuszkAPI::DateTime::Time::uShowFlag</a></div><div class="ttdeci">unsigned uShowFlag</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_2_declarations_8h_source.html#l00015">Declarations.h:15</a></div></div>
+<div class="ttc" id="_time_2_time_8h_html_a84be9dcfa5a172ee83121620d15c8e29"><div class="ttname"><a href="_time_2_time_8h.html#a84be9dcfa5a172ee83121620d15c8e29">MINUTES</a></div><div class="ttdeci">#define MINUTES</div><div class="ttdef"><b>Definition:</b> <a href="_time_2_time_8h_source.html#l00006">Time.h:6</a></div></div>
+<div class="ttc" id="_time_8h_html_ac328e551bde3d39b6d7b8cc9e048d941"><div class="ttname"><a href="_time_8h.html#ac328e551bde3d39b6d7b8cc9e048d941">ZERO</a></div><div class="ttdeci">#define ZERO</div><div class="ttdef"><b>Definition:</b> <a href="_time_8h_source.html#l00017">Time.h:17</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a class="anchor" id="ac4d2eed71f8558f7fa1793bf9cc28bf5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char KuszkAPI::DateTime::Time::cSeparator</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_time_2_time_2_declarations_8h_source.html#l00014">14</a> pliku <a class="el" href="_time_2_time_2_declarations_8h_source.html">Declarations.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7a6aac6c6b2cd0123a9a893724d253db"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_3global_scope_4.html#classunsigned">unsigned</a> KuszkAPI::DateTime::Time::uCzas</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_time_2_time_2_declarations_8h_source.html#l00013">13</a> pliku <a class="el" href="_time_2_time_2_declarations_8h_source.html">Declarations.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="_time_8cpp_source.html#l00112">operator!=()</a>, <a class="el" href="_time_8cpp_source.html#l00117">operator+()</a>, <a class="el" href="_time_8cpp_source.html#l00122">operator-()</a> i <a class="el" href="_time_8cpp_source.html#l00107">operator==()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af038cdd296843b3e675b40c2c0a0bbe6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_3global_scope_4.html#classunsigned">unsigned</a> KuszkAPI::DateTime::Time::uShowFlag</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_time_2_time_2_declarations_8h_source.html#l00015">15</a> pliku <a class="el" href="_time_2_time_2_declarations_8h_source.html">Declarations.h</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>KuszkAPI/Time/Time/<a class="el" href="_time_2_time_2_declarations_8h_source.html">Declarations.h</a></li>
+<li>KuszkAPI/Time/Time/<a class="el" href="_time_8cpp_source.html">Time.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano So, 12 lip 2014 21:18:52 dla KuszkAPI programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

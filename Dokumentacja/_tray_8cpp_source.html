@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>KuszkAPI: Plik źródłowy KuszkAPI/Core/Parts/Tray.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">KuszkAPI
+   &#160;<span id="projectnumber">2.1b</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="pages.html"><span>Dodatkowe&#160;strony</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje typów</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Definicje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Strony</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6f7fa3ee7946af07f3c30f8c4eea207f.html">KuszkAPI</a></li><li class="navelem"><a class="el" href="dir_c1e1de5c01dac8ef2f7c42ae2eacc49d.html">Core</a></li><li class="navelem"><a class="el" href="dir_57846da056604bda947cfaf3e255c2e6.html">Parts</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Tray.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_tray_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using namespace </span>KuszkAPI;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_core_1_1_tray.html#a47383cebf1a25331d3afba9adc5a9404">    3</a></span>&#160;<a class="code" href="class_kuszk_a_p_i_1_1_core_1_1_tray.html#a47383cebf1a25331d3afba9adc5a9404">KuszkAPI::Core::Tray::Tray</a>(<span class="keyword">const</span> HWND&amp; hWnd)</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;: hOwner(hWnd)</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;      memset(&amp;<a class="code" href="class_kuszk_a_p_i_1_1_core_1_1_tray.html#ad83565c1cc959863a720e41f881448d5">dData</a>, 0, <span class="keyword">sizeof</span>(NOTIFYICONDATA));</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;}</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_core_1_1_tray.html#aefed9cbfbadc1ba5fee7784dedc35517">    9</a></span>&#160;<a class="code" href="class_kuszk_a_p_i_1_1_core_1_1_tray.html#aefed9cbfbadc1ba5fee7784dedc35517">KuszkAPI::Core::Tray::~Tray</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;      Delete();</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_core_1_1_tray.html#afbed8319c95989ecd85ba210a6739bed">   14</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_kuszk_a_p_i_1_1_core_1_1_tray.html#afbed8319c95989ecd85ba210a6739bed">KuszkAPI::Core::Tray::Add</a>(<span class="keywordtype">unsigned</span> uTrayId, <span class="keywordtype">unsigned</span> uTrayMsg, <span class="keyword">const</span> <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html">Containers::String</a>&amp; sOpis, <span class="keyword">const</span> <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html">Containers::String</a>&amp; sIkona)</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      <span class="keywordflow">if</span> (dData.uID) Delete();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      dData.cbSize = <span class="keyword">sizeof</span>(NOTIFYICONDATA);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      dData.uFlags = NIF_MESSAGE | NIF_TIP | NIF_ICON;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      dData.hWnd = hOwner;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      dData.uID = uTrayId;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      dData.uCallbackMessage = uTrayMsg;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      dData.hIcon = LoadIcon(GetModuleHandle(NULL), sIkona.<a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html#a264c6116e5592a4464828feb720c8f3a">Str</a>());</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      memcpy(dData.szTip, sOpis.<a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html#a264c6116e5592a4464828feb720c8f3a">Str</a>(), <span class="keyword">sizeof</span>(dData.szTip) / <span class="keyword">sizeof</span>(<a class="code" href="_string_8h.html#a65c91f8d7af3c67b8a21e089fdddd0fe">TCHAR</a>) &lt; sOpis.<a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html#afd694656c3c52b347d6b965e2f5afb6a">Capacity</a>() ? <span class="keyword">sizeof</span>(dData.szTip) : sOpis.<a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html#afd694656c3c52b347d6b965e2f5afb6a">Capacity</a>() * <span class="keyword">sizeof</span>(<a class="code" href="_string_8h.html#a65c91f8d7af3c67b8a21e089fdddd0fe">TCHAR</a>));</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      Shell_NotifyIcon(NIM_ADD, &amp;dData);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_core_1_1_tray.html#a5fed98ac0664d87d16ffa170dccf405b">   27</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_kuszk_a_p_i_1_1_core_1_1_tray.html#a5fed98ac0664d87d16ffa170dccf405b">KuszkAPI::Core::Tray::Set</a>(<span class="keyword">const</span> <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html">Containers::String</a>&amp; sOpis, <span class="keyword">const</span> <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html">Containers::String</a>&amp; sIkona)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      dData.uFlags = 0;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <span class="keywordflow">if</span> (sOpis){</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;              dData.uFlags |= NIF_TIP;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;              memcpy(dData.szTip, sOpis.<a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html#a264c6116e5592a4464828feb720c8f3a">Str</a>(), <span class="keyword">sizeof</span>(dData.szTip) / <span class="keyword">sizeof</span>(<a class="code" href="_string_8h.html#a65c91f8d7af3c67b8a21e089fdddd0fe">TCHAR</a>) &lt; sOpis.<a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html#afd694656c3c52b347d6b965e2f5afb6a">Capacity</a>() ? <span class="keyword">sizeof</span>(dData.szTip) : sOpis.<a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html#afd694656c3c52b347d6b965e2f5afb6a">Capacity</a>() * <span class="keyword">sizeof</span>(<a class="code" href="_string_8h.html#a65c91f8d7af3c67b8a21e089fdddd0fe">TCHAR</a>));</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <span class="keywordflow">if</span> (sIkona){</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;              <span class="keywordflow">if</span> (dData.hIcon) DeleteObject(dData.hIcon);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;              dData.uFlags |= NIF_ICON;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;              dData.hIcon = LoadIcon(GetModuleHandle(NULL), sIkona.<a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html#a264c6116e5592a4464828feb720c8f3a">Str</a>());</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keywordflow">if</span> (sOpis || sIkona) Shell_NotifyIcon(NIM_MODIFY, &amp;dData);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_core_1_1_tray.html#a6971d52ab44978c7bfba60abef632552">   42</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_kuszk_a_p_i_1_1_core_1_1_tray.html#a6971d52ab44978c7bfba60abef632552">KuszkAPI::Core::Tray::Delete</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <span class="keywordflow">if</span> (dData.hIcon) DeleteObject(dData.hIcon);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      Shell_NotifyIcon(NIM_DELETE, &amp;dData);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      memset(&amp;dData, 0, <span class="keyword">sizeof</span>(NOTIFYICONDATA));</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_core_1_1_tray.html#a121fe49a6d669c0533f13bb27bea43d6">   49</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_kuszk_a_p_i_1_1_core_1_1_tray.html#a121fe49a6d669c0533f13bb27bea43d6">KuszkAPI::Core::Tray::Msg</a>(<span class="keyword">const</span> <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html">Containers::String</a>&amp; sTytul, <span class="keyword">const</span> <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html">Containers::String</a>&amp; sTekst, <span class="keywordtype">int</span> iIkona)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      NOTIFYICONDATA dTmp;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      memcpy(&amp;dTmp, &amp;dData, <span class="keyword">sizeof</span>(NOTIFYICONDATA));</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="keywordflow">if</span> (dData.uID){</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;              dTmp.uFlags = NIF_INFO;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;              dTmp.dwInfoFlags = iIkona;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;              memcpy(dTmp.szInfoTitle, sTytul.<a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html#a264c6116e5592a4464828feb720c8f3a">Str</a>(), <span class="keyword">sizeof</span>(dTmp.szInfoTitle) / <span class="keyword">sizeof</span>(<a class="code" href="_string_8h.html#a65c91f8d7af3c67b8a21e089fdddd0fe">TCHAR</a>) &lt; sTytul.<a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html#afd694656c3c52b347d6b965e2f5afb6a">Capacity</a>() ? <span class="keyword">sizeof</span>(dTmp.szInfoTitle) : sTytul.<a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html#afd694656c3c52b347d6b965e2f5afb6a">Capacity</a>() * <span class="keyword">sizeof</span>(<a class="code" href="_string_8h.html#a65c91f8d7af3c67b8a21e089fdddd0fe">TCHAR</a>));</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;              memcpy(dTmp.szInfo, sTekst.<a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html#a264c6116e5592a4464828feb720c8f3a">Str</a>(), <span class="keyword">sizeof</span>(dTmp.szInfo) / <span class="keyword">sizeof</span>(<a class="code" href="_string_8h.html#a65c91f8d7af3c67b8a21e089fdddd0fe">TCHAR</a>) &lt; sTekst.<a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html#afd694656c3c52b347d6b965e2f5afb6a">Capacity</a>() ? <span class="keyword">sizeof</span>(dTmp.szInfo) : sTekst.<a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html#afd694656c3c52b347d6b965e2f5afb6a">Capacity</a>() * <span class="keyword">sizeof</span>(<a class="code" href="_string_8h.html#a65c91f8d7af3c67b8a21e089fdddd0fe">TCHAR</a>));</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;              Shell_NotifyIcon(NIM_MODIFY, &amp;dTmp);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_core_1_1_tray.html#ac749bfeb230bddab05bdbb992db15a8b">   62</a></span>&#160;<span class="keywordtype">unsigned</span> <a class="code" href="class_kuszk_a_p_i_1_1_core_1_1_tray.html#ac749bfeb230bddab05bdbb992db15a8b">KuszkAPI::Core::Tray::GetId</a>(<span class="keywordtype">void</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <span class="keywordflow">return</span> dData.uID;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_core_1_1_tray.html#a157c70091111f3b3720223220ac9ddf6">   67</a></span>&#160;<span class="keywordtype">unsigned</span> <a class="code" href="class_kuszk_a_p_i_1_1_core_1_1_tray.html#a157c70091111f3b3720223220ac9ddf6">KuszkAPI::Core::Tray::GetMsg</a>(<span class="keywordtype">void</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="keywordflow">return</span> dData.uCallbackMessage;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_core_1_1_tray_html_aefed9cbfbadc1ba5fee7784dedc35517"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_core_1_1_tray.html#aefed9cbfbadc1ba5fee7784dedc35517">KuszkAPI::Core::Tray::~Tray</a></div><div class="ttdeci">~Tray(void)</div><div class="ttdef"><b>Definition:</b> <a href="_tray_8cpp_source.html#l00009">Tray.cpp:9</a></div></div>
+<div class="ttc" id="_string_8h_html_a65c91f8d7af3c67b8a21e089fdddd0fe"><div class="ttname"><a href="_string_8h.html#a65c91f8d7af3c67b8a21e089fdddd0fe">TCHAR</a></div><div class="ttdeci">#define TCHAR</div><div class="ttdef"><b>Definition:</b> <a href="_string_8h_source.html#l00021">String.h:21</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_core_1_1_tray_html_a5fed98ac0664d87d16ffa170dccf405b"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_core_1_1_tray.html#a5fed98ac0664d87d16ffa170dccf405b">KuszkAPI::Core::Tray::Set</a></div><div class="ttdeci">void Set(const Containers::String &amp;sOpis=Containers::String(), const Containers::String &amp;sIkona=Containers::String())</div><div class="ttdef"><b>Definition:</b> <a href="_tray_8cpp_source.html#l00027">Tray.cpp:27</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_core_1_1_tray_html_a121fe49a6d669c0533f13bb27bea43d6"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_core_1_1_tray.html#a121fe49a6d669c0533f13bb27bea43d6">KuszkAPI::Core::Tray::Msg</a></div><div class="ttdeci">void Msg(const Containers::String &amp;sTytul, const Containers::String &amp;sTekst, int iIkona=NIIF_INFO) const </div><div class="ttdef"><b>Definition:</b> <a href="_tray_8cpp_source.html#l00049">Tray.cpp:49</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_core_1_1_tray_html_a6971d52ab44978c7bfba60abef632552"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_core_1_1_tray.html#a6971d52ab44978c7bfba60abef632552">KuszkAPI::Core::Tray::Delete</a></div><div class="ttdeci">void Delete(void)</div><div class="ttdef"><b>Definition:</b> <a href="_tray_8cpp_source.html#l00042">Tray.cpp:42</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_string_html_afd694656c3c52b347d6b965e2f5afb6a"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_string.html#afd694656c3c52b347d6b965e2f5afb6a">KuszkAPI::Containers::String::Capacity</a></div><div class="ttdeci">unsigned Capacity(void) const </div><div class="ttdef"><b>Definition:</b> <a href="_string_8cpp_source.html#l00364">String.cpp:364</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_core_1_1_tray_html_a47383cebf1a25331d3afba9adc5a9404"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_core_1_1_tray.html#a47383cebf1a25331d3afba9adc5a9404">KuszkAPI::Core::Tray::Tray</a></div><div class="ttdeci">Tray(const HWND &amp;hWnd)</div><div class="ttdef"><b>Definition:</b> <a href="_tray_8cpp_source.html#l00003">Tray.cpp:3</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_string_html"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_string.html">KuszkAPI::Containers::String</a></div><div class="ttdef"><b>Definition:</b> <a href="_containers_2_string_2_declarations_8h_source.html#l00010">Declarations.h:10</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_core_1_1_tray_html_ac749bfeb230bddab05bdbb992db15a8b"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_core_1_1_tray.html#ac749bfeb230bddab05bdbb992db15a8b">KuszkAPI::Core::Tray::GetId</a></div><div class="ttdeci">unsigned GetId(void) const </div><div class="ttdef"><b>Definition:</b> <a href="_tray_8cpp_source.html#l00062">Tray.cpp:62</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_string_html_a264c6116e5592a4464828feb720c8f3a"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_string.html#a264c6116e5592a4464828feb720c8f3a">KuszkAPI::Containers::String::Str</a></div><div class="ttdeci">TCHAR * Str(void) const </div><div class="ttdef"><b>Definition:</b> <a href="_string_8cpp_source.html#l00325">String.cpp:325</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_core_1_1_tray_html_ad83565c1cc959863a720e41f881448d5"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_core_1_1_tray.html#ad83565c1cc959863a720e41f881448d5">KuszkAPI::Core::Tray::dData</a></div><div class="ttdeci">NOTIFYICONDATA dData</div><div class="ttdef"><b>Definition:</b> <a href="_core_2_parts_2_declarations_8h_source.html#l00051">Declarations.h:51</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_core_1_1_tray_html_a157c70091111f3b3720223220ac9ddf6"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_core_1_1_tray.html#a157c70091111f3b3720223220ac9ddf6">KuszkAPI::Core::Tray::GetMsg</a></div><div class="ttdeci">unsigned GetMsg(void) const </div><div class="ttdef"><b>Definition:</b> <a href="_tray_8cpp_source.html#l00067">Tray.cpp:67</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_core_1_1_tray_html_afbed8319c95989ecd85ba210a6739bed"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_core_1_1_tray.html#afbed8319c95989ecd85ba210a6739bed">KuszkAPI::Core::Tray::Add</a></div><div class="ttdeci">void Add(unsigned uTrayId, unsigned uTrayMsg, const Containers::String &amp;sOpis, const Containers::String &amp;sIkona)</div><div class="ttdef"><b>Definition:</b> <a href="_tray_8cpp_source.html#l00014">Tray.cpp:14</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano So, 12 lip 2014 21:18:51 dla KuszkAPI programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<map id="KuszkAPI::Forms::Controls" name="KuszkAPI::Forms::Controls">
+<area shape="rect" id="node2" href="$class_kuszk_a_p_i_1_1_forms_1_1_controls_1_1_group.html" title="KuszkAPI::Forms::Controls\l::Group\&lt; KuszkAPI::Forms\l::RadioBox \&gt;" alt="" coords="524,843,705,899"/>
+<area shape="rect" id="node19" href="$class_kuszk_a_p_i_1_1_forms_1_1_controls_1_1_group.html" title="KuszkAPI::Forms::Controls\l::Group\&lt; KuszkAPI::Forms\l::Label \&gt;" alt="" coords="1117,843,1299,899"/>
+<area shape="rect" id="node23" href="$class_kuszk_a_p_i_1_1_forms_1_1_controls_1_1_group.html" title="KuszkAPI::Forms::Controls\l::Group\&lt; KuszkAPI::Forms\l::TabBox \&gt;" alt="" coords="911,843,1092,899"/>
+<area shape="rect" id="node27" href="$class_kuszk_a_p_i_1_1_forms_1_1_controls_1_1_group.html" title="KuszkAPI::Forms::Controls\l::Group\&lt; KuszkAPI::Forms\l::Calendar \&gt;" alt="" coords="1324,843,1505,899"/>
+<area shape="rect" id="node31" href="$class_kuszk_a_p_i_1_1_forms_1_1_controls_1_1_group.html" title="KuszkAPI::Forms::Controls\l::Group\&lt; KuszkAPI::Forms\l::TableBox \&gt;" alt="" coords="1529,843,1711,899"/>
+<area shape="rect" id="node35" href="$class_kuszk_a_p_i_1_1_forms_1_1_controls_1_1_group.html" title="KuszkAPI::Forms::Controls\l::Group\&lt; KuszkAPI::Forms\l::ComboBox \&gt;" alt="" coords="1760,843,1941,899"/>
+<area shape="rect" id="node39" href="$class_kuszk_a_p_i_1_1_forms_1_1_controls_1_1_group.html" title="KuszkAPI::Forms::Controls\l::Group\&lt; KuszkAPI::Forms\l::EditBox \&gt;" alt="" coords="2503,843,2684,899"/>
+<area shape="rect" id="node42" href="$class_kuszk_a_p_i_1_1_forms_1_1_controls_1_1_group.html" title="KuszkAPI::Forms::Controls\l::Group\&lt; KuszkAPI::Forms\l::ListBox \&gt;" alt="" coords="2809,843,2991,899"/>
+<area shape="rect" id="node45" href="$class_kuszk_a_p_i_1_1_forms_1_1_controls_1_1_group.html" title="KuszkAPI::Forms::Controls\l::Group\&lt; KuszkAPI::Forms\l::Button \&gt;" alt="" coords="1977,843,2159,899"/>
+<area shape="rect" id="node48" href="$class_kuszk_a_p_i_1_1_forms_1_1_controls_1_1_group.html" title="KuszkAPI::Forms::Controls\l::Group\&lt; KuszkAPI::Forms\l::CheckBox \&gt;" alt="" coords="2291,843,2472,899"/>
+<area shape="rect" id="node4" href="$class_kuszk_a_p_i_1_1_containers_1_1_map.html" title="KuszkAPI::Containers\l::Map\&lt; KuszkAPI::Forms\l::RadioBox, unsigned \&gt;" alt="" coords="207,603,377,659"/>
+<area shape="rect" id="node5" href="$class_kuszk_a_p_i_1_1_containers_1_1_list.html" title="KuszkAPI::Containers\l::List\&lt; unsigned \&gt;" alt="" coords="1578,483,1728,525"/>
+<area shape="rect" id="node17" href="$class_kuszk_a_p_i_1_1_containers_1_1_map.html" title="KuszkAPI::Containers\l::Map\&lt; tnData, unsigned \&gt;" alt="" coords="1974,610,2151,651"/>
+<area shape="rect" id="node20" href="$class_kuszk_a_p_i_1_1_containers_1_1_map.html" title="KuszkAPI::Containers\l::Map\&lt; KuszkAPI::Forms\l::Label, unsigned \&gt;" alt="" coords="747,603,917,659"/>
+<area shape="rect" id="node24" href="$class_kuszk_a_p_i_1_1_containers_1_1_map.html" title="KuszkAPI::Containers\l::Map\&lt; KuszkAPI::Forms\l::TabBox, unsigned \&gt;" alt="" coords="445,603,616,659"/>
+<area shape="rect" id="node28" href="$class_kuszk_a_p_i_1_1_containers_1_1_map.html" title="KuszkAPI::Containers\l::Map\&lt; KuszkAPI::Forms\l::Calendar, unsigned \&gt;" alt="" coords="1091,603,1261,659"/>
+<area shape="rect" id="node32" href="$class_kuszk_a_p_i_1_1_containers_1_1_map.html" title="KuszkAPI::Containers\l::Map\&lt; KuszkAPI::Forms\l::TableBox, unsigned \&gt;" alt="" coords="1475,603,1645,659"/>
+<area shape="rect" id="node36" href="$class_kuszk_a_p_i_1_1_containers_1_1_map.html" title="KuszkAPI::Containers\l::Map\&lt; KuszkAPI::Forms\l::ComboBox, unsigned \&gt;" alt="" coords="2363,603,2533,659"/>
+<area shape="rect" id="node40" href="$class_kuszk_a_p_i_1_1_containers_1_1_map.html" title="KuszkAPI::Containers\l::Map\&lt; KuszkAPI::Forms\l::EditBox, unsigned \&gt;" alt="" coords="3099,603,3269,659"/>
+<area shape="rect" id="node43" href="$class_kuszk_a_p_i_1_1_containers_1_1_map.html" title="KuszkAPI::Containers\l::Map\&lt; KuszkAPI::Forms\l::ListBox, unsigned \&gt;" alt="" coords="3293,603,3464,659"/>
+<area shape="rect" id="node46" href="$class_kuszk_a_p_i_1_1_containers_1_1_map.html" title="KuszkAPI::Containers\l::Map\&lt; KuszkAPI::Forms\l::Button, unsigned \&gt;" alt="" coords="2635,603,2805,659"/>
+<area shape="rect" id="node49" href="$class_kuszk_a_p_i_1_1_containers_1_1_map.html" title="KuszkAPI::Containers\l::Map\&lt; KuszkAPI::Forms\l::CheckBox, unsigned \&gt;" alt="" coords="2904,603,3075,659"/>
+<area shape="rect" id="node6" href="$class_kuszk_a_p_i_1_1_containers_1_1_container.html" title="Implementacja bazy dla modułu kontenerów. " alt="" coords="1355,110,1505,151"/>
+<area shape="rect" id="node9" href="$class_kuszk_a_p_i_1_1_containers_1_1_list.html" title="Implementacja szablonu listy dla modułu kontenerów. " alt="" coords="1786,237,1936,278"/>
+<area shape="rect" id="node11" href="$class_kuszk_a_p_i_1_1_containers_1_1_vector.html" title="KuszkAPI::Containers\l::Vector\&lt; KuszkAPI::Forms\l::RadioBox * \&gt;" alt="" coords="103,229,285,285"/>
+<area shape="rect" id="node15" href="$class_kuszk_a_p_i_1_1_containers_1_1_list.html" title="KuszkAPI::Containers\l::List\&lt; tnKey \&gt;" alt="" coords="1835,370,1985,411"/>
+<area shape="rect" id="node22" href="$class_kuszk_a_p_i_1_1_containers_1_1_vector.html" title="KuszkAPI::Containers\l::Vector\&lt; KuszkAPI::Forms\l::Label * \&gt;" alt="" coords="754,229,936,285"/>
+<area shape="rect" id="node26" href="$class_kuszk_a_p_i_1_1_containers_1_1_vector.html" title="KuszkAPI::Containers\l::Vector\&lt; KuszkAPI::Forms\l::TabBox * \&gt;" alt="" coords="442,229,624,285"/>
+<area shape="rect" id="node30" href="$class_kuszk_a_p_i_1_1_containers_1_1_vector.html" title="KuszkAPI::Containers\l::Vector\&lt; KuszkAPI::Forms\l::Calendar * \&gt;" alt="" coords="1063,229,1245,285"/>
+<area shape="rect" id="node34" href="$class_kuszk_a_p_i_1_1_containers_1_1_vector.html" title="KuszkAPI::Containers\l::Vector\&lt; KuszkAPI::Forms\l::TableBox * \&gt;" alt="" coords="1270,229,1452,285"/>
+<area shape="rect" id="node38" href="$class_kuszk_a_p_i_1_1_containers_1_1_vector.html" title="KuszkAPI::Containers\l::Vector\&lt; KuszkAPI::Forms\l::ComboBox * \&gt;" alt="" coords="2419,229,2601,285"/>
+<area shape="rect" id="node7" href="$namespace_3global_scope_4.html#classunsigned" title="unsigned" alt="" coords="1557,5,1632,32"/>
+<area shape="rect" id="node10" href="$class_kuszk_a_p_i_1_1_containers_1_1_box.html" title="KuszkAPI::Containers\l::Box\&lt; KuszkAPI::Forms\l::RadioBox \&gt;" alt="" coords="43,363,211,419"/>
+<area shape="rect" id="node12" href="$class_kuszk_a_p_i_1_1_containers_1_1_box.html" title="Implementacja szablonu pudełka dla modułu kontenerów. " alt="" coords="2106,237,2256,278"/>
+<area shape="rect" id="node13" href="$class_kuszk_a_p_i_1_1_containers_1_1_map.html" title="KuszkAPI::Containers\l::Map\&lt; tnData, tnKey \&gt;" alt="" coords="1983,483,2141,525"/>
+<area shape="rect" id="node21" href="$class_kuszk_a_p_i_1_1_containers_1_1_box.html" title="KuszkAPI::Containers\l::Box\&lt; KuszkAPI::Forms\l::Label \&gt;" alt="" coords="717,363,885,419"/>
+<area shape="rect" id="node25" href="$class_kuszk_a_p_i_1_1_containers_1_1_box.html" title="KuszkAPI::Containers\l::Box\&lt; KuszkAPI::Forms\l::TabBox \&gt;" alt="" coords="373,363,541,419"/>
+<area shape="rect" id="node29" href="$class_kuszk_a_p_i_1_1_containers_1_1_box.html" title="KuszkAPI::Containers\l::Box\&lt; KuszkAPI::Forms\l::Calendar \&gt;" alt="" coords="1096,363,1264,419"/>
+<area shape="rect" id="node33" href="$class_kuszk_a_p_i_1_1_containers_1_1_box.html" title="KuszkAPI::Containers\l::Box\&lt; KuszkAPI::Forms\l::TableBox \&gt;" alt="" coords="1336,363,1504,419"/>
+<area shape="rect" id="node37" href="$class_kuszk_a_p_i_1_1_containers_1_1_box.html" title="KuszkAPI::Containers\l::Box\&lt; KuszkAPI::Forms\l::ComboBox \&gt;" alt="" coords="2441,363,2609,419"/>
+<area shape="rect" id="node41" href="$class_kuszk_a_p_i_1_1_containers_1_1_box.html" title="KuszkAPI::Containers\l::Box\&lt; KuszkAPI::Forms\l::EditBox \&gt;" alt="" coords="3327,363,3495,419"/>
+<area shape="rect" id="node44" href="$class_kuszk_a_p_i_1_1_containers_1_1_box.html" title="KuszkAPI::Containers\l::Box\&lt; KuszkAPI::Forms\l::ListBox \&gt;" alt="" coords="3569,363,3737,419"/>
+<area shape="rect" id="node47" href="$class_kuszk_a_p_i_1_1_containers_1_1_box.html" title="KuszkAPI::Containers\l::Box\&lt; KuszkAPI::Forms\l::Button \&gt;" alt="" coords="2800,363,2968,419"/>
+<area shape="rect" id="node50" href="$class_kuszk_a_p_i_1_1_containers_1_1_box.html" title="KuszkAPI::Containers\l::Box\&lt; KuszkAPI::Forms\l::CheckBox \&gt;" alt="" coords="3084,363,3252,419"/>
+<area shape="rect" id="node8" href="$class_kuszk_a_p_i_1_1_containers_1_1_list.html#struct_kuszk_a_p_i_1_1_containers_1_1_list_1_1_item_data" title="Struktura przechowująca wskaźnik na element listy oraz wskaźnik na kolejny obiekt. " alt="" coords="1888,110,2061,151"/>
+<area shape="rect" id="node16" href="$class_kuszk_a_p_i_1_1_forms_1_1_controls_1_1_group.html" title="KuszkAPI::Forms::Controls\l::Group\&lt; tnData \&gt;" alt="" coords="1888,723,2069,765"/>
+</map>

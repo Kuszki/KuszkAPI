@@ -1,0 +1,14 @@
+<map id="KuszkAPI::Core::Sections&lt; tnKey &gt;" name="KuszkAPI::Core::Sections&lt; tnKey &gt;">
+<area shape="rect" id="node2" href="$class_kuszk_a_p_i_1_1_containers_1_1_map.html" title="KuszkAPI::Containers\l::Map\&lt; CRITICAL_SECTION,\l tnKey \&gt;" alt="" coords="1790,579,1981,635"/>
+<area shape="rect" id="node3" href="$class_kuszk_a_p_i_1_1_containers_1_1_box.html" title="KuszkAPI::Containers\l::Box\&lt; CRITICAL_SECTION \&gt;" alt="" coords="1505,350,1701,391"/>
+<area shape="rect" id="node4" href="$class_kuszk_a_p_i_1_1_containers_1_1_vector.html" title="KuszkAPI::Containers\l::Vector\&lt; CRITICAL_SECTION * \&gt;" alt="" coords="819,239,1039,281"/>
+<area shape="rect" id="node5" href="$class_kuszk_a_p_i_1_1_containers_1_1_container.html" title="Implementacja bazy dla modułu kontenerów. " alt="" coords="182,417,333,458"/>
+<area shape="rect" id="node9" href="$class_kuszk_a_p_i_1_1_containers_1_1_vector.html" title="KuszkAPI::Containers\l::Vector\&lt; tnData \&gt;" alt="" coords="461,373,611,414"/>
+<area shape="rect" id="node12" href="$class_kuszk_a_p_i_1_1_containers_1_1_vector.html" title="KuszkAPI::Containers\l::Vector\&lt; tnData * \&gt;" alt="" coords="854,409,1005,450"/>
+<area shape="rect" id="node13" href="$class_kuszk_a_p_i_1_1_containers_1_1_list.html" title="KuszkAPI::Containers\l::List\&lt; tnKey \&gt;" alt="" coords="854,714,1005,755"/>
+<area shape="rect" id="node17" href="$class_kuszk_a_p_i_1_1_containers_1_1_list.html" title="Implementacja szablonu listy dla modułu kontenerów. " alt="" coords="461,681,611,722"/>
+<area shape="rect" id="node6" href="$namespace_3global_scope_4.html#classunsigned" title="unsigned" alt="" coords="5,313,80,340"/>
+<area shape="rect" id="node11" href="$class_kuszk_a_p_i_1_1_containers_1_1_box.html" title="Implementacja szablonu pudełka dla modułu kontenerów. " alt="" coords="1151,409,1302,450"/>
+<area shape="rect" id="node18" href="$class_kuszk_a_p_i_1_1_containers_1_1_map.html" title="KuszkAPI::Containers\l::Map\&lt; tnData, tnKey \&gt;" alt="" coords="1147,813,1306,854"/>
+<area shape="rect" id="node14" href="$class_kuszk_a_p_i_1_1_containers_1_1_list.html#struct_kuszk_a_p_i_1_1_containers_1_1_list_1_1_item_data" title="Struktura przechowująca wskaźnik na element listy oraz wskaźnik na kolejny obiekt. " alt="" coords="171,806,344,847"/>
+</map>

@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>KuszkAPI: Plik źródłowy KuszkAPI/Containers/Files/File.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">KuszkAPI
+   &#160;<span id="projectnumber">2.1b</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="pages.html"><span>Dodatkowe&#160;strony</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje typów</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Definicje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Strony</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6f7fa3ee7946af07f3c30f8c4eea207f.html">KuszkAPI</a></li><li class="navelem"><a class="el" href="dir_f746e1e67071bcc9516e83976125cf5b.html">Containers</a></li><li class="navelem"><a class="el" href="dir_80d31d915e8298a9bd5aa55f2ff6556a.html">Files</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">File.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_file_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using namespace </span>KuszkAPI;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> tnData, <span class="keyword">typename</span> tnHead&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#aec94e2e03560234f3f481d1d548e77f7">    4</a></span>&#160;<a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#aff404c59a39766529451a84d07976e2f">KuszkAPI::Containers::File&lt;tnData, tnHead&gt;::File</a>(<span class="keyword">const</span> <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html">String</a>&amp; sNazwaPliku, <span class="keywordtype">unsigned</span> uFileMode, <span class="keywordtype">unsigned</span> uCreate, <span class="keywordtype">unsigned</span> uAccess, <span class="keywordtype">unsigned</span> uShare)</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;      uDataSize = <span class="keyword">sizeof</span>(tnData);</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;      uHeadSize = <span class="keyword">sizeof</span>(tnHead);</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;      hUchwyt = NULL;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;      uMode = uFileMode;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;      memset(&amp;Head, 0, uHeadSize);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;      Assign(sNazwaPliku, uCreate, uAccess, uShare);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> tnData, <span class="keyword">typename</span> tnHead&gt;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#aff404c59a39766529451a84d07976e2f">   15</a></span>&#160;<a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#aff404c59a39766529451a84d07976e2f">KuszkAPI::Containers::File&lt;tnData, tnHead&gt;::File</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      uDataSize = <span class="keyword">sizeof</span>(tnData);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      uHeadSize = <span class="keyword">sizeof</span>(tnHead);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      hUchwyt = NULL;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      uMode = <a class="code" href="_files_8h.html#aff85e226924414c839bab54020319f63">MODE_STREAM</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      memset(&amp;Head, 0, uHeadSize);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> tnData, <span class="keyword">typename</span> tnHead&gt;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#a037c7885b677bb4997fca85c165748aa">   25</a></span>&#160;<a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#a037c7885b677bb4997fca85c165748aa">KuszkAPI::Containers::File&lt;tnData, tnHead&gt;::~File</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      <span class="keywordflow">if</span> (hUchwyt) CloseHandle(hUchwyt);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      memset(&amp;Head, 0, uHeadSize);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      sNazwa.Clean();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      Data.Clean();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      hUchwyt = NULL;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> tnData, <span class="keyword">typename</span> tnHead&gt;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#a4c4fd96e51aedfa315351bdce71ca345">   35</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#a4c4fd96e51aedfa315351bdce71ca345">KuszkAPI::Containers::File&lt;tnData, tnHead&gt;::Assign</a>(<span class="keyword">const</span> <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html">String</a>&amp; sNazwaPliku, <span class="keywordtype">unsigned</span> uCreate, <span class="keywordtype">unsigned</span> uAccess, <span class="keywordtype">unsigned</span> uShare)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      sNazwa = sNazwaPliku;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keywordflow">if</span> (hUchwyt) CloseHandle(hUchwyt);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      hUchwyt = CreateFile(sNazwa.Str(), uAccess, uShare, NULL, uCreate, 0, NULL);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keywordflow">if</span> (hUchwyt == INVALID_HANDLE_VALUE) hUchwyt = NULL;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keywordflow">return</span> (<span class="keywordtype">bool</span>) hUchwyt;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> tnData, <span class="keyword">typename</span> tnHead&gt;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#a05549b025756f90ce3bb01047d05cb6e">   45</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#a05549b025756f90ce3bb01047d05cb6e">KuszkAPI::Containers::File&lt;tnData, tnHead&gt;::Load</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keywordflow">if</span> (!hUchwyt) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      DWORD uReaded;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="keywordtype">unsigned</span> uSize = GetFileSize(hUchwyt, NULL);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keywordflow">if</span> (uMode) uSize -= uHeadSize;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      tnData* ptBufor = <span class="keyword">new</span> tnData[uSize / uDataSize];</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      SetFilePointer(hUchwyt, 0, NULL, FILE_BEGIN);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="keywordflow">if</span> (uMode) ReadFile(hUchwyt, &amp;Head, uHeadSize, &amp;uReaded, NULL);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      ReadFile(hUchwyt, ptBufor, uSize, &amp;uReaded, NULL);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      Data.Clean();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      Data.Add(ptBufor, uReaded / uDataSize);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keyword">delete</span> [] ptBufor;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> tnData, <span class="keyword">typename</span> tnHead&gt;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#a3e7116e7b98e0755ad129d90cf7ac358">   62</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#a3e7116e7b98e0755ad129d90cf7ac358">KuszkAPI::Containers::File&lt;tnData, tnHead&gt;::Save</a>(<span class="keywordtype">void</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <span class="keywordflow">if</span> (!hUchwyt) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      DWORD uWrited;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      SetFilePointer(hUchwyt, 0, NULL, FILE_BEGIN);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <span class="keywordflow">if</span> (uMode) WriteFile(hUchwyt, &amp;Head, uHeadSize, &amp;uWrited, NULL);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      WriteFile(hUchwyt, Data.GetBegin(), Data.Capacity() * uDataSize, &amp;uWrited, NULL);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> tnData, <span class="keyword">typename</span> tnHead&gt;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#a7c01e5b7010662ec699f3d5553145f4d">   73</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#a7c01e5b7010662ec699f3d5553145f4d">KuszkAPI::Containers::File&lt;tnData, tnHead&gt;::Copy</a>(<span class="keyword">const</span> <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html">String</a>&amp; sNazwaPliku)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> tnData, <span class="keyword">typename</span> tnHead&gt;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#ad0f05487a12d4bc1174601aa50597a66">   79</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#ad0f05487a12d4bc1174601aa50597a66">KuszkAPI::Containers::File&lt;tnData, tnHead&gt;::SetMode</a>(<span class="keywordtype">unsigned</span> uNewMode)</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      uMode = uNewMode;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> tnData, <span class="keyword">typename</span> tnHead&gt;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#abb8268cb30f5b2109e3fd0590983ae1a">   85</a></span>&#160;<span class="keywordtype">unsigned</span> <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#abb8268cb30f5b2109e3fd0590983ae1a">KuszkAPI::Containers::File&lt;tnData, tnHead&gt;::GetMode</a>(<span class="keywordtype">void</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <span class="keywordflow">return</span> uMode;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> tnData, <span class="keyword">typename</span> tnHead&gt;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#a96e8f58f721b5ad5f983112dde49afd2">   91</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#a96e8f58f721b5ad5f983112dde49afd2">KuszkAPI::Containers::File&lt;tnData, tnHead&gt;::Clean</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;{</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      memset(&amp;Head, 0, uHeadSize);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      Data.Clean();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_file_html_aff404c59a39766529451a84d07976e2f"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#aff404c59a39766529451a84d07976e2f">KuszkAPI::Containers::File::File</a></div><div class="ttdeci">File(void)</div><div class="ttdef"><b>Definition:</b> <a href="_file_8cpp_source.html#l00015">File.cpp:15</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_file_html_a4c4fd96e51aedfa315351bdce71ca345"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#a4c4fd96e51aedfa315351bdce71ca345">KuszkAPI::Containers::File::Assign</a></div><div class="ttdeci">bool Assign(const String &amp;sNazwaPliku, unsigned uCreate=OPEN_ALWAYS, unsigned uAccess=GENERIC_READ|GENERIC_WRITE, unsigned uShare=FILE_SHARE_READ)</div><div class="ttdef"><b>Definition:</b> <a href="_file_8cpp_source.html#l00035">File.cpp:35</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_file_html_a037c7885b677bb4997fca85c165748aa"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#a037c7885b677bb4997fca85c165748aa">KuszkAPI::Containers::File::~File</a></div><div class="ttdeci">~File(void)</div><div class="ttdef"><b>Definition:</b> <a href="_file_8cpp_source.html#l00025">File.cpp:25</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_string_html"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_string.html">KuszkAPI::Containers::String</a></div><div class="ttdef"><b>Definition:</b> <a href="_containers_2_string_2_declarations_8h_source.html#l00010">Declarations.h:10</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_file_html_ad0f05487a12d4bc1174601aa50597a66"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#ad0f05487a12d4bc1174601aa50597a66">KuszkAPI::Containers::File::SetMode</a></div><div class="ttdeci">void SetMode(unsigned uNewMode)</div><div class="ttdef"><b>Definition:</b> <a href="_file_8cpp_source.html#l00079">File.cpp:79</a></div></div>
+<div class="ttc" id="_files_8h_html_aff85e226924414c839bab54020319f63"><div class="ttname"><a href="_files_8h.html#aff85e226924414c839bab54020319f63">MODE_STREAM</a></div><div class="ttdeci">#define MODE_STREAM</div><div class="ttdef"><b>Definition:</b> <a href="_files_8h_source.html#l00014">Files.h:14</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_file_html_a05549b025756f90ce3bb01047d05cb6e"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#a05549b025756f90ce3bb01047d05cb6e">KuszkAPI::Containers::File::Load</a></div><div class="ttdeci">bool Load(void)</div><div class="ttdef"><b>Definition:</b> <a href="_file_8cpp_source.html#l00045">File.cpp:45</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_file_html_a96e8f58f721b5ad5f983112dde49afd2"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#a96e8f58f721b5ad5f983112dde49afd2">KuszkAPI::Containers::File::Clean</a></div><div class="ttdeci">void Clean(void)</div><div class="ttdef"><b>Definition:</b> <a href="_file_8cpp_source.html#l00091">File.cpp:91</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_file_html_abb8268cb30f5b2109e3fd0590983ae1a"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#abb8268cb30f5b2109e3fd0590983ae1a">KuszkAPI::Containers::File::GetMode</a></div><div class="ttdeci">unsigned GetMode(void) const </div><div class="ttdef"><b>Definition:</b> <a href="_file_8cpp_source.html#l00085">File.cpp:85</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_file_html_a7c01e5b7010662ec699f3d5553145f4d"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#a7c01e5b7010662ec699f3d5553145f4d">KuszkAPI::Containers::File::Copy</a></div><div class="ttdeci">bool Copy(const String &amp;sNazwaPliku) const </div><div class="ttdef"><b>Definition:</b> <a href="_file_8cpp_source.html#l00073">File.cpp:73</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_file_html_a3e7116e7b98e0755ad129d90cf7ac358"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#a3e7116e7b98e0755ad129d90cf7ac358">KuszkAPI::Containers::File::Save</a></div><div class="ttdeci">bool Save(void) const </div><div class="ttdef"><b>Definition:</b> <a href="_file_8cpp_source.html#l00062">File.cpp:62</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano So, 12 lip 2014 21:18:51 dla KuszkAPI programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

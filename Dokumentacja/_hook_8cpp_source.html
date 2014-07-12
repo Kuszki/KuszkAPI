@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>KuszkAPI: Plik źródłowy KuszkAPI/Core/Run/Hook.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">KuszkAPI
+   &#160;<span id="projectnumber">2.1b</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="pages.html"><span>Dodatkowe&#160;strony</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje typów</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Definicje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Strony</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6f7fa3ee7946af07f3c30f8c4eea207f.html">KuszkAPI</a></li><li class="navelem"><a class="el" href="dir_c1e1de5c01dac8ef2f7c42ae2eacc49d.html">Core</a></li><li class="navelem"><a class="el" href="dir_30b52d75edf39c2e2358b3dd5aa66de9.html">Run</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Hook.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_hook_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using namespace </span>KuszkAPI;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> tnKey&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_core_1_1_hook.html#ae6d9006c7818986e2da8f8aea3c81941">    4</a></span>&#160;<a class="code" href="class_kuszk_a_p_i_1_1_core_1_1_hook.html#ae6d9006c7818986e2da8f8aea3c81941">KuszkAPI::Core::Hook&lt;tnKey&gt;::Hook</a>(<span class="keywordtype">void</span>) {}</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> tnKey&gt;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_core_1_1_hook.html#afad2cd767826592c3549f6f130570038">    7</a></span>&#160;<a class="code" href="class_kuszk_a_p_i_1_1_core_1_1_hook.html#afad2cd767826592c3549f6f130570038">KuszkAPI::Core::Hook&lt;tnKey&gt;::~Hook</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;      Clean();</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> tnKey&gt;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_core_1_1_hook.html#ab84e8adb66b53b180d285314613139e7">   13</a></span>&#160;HHOOK <a class="code" href="class_kuszk_a_p_i_1_1_core_1_1_hook.html#ab84e8adb66b53b180d285314613139e7">KuszkAPI::Core::Hook&lt;tnKey&gt;::Add</a>(<span class="keyword">const</span> tnKey&amp; tKey, <span class="keywordtype">unsigned</span> uTyp, HOOKPROC fProc, HINSTANCE hInst, <span class="keywordtype">bool</span> bGlobal)</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;      <span class="keywordflow">if</span> (!mHook.Allow(tKey)) <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      <span class="keywordtype">unsigned</span> uThread = bGlobal &amp;&amp; hInst ? 0 : GetCurrentThreadId();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      HHOOK hTmp = SetWindowsHookEx(uTyp, fProc, hInst, uThread);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      <span class="keywordflow">if</span> (hTmp) mHook.Add(hTmp, tKey);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      <span class="keywordflow">return</span> hTmp;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> tnKey&gt;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_core_1_1_hook.html#a20b2d1c7ad2b347e7c1fb1ba4cd757da">   23</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_kuszk_a_p_i_1_1_core_1_1_hook.html#a20b2d1c7ad2b347e7c1fb1ba4cd757da">KuszkAPI::Core::Hook&lt;tnKey&gt;::Delete</a>(<span class="keyword">const</span> tnKey&amp; tKey)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      UnhookWindowsHookEx(mHook.GetData(tKey));</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      mHook.Delete(tKey);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> tnKey&gt;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_core_1_1_hook.html#ac14d06f6c00343bf0f478fb7a3a9b2ac">   30</a></span>&#160;HHOOK <a class="code" href="class_kuszk_a_p_i_1_1_core_1_1_hook.html#ac14d06f6c00343bf0f478fb7a3a9b2ac">KuszkAPI::Core::Hook&lt;tnKey&gt;::GetHandle</a>(<span class="keyword">const</span> tnKey&amp; tKey)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="keywordflow">return</span> mHook.GetData(tKey);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> tnKey&gt;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_core_1_1_hook.html#aaf3737d04474fc9a326befb1a6fa792c">   36</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_kuszk_a_p_i_1_1_core_1_1_hook.html#aaf3737d04474fc9a326befb1a6fa792c">KuszkAPI::Core::Hook&lt;tnKey&gt;::Clean</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt;= mHook.Capacity(); i++) UnhookWindowsHookEx(mHook.GetDataByInt(i));</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      mHook.Clean();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> tnKey&gt;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_core_1_1_hook.html#abed3a5b106a0f25abcb32fb0d3031316">   43</a></span>&#160;HHOOK <a class="code" href="class_kuszk_a_p_i_1_1_core_1_1_hook.html#abed3a5b106a0f25abcb32fb0d3031316">KuszkAPI::Core::Hook&lt;tnKey&gt;::operator[] </a>(<span class="keyword">const</span> tnKey&amp; tKey)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keywordflow">return</span> mHook.GetData(tKey);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_core_1_1_hook_html_ae6d9006c7818986e2da8f8aea3c81941"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_core_1_1_hook.html#ae6d9006c7818986e2da8f8aea3c81941">KuszkAPI::Core::Hook::Hook</a></div><div class="ttdeci">Hook(void)</div><div class="ttdef"><b>Definition:</b> <a href="_hook_8cpp_source.html#l00004">Hook.cpp:4</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_core_1_1_hook_html_ac14d06f6c00343bf0f478fb7a3a9b2ac"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_core_1_1_hook.html#ac14d06f6c00343bf0f478fb7a3a9b2ac">KuszkAPI::Core::Hook::GetHandle</a></div><div class="ttdeci">HHOOK GetHandle(const tnKey &amp;tKey) const </div><div class="ttdef"><b>Definition:</b> <a href="_hook_8cpp_source.html#l00030">Hook.cpp:30</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_core_1_1_hook_html_ab84e8adb66b53b180d285314613139e7"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_core_1_1_hook.html#ab84e8adb66b53b180d285314613139e7">KuszkAPI::Core::Hook::Add</a></div><div class="ttdeci">HHOOK Add(const tnKey &amp;tKey, unsigned uTyp, HOOKPROC fProc, HINSTANCE hInst=NULL, bool bGlobal=false)</div><div class="ttdef"><b>Definition:</b> <a href="_hook_8cpp_source.html#l00013">Hook.cpp:13</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_core_1_1_hook_html_afad2cd767826592c3549f6f130570038"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_core_1_1_hook.html#afad2cd767826592c3549f6f130570038">KuszkAPI::Core::Hook::~Hook</a></div><div class="ttdeci">~Hook(void)</div><div class="ttdef"><b>Definition:</b> <a href="_hook_8cpp_source.html#l00007">Hook.cpp:7</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_core_1_1_hook_html_aaf3737d04474fc9a326befb1a6fa792c"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_core_1_1_hook.html#aaf3737d04474fc9a326befb1a6fa792c">KuszkAPI::Core::Hook::Clean</a></div><div class="ttdeci">void Clean(void)</div><div class="ttdef"><b>Definition:</b> <a href="_hook_8cpp_source.html#l00036">Hook.cpp:36</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_core_1_1_hook_html_a20b2d1c7ad2b347e7c1fb1ba4cd757da"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_core_1_1_hook.html#a20b2d1c7ad2b347e7c1fb1ba4cd757da">KuszkAPI::Core::Hook::Delete</a></div><div class="ttdeci">void Delete(const tnKey &amp;tKey)</div><div class="ttdef"><b>Definition:</b> <a href="_hook_8cpp_source.html#l00023">Hook.cpp:23</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_core_1_1_hook_html_abed3a5b106a0f25abcb32fb0d3031316"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_core_1_1_hook.html#abed3a5b106a0f25abcb32fb0d3031316">KuszkAPI::Core::Hook::operator[]</a></div><div class="ttdeci">HHOOK operator[](const tnKey &amp;tKey) const </div><div class="ttdef"><b>Definition:</b> <a href="_hook_8cpp_source.html#l00043">Hook.cpp:43</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano So, 12 lip 2014 21:18:51 dla KuszkAPI programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>KuszkAPI: Plik źródłowy KuszkAPI/Forms/Tools/Region.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">KuszkAPI
+   &#160;<span id="projectnumber">2.1b</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="pages.html"><span>Dodatkowe&#160;strony</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje typów</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Definicje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Strony</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6f7fa3ee7946af07f3c30f8c4eea207f.html">KuszkAPI</a></li><li class="navelem"><a class="el" href="dir_24955163cd35c8a7f8a84f0221855978.html">Forms</a></li><li class="navelem"><a class="el" href="dir_b91d7adc7a356369b9f41a571c8fe5d6.html">Tools</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Region.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_region_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using namespace </span>KuszkAPI;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_forms_1_1_region.html#ac1722eaf3c05a8b34ac4483a33f9bdc8">    3</a></span>&#160;<a class="code" href="class_kuszk_a_p_i_1_1_forms_1_1_region.html#ac1722eaf3c05a8b34ac4483a33f9bdc8">KuszkAPI::Forms::Region::Region</a>(<span class="keyword">const</span> <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_strings.html">Containers::Strings</a>&amp; sRegions)</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt;= sRegions.<a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_strings.html#a89fcfadc786b1736408189065ce5deaf">Capacity</a>(); i++) Load(sRegions.<a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_strings.html#a9021319df4615931b43c7e715bcf5bf9">GetData</a>(i));</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;}</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_forms_1_1_region.html#af0a552651ce72b05ba439e721dace70b">    8</a></span>&#160;<a class="code" href="class_kuszk_a_p_i_1_1_forms_1_1_region.html#af0a552651ce72b05ba439e721dace70b">KuszkAPI::Forms::Region::~Region</a>(<span class="keywordtype">void</span>) {}</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_forms_1_1_region.html#a0f1044032ed926aef1bb42fa53478c97">   10</a></span>&#160;HRGN <a class="code" href="class_kuszk_a_p_i_1_1_forms_1_1_region.html#a0f1044032ed926aef1bb42fa53478c97">KuszkAPI::Forms::Region::Create</a>(HBITMAP hBitmap, COLORREF cColor)</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;      WORD wBmpWidth, wBmpHeight;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;      HRGN hTmp, hTmpRgn;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;      BYTE jTranspR = GetRValue(cColor);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      BYTE jTranspG = GetGValue(cColor);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      BYTE jTranspB = GetBValue(cColor);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      BITMAP bmpBmp;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      LPBITMAPINFO pbmiInfo;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      BITMAPINFO bmiInfo;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      GetObject(hBitmap, <span class="keyword">sizeof</span>(bmpBmp), &amp;bmpBmp);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      pbmiInfo = (LPBITMAPINFO) &amp;bmpBmp;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      wBmpWidth = (WORD) pbmiInfo-&gt;bmiHeader.biWidth;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      wBmpHeight = (WORD) pbmiInfo-&gt;bmiHeader.biHeight;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      BYTE* pPixels = <span class="keyword">new</span> BYTE[wBmpWidth * wBmpHeight * 3];</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <span class="keywordflow">if</span> (!pPixels) <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      HDC hDC = GetWindowDC(NULL);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      bmiInfo.bmiHeader.biSize = <span class="keyword">sizeof</span>(BITMAPINFOHEADER);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      bmiInfo.bmiHeader.biWidth = wBmpWidth;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      bmiInfo.bmiHeader.biHeight = -wBmpHeight;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      bmiInfo.bmiHeader.biPlanes = 1;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      bmiInfo.bmiHeader.biBitCount = 24;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      bmiInfo.bmiHeader.biCompression = BI_RGB;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      bmiInfo.bmiHeader.biSizeImage = wBmpWidth * wBmpHeight * 3;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      bmiInfo.bmiHeader.biXPelsPerMeter = 0;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      bmiInfo.bmiHeader.biYPelsPerMeter = 0;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      bmiInfo.bmiHeader.biClrUsed = 0;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      bmiInfo.bmiHeader.biClrImportant = 0;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="keywordtype">int</span> iRes = GetDIBits(hDC, hBitmap, 0, wBmpHeight, pPixels, &amp;bmiInfo, DIB_RGB_COLORS);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      ReleaseDC(NULL, hDC);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keywordflow">if</span> (!iRes){</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;              <span class="keyword">delete</span> pPixels;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;              <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="keywordflow">if</span> (!pPixels) <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      hTmp = CreateRectRgn(0, 0, wBmpWidth, wBmpHeight);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keywordflow">if</span> (!hTmp){</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;              <span class="keyword">delete</span> pPixels;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;              <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <span class="keywordflow">for</span> (DWORD y = 0, p = 0; y &lt; wBmpHeight; y++) <span class="keywordflow">for</span> (DWORD x = 0; x &lt; wBmpWidth; x++){</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;              BYTE jRed = pPixels[p + 2];</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;              BYTE jGreen = pPixels[p + 1];</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;              BYTE jBlue = pPixels[p + 0];</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;              <span class="keywordflow">if</span> (jRed == jTranspR &amp;&amp; jGreen == jTranspG &amp;&amp; jBlue == jTranspB){</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                       hTmpRgn = CreateRectRgn(x, y, x + 1, y + 1);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                       CombineRgn(hTmp, hTmp, hTmpRgn, RGN_XOR);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                       DeleteObject(hTmpRgn);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;             }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;             p+=3;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="keyword">delete</span> pPixels;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="keywordflow">if</span> (hTmp) bObject.Add(hTmp);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keywordflow">return</span> hTmp;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_forms_1_1_region.html#acf6bf3d1ec44a80132f29740f1ba3e47">   83</a></span>&#160;HRGN <a class="code" href="class_kuszk_a_p_i_1_1_forms_1_1_region.html#acf6bf3d1ec44a80132f29740f1ba3e47">KuszkAPI::Forms::Region::Load</a>(<span class="keyword">const</span> <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html">Containers::String</a>&amp; sRegion)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_file.html">Containers::File&lt;char, unsigned&gt;</a> fRgn(sRegion, <a class="code" href="_files_8h.html#af2a419ab7bfa7b25b16ebfcbf5bafc79">MODE_STRUCT</a>, OPEN_EXISTING);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      <span class="keywordflow">if</span> (!fRgn.<a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#a05549b025756f90ce3bb01047d05cb6e">Load</a>()) <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      HRGN hTmp = ExtCreateRegion(NULL, fRgn.<a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#a36c461929d4b75a786bc4abffa27e75f">Head</a>, (LPRGNDATA) fRgn.<a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#a626b4994923d10a4701e4d0a14c65592">Data</a>.GetBegin());</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="keywordflow">if</span> (hTmp) bObject.Add(hTmp);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <span class="keywordflow">return</span> hTmp;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_forms_1_1_region.html#adc79b9b2cc14f809d0965d9a1907b3e5">   92</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_kuszk_a_p_i_1_1_forms_1_1_region.html#adc79b9b2cc14f809d0965d9a1907b3e5">KuszkAPI::Forms::Region::Free</a>(<span class="keywordtype">unsigned</span> uNumer)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <span class="keywordflow">if</span> (bObject.Capacity() &gt;= uNumer){</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;              DeleteObject(bObject[uNumer]);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;              bObject.Delete(uNumer);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="class_kuszk_a_p_i_1_1_forms_1_1_region.html#a1ebddc93e7247121827934146b52be34">  100</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_kuszk_a_p_i_1_1_forms_1_1_region.html#a1ebddc93e7247121827934146b52be34">KuszkAPI::Forms::Region::Save</a>(<span class="keyword">const</span> <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_string.html">Containers::String</a>&amp; sRegion, <span class="keywordtype">unsigned</span> uNumer)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      <span class="keywordflow">if</span> (uNumer &gt; bObject.Capacity()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      HRGN hTmp = bObject.GetData(uNumer);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <span class="keywordtype">unsigned</span> uCount = GetRegionData(hTmp, 0, 0);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      LPRGNDATA pdData = <span class="keyword">new</span> RGNDATA[uCount];</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      <span class="keywordflow">if</span> (!pdData) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      GetRegionData(hTmp, uCount, pdData);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      <a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_file.html">Containers::File&lt;char, unsigned&gt;</a> fRgn(sRegion, <a class="code" href="_files_8h.html#af2a419ab7bfa7b25b16ebfcbf5bafc79">MODE_STRUCT</a>, CREATE_ALWAYS);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      fRgn.<a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#a626b4994923d10a4701e4d0a14c65592">Data</a>.Add((<span class="keywordtype">char</span>*) pdData, uCount);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      fRgn.<a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#a36c461929d4b75a786bc4abffa27e75f">Head</a> = uCount;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      <span class="keyword">delete</span> pdData;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      <span class="keywordflow">return</span> fRgn.<a class="code" href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#a3e7116e7b98e0755ad129d90cf7ac358">Save</a>();</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_forms_1_1_region_html_adc79b9b2cc14f809d0965d9a1907b3e5"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_forms_1_1_region.html#adc79b9b2cc14f809d0965d9a1907b3e5">KuszkAPI::Forms::Region::Free</a></div><div class="ttdeci">void Free(unsigned uNumer)</div><div class="ttdef"><b>Definition:</b> <a href="_region_8cpp_source.html#l00092">Region.cpp:92</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_file_html"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_file.html">KuszkAPI::Containers::File</a></div><div class="ttdef"><b>Definition:</b> <a href="_containers_2_files_2_declarations_8h_source.html#l00006">Declarations.h:6</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_string_html"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_string.html">KuszkAPI::Containers::String</a></div><div class="ttdef"><b>Definition:</b> <a href="_containers_2_string_2_declarations_8h_source.html#l00010">Declarations.h:10</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_forms_1_1_region_html_ac1722eaf3c05a8b34ac4483a33f9bdc8"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_forms_1_1_region.html#ac1722eaf3c05a8b34ac4483a33f9bdc8">KuszkAPI::Forms::Region::Region</a></div><div class="ttdeci">Region(const Containers::Strings &amp;sRegions=Containers::Strings())</div><div class="ttdef"><b>Definition:</b> <a href="_region_8cpp_source.html#l00003">Region.cpp:3</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_forms_1_1_region_html_af0a552651ce72b05ba439e721dace70b"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_forms_1_1_region.html#af0a552651ce72b05ba439e721dace70b">KuszkAPI::Forms::Region::~Region</a></div><div class="ttdeci">~Region(void)</div><div class="ttdef"><b>Definition:</b> <a href="_region_8cpp_source.html#l00008">Region.cpp:8</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_forms_1_1_region_html_acf6bf3d1ec44a80132f29740f1ba3e47"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_forms_1_1_region.html#acf6bf3d1ec44a80132f29740f1ba3e47">KuszkAPI::Forms::Region::Load</a></div><div class="ttdeci">HRGN Load(const Containers::String &amp;sRegion)</div><div class="ttdef"><b>Definition:</b> <a href="_region_8cpp_source.html#l00083">Region.cpp:83</a></div></div>
+<div class="ttc" id="_files_8h_html_af2a419ab7bfa7b25b16ebfcbf5bafc79"><div class="ttname"><a href="_files_8h.html#af2a419ab7bfa7b25b16ebfcbf5bafc79">MODE_STRUCT</a></div><div class="ttdeci">#define MODE_STRUCT</div><div class="ttdef"><b>Definition:</b> <a href="_files_8h_source.html#l00017">Files.h:17</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_file_html_a05549b025756f90ce3bb01047d05cb6e"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#a05549b025756f90ce3bb01047d05cb6e">KuszkAPI::Containers::File::Load</a></div><div class="ttdeci">bool Load(void)</div><div class="ttdef"><b>Definition:</b> <a href="_file_8cpp_source.html#l00045">File.cpp:45</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_strings_html_a9021319df4615931b43c7e715bcf5bf9"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_strings.html#a9021319df4615931b43c7e715bcf5bf9">KuszkAPI::Containers::Strings::GetData</a></div><div class="ttdeci">const String &amp; GetData(int iNumer) const </div><div class="ttdef"><b>Definition:</b> <a href="_strings_8cpp_source.html#l00081">Strings.cpp:81</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_strings_html"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_strings.html">KuszkAPI::Containers::Strings</a></div><div class="ttdef"><b>Definition:</b> <a href="_containers_2_strings_2_declarations_8h_source.html#l00010">Declarations.h:10</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_file_html_a36c461929d4b75a786bc4abffa27e75f"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#a36c461929d4b75a786bc4abffa27e75f">KuszkAPI::Containers::File::Head</a></div><div class="ttdeci">tnHead Head</div><div class="ttdef"><b>Definition:</b> <a href="_containers_2_files_2_declarations_8h_source.html#l00021">Declarations.h:21</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_strings_html_a89fcfadc786b1736408189065ce5deaf"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_strings.html#a89fcfadc786b1736408189065ce5deaf">KuszkAPI::Containers::Strings::Capacity</a></div><div class="ttdeci">unsigned Capacity(void) const </div><div class="ttdef"><b>Definition:</b> <a href="_strings_8cpp_source.html#l00118">Strings.cpp:118</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_file_html_a626b4994923d10a4701e4d0a14c65592"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#a626b4994923d10a4701e4d0a14c65592">KuszkAPI::Containers::File::Data</a></div><div class="ttdeci">Vector&lt; tnData &gt; Data</div><div class="ttdef"><b>Definition:</b> <a href="_containers_2_files_2_declarations_8h_source.html#l00020">Declarations.h:20</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_containers_1_1_file_html_a3e7116e7b98e0755ad129d90cf7ac358"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_containers_1_1_file.html#a3e7116e7b98e0755ad129d90cf7ac358">KuszkAPI::Containers::File::Save</a></div><div class="ttdeci">bool Save(void) const </div><div class="ttdef"><b>Definition:</b> <a href="_file_8cpp_source.html#l00062">File.cpp:62</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_forms_1_1_region_html_a1ebddc93e7247121827934146b52be34"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_forms_1_1_region.html#a1ebddc93e7247121827934146b52be34">KuszkAPI::Forms::Region::Save</a></div><div class="ttdeci">bool Save(const Containers::String &amp;sRegion, unsigned uNumer) const </div><div class="ttdef"><b>Definition:</b> <a href="_region_8cpp_source.html#l00100">Region.cpp:100</a></div></div>
+<div class="ttc" id="class_kuszk_a_p_i_1_1_forms_1_1_region_html_a0f1044032ed926aef1bb42fa53478c97"><div class="ttname"><a href="class_kuszk_a_p_i_1_1_forms_1_1_region.html#a0f1044032ed926aef1bb42fa53478c97">KuszkAPI::Forms::Region::Create</a></div><div class="ttdeci">HRGN Create(HBITMAP hBitmap, COLORREF cMask=RGB(255, 255, 255))</div><div class="ttdef"><b>Definition:</b> <a href="_region_8cpp_source.html#l00010">Region.cpp:10</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano So, 12 lip 2014 21:18:51 dla KuszkAPI programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>
