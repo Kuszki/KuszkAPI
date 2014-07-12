@@ -1,0 +1,278 @@
+/*! \file
+    \brief Zawiera doumentacje dla pliku List.cpp.
+
+Dokumentacja zamieszczona w innym pliku pomaga uniknąć chaosu w organizacji kodu.
+*/
+
+/*! \file List.cpp
+    \brief Zawiera implementacje szablonu klasy List.
+
+Implementacja każdej klasy w innym pliku pomaga uniknąć chaosu w organizacji kodu.
+*/
+
+/*! \class KuszkAPI::Containers::List
+    \brief Implementacja szablonu listy dla modułu kontenerów.
+    \tparam tnData Typ obiektów przechowywanych przez organizacje.
+    \note Elementy indeksowane są od 1. Indeks 0 wskazuje na ostatni element, a elementy ujemne oznaczają przesunięcie do tyłu względem ostatniego elementu.
+    \warning Przechowywane obiekty muszą posiadać konstruktor kopiujący.
+    \todo Należy zaimplementować mechanizm wyjątków.
+
+Kalasa stanowi implementacje szablonu dynamicznej listy danych.
+*/
+/*! \struct KuszkAPI::Containers::List::ItemData
+    \brief Struktura przechowująca wskaźnik na element listy oraz wskaźnik na kolejny obiekt.
+
+Przechowuje adres komórki pamięci w której znajdują się informacje o bierzącym i kolejnym obiekcie.
+*/
+/*! \var KuszkAPI::Containers::List::ItemData::ptData
+    \brief Wskaźnik na przechowywany obiekt.
+
+Przechowuje adres komórki pamięci w której znajduje się bierzący obiekt.
+*/
+/*! \var KuszkAPI::Containers::List::ItemData::ptNext
+    \brief Wskaźnik na kolejny obiekt.
+
+Przechowuje adres komórki pamięci w której znajdują się informacje o kolejnym obiekcie.
+*/
+/*! \var KuszkAPI::Containers::List::ptBegin
+    \brief Wskaźnik na początek danych.
+
+Przechowuje adres komórki pamięci w której znajduje się pierwszy obiekt.
+*/
+/*! \var KuszkAPI::Containers::List::ptLast
+    \brief Wskaźnik na koniec danych.
+
+Przechowuje adres komórki pamięci w której znajduje się ostatni obiekt.
+*/
+/*! \var KuszkAPI::Containers::List::tAbstract
+    \brief Abstrakcyjna instancja przechowywanego typu.
+    \note Istnieje by ominąć mechanizm wyjątków.
+
+Przechowuje pojedyńczy obiekt wybranego typu z wyzerowanymi wszystkimi polami.
+*/
+/*! \fn KuszkAPI::Containers::List::List(const KuszkAPI::Containers::List<tnData>&)
+    \brief Konstruktor kopiujący.
+    \param [in] lList Organizacja źródłowa.
+
+Kopiuje wybrany obiekt.
+*/
+/*! \fn KuszkAPI::Containers::List::List(const Vector<tnData>&)
+    \brief Konstruktor konwertujący.
+    \param [in] vVector Organizacja źródłowa.
+
+Dokonuje konwersji organizacji KuszkAPI::Containers::Vector na KuszkAPI::Containers::List w taki sposób, że zachowuje ilość danych, rodzaj i ich kolejność.
+*/
+/*! \fn KuszkAPI::Containers::List::List(const Array<tnData>&)
+    \brief Konstruktor konwertujący.
+    \param [in] aArray Organizacja źródłowa.
+
+Dokonuje konwersji organizacji KuszkAPI::Containers::Array na KuszkAPI::Containers::List w taki sposób, że zachowuje ilość danych, rodzaj i ich kolejność.
+*/
+/*! \fn KuszkAPI::Containers::List::List(const tnData[], unsigned)
+    \brief Konstruktor konwertujący.
+    \param [in] ptData TabBoxlica źródłowa.
+    \param [in] uCount Rozmiar tablicy źródłowej.
+
+Dokonuje konwersji tablicy o określonym rozmiarze na KuszkAPI::Containers::List w taki sposób, że zachowuje ilość danych, rodzaj i ich kolejność.
+*/
+/*! \fn KuszkAPI::Containers::List::List(void)
+    \brief Domyślny konstruktor.
+
+Inicjuje pusty obiekt usupełniając odpowiednie pola.
+*/
+/*! \fn KuszkAPI::Containers::List::~List(void)
+    \brief Dekonstruktor.
+
+Usuwa wszystkie obiekty i zwalnia zużyte zasoby.
+*/
+/*! \fn unsigned KuszkAPI::Containers::List::Add(const tnData&, int, bool)
+    \brief Dodaje wybrany element do organizacji.
+    \param [in] tData Element do dodania.
+    \param [in] iPos Numer elementu względem którego ma zostać dodany nowy element. Dostępne wartości:\n
+                0 - wskazuje na ostatni element (domyślnie).\n
+                wartość dodatnia - elementy numerowane są rosnąco zaczynając od 1.\n
+                wartość ujemna - elementy numerowane są malejąco licząc od 0.
+    \param [in] bMode Sposób w jaki ma być dodany nowy element. Dostępne wartości to:\n
+                #ADD_AFTER - dodaje objekt za wybranym elementem (domyślnie).\n
+                #ADD_BEFORE - dodaje obiekt przed wybranym elementem.
+    \return Aktualna liczba elementów.
+
+Kopiuje obiekt przekazywany w parametrze i dodaje go do organizacji.
+*/
+/*! \fn unsigned KuszkAPI::Containers::List::Add(const tnData[], unsigned, int, bool)
+    \brief Dodaje wybrane elementy do organizacji.
+    \param [in] ptData TabBoxlica źródłowa elementów.
+    \param [in] uCount Rozmiar tablicy źródłowej.
+    \param [in] iPos Numer elementu względem którego ma zostać dodany nowy element. Dostępne wartości:\n
+                0 - wskazuje na ostatni element (domyślnie).\n
+                wartość dodatnia - elementy numerowane są rosnąco zaczynając od 1.\n
+                wartość ujemna - elementy numerowane są malejąco licząc od 0.
+    \param [in] bMode Sposób w jaki ma być dodany nowy element. Dostępne wartości to:\n
+                #ADD_AFTER - dodaje objekt za wybranym elementem (domyślnie).\n
+                #ADD_BEFORE - dodaje obiekt przed wybranym elementem.
+    \return Aktualna liczba elementów.
+
+Kopiuje obiekty zawarte w tablicy i dodaje je do organizacji.
+*/
+/*! \fn const tnData& KuszkAPI::Containers::List::GetData(int) const
+    \brief Zwraca stałą referencje do wybranego obiektu.
+    \param [in] iNumer Indeks wybranego elementu. Dostępne wartości:\n
+                0 - wskazuje na ostatni element (domyślnie).\n
+                wartość dodatnia - elementy numerowane są rosnąco zaczynając od 1.\n
+                wartość ujemna - elementy numerowane są malejąco licząc od 0.
+    \return Stała referencja do wybranego obiektu.
+    \warning W przypadku niepowodzenia zwraca stałą referencje do obiektu KuszkAPI::Containers::List::tAbstract.
+
+Sprawdza czy element o podanym indeksie istnieje i zwraca jego stałą referencje lub element abstrakcyjny.
+*/
+/*! \fn tnData& KuszkAPI::Containers::List::Find(const tnData&) const
+    \brief Szuka w kontenerze podanego obiektu.
+    \param [in] tData Obiekt bazowy do porównania.
+    \return Wynik wyszukiwania. Dostępne wartości:
+            0 - nie znaleziono obiektu spełniającego kryteria porównania.\n
+            wartość dodatnia - indeks elementu licząc od 1.
+    \warning Dla klasy obiektu musi zostać zdefiniowany poprawny operator porównania.
+
+Sprawdza czy w organizacji istnieje element identyczny jak podany w parametrze i zwraca jego indeks.
+*/
+/*! \fn tnData& KuszkAPI::Containers::List::Contain(const tnData&) const
+    \brief Sprawdza czy w kontenerze znajduję się wybrany obiekt.
+    \param [in] tData Obiekt bazowy do porównania.
+    \return Wynik wyszukiwania. Dostępne wartości:
+            false - nie znaleziono obiektu spełniającego kryteria porównania.\n
+            true - podany element istnieje.
+    \warning Dla klasy obiektu musi zostać zdefiniowany poprawny operator porównania.
+
+Sprawdza czy w organizacji istnieje element identyczny jak podany w parametrze.
+*/
+/*! \fn tnData& KuszkAPI::Containers::List::Change(int, int)
+    \brief Dokonuje zamiany pozycji wybranych elementów.
+    \param [in] iOne Pierwszy obiekt.
+    \param [in] iTwo Drugi obiekt.
+    \return Powodzenie operacji. Dostępne wartości:
+            false - operacja nie powiodła się.\n
+            true - operacja powiodła się.
+    \note Elementy indeksowane są identycznie jak w przypadku zwyczajnego operatora indeksowania dla klasy.
+
+Wyszukuje elementy których indeksy podano jako parametry i zamienia je miejscami w organizacji.
+*/
+/*! \fn tnData& KuszkAPI::Containers::List::Change(const tnData&, const tnData&, bool)
+    \brief Dokonuje zamiany wybranych elementów na inny element.
+    \param [in] tOld Element do zamiany.
+    \param [in] tNew Nowy element.
+    \param [in] bAll Tryb pracy. Dostępne wartości:\n
+                false - zamień tylko pierwszy znaleziony element.\n
+                true - zamień wszystkie pasujące elementy.
+    \return Liczba dokonanych zmian. Dostępne wartości:
+            0 - operacja nie powiodła się lub nie znaleziono pasujących elementów.\n
+            wartość dodatnia - operacja powiodła się.
+    \warning Dla klasy obiektu musi zostać zdefiniowany poprawny operator porównania.
+
+Sprawdza czy w organizacji istnieją elementy identyczne jak podany w parametrze i zgodnie z wybranym trybem pracy dokonuje zamiany ich na wybrany nowy obiekt.
+*/
+/*! \fn tnData& KuszkAPI::Containers::List::Sort(bool)
+    \brief Sortuje obiekty w kontenerze.
+    \param [in] bGrow Tryb pracy. Dostępne wartości:\n
+                false - sortuj malejąco.\n
+                true - sortuj rosnąco.
+    \return Powodzenie operacji. Dostępne wartości:
+            false - operacja nie powiodła.\n
+            true - operacja powiodła się.
+    \warning Dla klasy obiektu muszą zostać zdefiniowane poprawne operatory porównania.
+
+Dokonuje sortowania obiektów zawartych w kontenerze według wybranego trybu pracy.
+*/
+/*! \fn tnData& KuszkAPI::Containers::List::Sort(KuszkAPI::Containers::List<tnData>*[], unsigned, bool)
+    \brief Sortuje obiekty w kontenerze i we wskazanej organizacji.
+    \param [in] pptData Wskaźnik na tablice zawierającą dodatkowe dane.
+    \param [in] uCount Ilość dodatkowych danych.
+    \param [in] bGrow Tryb pracy. Dostępne wartości:\n
+                false - sortuj malejąco.\n
+                true - sortuj rosnąco.
+    \return Powodzenie operacji. Dostępne wartości:
+            false - operacja nie powiodła.\n
+            true - operacja powiodła się.
+    \warning Dla klasy obiektu muszą zostać zdefiniowane poprawne operatory porównania.
+
+Dokonuje sortowania obiektów zawartych w kontenerze według wybranego trybu pracy, a ponad to zamienia kolejność obiektów w kontenerach na które wskazuje pierwszy parametr zgodnie z przebiegiem sortowania głownego kontenera.
+*/
+/*! \fn tnData& KuszkAPI::Containers::List::Reverse(void)
+    \brief Odwraca kolejność elementów.
+
+Dokonuje odwrócenia kolejności elementów znajdujących się w kontenerze.
+*/
+/*! \fn tnData& KuszkAPI::Containers::List::operator[](int)
+    \brief Zwraca referencje do wybranego obiektu.
+    \param [in] iNumer Indeks wybranego elementu. Dostępne wartości:\n
+                0 - wskazuje na ostatni element (domyślnie).\n
+                wartość dodatnia - elementy numerowane są rosnąco zaczynając od 1.\n
+                wartość ujemna - elementy numerowane są malejąco licząc od 0.
+    \return Referencja do wybranego obiektu.
+    \warning W przypadku niepowodzenia zwraca referencje do obiektu KuszkAPI::Containers::List::tAbstract.
+
+Sprawdza czy element o podanym indeksie istnieje i zwraca jego referencje lub element abstrakcyjny.
+*/
+/*! \fn const tnData& KuszkAPI::Containers::List::operator[](int) const
+    \brief Zwraca stałą referencje do wybranego obiektu.
+    \param [in] iNumer Indeks wybranego elementu. Dostępne wartości:\n
+                0 - wskazuje na ostatni element (domyślnie).\n
+                wartość dodatnia - elementy numerowane są rosnąco zaczynając od 1.\n
+                wartość ujemna - elementy numerowane są malejąco licząc od 0.
+    \return Stała referencja do wybranego obiektu.
+    \warning W przypadku niepowodzenia zwraca stałą referencje do obiektu KuszkAPI::Containers::List::tAbstract.
+
+Sprawdza czy element o podanym indeksie istnieje i zwraca jego stałą referencje lub element abstrakcyjny.
+*/
+/*! \fn KuszkAPI::Containers::List<tnData>& KuszkAPI::Containers::List::operator<<(const tnData&)
+    \brief Dodaje wybrany element do organizacji.
+    \param [in] tData Element do dodania.
+    \return Referencja do aktualnej organizacji.
+
+Kopiuje obiekt przekazywany w parametrze i dodaje go do organizacji.
+*/
+/*! \fn KuszkAPI::Containers::List<tnData>& KuszkAPI::Containers::List::operator>>(tnData&)
+    \brief Pobiera element i usuwa go z organizacji.
+    \param [out] tData Bufor wyjściowy.
+    \return Referencja do aktualnej organizacji.
+
+Kopiuje odpowiedni obiekt do bufora i usuwa go z organizacji. Jeśli kontener pracuje w trybie #MODE_HEEP operacji poddany zostanie obiekt o największym indeksie, a jeśli w trybie #MODE_QUEUE - element o indeksie najmniejszym.
+*/
+/*! \fn KuszkAPI::Containers::List<tnData>& KuszkAPI::Containers::List::operator==(const KuszkAPI::Containers::List<tnData>&)
+    \brief Porównuje dwie organizacje.
+    \param [in] lList Organizacja do porównania.
+    \return Wynik porównania. Dostępne wartości:\n
+            false - organizacje są identyczne.\n
+            true - organizacje nie są identyczne.
+
+Porównuje dwie organizacje w taki sposób, że sprawdza kolejno każdy obiekt przechowywany w organizacjach i dokonuje ich porównania. Organizacje uważane są za identyczne gdy zawierają te same elementy umieszczone w identycznej kolejności przy tej samej liczbie obiektów.
+*/
+/*! \fn KuszkAPI::Containers::List<tnData>& KuszkAPI::Containers::List::operator!=(const KuszkAPI::Containers::List<tnData>&)
+    \brief Porównuje dwie organizacje.
+    \param [in] lList Organizacja do porównania.
+    \return Wynik porównania. Dostępne wartości:\n
+            false - organizacje nie są identyczne.\n
+            true - organizacje są identyczne.
+
+Porównuje dwie organizacje w taki sposób, że sprawdza kolejno każdy obiekt przechowywany w organizacjach i dokonuje ich porównania. Organizacje uważane są za identyczne gdy zawierają te same elementy umieszczone w identycznej kolejności przy tej samej liczbie obiektów.
+*/
+/*! \fn KuszkAPI::Containers::List<tnData> KuszkAPI::Containers::List::operator+(const KuszkAPI::Containers::List<tnData>&) const
+    \brief Dodaje dwie organizacje do siebie.
+    \param [in] lList Druga organizacja.
+    \return Nowa organizacja stanowiąca sumę.
+
+Tworzy nową organizację z bierzącej i przekazanej w parametrze w taki sposób, że na początku znajdują się elementy bierzącej organizacji, a po nich następują elementy organizacji przekazanej w parametrze.
+*/
+/*! \fn KuszkAPI::Containers::List<tnData>& KuszkAPI::Containers::List::operator+=(const KuszkAPI::Containers::List<tnData>&)
+    \brief Dodaje wybraną organizacje do bierzącej.
+    \param [in] lList Wybrana organizacja.
+    \return Referencja do aktualnej organizacji.
+
+Kopiuje wszystkie elementy wybranej organizacji do bierzącej zachowując ich kolejność.
+*/
+/*! \fn KuszkAPI::Containers::List<tnData>& KuszkAPI::Containers::List::operator=(const KuszkAPI::Containers::List<tnData>&)
+    \brief Kopiuje wybraną organizacje tworząc bierzącą organizajce na jej podstawie.
+    \param [in] lList Wybrana organizacja.
+    \return Referencja do aktualnej organizacji.
+
+Czyści bierzącą organizacje i kopiuje wszystkie elementy wybranej organizacji do bierzącej zachowując ich kolejność.
+*/

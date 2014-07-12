@@ -1,0 +1,81 @@
+/*! \file
+    \brief Zawiera doumentacje dla pliku App.cpp.
+
+Dokumentacja zamieszczona w innym pliku pomaga uniknąć chaosu w organizacji kodu.
+*/
+
+/*! \file App.cpp
+    \brief Zawiera implementacje klasy App.
+
+Implementacja każdej klasy w innym pliku pomaga uniknąć chaosu w organizacji kodu.
+*/
+
+/*! \class KuszkAPI::Application::App
+    \brief Implementacja bazy dla modułu aplikacji.
+
+Klasa stanowi baze do tworzenia przyszłych klas reprezentujących wyszczególnione aplikacje.
+*/
+/*! \var KuszkAPI::Application::App::tRunTime
+    \brief Czas uruchomienia aplikacji.
+
+Przy inicjacji obiektu przyjmuję wartość bierzącego czasu.
+*/
+/*! \var KuszkAPI::Application::App::dRunDate
+    \brief Data uruchomienia aplikacji.
+
+Przy inicjacji obiektu przyjmuję wartość bierzącej daty.
+*/
+/*! \var KuszkAPI::Application::App::Thread
+    \brief Kontener przechowujący procesy związane z aplikacją.
+
+Zawiera uruchomione przez siebie procesy i pozwala na zarządzanie nimi. Utworzone procesy są indeksowane za pomocą typu "unsigned int".
+*/
+/*! \var KuszkAPI::Application::App::Hook
+    \brief Kontener przechowujący haki związane z aplikacją.
+
+Zawiera utworzone przez siebie haki i pozwala na zarządzanie nimi. Utworzone haki są indeksowane za pomocą typu "unsigned int".
+*/
+/*! \var KuszkAPI::Application::App::Lib
+    \brief Kontener przechowujący biblioteki DLL związane z aplikacją.
+
+Zawiera załadowane przez siebie biblioteki i pozwala na zarządzanie nimi. Otworzone boblioteki są indeksowane za pomocą typu "unsigned int".
+*/
+/*! \var KuszkAPI::Application::App::Program
+    \brief Reprezentuje instancje bierzącej aplikacji.
+
+Przy inicjacji obiektu pobiera potrzebne dane i ułatwia zarządzanie bierzącym procesem.
+*/
+/*! \var KuszkAPI::Application::App::Config
+    \brief Ułatwia zarządzanie powiązanym plikiem INI.
+    \warning Model zakłada jednoczesną obsługę tylko jednego pliku.
+
+Pozwala odczytywać i zapisywać informacje do wybranego później pliku INI.
+*/
+/*! \var KuszkAPI::Application::App::Registry
+    \brief Ułatwia zarządzanie powiązanym wpisem w rejestrze.
+    \warning Model zakłada jednoczesną obsługę tylko jednego wpisu.
+
+Pozwala odczytywać i zapisywać dane do wybranego później klucza.
+*/
+/*! \fn KuszkAPI::Application::App::App(void)
+    \brief Domyślny konstruktor.
+
+Configcjuje pola KuszkAPI::Application::App::tRunTime oraz App::dRunDate.
+*/
+/*! \fn KuszkAPI::Application::App::~App(void)
+    \brief Dokonuje zwolnienia użytych zasobów.
+
+Brak specjalnych operacji do opisu.
+*/
+/*! \fn DateTime::Time KuszkAPI::Application::App::GetRunTime(void) const
+    \brief Pozwala uzyskać informacje o czasie uruchomienia aplikacji.
+    \return Czas uruchomienia aplikacji.
+
+Zwraca kopie obiektu KuszkAPI::Application::App::tRunTime.
+*/
+/*! \fn DateTime::Date KuszkAPI::Application::App::GetRunDate(void) const
+    \brief Pozwala uzyskać informacje o dacie uruchomienia aplikacji.
+    \return Data uruchomienia aplikacji.
+
+Zwraca kopie obiektu KuszkAPI::Application::App::dRunDate.
+*/

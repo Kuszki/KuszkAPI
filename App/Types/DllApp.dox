@@ -1,0 +1,29 @@
+/*! \file
+    \brief Zawiera doumentacje dla pliku DllApp.cpp.
+
+Dokumentacja zamieszczona w innym pliku pomaga uniknąć chaosu w organizacji kodu.
+*/
+
+/*! \file DllApp.cpp
+    \brief Zawiera implementacje klasy DllApp.
+
+Implementacja każdej klasy w innym pliku pomaga uniknąć chaosu w organizacji kodu.
+*/
+
+/*! \class KuszkAPI::Application::DllApp
+    \brief Implementacja modelu aplikacji bibliotekowej.
+    \note Klasa zasadniczo bezużyteczna, nie wnosi nic nowego do jej klasy bazowej. Planowany rozwój w kolejnych wersjach modułu.
+
+Klasa dziedziczy składowe klasy App, a jej zastosowanie ułatwia zarządzanie aktualną aplikacją bibliotekową.
+*/
+/*! \fn KuszkAPI::Application::DllApp::DllApp(void)
+    \brief Domyślny konstruktor.
+
+Brak specjalnych operacji do opisu.
+*/
+*/
+/*! \fn KuszkAPI::Application::DllApp::~DllApp(void)
+    \brief Dokonuje zwolnienia użytych zasobów.
+
+Brak specjalnych operacji do opisu.
+*/

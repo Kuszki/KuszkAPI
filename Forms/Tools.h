@@ -1,0 +1,18 @@
+#ifndef _KUSZKAPI_FORMS_CONTANIERS_H
+#define _KUSZKAPI_FORMS_CONTANIERS_H
+
+// ---- HEADERS DECLARATIONS ----
+#include "Tools\Declarations.h"
+// ------------------------------
+
+// ---- HEADERS DEFINITIONS -----
+#include "Tools\GdiObject.cpp"
+#include "Tools\Bitmap.cpp"
+#include "Tools\Icon.cpp"
+#include "Tools\Cursor.cpp"
+#include "Tools\Brush.cpp"
+#include "Tools\Region.cpp"
+#include "Tools\Images.cpp"
+// ------------------------------
+
+#endif

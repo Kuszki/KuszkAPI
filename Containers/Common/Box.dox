@@ -1,0 +1,145 @@
+/*! \file
+    \brief Zawiera doumentacje dla pliku Box.cpp.
+
+Dokumentacja zamieszczona w innym pliku pomaga uniknąć chaosu w organizacji kodu.
+*/
+
+/*! \file Box.cpp
+    \brief Zawiera implementacje szablonu klasy Box.
+
+Implementacja każdej klasy w innym pliku pomaga uniknąć chaosu w organizacji kodu.
+*/
+
+/*! \class KuszkAPI::Containers::Box
+    \brief Implementacja szablonu pudełka dla modułu kontenerów.
+    \tparam tnData Typ obiektów przechowywanych przez organizacje.
+    \note Elementy indeksowane są od 1. Indeks 0 wskazuje na ostatni element, a elementy ujemne oznaczają przesunięcie do tyłu względem ostatniego elementu.
+    \warning Klasa użyta jako parametr szablonu musi mieć zdefiniowany konstruktor kopiujący.
+    \todo Należy zaimplementować mechanizm wyjątków.
+
+Kalasa stanowi implementacje szablonu pudełka do przechowywania danych. Organizacja zarządza pamięcią dynamicznie i pozwala przechowywać obiekty wszystkich klas posiadających konstruktor kopiujący.
+*/
+/*! \var KuszkAPI::Containers::Box::vPointers
+    \brief Wskaźniki na dane.
+
+Wektor przechowuje adresy komurek pamięci w których znajdują się obiekty zawarte w kontenerze. Taka organizacja pozwala przechowywać elementy dowolnych typów wraz z zaawansowanymi strukturami danych.
+*/
+/*! \var KuszkAPI::Containers::Box::uIlosc
+    \brief Liczba obiektów w kontenerze.
+    \todo Pole należy zastąpić użyciem odpowiedniej metody z klasy Vector.
+
+Przechowuje aktualną liczbę obiektów zawartych w kontenerze.
+*/
+/*! \fn KuszkAPI::Containers::Box::Box(const Box<tnData>&)
+    \brief Konstruktor kopiujący.
+    \param [in] bBox Organizacja źródłowa.
+
+Kopiuje wybrany obiekt.
+*/
+/*! \fn KuszkAPI::Containers::Box::Box(void)
+    \brief Domyślny konstruktor.
+
+Dokonuje inicjacji obiektu.
+*/
+/*! \fn KuszkAPI::Containers::Box::~Box(void)
+    \brief Dekonstruktor.
+
+Niszczy wszystkie obiekty przechowywane przez kontener.
+*/
+/*! \fn unsigned KuszkAPI::Containers::Box::Add(const tnData&, int, bool)
+    \brief Dodaje wybrany element do organizacji.
+    \param [in] tData Element do dodania.
+    \param [in] iPos Numer elementu względem którego ma zostać dodany nowy element. Dostępne wartości:\n
+                0 - wskazuje na ostatni element (domyślnie).\n
+                wartość dodatnia - elementy numerowane są rosnąco zaczynając od 1.\n
+                wartość ujemna - elementy numerowane są malejąco licząc od 0.
+    \param [in] bMode Sposób w jaki ma być dodany nowy element. Dostępne wartości to:\n
+                #ADD_AFTER - dodaje objekt za wybranym elementem (domyślnie).\n
+                #ADD_BEFORE - dodaje obiekt przed wybranym elementem.
+    \return Aktualna liczba elementów.
+
+Kopiuje obiekt przekazywany w parametrze i dodaje go do organizacji.
+*/
+/*! \fn unsigned KuszkAPI::Containers::Box::Add(tnData*, int, bool)
+    \brief Dodaje wybrany element do organizacji.
+    \param [in] ptData Wskaźnik na element do dodania.
+    \param [in] iPos Numer elementu względem którego ma zostać dodany nowy element. Dostępne wartości:\n
+                0 - wskazuje na ostatni element (domyślnie).\n
+                wartość dodatnia - elementy numerowane są rosnąco zaczynając od 1.\n
+                wartość ujemna - elementy numerowane są malejąco licząc od 0.
+    \param [in] bMode Sposób w jaki ma być dodany nowy element. Dostępne wartości to:\n
+                #ADD_AFTER - dodaje objekt za wybranym elementem (domyślnie).\n
+                #ADD_BEFORE - dodaje obiekt przed wybranym elementem.
+    \return Aktualna liczba elementów.
+    \warning Element nie zostaje skopiowany, więc gdy zostanie usunięty bez pośrednictwa kontenera może spowodować niezamierzone konsekfencje.
+
+Dodaje obiekt na który wskazuje parametr do organizacji.
+*/
+/*! \fn bool KuszkAPI::Containers::Box::Delete(unsigned)
+    \brief Usuwa wybrany obiekt z kontenera.
+    \param [in] iNumer Indeks usuwanego obiektu.
+    \return Powodzenie operacji.\n
+            true - element został usunięty,\n
+            false - element nie został usunięty (przyczyną może być błąd w trakcie usuwania elementu, lub brak elementu o podanym indeksie).
+
+Umożliwia usunięcie wybranego obiektu z kontenera, operacja jest nieodwracalna.
+*/
+/*! \fn const tnData& KuszkAPI::Containers::Box::GetData(int) const
+    \brief Zwraca stałą referencje do wybranego obiektu.
+    \param [in] iNumer Indeks wybranego elementu. Dostępne wartości:\n
+                0 - wskazuje na ostatni element (domyślnie).\n
+                wartość dodatnia - elementy numerowane są rosnąco zaczynając od 1.\n
+                wartość ujemna - elementy numerowane są malejąco licząc od 0.
+    \return Stała referencja do wybranego obiektu.
+    \warning W przypadku niepowodzenia zwraca stałą referencje do obiektu Vector::tAbstract.
+
+Sprawdza czy element o podanym indeksie istnieje i zwraca jego stałą referencje lub element abstrakcyjny.
+*/
+/*! \fn unsigned KuszkAPI::Containers::Box::Capacity(void) const
+    \brief Zwraca ilość przechowywanych obiektów.
+    \return Ilość przechowywanych obiektów.
+
+Zwraca kopie zmiennej KuszkAPI::Containers::Box::uIlosc.
+*/
+/*! \fn bool KuszkAPI::Containers::Box::Empty(void) const
+    \brief Sprawdza, czy kontener jest pusty.
+    \return Stan kontenera.\n
+            true - pusty,\n
+            false - zawierający obiekty.
+
+Zwraca kopie zmiennej KuszkAPI::Containers::Box::uIlosc zrzutowaną na typ "bool".
+*/
+/*! \fn void KuszkAPI::Containers::Box::Clean(void)
+    \brief Czyści kontener.
+
+Usuwa wszystkie dane z kontenera.
+*/
+/*! \fn tnData& KuszkAPI::Containers::Box::operator[](int)
+    \brief Zwraca referencje do wybranego obiektu.
+    \param [in] iNumer Indeks wybranego elementu. Dostępne wartości:\n
+                0 - wskazuje na ostatni element (domyślnie).\n
+                wartość dodatnia - elementy numerowane są rosnąco zaczynając od 1.\n
+                wartość ujemna - elementy numerowane są malejąco licząc od 0.
+    \return Referencja do wybranego obiektu.
+    \warning W przypadku niepowodzenia zwraca referencje do obiektu KuszkAPI::Containers::Box::tAbstract.
+
+Sprawdza czy element o podanym indeksie istnieje i zwraca jego referencje lub element abstrakcyjny.
+*/
+/*! \fn const tnData& KuszkAPI::Containers::Box::operator[](int) const
+    \brief Zwraca stałą referencje do wybranego obiektu.
+    \param [in] iNumer Indeks wybranego elementu. Dostępne wartości:\n
+                0 - wskazuje na ostatni element (domyślnie).\n
+                wartość dodatnia - elementy numerowane są rosnąco zaczynając od 1.\n
+                wartość ujemna - elementy numerowane są malejąco licząc od 0.
+    \return Stała referencja do wybranego obiektu.
+    \warning W przypadku niepowodzenia zwraca stałą referencje do obiektu KuszkAPI::Containers::Box::tAbstract.
+
+Sprawdza czy element o podanym indeksie istnieje i zwraca jego stałą referencje lub element abstrakcyjny.
+*/
+/*! \fn Box<tnData>& KuszkAPI::Containers::Box::operator=(const Box<tnData>&)
+    \brief Kopiuje wybraną organizacje tworząc bierzącą organizajce na jej podstawie.
+    \param [in] bBox Wybrana organizacja.
+    \return Referencja do aktualnej organizacji.
+
+Czyści bierzącą organizacje i kopiuje wszystkie elementy wybranej organizacji do bierzącej zachowując ich kolejność.
+*/

@@ -1,0 +1,115 @@
+/*! \file
+    \brief Zawiera doumentacje dla pliku Container.cpp.
+
+Dokumentacja zamieszczona w innym pliku pomaga uniknąć chaosu w organizacji kodu.
+*/
+
+/*! \file Container.cpp
+    \brief Zawiera implementacje klasy Container.
+
+Implementacja każdej klasy w innym pliku pomaga uniknąć chaosu w organizacji kodu.
+*/
+
+/*! \class KuszkAPI::Containers::Container
+    \brief Implementacja bazy dla modułu kontenerów.
+
+Kalasa stanowi implementacje podstawowych pól i metod używanych w klasach reprezentujących bardziej wyszczególnione kontenery.
+*/
+/*! \var KuszkAPI::Containers::Container::uIlosc
+    \brief Liczba przechowywanych obiektów.
+
+Przechowuje informacje o ilości obiektów przechowywanych w instancji kontenera.
+*/
+/*! \var KuszkAPI::Containers::Container::uMode
+    \brief Tryb pracy kontenera.
+    \bug Brak pewności czy mechanizm trybu pracy działa. Zostanie to sprawdzone i zaimplementowane w razie potrzeby w kolejnych wersjach modułu.
+    \test Należy przetestować działanie mechanizmu trybu pracy w poszczególnych kontenerach.
+
+Determinuje tryb pracy kontenera (kolejka lub stos), dostępne wartości to:\n
+#MODE_QUEUE - kolejka (domyślnie),\n
+#MODE_HEEP - stos.
+*/
+/*! \fn KuszkAPI::Containers::Container::Container(void)
+    \brief Domyślny konstruktor.
+
+Przy inicjacji obiektu ustala tryb pracy na domyślny (MODE_QUEUE).
+*/
+/*! \fn KuszkAPI::Containers::Container::~Container(void)
+    \brief Dekonstruktor.
+
+Niszczy wszystkie obiekty przechowywane przez kontener i zwalnia użyte zasoby.
+*/
+/*! \fn unsigned KuszkAPI::Containers::Container::Capacity(void) const
+    \brief Zwraca ilość przechowywanych obiektów.
+    \return Ilość przechowywanych obiektów.
+
+Zwraca kopie zmiennej KuszkAPI::Containers::Container::uIlosc.
+*/
+/*! \fn bool KuszkAPI::Containers::Container::Empty(void) const
+    \brief Sprawdza, czy kontener jest pusty.
+    \return Stan kontenera.\n
+            true - pusty,\n
+            false - zawierający obiekty.
+
+Zwraca kopie zmiennej KuszkAPI::Containers::Container::uIlosc zrzutowaną na typ "bool".
+*/
+/*! \fn void KuszkAPI::Containers::Container::SetMode(unsigned)
+    \brief Ustala nowy tryb pracy kontenera.
+    \param [in] uNewMode Nowy tryb pracy. Dostępne tryby to:\n
+                         #MODE_QUEUE - tryb kolejki,\n
+                         #MODE_HEEP - tryb stosu.
+
+Pozwala ustalić nowy tryb pracy kontenera po jego utworzeniu i zapełnieniu danymi.
+*/
+/*! \fn unsigned KuszkAPI::Containers::Container::GetMode(void) const
+    \brief Zwraca tryb pracy kontenera.
+    \return Tryb pracy kontenera.\n
+            #MODE_QUEUE - tryb kolejki,\n
+            #MODE_HEEP - tryb stosu.
+
+Pozwala uzyskać aktualny tryb pracy kontenera.
+*/
+/*! \fn bool KuszkAPI::Containers::Container::operator bool(void) const
+    \brief Sprawdza, czy kontener jest pusty.
+    \note Narzędzie przydatne do zwiększenia zwięzłości kodu.
+    \return Stan kontenera.\n
+            true - pusty,\n
+            false - zawierający obiekty.
+
+Wywołuje metodę KuszkAPI::Containers::Container::Capacity i zwraca jej wartość.
+*/
+/*! \fn virtual bool KuszkAPI::Containers::Container::Delete(unsigned)
+    \brief Usuwa wybrany obiekt z kontenera.
+    \param [in] iNumer Indeks usuwanego obiektu.
+    \return Powodzenie operacji.\n
+            true - element został usunięty,\n
+            false - element nie został usunięty (przyczyną może być błąd w trakcie usuwania elementu, lub brak elementu o podanym indeksie).
+
+Umożliwia usunięcie wybranego obiektu z kontenera, operacja jest nieodwracalna.
+*/
+/*! \fn virtual void KuszkAPI::Containers::Container::Clean(void)
+    \brief Czyści kontener.
+
+Usuwa wszystkie dane z kontenera.
+*/
+/*! \fn static bool KuszkAPI::Containers::Container::Change(tnData&, tnData&)
+    \brief Zamienia wartości obiektów.
+    \warning Stosowalne tylko dla obiektów z przeciążonym operatorem przypisania.
+    \tparam tnData Typ opiektów.
+    \param [in, out] tOne Referencja do pierwszego obiektu.
+    \param [in, out] tTwo Referencja do drugiego obiektu.
+    \return Powodzenie operacji.\n
+            true - elementy zostały zamienione,\n
+            false - elementy nie zostały zamienione.
+
+Umożliwia zamiane wartości dwóch obiektów, operacja jest odwracalna.
+*/
+/*! \fn static void KuszkAPI::Containers::Container::Copy(const tnData&, tnData&)
+    \brief Kopiuje obiekt.
+    \warning Stosowalne tylko dla obiektów typów prostych i struktur.
+    \tparam tnData Typ opiektów.
+    \param [in] tSource Stała referencja do obiektu źródłowego.
+    \param [out] tDestonation Referencja do obiektu docelowego.
+
+Umożliwia skopiowanie wartości jednego obiektu do drugiego.
+*/

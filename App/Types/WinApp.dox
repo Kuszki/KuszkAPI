@@ -1,0 +1,86 @@
+/*! \file
+    \brief Zawiera doumentacje dla pliku WinApp.cpp.
+
+Dokumentacja zamieszczona w innym pliku pomaga uniknąć chaosu w organizacji kodu.
+*/
+
+/*! \file WinApp.cpp
+    \brief Zawiera implementacje klasy WinApp.
+
+Implementacja każdej klasy w innym pliku pomaga uniknąć chaosu w organizacji kodu.
+*/
+
+/*! \class KuszkAPI::Application::WinApp
+    \brief Implementacja modelu aplikacji okienkowej.
+
+Klasa dziedziczy składowe klasy App, a jej zastosowanie ułatwia zarządzanie aktualną aplikacją.
+*/
+/*! \var KuszkAPI::Application::WinApp::hMutex
+    \brief Uchwyt mutexu tworzonego przy inicjacji obiektu.
+
+Mutex wykorzystywany jest by umożliwić ograniczenie instancji aplikacji do jednej.
+*/
+/*! \var KuszkAPI::Application::WinApp::Fonts
+    \brief Kontener przechowujący czcionki związane z aplikacją.
+
+Zawiera utworzone przez siebie czcionki i pozwala na zarządzanie nimi. Utworzone obiekty są indeksowane za pomocą typu "unsigned int".
+*/
+/*! \var KuszkAPI::Application::WinApp::Terminal
+    \brief Obiekt reprezentujący konsole używaną jako interfejs użytkownika.
+    \warning Konsola działać będzie w bierzącym wątku.
+
+Konsola używana do sterowania aplikacją jest domyślnie wyłączona.
+*/
+/*! \var KuszkAPI::Application::WinApp::Window
+    \brief Obiekt reprezentujący główne okno aplikacji.
+    \warning Model zakłada jedynie jedno okno używane przez aplikacje.
+
+Ułatwia kontrolowanie okna używanego jako interfejs użytkownika lub narzędzie do obsługi zdarzeń.
+*/
+/*! \var KuszkAPI::Application::WinApp::Interface
+    \brief Obiekt reprezentujący dialogi używane przez aplikacje.
+
+Zawiera zarówno domyślne dialogi, jak i te tworzone przez programiste.
+*/
+/*! \var KuszkAPI::Application::WinApp::Notification
+    \brief Obiekt reprezentujący obszar powiadamiania.
+    \warning Zdarzenia obszaru powiadamiania kierowane są do głownego okna aplikacji.
+
+Umożliwia edycje obszaru powiadamiania i ułatwia jego obsługę.
+*/
+/*! \fn KuszkAPI::Application::WinApp::WinApp(bool)
+    \brief Domyślny konstruktor.
+    \note Przydatne rozwiązanie gdy aplikacja nie posiada okna głównego lub jest ono celowo niewidoczne.
+    \param [in] bSingle Ustala czy aplikacja może występować tylko w jednej instancji. Dostępne rozwiązania to:\n
+                        false - nie (domyślnie),\n
+                        true - tak.
+
+Konstruktor umożliwia ograniczenie instancji aplikacji do jednej wykorzystując mechanizm mutexów. Uchwyt do utworzonego mutexu przechowuje zmienna KuszkAPI::Application::WinApp::hMutex.
+*/
+/*! \fn KuszkAPI::Application::WinApp::WinApp(const Containers::String&, const Containers::String&)
+    \brief Dodatkowy konstruktor.
+    \note Przydatne rozwiązanie gdy aplikacja posiada okno główne z którego korzysta użytkownik.
+    \param [in] sClass Nazwa klasy okna.
+    \param [in] sWnd Nazwa okna.
+
+Konstruktor umożliwia ograniczenie instancji aplikacji do jednej. Zostanie wyszukane okno o podanych parametrach i przywrócone na pulpit po czym aplikacja ulegnie zamknięciu.
+*/
+/*! \fn KuszkAPI::Application::WinApp::~WinApp(void)
+    \brief Dokonuje zwolnienia użytych zasobów.
+
+Dodatkowo zwalnia uchwyt mutexa KuszkAPI::Application::WinApp::hMutex w przypadku wcześniejszej potrzeby jego użycia.
+*/
+/*! \fn Containers::String KuszkAPI::Application::WinApp::Debug(Containers::String, Containers::String, Containers::String, Containers::String, Containers::String, Containers::String)
+    \brief Wyświetla komunikat debugowania aplikacji w konsoli.
+    \note Wygodniej użyć makra Debug(sStr).
+    \param [in] sTekst Wiadomość dla użytkownika.
+    \param [in] sDate Data wystąpienia zdarzenia lub jej opis.
+    \param [in] sTime Czas wystąpienia zdarzenia lub jego opis.
+    \param [in] sFile Nazwa pliku którego dotyczy zdarzenie lub jego opis.
+    \param [in] sFunction Nazwa funkcji której dotyczy zdarzenie lub jej opis.
+    \param [in] sLine Numer linii w której nastąpiło zdarzenie lub jej opis.
+    \return Odpowiedź użytkownika na komunikat.
+    \see Debug(sStr)
+
+Wświetla wiadomość w konsoli po uprzedniej jej aktywacji o ile to konieczne, pobiera od użytkownika odpowiedź i pozostawia konsole w poprzednim stanie.
+*/
