@@ -7,6 +7,7 @@ Po dołączeniu dyrektywą "include" do projektu zostaną dodane wszystkie skła
 #ifndef _KUSZKAPI_H
 #define _KUSZKAPI_H
 
+//TEST
 namespace KuszkAPI {};
 
 #define KUSZKAPI_NAMESPACE(name) namespace KuszkAPI { namespace name {
