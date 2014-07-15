@@ -1,5 +1,0 @@
-<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
-<area shape="rect" id="node1" href="$class_kuszk_a_p_i_1_1_application_1_1_app.html" title="Implementacja bazy dla modułu aplikacji. " alt="" coords="6,45,189,72"/>
-<area shape="rect" id="node2" href="$class_kuszk_a_p_i_1_1_application_1_1_dll_app.html" title="Implementacja modelu aplikacji bibliotekowej. " alt="" coords="237,5,389,46"/>
-<area shape="rect" id="node3" href="$class_kuszk_a_p_i_1_1_application_1_1_win_app.html" title="Implementacja modelu aplikacji okienkowej. " alt="" coords="237,70,389,111"/>
-</map>
