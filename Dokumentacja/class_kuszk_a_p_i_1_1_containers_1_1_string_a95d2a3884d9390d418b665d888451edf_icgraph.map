@@ -1,8 +1,0 @@
-<map id="KuszkAPI::Containers::String::Contain" name="KuszkAPI::Containers::String::Contain">
-<area shape="rect" id="node2" href="$class_kuszk_a_p_i_1_1_forms_1_1_bitmap.html#a99b745a2bbbbf2bcc5cf603238cf1cb3" title="KuszkAPI::Forms::Bitmap\l::Load" alt="" coords="206,5,381,46"/>
-<area shape="rect" id="node3" href="$class_kuszk_a_p_i_1_1_forms_1_1_icon.html#a8a7697aa166405a230a130320f887211" title="KuszkAPI::Forms::Icon\l::Load" alt="" coords="215,70,372,111"/>
-<area shape="rect" id="node4" href="$class_kuszk_a_p_i_1_1_forms_1_1_cursor.html#ae3910a0c24bf5eae465140e680cb063a" title="KuszkAPI::Forms::Cursor\l::Load" alt="" coords="208,135,379,177"/>
-<area shape="rect" id="node5" href="$class_kuszk_a_p_i_1_1_containers_1_1_strings.html#a67ba13de7be7201b1d86c4762424cfa1" title="KuszkAPI::Containers\l::Strings::LoadFromFile" alt="" coords="214,201,373,242"/>
-<area shape="rect" id="node6" href="$class_kuszk_a_p_i_1_1_core_1_1_reg.html#a0b1bba511ac0b7d6377694d5a78d3ad8" title="KuszkAPI::Core::Reg\l::Open" alt="" coords="220,266,367,307"/>
-<area shape="rect" id="node7" href="$class_kuszk_a_p_i_1_1_core_1_1_ini.html#a85379832bd93ba7dad6f44e90f15e371" title="KuszkAPI::Core::Ini\l::SetFile" alt="" coords="225,331,361,373"/>
-</map>

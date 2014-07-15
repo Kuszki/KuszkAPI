@@ -1,5 +1,0 @@
-<map id="KuszkAPI::Containers::Vector::Vector" name="KuszkAPI::Containers::Vector::Vector">
-<area shape="rect" id="node2" href="$class_kuszk_a_p_i_1_1_containers_1_1_container.html#a378e21dde84b19b1a9a10fed9234aefa" title="Zwraca ilość przechowywanych obiektów. " alt="" coords="206,5,357,46"/>
-<area shape="rect" id="node3" href="$class_kuszk_a_p_i_1_1_containers_1_1_array.html#ab996e7ad2a6da444cfd8f2553b9b4070" title="Zwraca adres pamięci w którym znajduje się początek organizacji. " alt="" coords="206,70,357,111"/>
-<area shape="rect" id="node4" href="$class_kuszk_a_p_i_1_1_containers_1_1_container.html#a4a2ac99d90acfaf1acb0c25b3bc93210" title="Zwraca tryb pracy kontenera. " alt="" coords="206,135,357,177"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="KuszkAPI::Containers::Strings" name="KuszkAPI::Containers::Strings">
-<area shape="rect" id="node2" href="$class_kuszk_a_p_i_1_1_containers_1_1_list.html" title="KuszkAPI::Containers\l::List\&lt; KuszkAPI::Containers\l::String \&gt;" alt="" coords="819,155,1010,211"/>
-<area shape="rect" id="node3" href="$class_kuszk_a_p_i_1_1_containers_1_1_container.html" title="Implementacja bazy dla modułu kontenerów. " alt="" coords="203,95,354,137"/>
-<area shape="rect" id="node11" href="$class_kuszk_a_p_i_1_1_containers_1_1_list.html" title="Implementacja szablonu listy dla modułu kontenerów. " alt="" coords="473,231,623,273"/>
-<area shape="rect" id="node4" href="$namespace_3global_scope_4.html#classunsigned" title="unsigned" alt="" coords="7,56,81,83"/>
-<area shape="rect" id="node5" href="$class_kuszk_a_p_i_1_1_containers_1_1_string.html" title="KuszkAPI::Containers\l::String" alt="" coords="203,167,354,209"/>
-<area shape="rect" id="node9" href="$class_kuszk_a_p_i_1_1_containers_1_1_list.html#struct_kuszk_a_p_i_1_1_containers_1_1_list_1_1_item_data" title="Struktura przechowująca wskaźnik na element listy oraz wskaźnik na kolejny obiekt. " alt="" coords="192,330,365,371"/>
-</map>

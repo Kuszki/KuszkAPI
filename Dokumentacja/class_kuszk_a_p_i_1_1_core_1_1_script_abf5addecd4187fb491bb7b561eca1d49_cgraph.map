@@ -1,7 +1,0 @@
-<map id="KuszkAPI::Core::Script::GetQuotes" name="KuszkAPI::Core::Script::GetQuotes">
-<area shape="rect" id="node2" href="$class_kuszk_a_p_i_1_1_containers_1_1_strings.html#a85279e4024226c7d0a89c0f51771db54" title="KuszkAPI::Containers\l::Strings::All" alt="" coords="211,5,362,46"/>
-<area shape="rect" id="node4" href="$class_kuszk_a_p_i_1_1_containers_1_1_strings.html#a89fcfadc786b1736408189065ce5deaf" title="KuszkAPI::Containers\l::Strings::Capacity" alt="" coords="211,70,362,111"/>
-<area shape="rect" id="node5" href="$class_kuszk_a_p_i_1_1_containers_1_1_string.html#a4dcb84e56f7d2cfb8a12846d0f86ab4d" title="KuszkAPI::Containers\l::String::Count" alt="" coords="211,135,362,177"/>
-<area shape="rect" id="node6" href="$class_kuszk_a_p_i_1_1_containers_1_1_strings.html#a65d04e46a0b67df68730abe6054aab28" title="KuszkAPI::Containers\l::Strings::Delete" alt="" coords="211,201,362,242"/>
-<area shape="rect" id="node3" href="$class_kuszk_a_p_i_1_1_containers_1_1_string.html#a8ca4879ad62f0f4521b7e13eaa711c2c" title="KuszkAPI::Containers\l::String::GetData" alt="" coords="411,5,562,46"/>
-</map>
