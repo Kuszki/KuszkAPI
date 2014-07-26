@@ -2,7 +2,7 @@
 #define _KUSZKAPI_FORMS_CONTANIERS_H
 
 // ---- HEADERS DECLARATIONS ----
-#include "Tools\Declarations.h"
+#include "Tools\Declarations.hpp"
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----

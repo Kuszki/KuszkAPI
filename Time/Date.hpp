@@ -13,7 +13,7 @@
 // ------------------------------
 
 // ---- HEADERS DECLARATIONS ----
-#include "Date\Declarations.h"
+#include "Date\Declarations.hpp"
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----

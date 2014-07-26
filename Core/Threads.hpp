@@ -2,7 +2,7 @@
 #define _KUSZKAPI_CORE_THREADS_H
 
 // ---- HEADERS DECLARATIONS ----
-#include "Threads\Declarations.h"
+#include "Threads\Declarations.hpp"
 // ------------------------------
 
 // ----- MACROS DEFINITIONS -----

@@ -2,7 +2,7 @@
 #define _KUSZKAPI_CORE_DATA_H
 
 // ---- HEADERS DECLARATIONS ----
-#include "Data\Declarations.h"
+#include "Data\Declarations.hpp"
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----

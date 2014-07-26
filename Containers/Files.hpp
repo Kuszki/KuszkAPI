@@ -1,5 +1,5 @@
 /*! \file
-    \brief Dołącza składnik obsługi plików z modułu Containers.h.
+    \brief Dołącza składnik obsługi plików z modułu Containers.hpp.
     \warning Należy dołączyć brakujące zależności ręcznie.
 
 Po dołączeniu dyrektywą "include" do projektu zostanie dodany wyłącznie moduł obsługi plików.
@@ -18,7 +18,7 @@ Po dołączeniu dyrektywą "include" do projektu zostanie dodany wyłącznie mod
 // ------------------------------
 
 // ---- HEADERS DECLARATIONS ----
-#include "Files\Declarations.h"
+#include "Files\Declarations.hpp"
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----

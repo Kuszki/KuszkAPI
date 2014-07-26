@@ -1,7 +1,7 @@
 /*! \file
     \brief Dołącza do projektu moduł jądra.
     \warning Należy dołączyć brakujące zależności ręcznie.
-    \see Containers.h
+    \see Containers.hpp
 
 Po dołączeniu dyrektywą "include" do projektu zostaną dodane wszystkie składowe modułu jądra takie jak obsługa konsoli, bibliotek DLL, wątków i innych obiektów związanych z kontrolą działania aplikacji.
 */
@@ -14,10 +14,10 @@ Po dołączeniu dyrektywą "include" do projektu zostaną dodane wszystkie skła
 // ------------------------------
 
 // ------ OWN USED HEADERS ------
-#include "Core\Parts.h"
-#include "Core\Data.h"
-#include "Core\Run.h"
-#include "Core\Threads.h"
+#include "Core\Parts.hpp"
+#include "Core\Data.hpp"
+#include "Core\Run.hpp"
+#include "Core\Threads.hpp"
 // ------------------------------
 
 #endif

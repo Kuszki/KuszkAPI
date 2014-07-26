@@ -8,7 +8,7 @@
 // ------------------------------
 
 // ---- HEADERS DECLARATIONS ----
-#include "Base\Declarations.h"
+#include "Base\Declarations.hpp"
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----

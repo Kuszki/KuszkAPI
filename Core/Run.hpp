@@ -6,7 +6,7 @@
 // ------------------------------
 
 // ---- HEADERS DECLARATIONS ----
-#include "Run\Declarations.h"
+#include "Run\Declarations.hpp"
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----

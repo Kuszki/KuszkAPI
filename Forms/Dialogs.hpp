@@ -2,7 +2,7 @@
 #define _KUSZKAPI_FORMS_DIALOGS_H
 
 // ---- HEADERS DECLARATIONS ----
-#include "Dialogs\Declarations.h"
+#include "Dialogs\Declarations.hpp"
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----

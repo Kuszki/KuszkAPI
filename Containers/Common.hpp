@@ -1,5 +1,5 @@
 /*! \file
-    \brief Dołącza powszechne składniki modułu Containers.h.
+    \brief Dołącza powszechne składniki modułu Containers.hpp.
     \warning Należy dołączyć brakujące zależności ręcznie.
 
 Po dołączeniu dyrektywą "include" do projektu zostaną dodane wyłącznie powszechne składowe modułu kontenerów takie jak szablony modelów listy, wektora, tablicy, pudełka i mapy.
@@ -9,7 +9,7 @@ Po dołączeniu dyrektywą "include" do projektu zostaną dodane wyłącznie pow
 #define _KUSZKAPI_CONTANIERS_COMMON_H
 
 // ---- HEADERS DECLARATIONS ----
-#include "Common\Declarations.h"
+#include "Common\Declarations.hpp"
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----

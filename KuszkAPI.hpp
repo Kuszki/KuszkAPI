@@ -23,12 +23,12 @@ namespace KuszkAPI {};
 // ------------------------------
 
 // ---- KUSZKAPI DEFINITIONS ----
-#include "Containers.h"
-#include "Time.h"
-#include "Core.h"
-#include "Forms.h"
-#include "Sockets.h"
-#include "App.h"
+#include "Containers.hpp"
+#include "Time.hpp"
+#include "Core.hpp"
+#include "Forms.hpp"
+#include "Sockets.hpp"
+#include "App.hpp"
 // ------------------------------
 
 #endif

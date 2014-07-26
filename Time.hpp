@@ -1,7 +1,7 @@
 /*! \file
     \brief Dołącza do projektu moduł przechwoywania czasu i daty.
     \warning Należy dołączyć brakujące zależności ręcznie.
-    \see Containers.h
+    \see Containers.hpp
 
 Po dołączeniu dyrektywą "include" do projektu zostaną dodane wszystkie składowe modułu czasu takie jak wygodny model daty i godziny.
 */
@@ -18,8 +18,8 @@ Po dołączeniu dyrektywą "include" do projektu zostaną dodane wszystkie skła
 // ------------------------------
 
 // ------ OWN USED HEADERS ------
-#include "Time\Time.h"
-#include "Time\Date.h"
+#include "Time\Time.hpp"
+#include "Time\Date.hpp"
 // ------------------------------
 
 #endif

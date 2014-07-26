@@ -8,7 +8,7 @@
 // ------------------------------
 
 // ---- HEADERS DECLARATIONS ----
-#include "Fonts\Declarations.h"
+#include "Fonts\Declarations.hpp"
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----

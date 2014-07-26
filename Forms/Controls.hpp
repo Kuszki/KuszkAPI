@@ -2,7 +2,7 @@
 #define _KUSZKAPI_FORMS_CONTROLS_H
 
 // ---- HEADERS DECLARATIONS ----
-#include "Controls\Declarations.h"
+#include "Controls\Declarations.hpp"
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----

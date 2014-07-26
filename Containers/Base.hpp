@@ -1,5 +1,5 @@
 /*! \file
-    \brief Dołącza bazowe składniki modułu Containers.h.
+    \brief Dołącza bazowe składniki modułu Containers.hpp.
 
 Po dołączeniu dyrektywą "include" do projektu zostaną dodane wyłącznie bazowe składowe modułu kontenerów takie jak abstrakcyjna klasa kontenera.
 */
@@ -17,7 +17,7 @@ Po dołączeniu dyrektywą "include" do projektu zostaną dodane wyłącznie baz
 // ------------------------------
 
 // ---- HEADERS DECLARATIONS ----
-#include "Base\Declarations.h"
+#include "Base\Declarations.hpp"
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----

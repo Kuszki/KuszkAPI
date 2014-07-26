@@ -8,7 +8,7 @@
 // ------------------------------
 
 // ---- HEADERS DECLARATIONS ----
-#include "Time\Declarations.h"
+#include "Time\Declarations.hpp"
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----

@@ -1,11 +1,11 @@
 /*! \file
     \brief Dołącza do projektu moduł aplikacji.
     \warning Należy dołączyć brakujące zależności ręcznie.
-    \see Containers.h
-    \see Core.h
-    \see Forms.h
-    \see Sockets.h
-    \see Time.h
+    \see Containers.hpp
+    \see Core.hpp
+    \see Forms.hpp
+    \see Sockets.hpp
+    \see Time.hpp
 
 Po dołączeniu dyrektywą "include" do projektu zostaną dodane wszystkie składowe modułu aplikacji takie jak model aplikacji okienkowej, konsolowej, czy biblioteki DLL.
 */
@@ -18,8 +18,8 @@ Po dołączeniu dyrektywą "include" do projektu zostaną dodane wszystkie skła
 // ------------------------------
 
 // ------ OWN USED HEADERS ------
-#include "App\Base.h"
-#include "App\Types.h"
+#include "App\Base.hpp"
+#include "App\Types.hpp"
 // ------------------------------
 
 // ----- MACROS DEFINITIONS -----

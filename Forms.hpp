@@ -1,7 +1,7 @@
 /*! \file
     \brief Dołącza do projektu moduł graficznego interfejsu użytkownika.
     \warning Należy dołączyć brakujące zależności ręcznie.
-    \see Containers.h
+    \see Containers.hpp
 
 Po dołączeniu dyrektywą "include" do projektu zostaną dodane wszystkie składowe modułu interfejsu graficznego takie jak obsługa okien, dialogów, czcionek i kontrolek ułatwiających sterowanie aplikacją.
 */
@@ -16,16 +16,16 @@ Po dołączeniu dyrektywą "include" do projektu zostaną dodane wszystkie skła
 // ------------------------------
 
 // ------ MISSING HEADERS -------
-#include "Forms\Headers.h"
+#include "Forms\Headers.hpp"
 // ------------------------------
 
 // ------ OWN USED HEADERS ------
-#include "Forms\Tools.h"
-#include "Forms\Base.h"
-#include "Forms\Controls.h"
-#include "Forms\Form.h"
-#include "Forms\Dialogs.h"
-#include "Forms\Fonts.h"
+#include "Forms\Tools.hpp"
+#include "Forms\Base.hpp"
+#include "Forms\Controls.hpp"
+#include "Forms\Form.hpp"
+#include "Forms\Dialogs.hpp"
+#include "Forms\Fonts.hpp"
 // ------------------------------
 
 #endif

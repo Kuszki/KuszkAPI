@@ -1,11 +1,11 @@
 /*! \file
-    \brief Dołącza wyszczególnione składniki modułu App.h.
+    \brief Dołącza wyszczególnione składniki modułu App.hpp.
     \warning Należy dołączyć brakujące zależności ręcznie.
-    \see Containers.h
-    \see Core.h
-    \see Forms.h
-    \see Sockets.h
-    \see Time.h
+    \see Containers.hpp
+    \see Core.hpp
+    \see Forms.hpp
+    \see Sockets.hpp
+    \see Time.hpp
 
 Po dołączeniu dyrektywą "include" do projektu zostaną dodane wyłącznie dodatkowe składowe modułu aplikacji takie jak zwyczajna i bibliotekowa klasa aplikacji.
 */
@@ -14,7 +14,7 @@ Po dołączeniu dyrektywą "include" do projektu zostaną dodane wyłącznie dod
 #define _KUSZKAPI_APP_TYPES_H
 
 // ---- HEADERS DECLARATIONS ----
-#include "Types\Declarations.h"
+#include "Types\Declarations.hpp"
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----

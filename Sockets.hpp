@@ -1,7 +1,7 @@
 /*! \file
     \brief Dołącza do projektu moduł obsługi Socketów.
     \warning Należy dołączyć brakujące zależności ręcznie.
-    \see Containers.h
+    \see Containers.hpp
 
 Po dołączeniu dyrektywą "include" do projektu zostaną dodane wszystkie składowe modułu Socketów takie jak model klienta i serwera aplikacji sieciowej.
 */
@@ -14,9 +14,9 @@ Po dołączeniu dyrektywą "include" do projektu zostaną dodane wszystkie skła
 // ------------------------------
 
 // ------ OWN USED HEADERS ------
-#include "Sockets\Base.h"
-#include "Sockets\Client.h"
-#include "Sockets\Server.h"
+#include "Sockets\Base.hpp"
+#include "Sockets\Client.hpp"
+#include "Sockets\Server.hpp"
 // ------------------------------
 
 #endif

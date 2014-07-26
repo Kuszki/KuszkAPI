@@ -1,5 +1,5 @@
 /*! \file
-    \brief Dołącza składnik obsługi listy łańcuchów znakowych z modułu Containers.h.
+    \brief Dołącza składnik obsługi listy łańcuchów znakowych z modułu Containers.hpp.
     \warning Należy dołączyć brakujące zależności ręcznie.
 
 Po dołączeniu dyrektywą "include" do projektu zostani dodany wyłącznie moduł obsługi listy łańcuchów znakowych.
@@ -18,7 +18,7 @@ Po dołączeniu dyrektywą "include" do projektu zostani dodany wyłącznie modu
 // ------------------------------
 
 // ---- HEADERS DECLARATIONS ----
-#include "Strings\Declarations.h"
+#include "Strings\Declarations.hpp"
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----

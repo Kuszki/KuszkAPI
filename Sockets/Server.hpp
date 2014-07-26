@@ -1,12 +1,12 @@
-#ifndef _KUSZKAPI_SOCKETS_CLIENT_H
-#define _KUSZKAPI_SOCKETS_CLIENT_H
+#ifndef _KUSZKAPI_SOCKETS_SERVER_H
+#define _KUSZKAPI_SOCKETS_SERVER_H
 
 // ---- HEADERS DECLARATIONS ----
-#include "Client\Declarations.h"
+#include "Server\Declarations.hpp"
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----
-#include "Client\Client.cpp"
+#include "Server\Server.cpp"
 // ------------------------------
 
 #endif

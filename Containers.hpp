@@ -25,11 +25,11 @@ Po dołączeniu dyrektywą "include" do projektu zostaną dodane wszystkie skła
 // ------------------------------
 
 // ------ OWN USED HEADERS ------
-#include "Containers\Base.h"
-#include "Containers\Common.h"
-#include "Containers\String.h"
-#include "Containers\Files.h"
-#include "Containers\Strings.h"
+#include "Containers\Base.hpp"
+#include "Containers\Common.hpp"
+#include "Containers\String.hpp"
+#include "Containers\Files.hpp"
+#include "Containers\Strings.hpp"
 // ------------------------------
 
 #endif
