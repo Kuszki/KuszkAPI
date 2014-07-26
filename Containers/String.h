@@ -35,7 +35,7 @@ Po dołączeniu dyrektywą "include" do projektu zostani dodany wyłącznie modu
 // ------------------------------
 
 // ----- MACROS DEFINITIONS -----
-#define S (CString) //!< Skrócone niejawne wywołanie odpowiedniego konstruktora klasy CString. Wygodne w użyciu do konwersji zwykłych łańcuchów lub innych danych na obiekt CString.
+#define S (KuszkAPI::Containers::String) //!< Skrócone niejawne wywołanie odpowiedniego konstruktora klasy CString. Wygodne w użyciu do konwersji zwykłych łańcuchów lub innych danych na obiekt CString.
 // ------------------------------
 
 #endif
