@@ -2,6 +2,10 @@ using namespace KuszkAPI;
 
 KUSZKAPI_NAMESPACE(Sockets)
 
+// --- FUNCTIONS DECLARATIONS ---
+LRESULT CALLBACK ClientHandlerProc(HWND, UINT, WPARAM, LPARAM);
+// ------------------------------
+
 // ---- CLASES DECLARATIONS -----
 class Client;
 // ------------------------------
@@ -12,14 +16,14 @@ class Client : public Socket
 
      protected:
 
+          typedef LRESULT (*ClientProc)(Client*, UINT);
+
           static unsigned uSize;
           static bool bClassRegistered;
 
           static bool Register(void);
 
      public:
-
-          typedef LRESULT (*ClientProc)(Client*, UINT);
 
           Client(SOCKET sSock,
                 const sockaddr_in& sAdr);
@@ -44,11 +48,9 @@ class Client : public Socket
           Client& operator<< (const Containers::String& sMessage);
           Client& operator>> (Containers::String& sMessage);
 
-};
-// ------------------------------
+          friend LRESULT CALLBACK ClientHandlerProc(HWND, UINT, WPARAM, LPARAM);
 
-// --- FUNCTIONS DECLARATIONS ---
-LRESULT CALLBACK ClientHandlerProc(HWND, UINT, WPARAM, LPARAM);
+};
 // ------------------------------
 
 KUSZKAPI_NAMESPACE_END

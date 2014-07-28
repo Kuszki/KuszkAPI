@@ -31,4 +31,10 @@ namespace KuszkAPI {};
 #include "App.hpp"
 // ------------------------------
 
+// ---- SCROUTS DEFINITIONS -----
+#ifndef KUSZKAPI_NOSCROUTS
+#include "Scrouts.hpp"
+#endif
+// ------------------------------
+
 #endif
