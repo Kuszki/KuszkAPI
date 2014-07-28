@@ -1,6 +1,6 @@
 using namespace KuszkAPI;
 
-KuszkAPI::DateTime::Time::Time(const TTime& tTime)
+KuszkAPI::DateTime::Time::Time(const TimeDsc& tTime)
 {
       cSeparator = TEXT(':');
       uShowFlag = HOURS | MINUTES | SECONDS | ZERO;
@@ -46,9 +46,9 @@ void KuszkAPI::DateTime::Time::Refresh(void)
       uCzas = tCzas.tm_hour * 3600 + tCzas.tm_min * 60 + tCzas.tm_sec;
 }
 
-KuszkAPI::DateTime::Time::TTime KuszkAPI::DateTime::Time::GetTime(void) const
+KuszkAPI::DateTime::Time::TimeDsc KuszkAPI::DateTime::Time::GetTime(void) const
 {
-      TTime tWynik;
+      TimeDsc tWynik;
       tWynik.Hour = uCzas / 3600;
       tWynik.Min = uCzas % 3600 / 60;
       tWynik.Sec = uCzas % 3600 % 60;
@@ -73,7 +73,7 @@ unsigned KuszkAPI::DateTime::Time::GetHours(void) const
 Containers::String KuszkAPI::DateTime::Time::Str(TCHAR cFormat, unsigned uFlags) const
 {
       Containers::String sBufor;
-      TTime tTmp = GetTime();
+      TimeDsc tTmp = GetTime();
       if (!cFormat) cFormat = cSeparator;
       if (!uFlags) uFlags = uShowFlag;
       if (uFlags & HOURS){
@@ -150,7 +150,7 @@ DateTime::Time KuszkAPI::DateTime::Time::operator-- (int)
       return tTmp;
 }
 
-KuszkAPI::DateTime::Time::operator TTime (void) const
+KuszkAPI::DateTime::Time::operator TimeDsc (void) const
 {
       return GetTime();
 }

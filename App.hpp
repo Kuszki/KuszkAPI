@@ -1,13 +1,14 @@
 /*! \file
     \brief Dołącza do projektu moduł aplikacji.
     \warning Należy dołączyć brakujące zależności ręcznie.
-    \see Containers.hpp
-    \see Core.hpp
-    \see Forms.hpp
-    \see Sockets.hpp
-    \see Time.hpp
 
 Po dołączeniu dyrektywą "include" do projektu zostaną dodane wszystkie składowe modułu aplikacji takie jak model aplikacji okienkowej, konsolowej, czy biblioteki DLL.
+*/
+
+/*! \namespace KuszkAPI::Application
+    \brief Przestrzeń nazw modułu aplikacji.
+
+Zawiera wszystkie deklaracje i definicje składowych modułu aplikacji.
 */
 
 #ifndef _KUSZKAPI_APP_H
@@ -24,6 +25,7 @@ Po dołączeniu dyrektywą "include" do projektu zostaną dodane wszystkie skła
 
 // ----- MACROS DEFINITIONS -----
 /*! \brief Wywołuje funkcję CWinApp::Debug z wybraną wiadomością dla użytkownika i dodatkowymi predefioniwalnymi macrami.
+           Używane dla wygody w KuszkAPI::Application::WinApp do wywoływania KuszkAPI::Application::WinApp::Debug.
     \param [in] sStr Wiadomość dla użytkownika.
     \return Odpowiedź użytkownika.
 */

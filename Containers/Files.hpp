@@ -11,10 +11,10 @@ Po dołączeniu dyrektywą "include" do projektu zostanie dodany wyłącznie mod
 // ------ MODES DEFINITIONS -----
 /// Odpowiada modelowi pliku strumieniowego.
 /// Należy używać w połączeniu z plikami w których dane zapisywane są za pomocą ciągu bitów.
-#define MODE_STREAM 0
+#define MODE_STREAM      0
 /// Odpowiada modelowi pliku strukturalnego.
 /// Należy używać w połączeniu z plikami w których dane zapisywane są jako uporządkowane wpisy o jednakowej wielkości.
-#define MODE_STRUCT 1
+#define MODE_STRUCT      1
 // ------------------------------
 
 // ---- HEADERS DECLARATIONS ----

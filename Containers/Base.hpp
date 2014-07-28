@@ -10,10 +10,10 @@ Po dołączeniu dyrektywą "include" do projektu zostaną dodane wyłącznie baz
 // ----- MODES DEFINITIONS ------
 /// Odpowiada modelowi kolejki.
 /// Pierwszy element na wejściu jest pierwszym elementem na wyjściu.
-#define MODE_QUEUE 0
+#define MODE_QUEUE  0
 /// Odpowiada modelowi stosu.
 /// Pierwszy element na wejściu jest ostatnim elementem na wyjściu.
-#define MODE_HEEP 1
+#define MODE_HEEP   1
 // ------------------------------
 
 // ---- HEADERS DECLARATIONS ----

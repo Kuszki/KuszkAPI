@@ -6,6 +6,12 @@
 Po dołączeniu dyrektywą "include" do projektu zostaną dodane wszystkie składowe modułu czasu takie jak wygodny model daty i godziny.
 */
 
+/*! \namespace KuszkAPI::DateTime
+    \brief Przestrzeń nazw modułu czasu i daty.
+
+Zawiera wszystkie deklaracje i definicje składowych modułu czasu i daty.
+*/
+
 #ifndef _KUSZKAPI_TIME_H
 #define _KUSZKAPI_TIME_H
 
@@ -14,7 +20,7 @@ Po dołączeniu dyrektywą "include" do projektu zostaną dodane wszystkie skła
 // ------------------------------
 
 // ----- FORMAT DEFINITIONS -----
-#define ZERO 1
+#define ZERO   1
 // ------------------------------
 
 // ------ OWN USED HEADERS ------

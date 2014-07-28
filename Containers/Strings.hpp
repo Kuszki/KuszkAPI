@@ -11,10 +11,10 @@ Po dołączeniu dyrektywą "include" do projektu zostani dodany wyłącznie modu
 // ------ MODES DEFINITIONS -----
 /// Ustala tryb kodowania na ASCII.
 /// Używane jako parametr metod klasy CStrings, pozwala ustalić jak kodowane mają być znaki w odczytywanym lub zapisywanym pliku.
-#define MODE_ASCII 0
+#define MODE_ASCII       0
 /// Ustala tryb kodowania na Unicode.
 /// Używane jako parametr metod klasy CStrings, pozwala ustalić jak kodowane mają być znaki w odczytywanym lub zapisywanym pliku.
-#define MODE_UNICODE 1
+#define MODE_UNICODE     1
 // ------------------------------
 
 // ---- HEADERS DECLARATIONS ----

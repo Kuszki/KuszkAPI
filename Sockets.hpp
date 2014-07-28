@@ -6,6 +6,12 @@
 Po dołączeniu dyrektywą "include" do projektu zostaną dodane wszystkie składowe modułu Socketów takie jak model klienta i serwera aplikacji sieciowej.
 */
 
+/*! \namespace KuszkAPI::Sockets
+    \brief Przestrzeń nazw modułu gniazd.
+
+Zawiera wszystkie deklaracje i definicje składowych modułu gniazd.
+*/
+
 #ifndef _KUSZKAPI_SOCKETS_H
 #define _KUSZKAPI_SOCKETS_H
 

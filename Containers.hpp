@@ -5,6 +5,12 @@
 Po dołączeniu dyrektywą "include" do projektu zostaną dodane wszystkie składowe modułu pojemników takie jak model wektora, listy, obsługa plików i ciągów znakowych.
 */
 
+/*! \namespace KuszkAPI::Containers
+    \brief Przestrzeń nazw modułu kontenerów.
+
+Zawiera wszystkie deklaracje i definicje składowych modułu kontenerów.
+*/
+
 #ifndef _KUSZKAPI_CONTANIERS_H
 #define _KUSZKAPI_CONTANIERS_H
 
@@ -15,13 +21,13 @@ Po dołączeniu dyrektywą "include" do projektu zostaną dodane wszystkie skła
 // ----- FORMAT DEFINITIONS -----
 /// Wskazuje na ostatni element w kontenerze.
 /// Użyty jako indeks elementu w kontenerze wskazuje ostatni element w tym kontenerze.
-#define LAST 0
+#define LAST        0
 /// Ustala tryb kodowania dodawania nowego elementu.
 /// Używane jako parametr metody dodającej do kontenera nowy element ustala, że ma on zostać dodany za wybranym elementem.
-#define ADD_AFTER 1
+#define ADD_AFTER   1
 /// Ustala tryb kodowania dodawania nowego elementu.
 /// Używane jako parametr metody dodającej do kontenera nowy element ustala, że ma on zostać dodany przed wybranym elementem.
-#define ADD_BEFORE 0
+#define ADD_BEFORE  0
 // ------------------------------
 
 // ------ OWN USED HEADERS ------
