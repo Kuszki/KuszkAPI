@@ -2,13 +2,13 @@
     \brief Dołącza do projektu moduł aplikacji.
     \warning Należy dołączyć brakujące zależności ręcznie.
 
-Po dołączeniu dyrektywą "include" do projektu zostaną dodane wszystkie składowe modułu aplikacji takie jak model aplikacji okienkowej, konsolowej, czy biblioteki DLL.
+Po dołączeniu dyrektywą "include" do projektu zostaną dodane wszystkie składowe modułu aplikacji takie jak model aplikacji okienkowej, konsolowej, czy biblioteki DLL. Kod źródłowy modułu znajdziesz <a target="_blank" href="https://github.com/Kuszki/KuszkAPI/tree/master/App">tutaj</a>.
 */
 
 /*! \namespace KuszkAPI::Application
     \brief Przestrzeń nazw modułu aplikacji.
 
-Zawiera wszystkie deklaracje i definicje składowych modułu aplikacji.
+Zawiera wszystkie deklaracje i definicje składowych modułu aplikacji. Kod źródłowy modułu znajdziesz <a target="_blank" href="https://github.com/Kuszki/KuszkAPI/tree/master/App">tutaj</a>.
 */
 
 #ifndef _KUSZKAPI_APP_H
