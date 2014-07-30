@@ -18,8 +18,10 @@ Po dołączeniu dyrektywą "include" do projektu zostaną dodane wyłącznie dod
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----
+#ifndef KUSZKAPI_HPPONLY
 #include "Types\WinApp.cpp"
 #include "Types\DllApp.cpp"
+#endif
 // ------------------------------
 
 #endif

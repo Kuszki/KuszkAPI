@@ -31,7 +31,9 @@ Po dołączeniu dyrektywą "include" do projektu zostani dodany wyłącznie modu
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----
+#ifndef KUSZKAPI_HPPONLY
 #include "String\String.cpp"
+#endif
 // ------------------------------
 
 // ----- MACROS DEFINITIONS -----

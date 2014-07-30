@@ -22,7 +22,9 @@ Po dołączeniu dyrektywą "include" do projektu zostanie dodany wyłącznie mod
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----
+#ifndef KUSZKAPI_HPPONLY
 #include "Files\File.cpp"
+#endif
 // ------------------------------
 
 #endif

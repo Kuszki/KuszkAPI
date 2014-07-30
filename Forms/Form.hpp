@@ -6,7 +6,9 @@
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----
+#ifndef KUSZKAPI_HPPONLY
 #include "Form\Form.cpp"
+#endif
 // ------------------------------
 
 #endif

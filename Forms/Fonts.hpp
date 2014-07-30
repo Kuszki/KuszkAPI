@@ -12,7 +12,9 @@
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----
+#ifndef KUSZKAPI_HPPONLY
 #include "Fonts\Font.cpp"
+#endif
 // ------------------------------
 
 #endif

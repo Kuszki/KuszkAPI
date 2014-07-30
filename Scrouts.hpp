@@ -12,14 +12,20 @@ Aby nie dołączać skróconych nazw (na przykład gdy kolidują z użytymi w in
 /// Jeśli nie chcesz używać skróconych nazw, bądź kolidują one z nazwami w Twoim projekcie, zwyczajnie zdefiniuj to makro przed dołączeniem biblioteki.
 #define KUSZKAPI_NOSCROUTS
 
-#define SRV KuszkAPI::Sockets::Server        //!< Skrócona nazwa dla klasy KuszkAPI::Sockets::Server.
-#define CLI KuszkAPI::Sockets::Client        //!< Skrócona nazwa dla klasy KuszkAPI::Sockets::Client.
+#define SRV KuszkAPI::Sockets::Server		//!< Skrócona nazwa dla klasy KuszkAPI::Sockets::Server.
+#define CLI KuszkAPI::Sockets::Client		//!< Skrócona nazwa dla klasy KuszkAPI::Sockets::Client.
 
-#define STR KuszkAPI::Containers::String     //!< Skrócona nazwa dla klasy KuszkAPI::Sockets::String.
+#define STR KuszkAPI::Containers::String	//!< Skrócona nazwa dla klasy KuszkAPI::Containers::String.
+#define MAP KuszkAPI::Containers::Map		//!< Skrócona nazwa dla klasy KuszkAPI::Containers::Map.
+#define ARA KuszkAPI::Containers::Array		//!< Skrócona nazwa dla klasy KuszkAPI::Containers::Array.
+#define LST KuszkAPI::Containers::List		//!< Skrócona nazwa dla klasy KuszkAPI::Containers::List.
+#define BOX KuszkAPI::Containers::Box		//!< Skrócona nazwa dla klasy KuszkAPI::Containers::Box.
 
-#define CON KuszkAPI::Core::Console          //!< Skrócona nazwa dla klasy KuszkAPI::Sockets::Console.
+#define INI KuszkAPI::Core::Ini              //!< Skrócona nazwa dla klasy KuszkAPI::Core::Ini.
+#define CON KuszkAPI::Core::Console		//!< Skrócona nazwa dla klasy KuszkAPI::Core::Console.
+#define THR KuszkAPI::Core::Threads<INT>	//!< Skrócona nazwa dla klasy KuszkAPI::Core::Threads.
 
-#define WND KuszkAPI::Forms::Form            //!< Skrócona nazwa dla klasy KuszkAPI::Sockets::Form.
+#define WND KuszkAPI::Forms::Form			//!< Skrócona nazwa dla klasy KuszkAPI::Forms::Form.
 
 #undef KUSZKAPI_NOSCROUTS
 // ------------------------------

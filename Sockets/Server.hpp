@@ -6,7 +6,9 @@
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----
+#ifndef KUSZKAPI_HPPONLY
 #include "Server\Server.cpp"
+#endif
 // ------------------------------
 
 #endif

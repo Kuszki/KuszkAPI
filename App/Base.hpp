@@ -18,7 +18,9 @@ Po dołączeniu dyrektywą "include" do projektu zostaną dodane wyłącznie baz
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----
+#ifndef KUSZKAPI_HPPONLY
 #include "Base\App.cpp"
+#endif
 // ------------------------------
 
 #endif

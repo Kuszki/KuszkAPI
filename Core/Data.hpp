@@ -6,8 +6,10 @@
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----
+#ifndef KUSZKAPI_HPPONLY
 #include "Data\Ini.cpp"
 #include "Data\Reg.cpp"
+#endif
 // ------------------------------
 
 #endif

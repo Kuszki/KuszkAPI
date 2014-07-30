@@ -6,9 +6,11 @@
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----
+#ifndef KUSZKAPI_HPPONLY
 #include "Dialogs\CommonDialog.cpp"
 #include "Dialogs\UserDialog.cpp"
 #include "Dialogs\Dialog.cpp"
+#endif
 // ------------------------------
 
 #endif

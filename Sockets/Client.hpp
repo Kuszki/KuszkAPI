@@ -6,7 +6,9 @@
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----
+#ifndef KUSZKAPI_HPPONLY
 #include "Client\Client.cpp"
+#endif
 // ------------------------------
 
 #endif

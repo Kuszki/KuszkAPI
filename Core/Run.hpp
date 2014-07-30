@@ -2,7 +2,7 @@
 #define _KUSZKAPI_CORE_RUN_H
 
 // ----- SCRIPT DEFINITIONS -----
-#define SCRIPT_ERROR ((unsigned) -1)
+#define SCRIPT_ERROR ((unsigned) -1)	//!< Wartość zwracana przez klasę KuszkAPI::Core::Script w przypadku błędu.
 // ------------------------------
 
 // ---- HEADERS DECLARATIONS ----
@@ -10,9 +10,11 @@
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----
+#ifndef KUSZKAPI_HPPONLY
 #include "Run\Script.cpp"
 #include "Run\Dll.cpp"
 #include "Run\Hook.cpp"
+#endif
 // ------------------------------
 
 #endif

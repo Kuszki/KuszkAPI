@@ -6,8 +6,10 @@
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----
+#ifndef KUSZKAPI_HPPONLY
 #include "Parts\Console.cpp"
 #include "Parts\Tray.cpp"
+#endif
 // ------------------------------
 
 #endif
