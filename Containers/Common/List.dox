@@ -5,7 +5,7 @@ Dokumentacja zamieszczona w innym pliku pomaga uniknąć chaosu w organizacji ko
 */
 
 /*! \file List.cpp
-    \brief Zawiera implementacje szablonu klasy List.
+    \brief Zawiera implementacje szablonu klasy Containers::List.
 
 Implementacja każdej klasy w innym pliku pomaga uniknąć chaosu w organizacji kodu.
 */
@@ -60,20 +60,20 @@ Kopiuje wybrany obiekt.
     \brief Konstruktor konwertujący.
     \param [in] vVector Organizacja źródłowa.
 
-Dokonuje konwersji organizacji KuszkAPI::Containers::Vector na KuszkAPI::Containers::List w taki sposób, że zachowuje ilość danych, rodzaj i ich kolejność.
+Dokonuje konwersji organizacji Containers::Vector na Containers::List w taki sposób, że zachowuje ilość danych, rodzaj i ich kolejność.
 */
 /*! \fn KuszkAPI::Containers::List::List(const Array<tnData>&)
     \brief Konstruktor konwertujący.
     \param [in] aArray Organizacja źródłowa.
 
-Dokonuje konwersji organizacji KuszkAPI::Containers::Array na KuszkAPI::Containers::List w taki sposób, że zachowuje ilość danych, rodzaj i ich kolejność.
+Dokonuje konwersji organizacji Containers::Array na Containers::List w taki sposób, że zachowuje ilość danych, rodzaj i ich kolejność.
 */
 /*! \fn KuszkAPI::Containers::List::List(const tnData[], unsigned)
     \brief Konstruktor konwertujący.
     \param [in] ptData TabBoxlica źródłowa.
     \param [in] uCount Rozmiar tablicy źródłowej.
 
-Dokonuje konwersji tablicy o określonym rozmiarze na KuszkAPI::Containers::List w taki sposób, że zachowuje ilość danych, rodzaj i ich kolejność.
+Dokonuje konwersji tablicy o określonym rozmiarze na Containers::List w taki sposób, że zachowuje ilość danych, rodzaj i ich kolejność.
 */
 /*! \fn KuszkAPI::Containers::List::List(void)
     \brief Domyślny konstruktor.
@@ -121,7 +121,7 @@ Kopiuje obiekty zawarte w tablicy i dodaje je do organizacji.
                 wartość dodatnia - elementy numerowane są rosnąco zaczynając od 1.\n
                 wartość ujemna - elementy numerowane są malejąco licząc od 0.
     \return Stała referencja do wybranego obiektu.
-    \warning W przypadku niepowodzenia zwraca stałą referencje do obiektu KuszkAPI::Containers::List::tAbstract.
+    \warning W przypadku niepowodzenia zwraca stałą referencje do obiektu Containers::List::tAbstract.
 
 Sprawdza czy element o podanym indeksie istnieje i zwraca jego stałą referencje lub element abstrakcyjny.
 */
@@ -219,7 +219,7 @@ Sprawdza czy element o podanym indeksie istnieje i zwraca jego referencje lub el
                 wartość dodatnia - elementy numerowane są rosnąco zaczynając od 1.\n
                 wartość ujemna - elementy numerowane są malejąco licząc od 0.
     \return Stała referencja do wybranego obiektu.
-    \warning W przypadku niepowodzenia zwraca stałą referencje do obiektu KuszkAPI::Containers::List::tAbstract.
+    \warning W przypadku niepowodzenia zwraca stałą referencje do obiektu Containers::List::tAbstract.
 
 Sprawdza czy element o podanym indeksie istnieje i zwraca jego stałą referencje lub element abstrakcyjny.
 */

@@ -5,7 +5,7 @@ Dokumentacja zamieszczona w innym pliku pomaga uniknąć chaosu w organizacji ko
 */
 
 /*! \file DllApp.cpp
-    \brief Zawiera implementacje klasy DllApp.
+    \brief Zawiera implementacje klasy Application::DllApp.
 
 Implementacja każdej klasy w innym pliku pomaga uniknąć chaosu w organizacji kodu.
 */
@@ -14,7 +14,7 @@ Implementacja każdej klasy w innym pliku pomaga uniknąć chaosu w organizacji 
     \brief Implementacja modelu aplikacji bibliotekowej.
     \note Klasa zasadniczo bezużyteczna, nie wnosi nic nowego do jej klasy bazowej. Planowany rozwój w kolejnych wersjach modułu.
 
-Klasa dziedziczy składowe klasy App, a jej zastosowanie ułatwia zarządzanie aktualną aplikacją bibliotekową.
+Klasa dziedziczy składowe klasy Application::App, a jej zastosowanie ułatwia zarządzanie aktualną aplikacją bibliotekową.
 */
 /*! \fn KuszkAPI::Application::DllApp::DllApp(void)
     \brief Domyślny konstruktor.

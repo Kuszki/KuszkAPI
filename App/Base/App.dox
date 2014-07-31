@@ -5,7 +5,7 @@ Dokumentacja zamieszczona w innym pliku pomaga uniknąć chaosu w organizacji ko
 */
 
 /*! \file App.cpp
-    \brief Zawiera implementacje klasy App.
+    \brief Zawiera implementacje klasy Application::App.
 
 Implementacja każdej klasy w innym pliku pomaga uniknąć chaosu w organizacji kodu.
 */
@@ -49,7 +49,7 @@ Przy inicjacji obiektu pobiera potrzebne dane i ułatwia zarządzanie bierzącym
     \brief Ułatwia zarządzanie powiązanym plikiem INI.
     \warning Model zakłada jednoczesną obsługę tylko jednego pliku.
 
-Pozwala odczytywać i zapisywać informacje do wybranego później pliku INI.
+Pozwala odczytywać i zapisywać informacje do wybranego później pliku *.ini.
 */
 /*! \var KuszkAPI::Application::App::Registry
     \brief Ułatwia zarządzanie powiązanym wpisem w rejestrze.
@@ -60,7 +60,7 @@ Pozwala odczytywać i zapisywać dane do wybranego później klucza.
 /*! \fn KuszkAPI::Application::App::App(void)
     \brief Domyślny konstruktor.
 
-Configcjuje pola KuszkAPI::Application::App::tRunTime oraz App::dRunDate.
+Inicjuje pola tRunTime oraz Application::App::dRunDate.
 */
 /*! \fn KuszkAPI::Application::App::~App(void)
     \brief Dokonuje zwolnienia użytych zasobów.
@@ -71,11 +71,11 @@ Brak specjalnych operacji do opisu.
     \brief Pozwala uzyskać informacje o czasie uruchomienia aplikacji.
     \return Czas uruchomienia aplikacji.
 
-Zwraca kopie obiektu KuszkAPI::Application::App::tRunTime.
+Zwraca kopie obiektu Application::App::tRunTime.
 */
 /*! \fn DateTime::Date KuszkAPI::Application::App::GetRunDate(void) const
     \brief Pozwala uzyskać informacje o dacie uruchomienia aplikacji.
     \return Data uruchomienia aplikacji.
 
-Zwraca kopie obiektu KuszkAPI::Application::App::dRunDate.
+Zwraca kopie obiektu Application::App::dRunDate.
 */

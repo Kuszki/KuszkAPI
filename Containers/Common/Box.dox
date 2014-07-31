@@ -5,7 +5,7 @@ Dokumentacja zamieszczona w innym pliku pomaga uniknąć chaosu w organizacji ko
 */
 
 /*! \file Box.cpp
-    \brief Zawiera implementacje szablonu klasy Box.
+    \brief Zawiera implementacje szablonu klasy Containers::Box.
 
 Implementacja każdej klasy w innym pliku pomaga uniknąć chaosu w organizacji kodu.
 */
@@ -71,7 +71,7 @@ Kopiuje obiekt przekazywany w parametrze i dodaje go do organizacji.
                 #ADD_AFTER - dodaje objekt za wybranym elementem (domyślnie).\n
                 #ADD_BEFORE - dodaje obiekt przed wybranym elementem.
     \return Aktualna liczba elementów.
-    \warning Element nie zostaje skopiowany, więc gdy zostanie usunięty bez pośrednictwa kontenera może spowodować niezamierzone konsekfencje.
+    \warning Element nie zostaje skopiowany, więc gdy zostanie usunięty bez pośrednictwa kontenera może spowodować niezamierzone efekty.
 
 Dodaje obiekt na który wskazuje parametr do organizacji.
 */
@@ -91,7 +91,7 @@ Umożliwia usunięcie wybranego obiektu z kontenera, operacja jest nieodwracalna
                 wartość dodatnia - elementy numerowane są rosnąco zaczynając od 1.\n
                 wartość ujemna - elementy numerowane są malejąco licząc od 0.
     \return Stała referencja do wybranego obiektu.
-    \warning W przypadku niepowodzenia zwraca stałą referencje do obiektu Vector::tAbstract.
+    \warning W przypadku niepowodzenia zwraca stałą referencje do obiektu Containers::Vector::tAbstract.
 
 Sprawdza czy element o podanym indeksie istnieje i zwraca jego stałą referencje lub element abstrakcyjny.
 */
@@ -107,7 +107,7 @@ Zwraca kopie zmiennej KuszkAPI::Containers::Box::uIlosc.
             true - pusty,\n
             false - zawierający obiekty.
 
-Zwraca kopie zmiennej KuszkAPI::Containers::Box::uIlosc zrzutowaną na typ "bool".
+Zwraca kopie zmiennej Containers::Box::uIlosc zrzutowaną na typ "bool".
 */
 /*! \fn void KuszkAPI::Containers::Box::Clean(void)
     \brief Czyści kontener.
@@ -121,7 +121,7 @@ Usuwa wszystkie dane z kontenera.
                 wartość dodatnia - elementy numerowane są rosnąco zaczynając od 1.\n
                 wartość ujemna - elementy numerowane są malejąco licząc od 0.
     \return Referencja do wybranego obiektu.
-    \warning W przypadku niepowodzenia zwraca referencje do obiektu KuszkAPI::Containers::Box::tAbstract.
+    \warning W przypadku niepowodzenia zwraca referencje do obiektu Containers::Vector::tAbstract.
 
 Sprawdza czy element o podanym indeksie istnieje i zwraca jego referencje lub element abstrakcyjny.
 */
@@ -132,7 +132,7 @@ Sprawdza czy element o podanym indeksie istnieje i zwraca jego referencje lub el
                 wartość dodatnia - elementy numerowane są rosnąco zaczynając od 1.\n
                 wartość ujemna - elementy numerowane są malejąco licząc od 0.
     \return Stała referencja do wybranego obiektu.
-    \warning W przypadku niepowodzenia zwraca stałą referencje do obiektu KuszkAPI::Containers::Box::tAbstract.
+    \warning W przypadku niepowodzenia zwraca stałą referencje do obiektu Containers::Vector::tAbstract.
 
 Sprawdza czy element o podanym indeksie istnieje i zwraca jego stałą referencje lub element abstrakcyjny.
 */

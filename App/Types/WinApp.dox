@@ -5,7 +5,7 @@ Dokumentacja zamieszczona w innym pliku pomaga uniknąć chaosu w organizacji ko
 */
 
 /*! \file WinApp.cpp
-    \brief Zawiera implementacje klasy WinApp.
+    \brief Zawiera implementacje klasy Application::WinApp.
 
 Implementacja każdej klasy w innym pliku pomaga uniknąć chaosu w organizacji kodu.
 */
@@ -13,7 +13,7 @@ Implementacja każdej klasy w innym pliku pomaga uniknąć chaosu w organizacji 
 /*! \class KuszkAPI::Application::WinApp
     \brief Implementacja modelu aplikacji okienkowej.
 
-Klasa dziedziczy składowe klasy App, a jej zastosowanie ułatwia zarządzanie aktualną aplikacją.
+Klasa dziedziczy składowe klasy Application::App, a jej zastosowanie ułatwia zarządzanie aktualną aplikacją.
 */
 /*! \var KuszkAPI::Application::WinApp::hMutex
     \brief Uchwyt mutexu tworzonego przy inicjacji obiektu.
@@ -55,7 +55,7 @@ Umożliwia edycje obszaru powiadamiania i ułatwia jego obsługę.
                         false - nie (domyślnie),\n
                         true - tak.
 
-Konstruktor umożliwia ograniczenie instancji aplikacji do jednej wykorzystując mechanizm mutexów. Uchwyt do utworzonego mutexu przechowuje zmienna KuszkAPI::Application::WinApp::hMutex.
+Konstruktor umożliwia ograniczenie instancji aplikacji do jednej wykorzystując mechanizm mutexów. Uchwyt do utworzonego mutexu przechowuje zmienna Application::WinApp::hMutex.
 */
 /*! \fn KuszkAPI::Application::WinApp::WinApp(const Containers::String&, const Containers::String&)
     \brief Dodatkowy konstruktor.
@@ -68,7 +68,7 @@ Konstruktor umożliwia ograniczenie instancji aplikacji do jednej. Zostanie wysz
 /*! \fn KuszkAPI::Application::WinApp::~WinApp(void)
     \brief Dokonuje zwolnienia użytych zasobów.
 
-Dodatkowo zwalnia uchwyt mutexa KuszkAPI::Application::WinApp::hMutex w przypadku wcześniejszej potrzeby jego użycia.
+Dodatkowo zwalnia uchwyt mutexa Application::WinApp::hMutex w przypadku wcześniejszej potrzeby jego użycia.
 */
 /*! \fn Containers::String KuszkAPI::Application::WinApp::Debug(Containers::String, Containers::String, Containers::String, Containers::String, Containers::String, Containers::String)
     \brief Wyświetla komunikat debugowania aplikacji w konsoli.

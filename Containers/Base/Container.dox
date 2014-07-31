@@ -5,7 +5,7 @@ Dokumentacja zamieszczona w innym pliku pomaga uniknąć chaosu w organizacji ko
 */
 
 /*! \file Container.cpp
-    \brief Zawiera implementacje klasy Container.
+    \brief Zawiera implementacje klasy Containers::Container.
 
 Implementacja każdej klasy w innym pliku pomaga uniknąć chaosu w organizacji kodu.
 */
@@ -32,7 +32,7 @@ Determinuje tryb pracy kontenera (kolejka lub stos), dostępne wartości to:\n
 /*! \fn KuszkAPI::Containers::Container::Container(void)
     \brief Domyślny konstruktor.
 
-Przy inicjacji obiektu ustala tryb pracy na domyślny (MODE_QUEUE).
+Przy inicjacji obiektu ustala tryb pracy na domyślny (#MODE_QUEUE).
 */
 /*! \fn KuszkAPI::Containers::Container::~Container(void)
     \brief Dekonstruktor.
@@ -43,7 +43,7 @@ Niszczy wszystkie obiekty przechowywane przez kontener i zwalnia użyte zasoby.
     \brief Zwraca ilość przechowywanych obiektów.
     \return Ilość przechowywanych obiektów.
 
-Zwraca kopie zmiennej KuszkAPI::Containers::Container::uIlosc.
+Zwraca kopie zmiennej Containers::Container::uIlosc.
 */
 /*! \fn bool KuszkAPI::Containers::Container::Empty(void) const
     \brief Sprawdza, czy kontener jest pusty.
@@ -51,7 +51,7 @@ Zwraca kopie zmiennej KuszkAPI::Containers::Container::uIlosc.
             true - pusty,\n
             false - zawierający obiekty.
 
-Zwraca kopie zmiennej KuszkAPI::Containers::Container::uIlosc zrzutowaną na typ "bool".
+Zwraca kopie zmiennej Containers::Container::uIlosc zrzutowaną na typ "bool".
 */
 /*! \fn void KuszkAPI::Containers::Container::SetMode(unsigned)
     \brief Ustala nowy tryb pracy kontenera.
@@ -76,7 +76,7 @@ Pozwala uzyskać aktualny tryb pracy kontenera.
             true - pusty,\n
             false - zawierający obiekty.
 
-Wywołuje metodę KuszkAPI::Containers::Container::Capacity i zwraca jej wartość.
+Wywołuje metodę Containers::Container::Capacity i zwraca jej wartość.
 */
 /*! \fn virtual bool KuszkAPI::Containers::Container::Delete(unsigned)
     \brief Usuwa wybrany obiekt z kontenera.
