@@ -17,6 +17,6 @@ Jeśli masz ochotę możesz korzystać z tego projektu na zasadzie licencji GNU 
 
 Instalacja
 ----------
-Aby używać projektu należy rozpakować go w dowolne miejsce, a następnie dołączyć plik KuszkAPI.hpp dyrektywą '#include <path to KuszkAPI root dir>/KuszkAPI.hpp'.
+Aby używać projektu należy rozpakować go w dowolne miejsce, a następnie dołączyć plik KuszkAPI.hpp dyrektywą `#include <path to KuszkAPI root dir>/KuszkAPI.hpp`.
 
 Należy wziąć pod uwagę, aby pliki nagłówkowe dołączane w windows.h były kompletne i zawierały wszystkie definicje (Common Control w wersji 6 lub nowszej). Domyślnie projekty będą budowane dla Windows XP+ i mogą nie działać poprawnie na poprzednich systemach.
