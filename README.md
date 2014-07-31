@@ -17,7 +17,7 @@ Jeśli masz ochotę możesz korzystać z tego projektu na zasadzie licencji GNU 
 
 Instalacja
 ----------
-Aby używać projektu należy rozpakować go w dowolne miejsce, a następnie dołączyć plik KuszkAPI.hpp dyrektywą
+Aby używać projektu należy rozpakować go w dowolne miejsce, a następnie dołączyć plik KuszkAPI.hpp dyrektywą:
 
 `#include <path to KuszkAPI root dir>/KuszkAPI.hpp`.
 
