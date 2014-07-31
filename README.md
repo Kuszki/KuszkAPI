@@ -22,3 +22,7 @@ Aby używać projektu należy rozpakować go w dowolne miejsce, a następnie do�
 `#include <path to KuszkAPI root dir>/KuszkAPI.hpp`.
 
 Należy wziąć pod uwagę, aby pliki nagłówkowe dołączane w windows.h były kompletne i zawierały wszystkie definicje (Common Control w wersji 6 lub nowszej). Domyślnie projekty będą budowane dla Windows XP+ i mogą nie działać poprawnie na poprzednich systemach.
+
+Dokumentacja
+----------
+Możesz wygenerować dokumentacje samemu za pomocą programu <a target="_blank" href="http://www.stack.nl/~dimitri/doxygen/index.html">Doxygen</a> lub wysłać mi maila z prośbą o udostępnienie dokumentacji. Dokumentacja znajduję się też na moim <a target="_blank" href="http://kuszki.myftp.org/slites/api">serwerze</a>, nie gwarantuję jednak, że będzie on czynny. 
