@@ -111,7 +111,7 @@ const tnData& KuszkAPI::Containers::List<tnData>::GetData(int iNumer) const
 {
       ItemData* ptBufor = ptBegin;
       if (iNumer < 1) iNumer += uIlosc;
-      if (iNumer > uIlosc || iNumer < 0) return tAbstract; else if (ptBufor){
+      if (iNumer > uIlosc || iNumer <= 0) return tAbstract; else if (ptBufor){
                  for (unsigned i = 1; i < iNumer; i++){
                        ptBufor = ptBufor->ptNext;
                        if (!ptBufor) return tAbstract;
@@ -218,7 +218,7 @@ tnData& KuszkAPI::Containers::List<tnData>::operator[] (int iNumer)
 {
       ItemData* ptBufor = ptBegin;
       if (iNumer < 1) iNumer += uIlosc;
-      if (iNumer > uIlosc || iNumer < 0) return tAbstract; else if (ptBufor){
+      if (iNumer > uIlosc || iNumer <= 0) return tAbstract; else if (ptBufor){
                  for (unsigned i = 1; i < iNumer; i++){
                        ptBufor = ptBufor->ptNext;
                        if (!ptBufor) return tAbstract;
@@ -233,7 +233,7 @@ const tnData& KuszkAPI::Containers::List<tnData>::operator[] (int iNumer) const
 {
       ItemData* ptBufor = ptBegin;
       if (iNumer < 1) iNumer += uIlosc;
-      if (iNumer > uIlosc || iNumer < 0) return tAbstract; else if (ptBufor){
+      if (iNumer > uIlosc || iNumer <= 0) return tAbstract; else if (ptBufor){
                  for (unsigned i = 1; i < iNumer; i++){
                        ptBufor = ptBufor->ptNext;
                        if (!ptBufor) return tAbstract;

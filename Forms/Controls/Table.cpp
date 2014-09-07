@@ -16,14 +16,22 @@ KuszkAPI::Forms::TableBox::~TableBox(void)
 
 HWND KuszkAPI::Forms::TableBox::Create(int iXPos, int iYPos, int iSzerokosc, int iWysokosc, const Containers::Strings& sHeader, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
 {
-      Destroy();
-      hUchwyt = CreateWindowEx(uExStyl | WS_EX_CLIENTEDGE, sClass.Str(), TEXT("ListView"), uStyl | WS_VISIBLE | WS_CHILD | LVS_SHAREIMAGELISTS, iXPos, iYPos, iSzerokosc, iWysokosc, hOwner, (HMENU) uId, hInstance, NULL);
-      DWORD dwStyle = SendMessage(hUchwyt, LVM_GETEXTENDEDLISTVIEWSTYLE, 0, 0);
-      dwStyle |= LVS_EX_FULLROWSELECT | LVS_EX_DOUBLEBUFFER;
-      SendMessage(hUchwyt, LVM_SETEXTENDEDLISTVIEWSTYLE, 0, dwStyle);
-      SetFont();
-      SetHeader(sHeader);
-      return hUchwyt;
+     Destroy();
+
+     hUchwyt = CreateWindowEx(uExStyl | WS_EX_CLIENTEDGE, sClass.Str(), TEXT("ListView"), uStyl | WS_VISIBLE | WS_CHILD | LVS_SHAREIMAGELISTS |
+LVS_SHOWSELALWAYS, iXPos, iYPos, iSzerokosc, iWysokosc, hOwner, (HMENU) uId, hInstance, NULL);
+
+     DWORD dwStyle = SendMessage(hUchwyt, LVM_GETEXTENDEDLISTVIEWSTYLE, 0, 0);
+
+     dwStyle |= LVS_EX_FULLROWSELECT | LVS_EX_DOUBLEBUFFER;
+
+     SendMessage(hUchwyt, LVM_SETEXTENDEDLISTVIEWSTYLE, 0, dwStyle);
+
+     SetFont();
+
+     if (sHeader) SetHeader(sHeader);
+
+     return hUchwyt;
 }
 
 void KuszkAPI::Forms::TableBox::AddItem(const Containers::String& sTekst, const Containers::Strings& sData, unsigned uGroup, unsigned uIkona)
@@ -45,6 +53,34 @@ void KuszkAPI::Forms::TableBox::AddItem(const Containers::String& sTekst, const 
       lItem.iItem = uTmp;
       uTmp = ListView_InsertItem(hUchwyt, &lItem);
       if (sData) SetItemData(sData, ++uTmp);
+}
+
+void KuszkAPI::Forms::TableBox::AddItem(const Containers::Strings& sData, unsigned uGroup, unsigned uIkona)
+{
+      if (!sData) return;
+
+      unsigned uTmp = ListView_GetItemCount(hUchwyt);
+
+      LVITEM lItem;
+      memset(&lItem, 0, sizeof(LVITEM));
+
+      lItem.mask = LVIF_TEXT;
+
+      if (uIkona){
+              lItem.mask |= LVIF_IMAGE;
+              lItem.iImage = uIkona - 1;
+      }
+
+      if (bGroups){
+              lItem.mask |= LVIF_GROUPID;
+              lItem.iGroupId = uGroup ? uGroup : (unsigned) I_GROUPIDNONE;
+      }
+
+      lItem.iItem = uTmp;
+
+      uTmp = ListView_InsertItem(hUchwyt, &lItem);
+
+      for (int i = 1; i <= sData.Capacity(); i++) SetItemData(sData.GetData(i), i, uTmp + 1);
 }
 
 void KuszkAPI::Forms::TableBox::AddItems(const Containers::Strings& sData, unsigned uGroup, unsigned uIcon)
@@ -159,6 +195,17 @@ unsigned KuszkAPI::Forms::TableBox::GetItemGroup(unsigned uNumer) const
       return GetItemStruct(uNumer).Group;
 }
 
+void KuszkAPI::Forms::TableBox::Select(unsigned uNumer)
+{
+	ListView_SetItemState(hUchwyt, -1, 0, LVIS_SELECTED);
+
+	SendMessage(hUchwyt, LVM_ENSUREVISIBLE, uNumer - 1, false);
+
+	ListView_SetItemState(hUchwyt, uNumer - 1, LVIS_SELECTED | LVIS_FOCUSED, LVIS_SELECTED | LVIS_FOCUSED);
+
+	Focus();
+}
+
 void KuszkAPI::Forms::TableBox::AddGroup(const Containers::String& sGroup)
 {
       if (!bGroups){
@@ -214,27 +261,32 @@ Containers::Strings KuszkAPI::Forms::TableBox::GetColumn(unsigned uNumer) const
       return sBufor;
 }
 
-void KuszkAPI::Forms::TableBox::SetHeader(const Containers::Strings& sHeader, const Containers::Vector<unsigned>& vSizes, const Containers::Vector<unsigned>& vIcos)
+void KuszkAPI::Forms::TableBox::SetHeader(const Containers::Strings& sHeader, const Containers::Vector<unsigned> vSizes, const Containers::Vector<unsigned> vIcos)
 {
-      CleanHeader();
-      uColumnCount = sHeader.Capacity();
-      LVCOLUMN lColumn;
-      memset(&lColumn, 0, sizeof(LVCOLUMN));
-      Containers::Vector<unsigned> vTmpSize = vSizes;
-      Containers::Vector<unsigned> vTmpIcon = vIcos;
-      vTmpSize[0] = 75;
-      vTmpIcon[0] = 0;
-      for (int i = 1; i <= uColumnCount; i++){
-              lColumn.mask = LVCF_TEXT | LVCF_SUBITEM | LVCF_WIDTH;
-              if (vTmpIcon.GetData(i)){
-                       lColumn.mask |= LVCF_IMAGE;
-                       lColumn.iImage = vTmpIcon.GetData(i) - 1;
-              }
-              lColumn.iSubItem = i - 1;
-              lColumn.cx = vTmpSize.GetData(i);
-              lColumn.pszText = sHeader.GetData(i).Str();
-              ListView_InsertColumn(hUchwyt, i - 1, &lColumn);
-      }
+     CleanHeader();
+     uColumnCount = sHeader.Capacity();
+
+     for (int i = 1; i <= uColumnCount; i++){
+
+          LVCOLUMN lColumn;
+		memset(&lColumn, 0, sizeof(LVCOLUMN));
+
+          lColumn.mask = LVCF_TEXT | LVCF_SUBITEM | LVCF_WIDTH;
+
+          if (vIcos.Capacity() >= i){
+
+               lColumn.mask |= LVCF_IMAGE;
+               lColumn.iImage = vIcos.GetData(i) ? vIcos.GetData(i) - 1 : 0;
+
+          }
+
+          lColumn.iSubItem = i - 1;
+          lColumn.cx = vSizes.Capacity() >= i ? vSizes.GetData(i) : 100;
+          lColumn.pszText = sHeader.GetData(i).Str();
+
+          ListView_InsertColumn(hUchwyt, i - 1, &lColumn);
+
+     }
 }
 
 void KuszkAPI::Forms::TableBox::SetImages(bool bSmallEnable, bool bLargeEnable)

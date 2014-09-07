@@ -236,12 +236,15 @@ class TableBox : public ListControl
                           int iYPos,
                           int iSzerokosc,
                           int iWysokosc,
-                          const Containers::Strings& sHeader,
+                          const Containers::Strings& sHeader = Containers::Strings(),
                           unsigned uStyl = LVS_REPORT | LVS_SINGLESEL,
                           unsigned uExStyl = 0,
                           const Containers::String& sClass = Containers::String(WC_LISTVIEW));
               void AddItem(const Containers::String& sTekst,
                            const Containers::Strings& sData = Containers::Strings(),
+                           unsigned uGroup = 0,
+                           unsigned uIkona = 0);
+              void AddItem(const Containers::Strings& sData,
                            unsigned uGroup = 0,
                            unsigned uIkona = 0);
               void AddItems(const Containers::Strings& sData,
@@ -263,6 +266,7 @@ class TableBox : public ListControl
               void SetItemGroup(unsigned uGroup,
                                 unsigned uNumer = 0);
               unsigned GetItemGroup(unsigned uNumer = 0) const;
+              void Select(unsigned uNumer);
               void AddGroup(const Containers::String& sGroup);
               void AddGroups(const Containers::Strings& sGroups);
               void DeleteGroup(unsigned uNumer);
@@ -272,8 +276,8 @@ class TableBox : public ListControl
                              unsigned uNumer);
               Containers::Strings GetColumn(unsigned uNumer = 0) const;
               void SetHeader(const Containers::Strings& sHeader,
-                             const Containers::Vector<unsigned>& vSizes = Containers::Vector<unsigned>(),
-                             const Containers::Vector<unsigned>& vIcons = Containers::Vector<unsigned>());
+                             const Containers::Vector<unsigned> vSizes = Containers::Vector<unsigned>(),
+                             const Containers::Vector<unsigned> vIcons = Containers::Vector<unsigned>());
               void SetImages(bool bSmallEnable,
                              bool bLargeEnable);
               unsigned GetColumnCount(void) const;

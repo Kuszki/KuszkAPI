@@ -146,7 +146,7 @@ template<typename tnData>
 const tnData& KuszkAPI::Containers::Array<tnData>::GetData(int iNumer) const
 {
       if (iNumer < 1) iNumer += uIlosc;
-      if (iNumer > uIlosc || iNumer < 0) return tAbstract; else return ptBegin[iNumer - 1];
+      if (iNumer > uIlosc || iNumer <= 0) return tAbstract; else return ptBegin[iNumer - 1];
 }
 
 template<typename tnData>
@@ -173,14 +173,14 @@ template<typename tnData>
 tnData& KuszkAPI::Containers::Array<tnData>::operator[] (int iNumer)
 {
       if (iNumer < 1) iNumer += uIlosc;
-      if (iNumer > uIlosc || iNumer < 0) return tAbstract; else return ptBegin[iNumer - 1];
+      if (iNumer > uIlosc || iNumer <= 0) return tAbstract; else return ptBegin[iNumer - 1];
 }
 
 template<typename tnData>
 const tnData& KuszkAPI::Containers::Array<tnData>::operator[] (int iNumer) const
 {
       if (iNumer < 1) iNumer += uIlosc;
-      if (iNumer > uIlosc || iNumer < 0) return tAbstract; else return ptBegin[iNumer - 1];
+      if (iNumer > uIlosc || iNumer <= 0) return tAbstract; else return ptBegin[iNumer - 1];
 }
 
 template<typename tnData>

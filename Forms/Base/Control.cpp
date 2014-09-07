@@ -89,10 +89,12 @@ WNDPROC KuszkAPI::Forms::Control::GetDefProc(void) const
       return fDefProc;
 }
 
-void KuszkAPI::Forms::Control::Subclass(WNDPROC fProc)
+WNDPROC KuszkAPI::Forms::Control::Subclass(WNDPROC fProc)
 {
       WNDPROC fTmp = SubclassWindow(hUchwyt, fProc);
       if (!fDefProc) fDefProc = fTmp;
+
+      return fDefProc;
 }
 
 void KuszkAPI::Forms::Control::Destroy(void)

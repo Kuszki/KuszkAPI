@@ -151,7 +151,7 @@ class Control : public Window
           HWND GetOwner(void) const;
           unsigned GetId(void) const;
           WNDPROC GetDefProc(void) const;
-          void Subclass(WNDPROC fProc);
+          WNDPROC Subclass(WNDPROC fProc);
           void Destroy(void);
           void Clean(void);
 
