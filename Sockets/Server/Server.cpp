@@ -10,7 +10,7 @@ bool KuszkAPI::Sockets::Server::Register(void)
 
      WNDCLASS cClass;
 
-     char pcName[] = "SOCKET_SERVER";
+     TCHAR pcName[] = TEXT("SOCKET_SERVER");
 
      memset(&cClass, 0, sizeof(cClass));
 
@@ -45,7 +45,7 @@ bool KuszkAPI::Sockets::Server::Listen(unsigned short uPort, ServerProc fProc)
 {
      if (!Register()) return false;
 
-     if (!hHandler) hHandler = CreateWindow("SOCKET_SERVER", NULL, 0, 0, 0, 0, 0, NULL, NULL, GetModuleHandle(NULL), NULL);
+     if (!hHandler) hHandler = CreateWindow(TEXT("SOCKET_SERVER"), NULL, 0, 0, 0, 0, 0, NULL, NULL, GetModuleHandle(NULL), NULL);
 
      if (!hHandler) return false;
 

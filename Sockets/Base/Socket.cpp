@@ -30,5 +30,5 @@ void KuszkAPI::Sockets::Socket::Stop(void)
 {
      WSACleanup();
 
-     UnregisterClass("SOCKET", GetModuleHandle(NULL));
+     UnregisterClass(TEXT("SOCKET"), GetModuleHandle(NULL));
 }

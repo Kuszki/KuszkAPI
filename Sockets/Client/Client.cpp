@@ -17,7 +17,7 @@ bool KuszkAPI::Sockets::Client::Register(void)
 
      WNDCLASS cClass;
 
-     char pcName[] = "SOCKET_CLIENT";
+     TCHAR pcName[] = TEXT("SOCKET_CLIENT");
 
      memset(&cClass, 0, sizeof(cClass));
 
@@ -57,7 +57,7 @@ bool KuszkAPI::Sockets::Client::Connect(const Containers::String& sServer, unsig
 {
      if (!Register()) return false;
 
-     if (!hHandler) hHandler = CreateWindow("SOCKET_CLIENT", NULL, 0, 0, 0, 0, 0, NULL, NULL, GetModuleHandle(NULL), NULL);
+     if (!hHandler) hHandler = CreateWindow(TEXT("SOCKET_CLIENT"), NULL, 0, 0, 0, 0, 0, NULL, NULL, GetModuleHandle(NULL), NULL);
 
      if (!hHandler) return false;
 
@@ -147,7 +147,7 @@ unsigned KuszkAPI::Sockets::Client::Recv(Containers::Array<tnData>& aBufor)
 
 Sockets::Client& KuszkAPI::Sockets::Client::operator<< (const Containers::String& sMessage)
 {
-     send(sSocket, sMessage.Str(), sMessage.Capacity() + 1, 0);
+     send(sSocket, (char*) sMessage.Str(), (sMessage.Capacity() + 1) * sizeof(TCHAR), 0);
 
      return *this;
 }

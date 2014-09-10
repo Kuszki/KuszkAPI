@@ -64,7 +64,7 @@ const tnKey& KuszkAPI::Containers::Map<tnData, tnKey>::GetKey(int iNumer) const
 template<typename tnData, typename tnKey>
 void KuszkAPI::Containers::Map<tnData, tnKey>::SetDataByInt(const tnData& tData, int iNumer)
 {
-      return bData[iNumer] = tData;
+      bData[iNumer] = tData;
 }
 
 template<typename tnData, typename tnKey>
