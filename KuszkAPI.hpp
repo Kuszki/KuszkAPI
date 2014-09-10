@@ -1,4 +1,4 @@
-/*! \mainpage <a target="_blank" href="https://github.com/Kuszki/KuszkAPI">KuszkAPI</a>
+/*! \mainpage KuszkAPI
 
     \section basic_sec Wstęp
 
