@@ -2,7 +2,12 @@ using namespace KuszkAPI;
 
 bool KuszkAPI::Sockets::Server::bClassRegistered = false;
 
-KuszkAPI::Sockets::Server::Server(void) {}
+KuszkAPI::Sockets::Server::Server(void)
+{
+	Register();
+
+	hHandler = CreateWindow(TEXT("SOCKET_SERVER"), NULL, 0, 0, 0, 0, 0, NULL, NULL, NULL, NULL);
+}
 
 bool KuszkAPI::Sockets::Server::Register(void)
 {
@@ -43,11 +48,7 @@ bool KuszkAPI::Sockets::Server::Listen(unsigned short uPort, HWND hWnd)
 
 bool KuszkAPI::Sockets::Server::Listen(unsigned short uPort, ServerProc fProc)
 {
-     if (!Register()) return false;
-
-     if (!hHandler) hHandler = CreateWindow(TEXT("SOCKET_SERVER"), NULL, 0, 0, 0, 0, 0, NULL, NULL, GetModuleHandle(NULL), NULL);
-
-     if (!hHandler) return false;
+     if (!bClassRegistered || !hHandler) return false;
 
      SetWindowLong(hHandler, 0, (LONG) this);
      SetWindowLong(hHandler, 4, (LONG) fProc);
