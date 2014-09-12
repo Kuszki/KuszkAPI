@@ -23,6 +23,10 @@ class Socket
           Socket(void);
           virtual ~Socket(void);
 
+          SOCKET GetSocket(void) const;
+
+          operator SOCKET (void) const;
+
           static void Start(unsigned short uMain = 2,
                             unsigned short uSub = 0);
           static void Stop(void);
