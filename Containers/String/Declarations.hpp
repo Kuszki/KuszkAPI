@@ -21,6 +21,7 @@ class String
               String(const String& sString);
               String(const TCHAR pcString[]);
               String(const DCHAR pcString[]);
+              String(const void* pvVoid);
               String(unsigned uUnsigned);
               String(int iInt);
               String(TCHAR cChar);

@@ -35,6 +35,22 @@ KuszkAPI::Containers::String::String(const DCHAR pcString[])
       Add(pcString);
 }
 
+KuszkAPI::Containers::String::String(const void* pvVoid)
+{
+      uDataSize = sizeof(TCHAR);
+      pcData = NULL;
+      pcBufor = NULL;
+      pcConvert = NULL;
+      uIlosc = 0;
+      cAbstract = 0;
+      TCHAR* pcTmp = new TCHAR[MAX_PATH];
+      memset(pcTmp, 0, MAX_PATH);
+      LongToStr((unsigned) pvVoid, pcTmp, 16);
+      Add(TEXT("0x"));
+      Add(pcTmp);
+      delete [] pcTmp;
+}
+
 KuszkAPI::Containers::String::String(unsigned uUnsigned)
 {
       uDataSize = sizeof(TCHAR);
@@ -45,7 +61,7 @@ KuszkAPI::Containers::String::String(unsigned uUnsigned)
       cAbstract = 0;
       TCHAR* pcTmp = new TCHAR[MAX_PATH];
       memset(pcTmp, 0, MAX_PATH);
-      LongToStr(uUnsigned, pcTmp, uFormat);
+      UnsToStr(uUnsigned, pcTmp, uFormat);
       if (uFormat == 16) Add(TEXT("0x"));
       if (uFormat == 8) Add(TEXT('0'));
       Add(pcTmp);
