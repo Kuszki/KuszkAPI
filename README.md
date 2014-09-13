@@ -9,6 +9,15 @@ Zdaję sobie sprawę, że cała idea może wydawać się śmieszna i daremna, a 
 
 Jeśli znalazłeś błąd, masz jakieś propozycje lub uwagi, zgłoś to w <a target="_blank" href="https://github.com/Kuszki/KuszkAPI/issues">bugtrackerze</a> na GitHubie.
 
+Licencja
+----------
+
+Niniejszy program jest wolnym oprogramowaniem; możesz go rozprowadzać dalej i/lub modyfikować na warunkach Powszechnej Licencji Publicznej GNU, wydanej przez Fundację Wolnego Oprogramowania - według wersji 2-giej tej Licencji lub którejś z późniejszych wersji.
+
+Niniejszy program rozpowszechniany jest z nadzieją, iż będzie on użyteczny - jednak BEZ JAKIEJKOLWIEK GWARANCJI, nawet domyślnej gwarancji PRZYDATNOŚCI HANDLOWEJ albo PRZYDATNOŚCI DO OKREŚLONYCH ZASTOSOWAŃ. W celu uzyskania bliższych informacji - Powszechna Licencja Publiczna GNU.
+
+Z pewnością wraz z niniejszym programem otrzymałeś też egzemplarz Powszechnej Licencji Publicznej GNU (GNU General Public License); jeśli nie - napisz do Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
 Założenia
 ----------
 Projekt powstał w celu zapoznania się z działaniem WinAPI oraz WinSock, a także w celu zrozumienia idei programowania obiektowego. Jako, że jest to dość wygodna forma zarządzania kodem stosuje ją w sowich programach.
@@ -25,4 +34,4 @@ Należy wziąć pod uwagę, aby pliki nagłówkowe dołączane w windows.h były
 
 Dokumentacja
 ----------
-Możesz wygenerować dokumentacje samemu za pomocą programu <a target="_blank" href="http://www.stack.nl/~dimitri/doxygen/index.html">Doxygen</a> lub wysłać mi maila z prośbą o udostępnienie dokumentacji. Dokumentacja znajduję się też na moim <a target="_blank" href="http://kuszki.myftp.org/slites/api">serwerze</a>, nie gwarantuję jednak, że będzie on czynny. 
+Możesz wygenerować dokumentacje samemu za pomocą programu <a target="_blank" href="http://www.stack.nl/~dimitri/doxygen/index.html">Doxygen</a> lub wysłać mi maila z prośbą o udostępnienie dokumentacji. Dokumentacja znajduję się też na moim <a target="_blank" href="http://kuszki.myftp.org/slites/api">serwerze</a>, nie gwarantuję jednak, że będzie on czynny.
