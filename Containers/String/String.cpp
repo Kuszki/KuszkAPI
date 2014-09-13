@@ -228,8 +228,8 @@ unsigned KuszkAPI::Containers::String::Delete(const String& sString, bool bAll)
 
 unsigned KuszkAPI::Containers::String::Delete(int iNumer)
 {
-      if (iNumer == (unsigned) -1) iNumer = uIlosc;
-      if (!uIlosc || iNumer > uIlosc) return false;
+      if (iNumer < 1) iNumer += uIlosc;
+      if (iNumer > uIlosc || iNumer < 0) return false;
       TCHAR* pcTmp = new TCHAR[--uIlosc];
       memcpy(pcTmp, pcData, uDataSize * (iNumer - 1));
       memcpy(pcTmp + iNumer - 1, pcData + iNumer, uDataSize * (uIlosc - iNumer + 1));
