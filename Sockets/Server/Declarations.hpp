@@ -16,15 +16,15 @@ class Server : public Socket
 
      protected:
 
-          typedef LRESULT (*ServerProc)(Server*, UINT, SOCKET);
+          typedef LRESULT (*ServerProc)(Server&, UINT, SOCKET);
 
           static bool bClassRegistered;
 
           static bool Register(void);
 
-     public:
+          Containers::Map<Client, SOCKET> mClients;
 
-          Containers::Map<Client, SOCKET> Clients;
+     public:
 
           Server(void);
 
@@ -36,6 +36,10 @@ class Server : public Socket
           SOCKET Accept(void);
           void Disconnect(SOCKET sClient);
           unsigned Capacity(void) const;
+
+          Client& GetClient(unsigned uClient);
+
+		Client& operator[] (SOCKET sClient);
 
           template<typename tnData> void Announce(const Containers::Array<tnData>& aBufor,
                                                   unsigned uHeader = 0);

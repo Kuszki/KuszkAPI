@@ -158,7 +158,8 @@ Sockets::Client& KuszkAPI::Sockets::Client::operator>> (Containers::String& sMes
      unsigned uTmp = recv(sSocket, pcBufor, uSize, 0);
 
      pcBufor[uTmp] = 0;
-     sMessage = pcBufor;
+
+     sMessage.Add(pcBufor);
 
      delete [] pcBufor;
 
@@ -170,19 +171,26 @@ LRESULT CALLBACK KuszkAPI::Sockets::ClientHandlerProc(HWND hWnd, UINT uMsg, WPAR
      Sockets::Client* pcClient = (Sockets::Client*) GetWindowLong(hWnd, 0);
      Sockets::Client::ClientProc fProc = (Sockets::Client::ClientProc) GetWindowLong(hWnd, 4);
 
+     LRESULT rCode = 0;
+
      switch (uMsg){
           case WM_SOCKET:
                switch (WSAGETSELECTEVENT(lParam)){
+                    case FD_CONNECT:
+
+                         rCode = fProc(*pcClient, FD_CONNECT);
+
+                    break;
                     case FD_READ:
 
-                         return fProc(pcClient, FD_READ);
+                         rCode = fProc(*pcClient, FD_READ);
 
                     break;
                     case FD_CLOSE:
 
-                         pcClient->Disconnect();
+                         rCode = fProc(*pcClient, FD_CLOSE);
 
-                         return fProc(pcClient, FD_CLOSE);
+                         pcClient->Disconnect();
 
                     break;
                }

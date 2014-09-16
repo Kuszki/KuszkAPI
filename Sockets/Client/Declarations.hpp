@@ -16,7 +16,7 @@ class Client : public Socket
 
      protected:
 
-          typedef LRESULT (*ClientProc)(Client*, UINT);
+          typedef LRESULT (*ClientProc)(Client&, UINT);
 
           static unsigned uSize;
           static bool bClassRegistered;

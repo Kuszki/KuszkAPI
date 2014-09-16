@@ -43,6 +43,8 @@ bool KuszkAPI::Sockets::Server::Listen(unsigned short uPort, HWND hWnd)
 
      if (WSAAsyncSelect(sSocket, hWnd, WM_SOCKET, FD_READ | FD_WRITE | FD_ACCEPT | FD_CLOSE)) return false;
 
+     hCurrent = hWnd;
+
      return true;
 }
 
@@ -59,7 +61,7 @@ bool KuszkAPI::Sockets::Server::Listen(unsigned short uPort, ServerProc fProc)
 void KuszkAPI::Sockets::Server::Shutdown(void)
 {
      if (sSocket){
-          Clients.Clean();
+          mClients.Clean();
           memset(&sAdres, 0, sizeof(sockaddr_in));
           closesocket(sSocket);
           sSocket = 0;
@@ -77,31 +79,43 @@ SOCKET KuszkAPI::Sockets::Server::Accept(void)
 
      SOCKET sTmpSock = accept(sSocket, (sockaddr*) &sTmpAdr, &iTmp);
 
-     if (sTmpSock != INVALID_SOCKET) Clients.Add(new Client(sTmpSock, sTmpAdr), sTmpSock); else return false;
+     if (sTmpSock != INVALID_SOCKET) mClients.Add(new Client(sTmpSock, sTmpAdr), sTmpSock); else return false;
 
      return sTmpSock;
 }
 
 void KuszkAPI::Sockets::Server::Disconnect(SOCKET sClient)
 {
-     Clients.Delete(sClient);
+     mClients.Delete(sClient);
 }
 
 unsigned KuszkAPI::Sockets::Server::Capacity(void) const
 {
-     return Clients.Capacity();
+     return mClients.Capacity();
+}
+
+Sockets::Client& KuszkAPI::Sockets::Server::GetClient(unsigned uClient)
+{
+	return mClients.GetDataByInt(uClient);
+}
+
+Sockets::Client& KuszkAPI::Sockets::Server::operator[] (SOCKET sClient)
+{
+	return mClients[sClient];
 }
 
 template<typename tnData>
 void KuszkAPI::Sockets::Server::Announce(const Containers::Array<tnData>& aBufor, unsigned uHeader)
 {
-     for (int i = 1; i <= Clients.Capacity(); i++) Clients.GetDataByInt(i).Send(aBufor, uHeader);
+     for (int i = 1; i <= mClients.Capacity(); i++) mClients.GetDataByInt(i).Send(aBufor, uHeader);
 }
 
 LRESULT CALLBACK KuszkAPI::Sockets::ServerHandlerProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
      Sockets::Server* psServer = (Sockets::Server*) GetWindowLong(hWnd, 0);
      Sockets::Server::ServerProc fProc = (Sockets::Server::ServerProc) GetWindowLong(hWnd, 4);
+
+     LRESULT rCode = 0;
 
      switch (uMsg){
           case WM_SOCKET:
@@ -110,19 +124,19 @@ LRESULT CALLBACK KuszkAPI::Sockets::ServerHandlerProc(HWND hWnd, UINT uMsg, WPAR
 
                          wParam = psServer->Accept();
 
-                         return fProc(psServer, FD_ACCEPT, wParam);
+                         rCode = fProc(*psServer, FD_ACCEPT, wParam);
 
                     break;
                     case FD_READ:
 
-                         return fProc(psServer, FD_READ, wParam);
+                         rCode = fProc(*psServer, FD_READ, wParam);
 
                     break;
                     case FD_CLOSE:
 
-                         psServer->Disconnect(wParam);
+                         rCode = fProc(*psServer, FD_CLOSE, wParam);
 
-                         return fProc(psServer, FD_CLOSE, wParam);
+                         psServer->Disconnect(wParam);
 
                     break;
                }
@@ -131,5 +145,5 @@ LRESULT CALLBACK KuszkAPI::Sockets::ServerHandlerProc(HWND hWnd, UINT uMsg, WPAR
           default: return DefWindowProc(hWnd, uMsg, wParam, lParam);
     }
 
-    return 0;
+    return rCode;
 }

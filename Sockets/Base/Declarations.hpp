@@ -17,6 +17,7 @@ class Socket
           sockaddr_in sAdres;
 
           HWND hHandler;
+          HWND hCurrent;
 
      public:
 

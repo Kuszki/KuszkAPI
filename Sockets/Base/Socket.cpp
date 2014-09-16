@@ -9,7 +9,9 @@ KuszkAPI::Sockets::Socket::Socket(void)
      memset(&sAdres, 0, sizeof(sockaddr_in));
 
      sSocket = 0;
-     hHandler = 0;
+
+     hHandler = NULL;
+     hCurrent = NULL;
 }
 
 KuszkAPI::Sockets::Socket::~Socket(void)
