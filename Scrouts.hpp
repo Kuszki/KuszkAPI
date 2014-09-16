@@ -20,6 +20,7 @@ Aby nie dołączać skróconych nazw (na przykład gdy kolidują z użytymi w in
 #define ARA KuszkAPI::Containers::Array		//!< Skrócona nazwa dla klasy KuszkAPI::Containers::Array.
 #define LST KuszkAPI::Containers::List		//!< Skrócona nazwa dla klasy KuszkAPI::Containers::List.
 #define BOX KuszkAPI::Containers::Box		//!< Skrócona nazwa dla klasy KuszkAPI::Containers::Box.
+#define VCT KuszkAPI::Containers::Vector	//!< Skrócona nazwa dla klasy KuszkAPI::Containers::Vector.
 
 #define INI KuszkAPI::Core::Ini              //!< Skrócona nazwa dla klasy KuszkAPI::Core::Ini.
 #define CON KuszkAPI::Core::Console		//!< Skrócona nazwa dla klasy KuszkAPI::Core::Console.
