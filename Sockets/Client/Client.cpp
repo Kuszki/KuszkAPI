@@ -43,9 +43,9 @@ bool KuszkAPI::Sockets::Client::Connect(const Containers::String& sServer, unsig
      sAdres.sin_port = htons(uPort);
 
      if (connect(sSocket, (sockaddr*) &sAdres, sizeof(sockaddr_in))){
-          closesocket(sSocket);
-          sSocket = 0;
-          return false;
+         closesocket(sSocket);
+         sSocket = 0;
+         return false;
      }
 
      WSAAsyncSelect(sSocket, hWnd, WM_SOCKET, FD_READ | FD_WRITE | FD_CLOSE);
@@ -70,9 +70,9 @@ bool KuszkAPI::Sockets::Client::Connect(const Containers::String& sServer, unsig
 void KuszkAPI::Sockets::Client::Disconnect(void)
 {
      if (sSocket){
-          memset(&sAdres, 0, sizeof(sockaddr_in));
-          closesocket(sSocket);
-          sSocket = 0;
+         memset(&sAdres, 0, sizeof(sockaddr_in));
+         closesocket(sSocket);
+         sSocket = 0;
      }
 }
 
@@ -98,8 +98,8 @@ unsigned KuszkAPI::Sockets::Client::Send(const Containers::Array<tnData>& aBufor
      char* pcBufor = new char[uTmp];
 
      if (uHeader){
-          memcpy(pcBufor, &uHeader, sizeof(unsigned));
-          memcpy(pcBufor + sizeof(unsigned), aBufor.GetBegin(), uTmp - sizeof(unsigned));
+         memcpy(pcBufor, &uHeader, sizeof(unsigned));
+         memcpy(pcBufor + sizeof(unsigned), aBufor.GetBegin(), uTmp - sizeof(unsigned));
      } else memcpy(pcBufor, aBufor.GetBegin(), uTmp);
 
      uTmp = send(sSocket, pcBufor, uTmp, 0);
@@ -176,29 +176,29 @@ LRESULT CALLBACK KuszkAPI::Sockets::ClientHandlerProc(HWND hWnd, UINT uMsg, WPAR
      LRESULT rCode = 0;
 
      switch (uMsg){
-          case WM_SOCKET:
-               switch (WSAGETSELECTEVENT(lParam)){
-                    case FD_CONNECT:
+         case WM_SOCKET:
+           switch (WSAGETSELECTEVENT(lParam)){
+               case FD_CONNECT:
 
-                         rCode = fProc(*pcClient, FD_CONNECT);
+                   rCode = fProc(*pcClient, FD_CONNECT);
 
-                    break;
-                    case FD_READ:
+               break;
+               case FD_READ:
 
-                         rCode = fProc(*pcClient, FD_READ);
+                   rCode = fProc(*pcClient, FD_READ);
 
-                    break;
-                    case FD_CLOSE:
+               break;
+               case FD_CLOSE:
 
-                         rCode = fProc(*pcClient, FD_CLOSE);
+                   rCode = fProc(*pcClient, FD_CLOSE);
 
-                         pcClient->Disconnect();
+                   pcClient->Disconnect();
 
-                    break;
-               }
-          break;
+               break;
+           }
+         break;
 
-          default: return DefWindowProc(hWnd, uMsg, wParam, lParam);
+         default: return DefWindowProc(hWnd, uMsg, wParam, lParam);
     }
 
     return 0;
