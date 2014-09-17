@@ -128,7 +128,7 @@ template<typename tnData>
 bool KuszkAPI::Containers::Array<tnData>::Delete(int iNumer)
 {
       if (iNumer < 1) iNumer += uIlosc;
-      if (iNumer > uIlosc || iNumer < 0) return false;
+      if (iNumer > uIlosc || iNumer <= 0) return false;
       tnData* pBufor = NULL;
       uIlosc--;
       iNumer--;

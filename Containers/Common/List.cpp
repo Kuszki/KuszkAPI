@@ -88,7 +88,7 @@ bool KuszkAPI::Containers::List<tnData>::Delete(int iNumer)
 {
       ItemData* ptBufor = ptBegin;
       if (iNumer < 1) iNumer += uIlosc;
-      if (iNumer > uIlosc || iNumer < 0) return false; else if (iNumer > 1){
+      if (iNumer > uIlosc || iNumer <= 0) return false; else if (iNumer > 1){
                  for (unsigned i = 1; i < iNumer - 1; i++){
                        ptBufor = ptBufor->ptNext;
                        if (!ptBufor->ptNext) return false;
