@@ -13,7 +13,7 @@ KuszkAPI::Containers::String::String(const String& sString)
 	uIlosc = 0;
 	cAbstract = 0;
 
-	Add(sString.pcData);
+	if (sString.uIlosc) Add(sString.pcData);
 }
 
 KuszkAPI::Containers::String::String(const TCHAR pcString[])
@@ -150,7 +150,7 @@ unsigned KuszkAPI::Containers::String::Add(TCHAR cChar, int iPos, bool bMode)
 {
 	if (iPos < 1) iPos += uIlosc;
 
-	if (iPos > uIlosc || iPos <= 0) return uIlosc;
+	if (iPos > uIlosc || iPos < 0) return uIlosc;
 	else if (pcData){
 
 		TCHAR* pcTmp = new TCHAR[uIlosc + 2];
@@ -203,7 +203,7 @@ unsigned KuszkAPI::Containers::String::Add(const TCHAR pcString[], int iPos, boo
 
 	if (iPos < 1) iPos += uIlosc;
 
-	if (iPos > uIlosc || iPos <= 0) return uIlosc;
+	if (iPos > uIlosc || iPos < 0) return uIlosc;
 	else if (pcData){
 
 		TCHAR* pcTmp = new TCHAR[uIlosc + uCount + 1];
@@ -587,7 +587,7 @@ const TCHAR& KuszkAPI::Containers::String::operator[] (int iNumer) const
 
 Containers::String& KuszkAPI::Containers::String::operator<< (const String& sString)
 {
-	Add(sString.pcData);
+	if (sString.uIlosc) Add(sString.pcData);
 
 	return *this;
 }
@@ -651,8 +651,8 @@ Containers::String KuszkAPI::Containers::String::operator+ (const String& sStrin
 {
 	String sTmp;
 
-	sTmp.Add(pcData);
-	sTmp.Add(sString.Str());
+	if (uIlosc) sTmp.Add(pcData);
+	if (sString.uIlosc) sTmp.Add(sString.Str());
 
 	return sTmp;
 }
@@ -661,7 +661,8 @@ Containers::String KuszkAPI::Containers::String::operator+ (const TCHAR pcString
 {
 	String sTmp;
 
-	sTmp.Add(pcData);
+	if (uIlosc) sTmp.Add(pcData);
+
 	sTmp.Add(pcString);
 
 	return sTmp;
@@ -669,7 +670,7 @@ Containers::String KuszkAPI::Containers::String::operator+ (const TCHAR pcString
 
 Containers::String& KuszkAPI::Containers::String::operator+= (const String& sString)
 {
-	Add(sString.pcData);
+	if (sString.uIlosc) Add(sString.pcData);
 
 	return *this;
 }
