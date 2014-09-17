@@ -147,13 +147,15 @@ unsigned KuszkAPI::Sockets::Client::Recv(Containers::Array<tnData>& aBufor)
 
 Sockets::Client& KuszkAPI::Sockets::Client::operator<< (const Containers::String& sMessage)
 {
-     send(sSocket, (char*) sMessage.Str(), (sMessage.Capacity() + 1) * sizeof(TCHAR), 0);
+     if (sSocket) send(sSocket, (char*) sMessage.Str(), (sMessage.Capacity() + 1) * sizeof(TCHAR), 0);
 
      return *this;
 }
 
 Sockets::Client& KuszkAPI::Sockets::Client::operator>> (Containers::String& sMessage)
 {
+     if (!sSocket) return *this;
+
      char* pcBufor = new char[uSize];
      unsigned uTmp = recv(sSocket, pcBufor, uSize, 0);
 
