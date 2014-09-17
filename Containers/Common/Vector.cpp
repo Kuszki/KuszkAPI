@@ -5,10 +5,15 @@ KuszkAPI::Containers::Vector<tnData>::Vector(const Vector<tnPrev>& vVector)
 {
 	unsigned uOldSize = sizeof(tnPrev);
 	unsigned uOldCount = vVector.Capacity();
+
 	uDataSize = sizeof(tnData);
+
 	ptBegin = new tnData[uOldCount * uOldSize / uDataSize];
+
 	uIlosc = uOldCount * uOldSize / uDataSize;
+
 	uMode = MODE_QUEUE;
+
 	memcpy(ptBegin, vVector.GetBegin(), uOldCount * uOldSize);
 	memset(&tAbstract, 0, uDataSize);
 }
@@ -17,9 +22,13 @@ template<typename tnData>
 KuszkAPI::Containers::Vector<tnData>::Vector(const Vector<tnData>& vVector)
 {
 	uDataSize = sizeof(tnData);
+
 	ptBegin = new tnData[vVector.uIlosc];
+
 	uIlosc = vVector.uIlosc;
+
 	uMode = vVector.uMode;
+
 	memcpy(ptBegin, vVector.ptBegin, vVector.uIlosc * uDataSize);
 	memset(&tAbstract, 0, uDataSize);
 }
@@ -28,9 +37,13 @@ template<typename tnData>
 KuszkAPI::Containers::Vector<tnData>::Vector(const Array<tnData>& aArray)
 {
 	uDataSize = sizeof(tnData);
+
 	ptBegin = new tnData[aArray.Capacity()];
+
 	uIlosc = aArray.Capacity();
+
 	uMode = aArray.GetMode();
+
 	memcpy(ptBegin, aArray.GetBegin(), aArray.Capacity() * uDataSize);
 	memset(&tAbstract, 0, uDataSize);
 }
@@ -39,10 +52,15 @@ template<typename tnData>
 KuszkAPI::Containers::Vector<tnData>::Vector(const List<tnData>& lList)
 {
 	uDataSize = sizeof(tnData);
+
 	uIlosc = lList.Capacity();
+
 	uMode = lList.GetMode();
+
 	ptBegin = new tnData[uIlosc];
+
 	for (int i = 0; i < uIlosc; i++) ptBegin[i] = lList.GetData(i + 1);
+
 	memset(&tAbstract, 0, uDataSize);
 }
 
@@ -50,9 +68,13 @@ template<typename tnData>
 KuszkAPI::Containers::Vector<tnData>::Vector(const tnData ptData[], unsigned uCount)
 {
 	uDataSize = sizeof(tnData);
+
 	ptBegin = new tnData[uCount];
+
 	uIlosc = uCount;
+
 	uMode = MODE_QUEUE;
+
 	memcpy(ptBegin, ptData, uCount * uDataSize);
 	memset(&tAbstract, 0, uDataSize);
 }
@@ -61,7 +83,9 @@ template<typename tnData>
 KuszkAPI::Containers::Vector<tnData>::Vector(void)
 {
 	memset(&tAbstract, 0, sizeof(tnData));
+
 	uDataSize = sizeof(tnData);
+
 	ptBegin = NULL;
 }
 
@@ -82,12 +106,18 @@ unsigned KuszkAPI::Containers::Vector<tnData>::Add(const tnData& tData, int iPos
 		if (!bMode) iPos--;
 
 		if (iPos == uIlosc){
+
 			memcpy(ptTmp, ptBegin, uDataSize * uIlosc);
+
 			ptTmp[uIlosc] = tData;
+
 		} else {
+
 			memcpy(ptTmp, ptBegin, uDataSize * iPos);
 			memcpy(ptTmp + iPos, ptBegin + iPos - 1, uDataSize * (uIlosc - iPos + 1));
+
 			ptTmp[iPos] = tData;
+
 		}
 
 		delete [] ptBegin;
@@ -98,7 +128,9 @@ unsigned KuszkAPI::Containers::Vector<tnData>::Add(const tnData& tData, int iPos
 	} else {
 
 		uIlosc = 1;
+
 		ptBegin = new tnData[1];
+
 		ptBegin[0] = tData;
 
 	}
@@ -110,6 +142,7 @@ template<typename tnData>
 unsigned KuszkAPI::Containers::Vector<tnData>::Add(const tnData ptData[], unsigned uCount, int iPos, bool bMode)
 {
 	if (!ptData) return uIlosc;
+
 	if (iPos < 1) iPos += uIlosc;
 	if (iPos > uIlosc || iPos < 0) return uIlosc; else if (ptBegin){
 
@@ -137,7 +170,9 @@ unsigned KuszkAPI::Containers::Vector<tnData>::Add(const tnData ptData[], unsign
 	} else {
 
 		ptBegin = new tnData[uCount + 1];
+
 		memcpy(ptBegin, ptData, uDataSize * uCount);
+
 		uIlosc = uCount;
 	}
 
@@ -150,12 +185,14 @@ bool KuszkAPI::Containers::Vector<tnData>::Delete(int iNumer)
 	if (iNumer > uIlosc) return false;
 
 	tnData* pBufor = NULL;
+
 	uIlosc--;
 	iNumer--;
 
 	if (uIlosc){
 
 		pBufor = new tnData[uIlosc];
+
 		memcpy(pBufor, ptBegin, uDataSize * iNumer);
 		memcpy(pBufor + iNumer, ptBegin + iNumer + 1, uDataSize * (uIlosc - iNumer));
 	}
@@ -226,6 +263,7 @@ unsigned KuszkAPI::Containers::Vector<tnData>::Change(const tnData& tOld, const 
 			uTmp = Find(tOld);
 
 			uCount++;
+
 		}
 
 		return uCount;
@@ -233,6 +271,7 @@ unsigned KuszkAPI::Containers::Vector<tnData>::Change(const tnData& tOld, const 
 	} else {
 
 		(*this)[uTmp] = tNew;
+
 		return true;
 
 	} else return false;
@@ -288,6 +327,7 @@ void KuszkAPI::Containers::Vector<tnData>::Clean(void)
 	if (ptBegin) delete [] ptBegin;
 
 	ptBegin = NULL;
+
 	uIlosc = 0;
 }
 
@@ -361,17 +401,20 @@ bool KuszkAPI::Containers::Vector<tnData>::operator!= (const Vector<tnData>& vVe
 template<typename tnData>
 Containers::Vector<tnData> KuszkAPI::Containers::Vector<tnData>::operator+ (const Vector<tnData>& vVector) const
 {
-	 Containers::Vector<tnData> vTmp;
-	 vTmp.Add(ptBegin, uIlosc);
-	 vTmp.Add(vVector.ptBegin, vVector.uIlosc);
-	 return vTmp;
+	Containers::Vector<tnData> vTmp;
+
+	vTmp.Add(ptBegin, uIlosc);
+	vTmp.Add(vVector.ptBegin, vVector.uIlosc);
+
+	return vTmp;
 }
 
 template<typename tnData>
 Containers::Vector<tnData>& KuszkAPI::Containers::Vector<tnData>::operator+= (const Vector<tnData>& vVector)
 {
-	 Add(vVector.ptBegin, vVector.uIlosc);
-	 return *this;
+	Add(vVector.ptBegin, vVector.uIlosc);
+
+	return *this;
 }
 
 template<typename tnData>
