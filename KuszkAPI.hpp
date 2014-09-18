@@ -58,8 +58,10 @@ Zawiera jedynie kolejne przestrzenie nazw odpowiadające za poszczególne moduł
 namespace KuszkAPI {};
 // ------------------------------
 
+// ------ NAMESPACE MACROS ------
 #define KUSZKAPI_NAMESPACE(name) namespace KuszkAPI { namespace name {
 #define KUSZKAPI_NAMESPACE_END };};
+// ------------------------------
 
 // ----- WINAPI DEFINITIONS -----
 #define WINVER           0x0502
