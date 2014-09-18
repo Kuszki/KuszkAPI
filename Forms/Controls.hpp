@@ -6,7 +6,6 @@
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----
-#ifndef KUSZKAPI_HPPONLY
 #include "Controls\Button.cpp"
 #include "Controls\Radio.cpp"
 #include "Controls\Check.cpp"
@@ -18,7 +17,6 @@
 #include "Controls\Calendar.cpp"
 #include "Controls\Tab.cpp"
 #include "Controls\Controls.cpp"
-#endif
 // ------------------------------
 
 #endif

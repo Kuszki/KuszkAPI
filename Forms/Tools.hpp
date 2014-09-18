@@ -6,7 +6,6 @@
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----
-#ifndef KUSZKAPI_HPPONLY
 #include "Tools\GdiObject.cpp"
 #include "Tools\Bitmap.cpp"
 #include "Tools\Icon.cpp"
@@ -14,7 +13,6 @@
 #include "Tools\Brush.cpp"
 #include "Tools\Region.cpp"
 #include "Tools\Images.cpp"
-#endif
 // ------------------------------
 
 #endif

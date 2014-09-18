@@ -2,9 +2,9 @@
 #define _KUSZKAPI_FORMS_FONTS_H
 
 // ----- STYLES DEFINITIONS -----
-#define STYLE_ITALIC 1
-#define STYLE_UNDERLINE 2
-#define STYLE_STRIKEOUT 4
+#define STYLE_ITALIC	1	//!< Styl czcionki. Czcionka z tym stylem będzie ukośna.
+#define STYLE_UNDERLINE	2	//!< Styl czcionki. Czcionka z tym stylem będzie podkreślona.
+#define STYLE_STRIKEOUT	4	//!< Styl czcionki. Czcionka z tym stylem będzie przekreślona.
 // ------------------------------
 
 // ---- HEADERS DECLARATIONS ----
@@ -12,9 +12,7 @@
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----
-#ifndef KUSZKAPI_HPPONLY
 #include "Fonts\Font.cpp"
-#endif
 // ------------------------------
 
 #endif
