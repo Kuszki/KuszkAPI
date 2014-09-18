@@ -1,0 +1,176 @@
+/*! \file
+    \brief Zawiera doumentacje dla pliku Map.cpp.
+
+Dokumentacja zamieszczona w innym pliku pomaga uniknąć chaosu w organizacji kodu.
+*/
+
+/*! \file Map.cpp
+    \brief Zawiera implementacje szablonu klasy Containers::Map.
+
+Implementacja każdej klasy w innym pliku pomaga uniknąć chaosu w organizacji kodu.
+*/
+
+/*! \class KuszkAPI::Containers::Map
+    \brief Implementacja szablonu mapy dla modułu kontenerów.
+    \tparam tnData Typ obiektów przechowywanych przez organizacje.
+    \tparam tnKey Typ obiektu klucza na podstawie którego indeksowane będą elementy.
+    \warning Zarówno klasy danych jak i klucza muszą mieć zdefiniowane konstruktory kopiujące.
+    \todo Należy zaimplementować mechanizm wyjątków.
+
+Kalasa stanowi implementacje szablonu mapy danych.
+*/
+/*! \var KuszkAPI::Containers::Map::bData
+    \brief Kontener przechowujący dane umieszczane w mapie.
+
+Przechowuje wszystkie obiekty zawarte w mapie umieszczone w identycznej kolejności, jak odpowiadające im klucze.
+*/
+/*! \var KuszkAPI::Containers::Map::lKey
+    \brief Kontener przechowujący klucze danych umieszczanych w mapie.
+
+Przechowuje wszystkie klucze do obiektów zawartych w mapie umieszczone w identycznej kolejności, jak odpowiadające im dane.
+*/
+/*! \var KuszkAPI::Containers::Map::uIlosc
+    \brief Ilość obiektów w organizacji.
+
+Przechowuje ilość par obiektów (klucza i danych).
+*/
+/*! \fn KuszkAPI::Containers::Map::Map(const Map<tnData, tnKey>&)
+    \brief Konstruktor kopiujący.
+    \param [in] mMap Organizacja źródłowa.
+
+Kopiuje wybrany obiekt.
+*/
+/*! \fn KuszkAPI::Containers::Map::Map(void)
+    \brief Domyślny konstruktor.
+
+Inicjuje wszystkie pola.
+*/
+/*! \fn KuszkAPI::Containers::Map::~Map(void)
+    \brief Dekonstruktor.
+
+Usuwa wszystkie obiekty i zwalnia zużyte zasoby.
+*/
+/*! \fn unsigned KuszkAPI::Containers::Map::Add(const tnData&, const tnKey&)
+    \brief Dodaje wybrany element do organizacji.
+    \param [in] tData Element do dodania.
+    \param [in] tKey Klucz do elementu.
+    \return Aktualna liczba elementów.
+
+Kopiuje obiekt klucza i danych przekazywane w parametrach i dodaje je do organizacji.
+*/
+/*! \fn unsigned KuszkAPI::Containers::Map::Add(tnData*, const tnKey&)
+    \brief Dodaje wybrany element do organizacji.
+    \param [in] ptData Adres elementu do dodania.
+    \param [in] tKey Klucz do elementu.
+    \return Aktualna liczba elementów.
+    \warning Obiekt na który wskazuje podany adres zostanie zniszczony wraz ze zniszczeniem kontenera.
+
+Kopiuje jedynie obiekt klucza, a następnie dodaje do organizacji element na który wskazuję podany adres pamięci wraz ze skopiowanym kluczem.
+*/
+/*! \fn bool KuszkAPI::Containers::Map::Delete(const tnKey&)
+    \brief Uzuwa wybrany element z organizacji.
+    \param [in] tKey Klucz do elementu.
+    \return Powodzenie operacji.\n
+            true - element został usunięty,\n
+            false - element nie został usunięty (przyczyną może być błąd w trakcie usuwania elementu, lub brak elementu o podanym indeksie).
+
+Usuwa obiekt powiązany z podanym kluczem, a wraz z nim odpowiadający mu klucz.
+*/
+/*! \fn const tnData& KuszkAPI::Containers::Map::GetData(const tnKey&) const
+    \brief Zwraca stałą referencje do wybranego obiektu.
+    \param [in] tKey Klucz do elementu.
+    \return Stała referencja do wybranego obiektu.
+    \warning W przypadku niepowodzenia zwraca stałą referencje do obiektu Containers::Box::tAbstract.
+
+Sprawdza czy element o podanym indeksie istnieje i zwraca jego stałą referencje lub element abstrakcyjny.
+*/
+/*! \fn void KuszkAPI::Containers::Map::SetKey(const tnKey&, int)
+    \brief Ustala nowy klucz dla wybranego obiektu.
+    \param [in] tKey Nowy klucz do elementu.
+    \param [in] iNumer Indeks elementu. Dostępne wartości:\n
+                0 - wskazuje na ostatni element (domyślnie).\n
+                wartość dodatnia - elementy numerowane są rosnąco zaczynając od 1.\n
+                wartość ujemna - elementy numerowane są malejąco licząc od 0.
+
+Dokonuje zmiany klucza obiektu o podanym indeksie. Indeks elementu zależy od kolejności dodawania elementów do kontenera.
+*/
+/*! \fn const tnKey& KuszkAPI::Containers::Map::GetKey(int)
+    \brief Zwraca klucz dla wybranego obiektu.
+    \param [in] iNumer Indeks elementu. Dostępne wartości:\n
+                0 - wskazuje na ostatni element (domyślnie).\n
+                wartość dodatnia - elementy numerowane są rosnąco zaczynając od 1.\n
+                wartość ujemna - elementy numerowane są malejąco licząc od 0.
+
+Zwraca obiekt klucza dla elementu o podanym indeksie. Indeks elementu zależy od kolejności dodawania elementów do kontenera.
+*/
+/*! \fn void KuszkAPI::Containers::Map::SetDataByInt(const tnData&, int)
+    \brief Ustala nową wartość dla wybranego obiektu.
+    \param [in] tData Nowa wartość elementu.
+    \param [in] iNumer Indeks elementu. Dostępne wartości:\n
+                0 - wskazuje na ostatni element (domyślnie).\n
+                wartość dodatnia - elementy numerowane są rosnąco zaczynając od 1.\n
+                wartość ujemna - elementy numerowane są malejąco licząc od 0.
+
+Dokonuje zmiany wartości obiektu o podanym indeksie. Indeks elementu zależy od kolejności dodawania elementów do kontenera.
+*/
+/*! \fn const tnData& KuszkAPI::Containers::Map::GetDataByInt(int)
+    \brief Zwraca wybrany obiekt.
+    \param [in] iNumer Indeks elementu. Dostępne wartości:\n
+                0 - wskazuje na ostatni element (domyślnie).\n
+                wartość dodatnia - elementy numerowane są rosnąco zaczynając od 1.\n
+                wartość ujemna - elementy numerowane są malejąco licząc od 0.
+
+Zwraca obiekt elementu o podanym indeksie. Indeks elementu zależy od kolejności dodawania elementów do kontenera.
+*/
+/*! \fn unsigned KuszkAPI::Containers::Map::Capacity(void) const
+    \brief Zwraca ilość przechowywanych obiektów.
+    \return Ilość przechowywanych obiektów.
+
+Zwraca kopie zmiennej Containers::Map::uIlosc.
+*/
+/*! \fn bool KuszkAPI::Containers::Map::Allow(const tnKey&)
+    \brief Sprawdza, czy istnieje możliwość dodania nowego obiektu o podanym kluczu.
+    \param [in] tKey Klucz elementu.
+    \return Wynik poszukiwań.\n
+            true - można dodać wybrany element,\n
+            false - nie można dodać elementu (prawdopodobnie element o podanym kluczu już istnieje).
+
+Przeprowadza poszukiwania podanego klucza na liście kluczy celem sprawdzenia, czy znajduję się on w użyciu.
+*/
+/*! \fn bool KuszkAPI::Containers::Map::Contain(const tnKey&)
+    \brief Sprawdza, czy wybrany klucz jest już w użyciu.
+    \param [in] tKey Klucz elementu.
+    \return Wynik poszukiwań.\n
+            true - klucz jest w użyciu,\n
+            false - nie znaleziono wybranego klucza.
+
+Przeprowadza poszukiwania podanego klucza na liście kluczy celem sprawdzenia, czy znajduję się on w użyciu.
+*/
+/*! \fn void KuszkAPI::Containers::Map::Clean(void)
+    \brief Czyści kontener.
+
+Usuwa wszystkie dane z kontenera.
+*/
+/*! \fn tnData& KuszkAPI::Containers::Map::operator[](const tnKey&)
+    \brief Zwraca referencje do wybranego obiektu.
+    \param [in] tKey Klucz wybranego elementu.
+    \return Referencja do wybranego obiektu.
+    \warning W przypadku niepowodzenia zwraca referencje do obiektu Containers::Box::tAbstract.
+
+Sprawdza czy element o podanym indeksie istnieje i zwraca jego referencje lub element abstrakcyjny.
+*/
+/*! \fn const tnData& KuszkAPI::Containers::Map::operator[](const tnKey&) const
+    \brief Zwraca stałą referencje do wybranego obiektu.
+    \param [in] tKey Klucz wybranego elementu.
+    \return Stała referencja do wybranego obiektu.
+    \warning W przypadku niepowodzenia zwraca stałą referencje do obiektu Containers::Box::tAbstract.
+
+Sprawdza czy element o podanym indeksie istnieje i zwraca jego stałą referencje lub element abstrakcyjny.
+*/
+/*! \fn Map<tnData, tnKey>& KuszkAPI::Containers::Map::operator=(const Map<tnData, tnKey&)
+    \brief Kopiuje wybraną organizacje tworząc bierzącą organizajce na jej podstawie.
+    \param [in] mMap Wybrana organizacja.
+    \return Referencja do aktualnej organizacji.
+
+Czyści bierzącą organizacje i kopiuje wszystkie elementy wybranej organizacji do bierzącej zachowując ich kolejność.
+*/
