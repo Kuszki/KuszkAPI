@@ -149,7 +149,6 @@ KuszkAPI::Containers::String::~String(void)
 unsigned KuszkAPI::Containers::String::Add(TCHAR cChar, int iPos, bool bMode)
 {
 	if (iPos < 1) iPos += uIlosc;
-
 	if (iPos > uIlosc || iPos < 0) return uIlosc;
 	else if (pcData){
 
@@ -160,6 +159,7 @@ unsigned KuszkAPI::Containers::String::Add(TCHAR cChar, int iPos, bool bMode)
 		if (iPos == uIlosc){
 
 			memcpy(pcTmp, pcData, uDataSize * uIlosc);
+
 			pcTmp[uIlosc] = cChar;
 
 		} else {
@@ -202,7 +202,6 @@ unsigned KuszkAPI::Containers::String::Add(const TCHAR pcString[], int iPos, boo
 	if (!uCount) return uIlosc;
 
 	if (iPos < 1) iPos += uIlosc;
-
 	if (iPos > uIlosc || iPos < 0) return uIlosc;
 	else if (pcData){
 
