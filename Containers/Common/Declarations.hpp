@@ -244,6 +244,7 @@ class Map
 
 	public:
 
+		Map(const Map<tnData, tnKey>& mMap);
 		Map(void);
 		~Map(void);
 
@@ -266,6 +267,7 @@ class Map
 
 		tnData& operator[] (const tnKey& tKey);
 		const tnData& operator[] (const tnKey& tKey) const;
+		Map<tnData, tnKey>& operator= (const Map<tnData, tnKey>& mMap);
 
 };
 // ------------------------------

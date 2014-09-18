@@ -1,6 +1,13 @@
 using namespace KuszkAPI;
 
 template<typename tnData, typename tnKey>
+KuszkAPI::Containers::Map<tnData, tnKey>::Map(const Map<tnData, tnKey>& mMap)
+: bData(mMap.bData), lKey(mMap.lKey)
+{
+     uIlosc = mMap.uIlosc;
+}
+
+template<typename tnData, typename tnKey>
 KuszkAPI::Containers::Map<tnData, tnKey>::Map(void)
 {
      uIlosc = 0;
@@ -119,4 +126,15 @@ template<typename tnData, typename tnKey>
 const tnData& KuszkAPI::Containers::Map<tnData, tnKey>::operator[] (const tnKey& tKey) const
 {
      return bData.GetData(lKey.Find(tKey));
+}
+
+template<typename tnData, typename tnKey>
+Containers::Map<tnData, tnKey>& KuszkAPI::Containers::Map<tnData, tnKey>::operator= (const Map<tnData, tnKey>& mMap)
+{
+     bData = mMap.bData;
+     lKey = mMap.lKey;
+
+     uIlosc = mMap.uIlosc;
+
+     return *this;
 }
