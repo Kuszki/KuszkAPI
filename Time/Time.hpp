@@ -12,7 +12,9 @@
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----
+#ifdef _KUSZKAPI_CPP
 #include "Time\Time.cpp"
+#endif
 // ------------------------------
 
 #endif

@@ -6,9 +6,11 @@
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----
+#ifdef _KUSZKAPI_CPP
 #include "Dialogs\CommonDialog.cpp"
 #include "Dialogs\UserDialog.cpp"
 #include "Dialogs\Dialog.cpp"
+#endif
 // ------------------------------
 
 #endif

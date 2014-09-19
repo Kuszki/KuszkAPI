@@ -13,11 +13,13 @@ Po dołączeniu dyrektywą "include" do projektu zostaną dodane wyłącznie pow
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----
+#ifdef _KUSZKAPI_CPP
 #include "Common\List.cpp"
 #include "Common\Vector.cpp"
 #include "Common\Array.cpp"
 #include "Common\Box.cpp"
 #include "Common\Map.cpp"
+#endif
 // ------------------------------
 
 #endif

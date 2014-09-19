@@ -6,8 +6,10 @@
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----
+#ifdef _KUSZKAPI_CPP
 #include "Parts\Console.cpp"
 #include "Parts\Tray.cpp"
+#endif
 // ------------------------------
 
 #endif

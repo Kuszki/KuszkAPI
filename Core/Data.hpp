@@ -6,8 +6,10 @@
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----
+#ifdef _KUSZKAPI_CPP
 #include "Data\Ini.cpp"
 #include "Data\Reg.cpp"
+#endif
 // ------------------------------
 
 #endif

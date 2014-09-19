@@ -10,15 +10,17 @@
 Po dołączeniu dyrektywą "include" do projektu zostaną dodane wyłącznie bazowe składowe modułu aplikacji takie jak abstrakcyjna klasa aplikacji.
 */
 
-#ifndef _KUSZKAPI_APP_BASE_H
-#define _KUSZKAPI_APP_BASE_H
+#ifndef _KUSZKAPI_APP_BASE_HPP
+#define _KUSZKAPI_APP_BASE_HPP
 
 // ---- HEADERS DECLARATIONS ----
 #include "Base\Declarations.hpp"
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----
+#ifdef _KUSZKAPI_CPP
 #include "Base\App.cpp"
+#endif
 // ------------------------------
 
 #endif

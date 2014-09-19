@@ -18,7 +18,9 @@ Po dołączeniu dyrektywą "include" do projektu zostanie dodany wyłącznie mod
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----
+#ifdef _KUSZKAPI_CPP
 #include "Files\File.cpp"
+#endif
 // ------------------------------
 
 #endif

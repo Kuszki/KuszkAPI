@@ -40,7 +40,7 @@
 */
 
 /*! \file
-    \brief Główny plik dołączający do projektu całe środowisko.
+    \brief Główny plik dołączający do projektu nagłówki całego środowiska.
 
 Po dołączeniu dyrektywą "include" do projektu zostaną dodane wszystkie składowe KuszkAPI. Kod źródłowy całego projektu znajdziesz <a target="_blank" href="https://github.com/Kuszki/KuszkAPI">tutaj</a>
 */
@@ -51,8 +51,8 @@ Po dołączeniu dyrektywą "include" do projektu zostaną dodane wszystkie skła
 Zawiera jedynie kolejne przestrzenie nazw odpowiadające za poszczególne moduły. Nie zawiera definicji ani deklaracji żadnych klas, struktur i funkcji. Kod źródłowy znajdziesz <a target="_blank" href="https://github.com/Kuszki/KuszkAPI">tutaj</a>.
 */
 
-#ifndef _KUSZKAPI_H
-#define _KUSZKAPI_H
+#ifndef _KUSZKAPI_HPP
+#define _KUSZKAPI_HPP
 
 // ---- NAMESPACE DEFINITION ----
 namespace KuszkAPI {};

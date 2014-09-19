@@ -10,9 +10,11 @@
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----
+#ifdef _KUSZKAPI_CPP
 #include "Run\Script.cpp"
 #include "Run\Dll.cpp"
 #include "Run\Hook.cpp"
+#endif
 // ------------------------------
 
 #endif

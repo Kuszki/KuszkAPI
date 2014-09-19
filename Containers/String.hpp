@@ -38,7 +38,9 @@ Po dołączeniu dyrektywą "include" do projektu zostani dodany wyłącznie modu
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----
+#ifdef _KUSZKAPI_CPP
 #include "String\String.cpp"
+#endif
 // ------------------------------
 
 // ----- MACROS DEFINITIONS -----

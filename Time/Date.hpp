@@ -17,7 +17,9 @@
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----
+#ifdef _KUSZKAPI_CPP
 #include "Date\Date.cpp"
+#endif
 // ------------------------------
 
 #endif

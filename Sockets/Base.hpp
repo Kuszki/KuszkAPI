@@ -6,7 +6,9 @@
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----
+#ifdef _KUSZKAPI_CPP
 #include "Base\Socket.cpp"
+#endif
 // ------------------------------
 
 #endif

@@ -16,11 +16,13 @@
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----
+#ifdef _KUSZKAPI_CPP
 #include "Threads\Thread.cpp"
 #include "Threads\Event.cpp"
 #include "Threads\Section.cpp"
 #include "Threads\Process.cpp"
 #include "Threads\Instance.cpp"
+#endif
 // ------------------------------
 
 #endif

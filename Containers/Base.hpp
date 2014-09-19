@@ -17,7 +17,9 @@ Po dołączeniu dyrektywą "include" do projektu zostaną dodane wyłącznie baz
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----
+#ifdef _KUSZKAPI_CPP
 #include "Base\Container.cpp"
+#endif
 // ------------------------------
 
 #endif

@@ -12,12 +12,14 @@
 // ------------------------------
 
 // ---- HEADERS DEFINITIONS -----
+#ifdef _KUSZKAPI_CPP
 #include "Base\Window.cpp"
 #include "Base\Control.cpp"
 #include "Base\TextControl.cpp"
 #include "Base\CheckControl.cpp"
 #include "Base\ListControl.cpp"
 #include "Base\DateControl.cpp"
+#endif
 // ------------------------------
 
 #endif
