@@ -26,11 +26,25 @@ Jeśli masz ochotę możesz korzystać z tego projektu na zasadzie licencji GNU 
 
 Instalacja
 ----------
-Aby używać projektu należy rozpakować go w dowolne miejsce, a następnie dołączyć plik KuszkAPI.hpp dyrektywą:
+Aby używać projektu należy rozpakować go w dowolne miejsce, a następnie dołączyć plik nagłówkowy `KuszkAPI.hpp` dyrektywą:
 
 `#include "<path to KuszkAPI root dir>/KuszkAPI.hpp"`.
 
-Należy wziąć pod uwagę, aby pliki nagłówkowe dołączane w windows.h były kompletne i zawierały wszystkie definicje (Common Control w wersji 6 lub nowszej). Domyślnie projekty będą budowane dla Windows XP+ i mogą nie działać poprawnie na poprzednich systemach.
+Następnie do projektu należy dodać plik `KuszkAPI.cpp` i oznaczyć go jako "do budowy".
+
+Gdy zamierzasz urzyć w projekcie szablonów pochodzących z dołączonego środowiska utwórz dowolny plik nagłówkowy, w którym wymienisz wszystkie użyte szablony, a następnie zdefiniuj globalne makro w projekcie:
+
+`KUSZKAPI_TEMPLATE_SPEC=\"<ścieżka do Twojego pliku z deklaracjami szablonów>\"`
+
+Przykładowa deklaracja użycia szablonu Mapy z parametrem klucza int, oraz typem danych bool:
+
+`template class KuszkAPI::Containers::Map<bool, int>;`
+
+Oraz przykład deklaracji użycia metody Read z klasy Klienta serwera, gdzie jako parametr danych użyty zostanie typ char:
+
+`template unsigned KuszkAPI::Sockets::Client::Read<char>(const KuszkAPI::Containers::Array<char>&, unsigned);`
+
+Należy także wziąć pod uwagę, aby pliki nagłówkowe dołączane w windows.h były kompletne i zawierały wszystkie definicje (Common Control w wersji 6 lub nowszej). Domyślnie projekty będą budowane dla Windows XP+ i mogą nie działać poprawnie na poprzednich systemach.
 
 Dokumentacja
 ----------
