@@ -36,13 +36,20 @@ Gdy zamierzasz urzyć w projekcie szablonów pochodzących z dołączonego środ
 
 `KUSZKAPI_TEMPLATE_SPEC=\"<ścieżka do Twojego pliku z deklaracjami szablonów>\"`
 
-Przykładowa deklaracja użycia szablonu Mapy z parametrem klucza int, oraz typem danych bool:
+Przykładowa deklaracja użycia szablonu Mapy z parametrem klucza `int`, oraz typem danych `bool`:
 
 `template class KuszkAPI::Containers::Map<bool, int>;`
 
-Oraz przykład deklaracji użycia metody Read z klasy Klienta serwera, gdzie jako parametr danych użyty zostanie typ char:
+Oraz przykład deklaracji użycia metody Read z klasy Klienta serwera, wraz z zastosowaniem skróconych nazw, gdzie jako parametr danych użyty zostanie typ `char`:
 
-`template unsigned KuszkAPI::Sockets::Client::Read<char>(const KuszkAPI::Containers::Array<char>&, unsigned);`
+`template unsigned SRV::Read<char>(const ARA<char>&, unsigned);`
+
+Oczywiście możesz także w głównym pliku projektu umieścić poniższą dyrektywę:
+
+`#include "<path to KuszkAPI root dir>/KuszkAPI.cpp"`.
+
+Musisz jednak pamiętać, że zbudowanie kilku plików źródłowych używających projektu może być niemożliwe.
+
 
 Należy także wziąć pod uwagę, aby pliki nagłówkowe dołączane w windows.h były kompletne i zawierały wszystkie definicje (Common Control w wersji 6 lub nowszej). Domyślnie projekty będą budowane dla Windows XP+ i mogą nie działać poprawnie na poprzednich systemach.
 
