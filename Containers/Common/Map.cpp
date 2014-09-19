@@ -131,6 +131,8 @@ const tnData& KuszkAPI::Containers::Map<tnData, tnKey>::operator[] (const tnKey&
 template<typename tnData, typename tnKey>
 Containers::Map<tnData, tnKey>& KuszkAPI::Containers::Map<tnData, tnKey>::operator= (const Map<tnData, tnKey>& mMap)
 {
+     Clean();
+
      bData = mMap.bData;
      lKey = mMap.lKey;
 
