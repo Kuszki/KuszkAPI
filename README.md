@@ -34,25 +34,26 @@ Następnie do projektu należy dodać plik `KuszkAPI.cpp` i oznaczyć go jako "d
 
 Gdy zamierzasz urzyć w projekcie szablonów pochodzących z dołączonego środowiska utwórz dowolny plik nagłówkowy, w którym wymienisz wszystkie użyte szablony, a następnie zdefiniuj globalne makro w projekcie:
 
-`KUSZKAPI_TEMPLATE_SPEC=\"<ścieżka do Twojego pliku z deklaracjami szablonów>\"`
+`KUSZKAPI_TEMPLATE_SPEC=\"[ścieżka do Twojego pliku z deklaracjami szablonów>]\"`
 
 Przykładowa deklaracja użycia szablonu Mapy z parametrem klucza `int`, oraz typem danych `bool`:
 
 `template class KuszkAPI::Containers::Map<bool, int>;`
 
-Oraz przykład deklaracji użycia metody Read z klasy Klienta serwera, wraz z zastosowaniem skróconych nazw, gdzie jako parametr danych użyty zostanie typ `char`:
+Oraz przykład deklaracji użycia metody `Read` z klasy Klienta serwera, wraz z zastosowaniem skróconych nazw, gdzie jako parametr danych użyty zostanie typ `char`:
 
 `template unsigned SRV::Read<char>(const ARA<char>&, unsigned);`
 
 Oczywiście możesz także w głównym pliku projektu umieścić poniższą dyrektywę:
 
-`#include "<path to KuszkAPI root dir>/KuszkAPI.cpp"`.
+`#include "[path to KuszkAPI root dir]/KuszkAPI.cpp"`.
 
 Musisz jednak pamiętać, że zbudowanie kilku plików źródłowych używających projektu może być niemożliwe.
-
 
 Należy także wziąć pod uwagę, aby pliki nagłówkowe dołączane w windows.h były kompletne i zawierały wszystkie definicje (Common Control w wersji 6 lub nowszej). Domyślnie projekty będą budowane dla Windows XP+ i mogą nie działać poprawnie na poprzednich systemach.
 
 Dokumentacja
 ----------
-Możesz wygenerować dokumentacje samemu za pomocą programu <a target="_blank" href="http://www.stack.nl/~dimitri/doxygen/index.html">Doxygen</a> lub wysłać mi maila z prośbą o udostępnienie dokumentacji. Dokumentacja znajduję się też na moim <a target="_blank" href="http://kuszki.myftp.org/slites/api">serwerze</a>, nie gwarantuję jednak, że będzie on czynny.
+Możesz wygenerować dokumentację samemu za pomocą programu <a target="_blank" href="http://www.stack.nl/~dimitri/doxygen/index.html">Doxygen</a> lub wysłać mi maila z prośbą o udostępnienie dokumentacji. Dokumentacja znajduję się też na moim <a target="_blank" href="http://kuszki.myftp.org/slites/api">serwerze</a>, nie gwarantuję jednak, że będzie on czynny.
+
+Aby wygenerować dokumentację użyj pliku `Doxyfile` znajdującego się w projekcie. Pamiętaj jednak aby odpowiednio nastawić katalog roboczy oraz katalog z kodem źródłowym.
