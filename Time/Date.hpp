@@ -8,8 +8,8 @@
 #define WEEKDAY 	16	//!< Styl daty. Do wyjścia zostanie dodany dzień tygodnia.
 #define WORDS 		32	//!< Styl daty. Nazwy w wyjściu zostaną wygenerowane używając słów zamiast cyfr.
 
-#define WDMY 		2	//!< Styl daty. Wyjście będzie zawierało informacje w kolejności: <dzień tygodnia> <dzień miesiąca> <miesiąc> <rok>.
-#define WYMD 		4	//!< Styl daty. Wyjście będzie zawierało informacje w kolejności: <dzień tygodnia> <rok> <miesiąc> <dzień miesiąca>.
+#define WDMY 		2	//!< Styl daty. Wyjście będzie zawierało informacje w kolejności: [dzień tygodnia] [dzień miesiąca] [miesiąc] [rok].
+#define WYMD 		4	//!< Styl daty. Wyjście będzie zawierało informacje w kolejności: [dzień tygodnia] [rok] [miesiąc] [dzień miesiąca].
 // ------------------------------
 
 // ---- HEADERS DECLARATIONS ----

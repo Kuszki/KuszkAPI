@@ -24,9 +24,25 @@
 
     \section install_sec Instalacja
 
-    Aby używać projektu należy rozpakować go w dowolne miejsce, a następnie dołączyć plik KuszkAPI.hpp dyrektywą "include".
+    Aby używać projektu należy rozpakować go w dowolne miejsce, a następnie dołączyć plik nagłówkowy `KuszkAPI.hpp` dyrektywą `#include`.
 
-    Należy wziąć pod uwagę, aby pliki nagłówkowe dołączane w windows.h były kompletne i zawierały wszystkie definicje (Common Control w wersji 6 lub nowszej). Domyślnie projekty będą budowane dla Windows XP+ i mogą nie działać poprawnie na poprzednich systemach.
+    Następnie do projektu należy dodać plik `KuszkAPI.cpp` i oznaczyć go jako "do budowy".
+
+    Gdy zamierzasz urzyć w projekcie szablonów pochodzących z dołączonego środowiska utwórz dowolny plik nagłówkowy, w którym wymienisz wszystkie użyte szablony, a następnie zdefiniuj globalne makro w projekcie:
+
+    `KUSZKAPI_TEMPLATE_SPEC="[ścieżka do Twojego pliku z deklaracjami szablonów]"`
+
+    Przykładowa deklaracja użycia szablonu Mapy z parametrem klucza `int`, oraz typem danych `bool`:
+
+    `template class KuszkAPI::Containers::Map<bool, int>;`
+
+    Oraz przykład deklaracji użycia metody `Read` z klasy Klienta serwera, wraz z zastosowaniem skróconych nazw, gdzie jako parametr danych użyty zostanie typ `char`:
+
+    `template unsigned SRV::Read<char>(const ARA<char>&, unsigned);`
+
+    Oczywiście możesz także do głownego pliku projektu dołączyć plik `KuszkAPI/KuszkAPI.cpp`. Musisz jednak pamiętać, że zbudowanie kilku plików źródłowych używających projektu może być niemożliwe.
+
+    Należy także wziąć pod uwagę, aby pliki nagłówkowe dołączane w windows.h były kompletne i zawierały wszystkie definicje (Common Control w wersji 6 lub nowszej). Domyślnie projekty będą budowane dla Windows XP+ i mogą nie działać poprawnie na poprzednich systemach.
 
     \section links_sec Przydatne linki
 
