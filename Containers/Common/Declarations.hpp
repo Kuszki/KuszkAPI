@@ -260,6 +260,7 @@ class Map
 		void SetDataByInt(const tnData& tData,
 					   int iNumer);
 		tnData& GetDataByInt(int iNumer);
+		const tnData& GetDataByInt(int iNumer) const;
 		unsigned Capacity(void) const;
 		bool Allow(const tnKey& tKey) const;
 		bool Contain(const tnKey& tKey) const;

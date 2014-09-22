@@ -113,7 +113,16 @@ Zwraca obiekt klucza dla elementu o podanym indeksie. Indeks elementu zależy od
 
 Dokonuje zmiany wartości obiektu o podanym indeksie. Indeks elementu zależy od kolejności dodawania elementów do kontenera.
 */
-/*! \fn const tnData& KuszkAPI::Containers::Map::GetDataByInt(int)
+/*! \fn const tnData& KuszkAPI::Containers::Map::GetDataByInt(int) const
+    \brief Zwraca wybrany obiekt.
+    \param [in] iNumer Indeks elementu. Dostępne wartości:\n
+                0 - wskazuje na ostatni element (domyślnie).\n
+                wartość dodatnia - elementy numerowane są rosnąco zaczynając od 1.\n
+                wartość ujemna - elementy numerowane są malejąco licząc od 0.
+
+Zwraca stałą referencję elementu o podanym indeksie. Indeks elementu zależy od kolejności dodawania elementów do kontenera.
+*/
+/*! \fn tnData& KuszkAPI::Containers::Map::GetDataByInt(int)
     \brief Zwraca wybrany obiekt.
     \param [in] iNumer Indeks elementu. Dostępne wartości:\n
                 0 - wskazuje na ostatni element (domyślnie).\n
