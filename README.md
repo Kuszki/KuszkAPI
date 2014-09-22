@@ -34,7 +34,7 @@ Następnie do projektu należy dodać plik `KuszkAPI.cpp` i oznaczyć go jako "d
 
 Gdy zamierzasz urzyć w projekcie szablonów pochodzących z dołączonego środowiska utwórz dowolny plik nagłówkowy, w którym wymienisz wszystkie użyte szablony, a następnie zdefiniuj globalne makro w projekcie:
 
-`KUSZKAPI_TEMPLATE_SPEC=\"[ścieżka do Twojego pliku z deklaracjami szablonów>]\"`
+`KUSZKAPI_TEMPLATE_SPEC=\"[ścieżka do Twojego pliku z deklaracjami szablonów]\"`
 
 Przykładowa deklaracja użycia szablonu Mapy z parametrem klucza `int`, oraz typem danych `bool`:
 
