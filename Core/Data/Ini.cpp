@@ -99,6 +99,12 @@ Containers::Strings KuszkAPI::Core::Ini::GetKeys(const Containers::String& sSect
 	return Containers::Strings(pcBufor);
 }
 
+void KuszkAPI::Core::Ini::SetStrValues(const Containers::Map<Containers::String, Containers::String>& mValues, const Containers::String& sSection)
+{
+	for (int i = 1; i <= mValues.Capacity(); i++) SetStr(sSection, mValues.GetKey(i), mValues.GetDataByInt(i));
+}
+
+
 Containers::Map<Containers::String, Containers::String> KuszkAPI::Core::Ini::GetStrValues(const Containers::String& sSection) const
 {
 	Containers::Strings sKeys = GetKeys(sSection);
@@ -108,6 +114,11 @@ Containers::Map<Containers::String, Containers::String> KuszkAPI::Core::Ini::Get
 	for (int i = 1; i <= sKeys.Capacity(); i++) mValues.Add(GetStr(sSection, sKeys[i]), sKeys[i]);
 
 	return mValues;
+}
+
+void KuszkAPI::Core::Ini::SetIntValues(const Containers::Map<int, Containers::String>& mValues, const Containers::String& sSection)
+{
+	for (int i = 1; i <= mValues.Capacity(); i++) SetInt(sSection, mValues.GetKey(i), mValues.GetDataByInt(i));
 }
 
 Containers::Map<int, Containers::String> KuszkAPI::Core::Ini::GetIntValues(const Containers::String& sSection) const

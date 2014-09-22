@@ -34,7 +34,11 @@ class Ini
                      const Containers::String& sName) const;
           Containers::Strings GetSections() const;
           Containers::Strings GetKeys(const Containers::String& sSection) const;
+          void SetStrValues(const Containers::Map<Containers::String, Containers::String>& mValues,
+                            const Containers::String& sSection);
           Containers::Map<Containers::String, Containers::String> GetStrValues(const Containers::String& sSection) const;
+          void SetIntValues(const Containers::Map<int, Containers::String>& mValues,
+                            const Containers::String& sSection);
           Containers::Map<int, Containers::String> GetIntValues(const Containers::String& sSection) const;
           void Clean(void);
 
