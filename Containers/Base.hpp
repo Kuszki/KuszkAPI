@@ -22,4 +22,8 @@ Po dołączeniu dyrektywą "include" do projektu zostaną dodane wyłącznie baz
 #endif
 // ------------------------------
 
+// ----- MACROS DEFINITIONS -----
+#define foreach(container)	for (int i = 1; i <= container.Capacity(); i++)	//!< Skrócona konstrukcja pętli for dla wykonania operacji na wszystkich elementach kontenera.
+// ------------------------------
+
 #endif
