@@ -29,6 +29,7 @@ class Time
 
           };
 
+          Time(const Time& tTime);
           Time(const TimeDsc& tTime);
           Time(unsigned uHour,
                unsigned uMin,
@@ -61,6 +62,7 @@ class Time
           Time& operator-- (void);
           Time operator++ (int);
           Time operator-- (int);
+
           operator TimeDsc (void) const;
           operator Containers::String (void) const;
 

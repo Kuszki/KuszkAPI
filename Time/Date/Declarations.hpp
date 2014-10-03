@@ -12,6 +12,7 @@ class Date
      protected:
 
           tm tData;
+
           TCHAR cSeparator;
 
           unsigned uShowFlag;
@@ -31,6 +32,7 @@ class Date
 
           };
 
+		Date(const Date& dDate);
           Date(const DateDsc& tDate);
           Date(unsigned uDay,
                unsigned uMonth,
@@ -60,6 +62,7 @@ class Date
           Date operator+ (unsigned uDays) const;
           int operator- (const Date& dData) const;
           Date operator- (unsigned uDays) const;
+
           operator DateDsc (void) const;
           operator Containers::String (void) const;
 
