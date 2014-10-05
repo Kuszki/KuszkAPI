@@ -19,6 +19,7 @@
 #include "Base\CheckControl.cpp"
 #include "Base\ListControl.cpp"
 #include "Base\DateControl.cpp"
+#include "Base\BarControl.cpp"
 #endif
 // ------------------------------
 

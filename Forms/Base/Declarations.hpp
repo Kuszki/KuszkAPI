@@ -9,6 +9,7 @@ class TextControl;
 class CheckBoxControl;
 class ListControl;
 class DateControl;
+class BarControl;
 // ------------------------------
 
 // ---- WINDOW DECLARATIONS -----
@@ -237,6 +238,26 @@ class DateControl : public Control
 
           virtual void SetDate(const DateTime::Date& dDate) = 0;
           virtual DateTime::Date GetDate(void) const = 0;
+
+};
+// ------------------------------
+
+// ---- BARCTR DECLARATIONS -----
+class BarControl : public Control
+{
+
+     protected:
+
+		unsigned short uMin;
+		unsigned short uMax;
+
+     public:
+
+          BarControl(const HWND& hOwn,
+                     unsigned uCtrId);
+
+          virtual void SetValue(unsigned uValue) = 0;
+          virtual unsigned GetValue(void) const = 0;
 
 };
 // ------------------------------

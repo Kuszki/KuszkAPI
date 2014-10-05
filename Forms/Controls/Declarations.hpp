@@ -373,8 +373,9 @@ class TabBox : public Control
 {
 
      public:
+
           TabBox(const HWND& hOwn,
-                unsigned uCrtId);
+                 unsigned uCrtId);
 
           HWND Create(int iXPos,
                       int iYPos,
@@ -393,6 +394,35 @@ class TabBox : public Control
           unsigned GetIndex(void) const;
           unsigned Capacity(void) const;
           void CleanItems(void);
+
+};
+// ------------------------------
+
+// -- PROGRESSBAR DECLARATIONS --
+class ProgressBar : public BarControl
+{
+
+     public:
+
+          ProgressBar(const HWND& hOwn,
+                      unsigned uCrtId);
+
+          HWND Create(int iXPos,
+                      int iYPos,
+                      int iSzerokosc,
+                      int iWysokosc,
+                      unsigned short uStart = 0,
+                      unsigned short uStop = 100,
+                      unsigned uStep = 1,
+                      unsigned uStyl = 0,
+                      unsigned uExStyl = 0,
+                      const Containers::String& sClass = Containers::String(PROGRESS_CLASS));
+          void SetValue(unsigned uValue);
+          unsigned GetValue(void) const;
+          void SetProgress(float fProgress);
+          float GetProgress(void) const;
+          void Increment(int iValue = 0);
+
 
 };
 // ------------------------------

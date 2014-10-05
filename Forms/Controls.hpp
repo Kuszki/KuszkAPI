@@ -17,6 +17,7 @@
 #include "Controls\Table.cpp"
 #include "Controls\Calendar.cpp"
 #include "Controls\Tab.cpp"
+#include "Controls\ProgressBar.cpp"
 #include "Controls\Controls.cpp"
 #endif
 // ------------------------------
