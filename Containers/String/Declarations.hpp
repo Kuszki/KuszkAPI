@@ -29,6 +29,7 @@ class String
 		String(const TCHAR pcString[]);
 		String(const DCHAR pcString[]);
 		String(const void* pvVoid);
+		String(float fFloat);
 		String(unsigned uUnsigned);
 		String(int iInt);
 		String(TCHAR cChar);

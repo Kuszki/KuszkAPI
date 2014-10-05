@@ -92,6 +92,28 @@ KuszkAPI::Containers::String::String(unsigned uUnsigned)
 	delete [] pcTmp;
 }
 
+KuszkAPI::Containers::String::String(float fFloat)
+{
+	uDataSize = sizeof(TCHAR);
+
+	pcData = NULL;
+	pcBufor = NULL;
+	pcConvert = NULL;
+
+	uIlosc = 0;
+	cAbstract = 0;
+
+	TCHAR* pcTmp = new TCHAR[MAX_PATH];
+
+	memset(pcTmp, 0, MAX_PATH);
+
+	FloToStr(pcTmp, TEXT("%f"), fFloat);
+
+	Add(pcTmp);
+
+	delete [] pcTmp;
+}
+
 KuszkAPI::Containers::String::String(int iInt)
 {
 	uDataSize = sizeof(TCHAR);

@@ -16,6 +16,7 @@ Zawiera wszystkie deklaracje i definicje składowych modułu kontenerów. Kod ź
 
 // -------- USED HEADERS --------
 #include <Windows.h>
+#include <stdio.h>
 // ------------------------------
 
 // ----- FORMAT DEFINITIONS -----
