@@ -20,7 +20,7 @@ bool KuszkAPI::Sockets::Server::Register(void)
 	memset(&cClass, 0, sizeof(cClass));
 
 	cClass.hInstance = GetModuleHandle(NULL);
-	cClass.cbWndExtra = 2 * sizeof(int);
+	cClass.cbWndExtra = 2 * sizeof(void*);
 	cClass.lpfnWndProc = Sockets::ServerHandlerProc;
 	cClass.lpszClassName = pcName;
 

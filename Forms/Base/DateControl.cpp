@@ -4,5 +4,5 @@ KuszkAPI::Forms::DateControl::DateControl(const HWND& hOwn, unsigned uCtrId) : C
 
 KuszkAPI::Forms::DateControl::operator DateTime::Date (void) const
 {
-      return GetDate();
+     return GetDate();
 }

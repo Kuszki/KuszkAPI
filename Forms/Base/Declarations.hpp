@@ -43,7 +43,10 @@ class Window
           };
 
           const HWND& hOwner;
+
           HWND hUchwyt;
+
+          bool bTmpWindow;
 
      public:
 
@@ -89,7 +92,8 @@ class Window
 
           operator const HWND& (void) const;
 
-          virtual void Destroy(void) = 0;
+          virtual void Destroy(void);
+
           virtual void Clean(void) = 0;
 
           static void SetWndName(HWND hWnd,
@@ -105,7 +109,7 @@ class Control : public Window
 
      protected:
 
-          class ToopTip
+          class ToolTip
           {
 
                private:
@@ -119,9 +123,9 @@ class Control : public Window
 
                public:
 
-                    ToopTip(const HWND& hWnd,
+                    ToolTip(const HWND& hWnd,
                             const HWND& hOwn);
-                    ~ToopTip(void);
+                    ~ToolTip(void);
 
                     void Add(const Containers::String& sTekst,
                              const Containers::String& sTytul = Containers::String(),
@@ -142,20 +146,21 @@ class Control : public Window
 
      public:
 
-          ToopTip Tooltip;
+          ToolTip Tooltip;
           Control(const HWND& hOwn,
                   unsigned uCtrId);
-          virtual ~Control(void);
 
           void SetFont(HFONT hCzcionka = NULL);
           HWND GetOwner(void) const;
           unsigned GetId(void) const;
           WNDPROC GetDefProc(void) const;
           WNDPROC Subclass(WNDPROC fProc);
-          void Destroy(void);
+          void Destroy();
           void Clean(void);
 
           operator WNDPROC (void) const;
+
+          template<typename tnControl> static tnControl Clone(HWND hWindow);
 
 };
 // ------------------------------

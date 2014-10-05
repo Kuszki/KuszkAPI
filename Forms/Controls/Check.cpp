@@ -1,6 +1,6 @@
 using namespace KuszkAPI;
 
-KuszkAPI::Forms::CheckBox::CheckBox(const HWND& hOwn, unsigned uCrtId) : CheckBoxControl(hOwn, uCrtId){}
+KuszkAPI::Forms::CheckBox::CheckBox(const HWND& hOwn, unsigned uCrtId) : CheckBoxControl(hOwn, uCrtId) {}
 
 HWND KuszkAPI::Forms::CheckBox::Create(const Containers::String& sTekst, int iXPos, int iYPos, int iSzerokosc, int iWysokosc, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
 {

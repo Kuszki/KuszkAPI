@@ -1,6 +1,6 @@
 using namespace KuszkAPI;
 
-KuszkAPI::Forms::Button::Button(const HWND& hOwn, unsigned uCrtId) : TextControl(hOwn, uCrtId){}
+KuszkAPI::Forms::Button::Button(const HWND& hOwn, unsigned uCrtId) : TextControl(hOwn, uCrtId) {}
 
 HWND KuszkAPI::Forms::Button::Create(const Containers::String& sTekst, int iXPos, int iYPos, int iSzerokosc, int iWysokosc, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
 {

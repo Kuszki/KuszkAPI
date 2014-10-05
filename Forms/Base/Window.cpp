@@ -44,11 +44,13 @@ KuszkAPI::Forms::Window::Window(const HWND& hOwn)
 : hOwner(hOwn), Watch(hUchwyt)
 {
      hUchwyt = NULL;
+
+     bTmpWindow = false;
 }
 
 KuszkAPI::Forms::Window::~Window(void)
 {
-     hUchwyt = NULL;
+     if (!bTmpWindow) Destroy();
 }
 
 void KuszkAPI::Forms::Window::Show(int iStyl)
@@ -181,6 +183,17 @@ unsigned KuszkAPI::Forms::Window::GetClaLong(int iId) const
 KuszkAPI::Forms::Window::operator const HWND& (void) const
 {
      return hUchwyt;
+}
+
+void KuszkAPI::Forms::Window::Destroy(void)
+{
+     if (hUchwyt){
+
+          DestroyWindow(hUchwyt);
+
+          hUchwyt = NULL;
+
+     }
 }
 
 void KuszkAPI::Forms::Window::SetWndName(HWND hWnd, const Containers::String& sName)

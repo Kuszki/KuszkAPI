@@ -1,6 +1,6 @@
 using namespace KuszkAPI;
 
-KuszkAPI::Forms::EditBox::EditBox(const HWND& hOwn, unsigned uCrtId) : TextControl(hOwn, uCrtId){}
+KuszkAPI::Forms::EditBox::EditBox(const HWND& hOwn, unsigned uCrtId) : TextControl(hOwn, uCrtId) {}
 
 HWND KuszkAPI::Forms::EditBox::Create(int iXPos, int iYPos, int iSzerokosc, int iWysokosc, const Containers::String& sTekst, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
 {

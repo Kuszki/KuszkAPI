@@ -1,6 +1,6 @@
 using namespace KuszkAPI;
 
-KuszkAPI::Forms::ListBox::ListBox(const HWND& hOwn, unsigned uCrtId) : ListControl(hOwn, uCrtId){}
+KuszkAPI::Forms::ListBox::ListBox(const HWND& hOwn, unsigned uCrtId) : ListControl(hOwn, uCrtId) {}
 
 HWND KuszkAPI::Forms::ListBox::Create(int iXPos, int iYPos, int iSzerokosc, int iWysokosc, const Containers::Strings& sLista, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
 {
