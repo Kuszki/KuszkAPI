@@ -94,7 +94,6 @@ class Window
           operator const HWND& (void) const;
 
           virtual void Destroy(void);
-
           virtual void Clean(void) = 0;
 
           static void SetWndName(HWND hWnd,
@@ -156,10 +155,11 @@ class Control : public Window
           unsigned GetId(void) const;
           WNDPROC GetDefProc(void) const;
           WNDPROC Subclass(WNDPROC fProc);
-          void Destroy();
-          void Clean(void);
 
           operator WNDPROC (void) const;
+
+          virtual void Destroy(void) override;
+          virtual void Clean(void) override;
 
           template<typename tnControl> static tnControl Clone(HWND hWindow);
 
@@ -220,7 +220,6 @@ class ListControl : public Control
           virtual Containers::Strings GetItems(void) const = 0;
           virtual unsigned GetIndex(void) const = 0;
           virtual unsigned Capacity(void) const = 0;
-          virtual void CleanItems(void) = 0;
 
 };
 // ------------------------------

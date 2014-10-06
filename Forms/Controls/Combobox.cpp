@@ -48,7 +48,8 @@ void KuszkAPI::Forms::ComboBox::SetItem(const Containers::String& sTekst, unsign
 
 void KuszkAPI::Forms::ComboBox::SetItems(const Containers::Strings& sLista, unsigned uIkona)
 {
-      CleanItems();
+      Clean();
+      
       for (int i = 1; i <= sLista.Capacity(); i++) AddItem(sLista.GetData(i), uIkona);
 }
 
@@ -131,7 +132,7 @@ void KuszkAPI::Forms::ComboBox::Sort(bool bGrow)
       }
 }
 
-void KuszkAPI::Forms::ComboBox::CleanItems(void)
+void KuszkAPI::Forms::ComboBox::Clean(void)
 {
       ComboBox_ResetContent(hUchwyt);
 }

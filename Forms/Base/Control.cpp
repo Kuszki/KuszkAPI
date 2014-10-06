@@ -112,19 +112,12 @@ WNDPROC KuszkAPI::Forms::Control::Subclass(WNDPROC fProc)
 
 void KuszkAPI::Forms::Control::Destroy(void)
 {
-     if (hUchwyt){
-
-          Clean();
-
-          Window::Destroy();
-
-     }
-}
-
-void KuszkAPI::Forms::Control::Clean(void)
-{
      Tooltip.Delete();
+
+     Window::Destroy();
 }
+
+void KuszkAPI::Forms::Control::Clean(void) {}
 
 KuszkAPI::Forms::Control::operator WNDPROC (void) const
 {

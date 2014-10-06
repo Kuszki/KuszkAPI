@@ -15,7 +15,7 @@ KuszkAPI::Forms::CommonDialog::~CommonDialog(void)
       memset(&tLastColor, 0, sizeof(COLORREF));
 }
 
-bool KuszkAPI::Forms::CommonDialog::GetFileOpen(TCHAR pcDefExt[], TCHAR pcMask[], unsigned uFlags) const
+bool KuszkAPI::Forms::CommonDialog::GetFileOpen(const TCHAR pcDefExt[], const TCHAR pcMask[], unsigned uFlags) const
 {
       OPENFILENAME oPlik;
       TCHAR* pcBufor = new TCHAR[MAX_PATH];
@@ -39,7 +39,7 @@ bool KuszkAPI::Forms::CommonDialog::GetFileOpen(TCHAR pcDefExt[], TCHAR pcMask[]
       return bTmp;
 }
 
-bool KuszkAPI::Forms::CommonDialog::GetFileSave(TCHAR pcDefExt[], TCHAR pcMask[], unsigned uFlags) const
+bool KuszkAPI::Forms::CommonDialog::GetFileSave(const TCHAR pcDefExt[], const TCHAR pcMask[], unsigned uFlags) const
 {
       OPENFILENAME oPlik;
       TCHAR* pcBufor = new TCHAR[MAX_PATH];

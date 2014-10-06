@@ -38,11 +38,11 @@ class Form : public Window
                       int iXPos = CW_USEDEFAULT,
                       int iYPos = CW_USEDEFAULT);
           bool Register(void);
-          void Destroy(void);
           void SetTitle(const Containers::String& sNazwa);
           Containers::String GetTitle(void) const;
           HMENU GetMenu(void) const;
-          void Clean(void);
+
+          virtual void Clean(void) override;
 
           static Forms::Form Clone(HWND hWindow);
 

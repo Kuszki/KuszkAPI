@@ -54,11 +54,11 @@ class CommonDialog
       public:
               CommonDialog(const HWND& hOwn = NULL);
               ~CommonDialog(void);
-              bool GetFileOpen(TCHAR pcDefExt[] = NULL,
-                               TCHAR pcMask[] = TEXT("Wszystkie pliki\0*.*\0"),
+              bool GetFileOpen(const TCHAR pcDefExt[] = NULL,
+                               const TCHAR pcMask[] = TEXT("Wszystkie pliki\0*.*\0"),
                                unsigned uFlags = OFN_FILEMUSTEXIST | OFN_HIDEREADONLY) const;
-              bool GetFileSave(TCHAR pcDefExt[] = NULL,
-                               TCHAR pcMask[] = TEXT("Wszystkie pliki\0*.*\0"),
+              bool GetFileSave(const TCHAR pcDefExt[] = NULL,
+                               const TCHAR pcMask[] = TEXT("Wszystkie pliki\0*.*\0"),
                                unsigned uFlags = OFN_OVERWRITEPROMPT | OFN_PATHMUSTEXIST) const;
               bool GetFont(unsigned uMin = 0,
                            unsigned uMax = 0) const;

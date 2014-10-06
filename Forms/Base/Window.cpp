@@ -180,11 +180,6 @@ unsigned KuszkAPI::Forms::Window::GetClaLong(int iId) const
      return GetClassLong(hUchwyt, iId);
 }
 
-KuszkAPI::Forms::Window::operator const HWND& (void) const
-{
-     return hUchwyt;
-}
-
 void KuszkAPI::Forms::Window::Destroy(void)
 {
      if (hUchwyt){
@@ -194,6 +189,11 @@ void KuszkAPI::Forms::Window::Destroy(void)
           hUchwyt = NULL;
 
      }
+}
+
+KuszkAPI::Forms::Window::operator const HWND& (void) const
+{
+     return hUchwyt;
 }
 
 void KuszkAPI::Forms::Window::SetWndName(HWND hWnd, const Containers::String& sName)

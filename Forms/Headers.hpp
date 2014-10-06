@@ -599,9 +599,14 @@
 #ifndef ACM_ISPLAYING
     #define ACM_ISPLAYING                   (WM_USER + 104)
 #endif
+#ifndef LVGS_COLLAPSIBLE
+	#define LVGS_COLLAPSIBLE        0x00000008
+#endif
 
+#ifndef TTM_SETTITLE
 #ifndef UNICODE
     #define TTM_SETTITLE                    TTM_SETTITLEA
 #else
     #define TTM_SETTITLE                    TTM_SETTITLEW
+#endif
 #endif

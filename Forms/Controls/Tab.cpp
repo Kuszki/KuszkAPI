@@ -35,7 +35,8 @@ void KuszkAPI::Forms::TabBox::DeleteItem(unsigned uNumer)
 
 void KuszkAPI::Forms::TabBox::SetItems(const Containers::Strings& sLista)
 {
-      CleanItems();
+      Clean();
+      
       AddItems(sLista);
 }
 
@@ -72,7 +73,7 @@ unsigned KuszkAPI::Forms::TabBox::Capacity(void) const
       return TabCtrl_GetItemCount(hUchwyt);
 }
 
-void KuszkAPI::Forms::TabBox::CleanItems(void)
+void KuszkAPI::Forms::TabBox::Clean(void)
 {
       TabCtrl_DeleteAllItems(hUchwyt);
 }

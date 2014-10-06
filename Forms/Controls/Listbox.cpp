@@ -29,7 +29,8 @@ void KuszkAPI::Forms::ListBox::DeleteItem(unsigned uNumer)
 
 void KuszkAPI::Forms::ListBox::SetItems(const Containers::Strings& sLista)
 {
-      CleanItems();
+      Clean();
+      
       AddItems(sLista);
 }
 
@@ -71,7 +72,7 @@ void KuszkAPI::Forms::ListBox::Sort(bool bGrow)
       SetItems(sTmp);
 }
 
-void KuszkAPI::Forms::ListBox::CleanItems(void)
+void KuszkAPI::Forms::ListBox::Clean(void)
 {
       ListBox_ResetContent(hUchwyt);
 }

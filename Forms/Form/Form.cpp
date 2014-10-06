@@ -55,17 +55,6 @@ bool KuszkAPI::Forms::Form::Register(void)
      return RegisterClassEx(&Class);
 }
 
-void KuszkAPI::Forms::Form::Destroy(void)
-{
-     if (hUchwyt){
-
-          Clean();
-
-          Window::Destroy();
-
-     }
-}
-
 void KuszkAPI::Forms::Form::SetTitle(const Containers::String& sTekst)
 {
      Window::SetWndName(hUchwyt, sTekst);

@@ -130,7 +130,8 @@ class Label : public TextControl
                       unsigned uExStyl = 0,
                       const Containers::String& sClass = Containers::String(WC_STATIC));
           void SetImage(HGDIOBJ hImg);
-          void Clean(void);
+
+		virtual void Clean(void) override;
 
 };
 // ------------------------------
@@ -165,9 +166,10 @@ class EditBox : public TextControl
           void SetPass(TCHAR cZnak);
           void Scrool(bool bPos = true);
           unsigned Capacity(void) const;
-          void CleanLines(void);
 
           operator Containers::Strings (void) const;
+
+          virtual void Clean(void) override;
 };
 // ------------------------------
 
@@ -197,7 +199,8 @@ class ListBox : public ListControl
           unsigned GetIndex(void) const;
           unsigned Capacity(void) const;
           void Sort(bool bGrow = true);
-          void CleanItems(void);
+
+          virtual void Clean(void) override;
 
 };
 // ------------------------------
@@ -251,7 +254,8 @@ class ComboBox : public ListControl
           unsigned GetIndex(void) const;
           unsigned Capacity(void) const;
           void Sort(bool bGrow = true);
-          void CleanItems(void);
+
+          virtual void Clean(void) override;
 
 };
 // ------------------------------
@@ -344,6 +348,8 @@ class TableBox : public ListControl
           void CleanGroups(void);
           void CleanHeader(void);
 
+          virtual void Clean(void) override;
+
 };
 // ------------------------------
 
@@ -393,7 +399,8 @@ class TabBox : public Control
           Containers::Strings GetItems(void) const;
           unsigned GetIndex(void) const;
           unsigned Capacity(void) const;
-          void CleanItems(void);
+
+          virtual void Clean(void) override;
 
 };
 // ------------------------------
