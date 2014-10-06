@@ -38,7 +38,7 @@
 
     Oraz przykład deklaracji użycia metody `Read` z klasy Klienta serwera, wraz z zastosowaniem skróconych nazw, gdzie jako parametr danych użyty zostanie typ `char`:
 
-    `template unsigned SRV::Read<char>(const ARA<char>&, unsigned);`
+    `template unsigned SRV::Read<char>(ARA<char>&, unsigned);`
 
     Oczywiście możesz także do głownego pliku projektu dołączyć plik `KuszkAPI/KuszkAPI.cpp`. Musisz jednak pamiętać, że zbudowanie kilku plików źródłowych używających projektu może być niemożliwe.
 
