@@ -57,18 +57,6 @@ const tnData& KuszkAPI::Containers::Box<tnData>::GetData(int iNumer) const
 }
 
 template<typename tnData>
-unsigned KuszkAPI::Containers::Box<tnData>::Capacity(void) const
-{
-     return uIlosc;
-}
-
-template<typename tnData>
-bool KuszkAPI::Containers::Box<tnData>::Empty(void) const
-{
-     return !uIlosc;
-}
-
-template<typename tnData>
 void KuszkAPI::Containers::Box<tnData>::Clean(void)
 {
      for (int i = 1; i <= uIlosc; i++) delete vPointers[i];

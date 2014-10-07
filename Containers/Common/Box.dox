@@ -24,12 +24,6 @@ Kalasa stanowi implementacje szablonu pudełka do przechowywania danych. Organiz
 
 Wektor przechowuje adresy komurek pamięci w których znajdują się obiekty zawarte w kontenerze. Taka organizacja pozwala przechowywać elementy dowolnych typów wraz z zaawansowanymi strukturami danych.
 */
-/*! \var KuszkAPI::Containers::Box::uIlosc
-    \brief Liczba obiektów w kontenerze.
-    \todo Pole należy zastąpić użyciem odpowiedniej metody z klasy Vector.
-
-Przechowuje aktualną liczbę obiektów zawartych w kontenerze.
-*/
 /*! \fn KuszkAPI::Containers::Box::Box(const Box<tnData>&)
     \brief Konstruktor kopiujący.
     \param [in] bBox Organizacja źródłowa.
@@ -75,15 +69,6 @@ Kopiuje obiekt przekazywany w parametrze i dodaje go do organizacji.
 
 Dodaje obiekt na który wskazuje parametr do organizacji.
 */
-/*! \fn bool KuszkAPI::Containers::Box::Delete(unsigned)
-    \brief Usuwa wybrany obiekt z kontenera.
-    \param [in] iNumer Indeks usuwanego obiektu.
-    \return Powodzenie operacji.\n
-            true - element został usunięty,\n
-            false - element nie został usunięty (przyczyną może być błąd w trakcie usuwania elementu, lub brak elementu o podanym indeksie).
-
-Umożliwia usunięcie wybranego obiektu z kontenera, operacja jest nieodwracalna.
-*/
 /*! \fn const tnData& KuszkAPI::Containers::Box::GetData(int) const
     \brief Zwraca stałą referencje do wybranego obiektu.
     \param [in] iNumer Indeks wybranego elementu. Dostępne wartości:\n
@@ -94,25 +79,6 @@ Umożliwia usunięcie wybranego obiektu z kontenera, operacja jest nieodwracalna
     \warning W przypadku niepowodzenia zwraca stałą referencje do obiektu Containers::Vector::tAbstract.
 
 Sprawdza czy element o podanym indeksie istnieje i zwraca jego stałą referencje lub element abstrakcyjny.
-*/
-/*! \fn unsigned KuszkAPI::Containers::Box::Capacity(void) const
-    \brief Zwraca ilość przechowywanych obiektów.
-    \return Ilość przechowywanych obiektów.
-
-Zwraca kopie zmiennej KuszkAPI::Containers::Box::uIlosc.
-*/
-/*! \fn bool KuszkAPI::Containers::Box::Empty(void) const
-    \brief Sprawdza, czy kontener jest pusty.
-    \return Stan kontenera.\n
-            true - pusty,\n
-            false - zawierający obiekty.
-
-Zwraca kopie zmiennej Containers::Box::uIlosc zrzutowaną na typ "bool".
-*/
-/*! \fn void KuszkAPI::Containers::Box::Clean(void)
-    \brief Czyści kontener.
-
-Usuwa wszystkie dane z kontenera.
 */
 /*! \fn tnData& KuszkAPI::Containers::Box::operator[](int)
     \brief Zwraca referencje do wybranego obiektu.

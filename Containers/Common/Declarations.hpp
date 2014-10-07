@@ -35,7 +35,7 @@ class List : public Container
 		List(const tnData ptData[],
 			unsigned uCount);
 		List(void);
-		~List(void);
+		virtual ~List(void);
 
 		unsigned Add(const tnData& tData,
 				   int iPos = LAST,
@@ -44,7 +44,6 @@ class List : public Container
 				   unsigned uCount,
 				   int iPos = LAST,
 				   bool bMode = ADD_AFTER);
-		bool Delete(int iNumer);
 		const tnData& GetData(int iNumer) const;
 		unsigned Find(const tnData& tData) const;
 		bool Contain(const tnData& tData) const;
@@ -58,7 +57,9 @@ class List : public Container
 				unsigned uCount,
 				bool bGrow = true);
 		void Reverse(void);
-		void Clean(void);
+
+		virtual bool Delete(int iNumer) override;
+          virtual void Clean(void) override;
 
 		tnData& operator[] (int iNumer);
 		const tnData& operator[] (int iNumer) const;
@@ -96,7 +97,7 @@ class Vector : public Container
 		Vector(const tnData ptData[],
 			  unsigned uCount);
 		Vector(void);
-		~Vector(void);
+		virtual ~Vector(void);
 
 		unsigned Add(const tnData& tData,
 				   int iPos = LAST,
@@ -105,7 +106,6 @@ class Vector : public Container
 				   unsigned uCount,
 				   int iPos = LAST,
 				   bool bMode = ADD_AFTER);
-		bool Delete(int iNumer);
 		const tnData& GetData(int iNumer) const;
 		const tnData* GetBegin(void) const;
 		const tnData* GetEnd(void) const;
@@ -121,7 +121,9 @@ class Vector : public Container
 				unsigned uCount,
 				bool bGrow = true);
 		void Reverse(void);
-		void Clean(void);
+
+		virtual bool Delete(int iNumer) override;
+          virtual void Clean(void) override;
 
 		tnData& operator[] (int iNumer);
 		const tnData& operator[] (int iNumer) const;
@@ -169,7 +171,7 @@ class Array : public Container
 		Array(const tnData ptData[],
 			 unsigned uCount);
 		Array(void);
-		~Array(void);
+		virtual ~Array(void);
 
 		unsigned Add(const tnData& tData,
 				   int iPos = LAST,
@@ -178,11 +180,12 @@ class Array : public Container
 				   unsigned uCount,
 				   int iPos = LAST,
 				   bool bMode = ADD_AFTER);
-		bool Delete(int iNumer);
 		const tnData& GetData(int iNumer) const;
 		const tnData* GetBegin(void) const;
 		const tnData* GetEnd(void) const;
-		void Clean(void);
+
+		virtual bool Delete(int iNumer) override;
+          virtual void Clean(void) override;
 
 		tnData& operator[] (int iNumer);
 		const tnData& operator[] (int iNumer) const;
@@ -197,20 +200,18 @@ class Array : public Container
 
 // ------ BOX DECLARATIONS ------
 template<typename tnData>
-class Box
+class Box : public Container
 {
 
 	protected:
 
 		    Vector<tnData*> vPointers;
 
-		    unsigned uIlosc;
-
 	public:
 
 		Box(const Box<tnData>& bBox);
 		Box(void);
-		~Box(void);
+		virtual ~Box(void);
 
 		unsigned Add(const tnData& tData,
 				   int iPos = LAST,
@@ -218,11 +219,10 @@ class Box
 		unsigned Add(tnData* ptData,
 				   int iPos = LAST,
 				   bool bMode = ADD_AFTER);
-		bool Delete(int iNumer);
 		const tnData& GetData(int iNumer) const;
-		unsigned Capacity(void) const;
-		bool Empty(void) const;
-		void Clean(void);
+
+		virtual bool Delete(int iNumer) override;
+          virtual void Clean(void) override;
 
 		tnData& operator[] (int iNumer);
 		const tnData& operator[] (int iNumer) const;
