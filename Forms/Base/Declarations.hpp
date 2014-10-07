@@ -6,7 +6,7 @@ KUSZKAPI_NAMESPACE(Forms)
 class Window;
 class Control;
 class TextControl;
-class CheckBoxControl;
+class CheckControl;
 class ListControl;
 class DateControl;
 class BarControl;
@@ -184,13 +184,13 @@ class TextControl : public Control
 // ------------------------------
 
 // --- CHECKCTR DECLARATIONS ----
-class CheckBoxControl : public TextControl
+class CheckControl : public TextControl
 {
 
      public:
 
-          CheckBoxControl(const HWND& hOwn,
-                          unsigned uCtrId);
+          CheckControl(const HWND& hOwn,
+                       unsigned uCtrId);
 
           bool GetCheck(void) const;
 
@@ -247,8 +247,8 @@ class BarControl : public Control
 
      protected:
 
-		unsigned short uMin;
-		unsigned short uMax;
+		short iMin;
+		short iMax;
 
      public:
 

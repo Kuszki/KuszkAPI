@@ -3,7 +3,7 @@ using namespace KuszkAPI;
 Containers::Box<Forms::RadioBox::ItemData> KuszkAPI::Forms::RadioBox::bData = Containers::Box<Forms::RadioBox::ItemData>();
 
 KuszkAPI::Forms::RadioBox::RadioBox(const HWND& hOwn, unsigned uCrtId)
-: CheckBoxControl(hOwn, uCrtId)
+: CheckControl(hOwn, uCrtId)
 {
      uGroupId = 0;
 }

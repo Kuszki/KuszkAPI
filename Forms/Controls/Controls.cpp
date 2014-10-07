@@ -30,20 +30,20 @@ tnData& KuszkAPI::Forms::Controls::Group<tnData>::operator[] (unsigned uNumer)
      return mControl[uNumer];
 }
 
-KuszkAPI::Forms::Controls::Controls(const HWND& hOwn) : hOwner(hOwn), Buttons(hOwner), RadioBoxs(hOwner), CheckBoxs(hOwner), Labels(hOwner), EditBoxs(hOwner), Lists(hOwner), Combos(hOwner), TableBoxs(hOwner), Calendars(hOwner), TabBoxs(hOwner) {}
+KuszkAPI::Forms::Controls::Controls(const HWND& hOwn) : hOwner(hOwn), Buttons(hOwner), Radios(hOwner), Checks(hOwner), Labels(hOwner), Edits(hOwner), Lists(hOwner), Combos(hOwner), Tables(hOwner), Calendars(hOwner), Tabs(hOwner) {}
 
 KuszkAPI::Forms::Controls::~Controls(void) {}
 
 void KuszkAPI::Forms::Controls::Clean(void)
 {
      Buttons.Clean();
-     RadioBoxs.Clean();
-     CheckBoxs.Clean();
+     Radios.Clean();
+     Checks.Clean();
      Labels.Clean();
-     EditBoxs.Clean();
+     Edits.Clean();
      Lists.Clean();
      Combos.Clean();
-     TableBoxs.Clean();
+     Tables.Clean();
      Calendars.Clean();
-     TabBoxs.Clean();
+     Tabs.Clean();
 }

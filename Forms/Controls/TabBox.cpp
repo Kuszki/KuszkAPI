@@ -1,6 +1,6 @@
 using namespace KuszkAPI;
 
-KuszkAPI::Forms::TabBox::TabBox(const HWND& hOwn, unsigned uCrtId) : Control(hOwn, uCrtId) {}
+KuszkAPI::Forms::TabBox::TabBox(const HWND& hOwn, unsigned uCrtId) : ListControl(hOwn, uCrtId) {}
 
 HWND KuszkAPI::Forms::TabBox::Create(int iXPos, int iYPos, int iSzerokosc, int iWysokosc, const Containers::Strings& sLista, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
 {

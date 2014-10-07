@@ -1,13 +1,13 @@
 using namespace KuszkAPI;
 
-KuszkAPI::Forms::CheckBoxControl::CheckBoxControl(const HWND& hOwn, unsigned uCtrId) : TextControl(hOwn, uCtrId) {}
+KuszkAPI::Forms::CheckControl::CheckControl(const HWND& hOwn, unsigned uCtrId) : TextControl(hOwn, uCtrId) {}
 
-bool KuszkAPI::Forms::CheckBoxControl::GetCheck(void) const
+bool KuszkAPI::Forms::CheckControl::GetCheck(void) const
 {
      return Button_GetCheck(hUchwyt) == BST_CHECKED;
 }
 
-KuszkAPI::Forms::CheckBoxControl::operator bool (void) const
+KuszkAPI::Forms::CheckControl::operator bool (void) const
 {
      return GetCheck();
 }

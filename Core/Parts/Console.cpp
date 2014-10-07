@@ -1,8 +1,10 @@
 using namespace KuszkAPI;
 
 HWND KuszkAPI::Core::Console::hUchwyt = NULL;
+
 HANDLE KuszkAPI::Core::Console::hIn = NULL;
 HANDLE KuszkAPI::Core::Console::hOut = NULL;
+
 unsigned KuszkAPI::Core::Console::uIlosc = 0;
 
 KuszkAPI::Core::Console::Console(bool bShow)

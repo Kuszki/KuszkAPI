@@ -2,18 +2,18 @@ using namespace KuszkAPI;
 
 KuszkAPI::Forms::ProgressBar::ProgressBar(const HWND& hOwn, unsigned uCtrId) : BarControl(hOwn, uCtrId) {}
 
-HWND KuszkAPI::Forms::ProgressBar::Create(int iXPos, int iYPos, int iSzerokosc, int iWysokosc, unsigned short uStart, unsigned short uStop, unsigned uStep, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
+HWND KuszkAPI::Forms::ProgressBar::Create(int iXPos, int iYPos, int iSzerokosc, int iWysokosc, short iStart, short iStop, unsigned uStep, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
 {
      Destroy();
 
-     uMin = uStart;
-     uMax = uStop;
+     iMin = iStart;
+     iMax = iStop;
 
      hUchwyt = CreateWindowEx(uExStyl, sClass.Str(), NULL, uStyl | WS_VISIBLE | WS_CHILD | PBS_SMOOTH | PBS_SMOOTHREVERSE, iXPos, iYPos, iSzerokosc, iWysokosc, hOwner, (HMENU) uId, hInstance, NULL);
 
 	if (hUchwyt){
 
-		SendMessage(hUchwyt, PBM_SETRANGE, 0, (LPARAM) MAKELONG(uMin, uMax));
+		SendMessage(hUchwyt, PBM_SETRANGE, 0, (LPARAM) MAKELONG(iMin, iMax));
 		SendMessage(hUchwyt, PBM_SETSTEP, (WPARAM) uStep, 0);
 
 	}
@@ -33,12 +33,12 @@ unsigned KuszkAPI::Forms::ProgressBar::GetValue(void) const
 
 void KuszkAPI::Forms::ProgressBar::SetProgress(float fProgress)
 {
-	SendMessage(hUchwyt, PBM_SETPOS, (WPARAM) (fProgress * (uMax - uMin)), 0);
+	SendMessage(hUchwyt, PBM_SETPOS, (WPARAM) (fProgress * (iMax - iMin)), 0);
 }
 
 float KuszkAPI::Forms::ProgressBar::GetProgress(void) const
 {
-	return ((float) SendMessage(hUchwyt, PBM_GETPOS, 0, 0)) / (uMax - uMin);
+	return ((float) SendMessage(hUchwyt, PBM_GETPOS, 0, 0)) / (iMax - iMin);
 }
 
 void KuszkAPI::Forms::ProgressBar::Increment(int iValue)

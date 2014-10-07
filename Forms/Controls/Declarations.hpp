@@ -11,8 +11,9 @@ class EditBox;
 class ListBox;
 class ComboBox;
 class TableBox;
-class Calendar;
 class TabBox;
+class Calendar;
+class TrackBar;
 class Controls;
 // ------------------------------
 
@@ -38,7 +39,7 @@ class Button : public TextControl
 // ------------------------------
 
 // ----- RADIO DECLARATIONS -----
-class RadioBox : public CheckBoxControl
+class RadioBox : public CheckControl
 {
 
      private:
@@ -73,13 +74,14 @@ class RadioBox : public CheckBoxControl
                       unsigned uExStyl = 0,
                       const Containers::String& sClass = Containers::String(WC_BUTTON));
           unsigned GetGroupId(void) const;
-          void SetCheckBox(bool bZaznacz = true);
+
+          virtual void SetCheckBox(bool bZaznacz = true) override;
 
 };
 // ------------------------------
 
 // ----- CHECK DECLARATIONS -----
-class CheckBox : public CheckBoxControl
+class CheckBox : public CheckControl
 {
 
      public:
@@ -95,7 +97,8 @@ class CheckBox : public CheckBoxControl
                       unsigned uExStyl = 0,
                       unsigned uStyl = 0,
                       const Containers::String& sClass = Containers::String(WC_BUTTON));
-          void SetCheckBox(bool bZaznacz = true);
+
+          virtual void SetCheckBox(bool bZaznacz = true) override;
 
 };
 // ------------------------------
@@ -192,14 +195,15 @@ class ListBox : public ListControl
                       const Containers::String& sClass = Containers::String(WC_LISTBOX));
           void AddItem(const Containers::String& sTekst);
           void AddItems(const Containers::Strings& sLista);
-          void DeleteItem(unsigned uNumer = 0);
           void SetItems(const Containers::Strings& sLista);
-          Containers::String GetItem(unsigned uNumer = 0) const;
-          Containers::Strings GetItems(void) const;
-          unsigned GetIndex(void) const;
-          unsigned Capacity(void) const;
+
           void Sort(bool bGrow = true);
 
+          virtual void DeleteItem(unsigned uNumer = 0) override;
+          virtual Containers::String GetItem(unsigned uNumer = 0) const override;
+          virtual Containers::Strings GetItems(void) const override;
+          virtual unsigned GetIndex(void) const override;
+          virtual unsigned Capacity(void) const override;
           virtual void Clean(void) override;
 
 };
@@ -239,22 +243,22 @@ class ComboBox : public ListControl
                        unsigned uIkona = 0);
           void AddItems(const Containers::Strings& sLista,
                         unsigned uIkona = 0);
-          void DeleteItem(unsigned uNumer = 0);
           void SetItem(const Containers::String& sTekst,
                        unsigned uNumer = 0);
           void SetItems(const Containers::Strings& sLista,
                         unsigned uIkona = 0);
-          Containers::String GetItem(unsigned uNumer = 0) const;
-          Containers::Strings GetItems(void) const;
           ItemData GetItemStruct(unsigned uNumer = 0) const;
           void SetItemIcon(unsigned uIkona = 0,
                            unsigned uNumer = 0);
           unsigned GetItemIcon(unsigned uNumer = 0) const;
           void SetImages(bool bEnable);
-          unsigned GetIndex(void) const;
-          unsigned Capacity(void) const;
           void Sort(bool bGrow = true);
 
+		virtual void DeleteItem(unsigned uNumer = 0) override;
+          virtual Containers::String GetItem(unsigned uNumer = 0) const override;
+          virtual Containers::Strings GetItems(void) const override;
+          virtual unsigned GetIndex(void) const override;
+          virtual unsigned Capacity(void) const override;
           virtual void Clean(void) override;
 
 };
@@ -309,9 +313,6 @@ class TableBox : public ListControl
           void AddItems(const Containers::Strings& sData,
                         unsigned uGroup = 0,
                         unsigned uIcon = 0);
-          void DeleteItem(unsigned uNumer = 0);
-          Containers::String GetItem(unsigned uNumer = 0) const;
-          Containers::Strings GetItems(void) const;
           ItemData GetItemStruct(unsigned uNumer = 0) const;
           void SetItemData(const Containers::String& sTekst,
                            unsigned uXPos,
@@ -340,14 +341,48 @@ class TableBox : public ListControl
           void SetImages(bool bSmallEnable,
                          bool bLargeEnable);
           unsigned GetColumnCount(void) const;
-          unsigned GetIndex(void) const;
-          unsigned Capacity(void) const;
           void Sort(unsigned uNumer = 1,
                     bool bGrow = true);
           void CleanItems(void);
           void CleanGroups(void);
           void CleanHeader(void);
 
+          virtual void DeleteItem(unsigned uNumer = 0) override;
+          virtual Containers::String GetItem(unsigned uNumer = 0) const override;
+          virtual Containers::Strings GetItems(void) const override;
+          virtual unsigned GetIndex(void) const override;
+          virtual unsigned Capacity(void) const override;
+          virtual void Clean(void) override;
+
+};
+// ------------------------------
+
+// ------ TAB DECLARATIONS ------
+class TabBox : public ListControl
+{
+
+     public:
+
+          TabBox(const HWND& hOwn,
+                 unsigned uCrtId);
+
+          HWND Create(int iXPos,
+                      int iYPos,
+                      int iSzerokosc,
+                      int iWysokosc,
+                      const Containers::Strings& sLista = Containers::Strings(),
+                      unsigned uStyl = TCS_MULTILINE,
+                      unsigned uExStyl = 0,
+                      const Containers::String& sClass = Containers::String(WC_TABCONTROL));
+          void AddItem(const Containers::String& sTekst);
+          void AddItems(const Containers::Strings& sLista);
+          void SetItems(const Containers::Strings& sLista);
+
+		virtual void DeleteItem(unsigned uNumer = 0) override;
+          virtual Containers::String GetItem(unsigned uNumer = 0) const override;
+          virtual Containers::Strings GetItems(void) const override;
+          virtual unsigned GetIndex(void) const override;
+          virtual unsigned Capacity(void) const override;
           virtual void Clean(void) override;
 
 };
@@ -374,37 +409,6 @@ class Calendar : public DateControl
 };
 // ------------------------------
 
-// ------ TAB DECLARATIONS ------
-class TabBox : public Control
-{
-
-     public:
-
-          TabBox(const HWND& hOwn,
-                 unsigned uCrtId);
-
-          HWND Create(int iXPos,
-                      int iYPos,
-                      int iSzerokosc,
-                      int iWysokosc,
-                      const Containers::Strings& sLista = Containers::Strings(),
-                      unsigned uStyl = TCS_MULTILINE,
-                      unsigned uExStyl = 0,
-                      const Containers::String& sClass = Containers::String(WC_TABCONTROL));
-          void AddItem(const Containers::String& sTekst);
-          void AddItems(const Containers::Strings& sLista);
-          void DeleteItem(unsigned uNumer = 0);
-          void SetItems(const Containers::Strings& sLista);
-          Containers::String GetItem(unsigned uNumer = 0) const;
-          Containers::Strings GetItems(void) const;
-          unsigned GetIndex(void) const;
-          unsigned Capacity(void) const;
-
-          virtual void Clean(void) override;
-
-};
-// ------------------------------
-
 // -- PROGRESSBAR DECLARATIONS --
 class ProgressBar : public BarControl
 {
@@ -418,8 +422,8 @@ class ProgressBar : public BarControl
                       int iYPos,
                       int iSzerokosc,
                       int iWysokosc,
-                      unsigned short uStart = 0,
-                      unsigned short uStop = 100,
+                      short iStart = 0,
+                      short iStop = 100,
                       unsigned uStep = 1,
                       unsigned uStyl = 0,
                       unsigned uExStyl = 0,
@@ -429,6 +433,32 @@ class ProgressBar : public BarControl
           void SetProgress(float fProgress);
           float GetProgress(void) const;
           void Increment(int iValue = 0);
+
+
+};
+// ------------------------------
+
+// --- TRACKBAR DECLARATIONS ----
+class TrackBar : public BarControl
+{
+
+     public:
+
+          TrackBar(const HWND& hOwn,
+                   unsigned uCrtId);
+
+          HWND Create(int iXPos,
+                      int iYPos,
+                      int iSzerokosc,
+                      int iWysokosc,
+                      short iStart = 0,
+                      short iStop = 10,
+                      unsigned uStep = 1,
+                      unsigned uStyl = 0,
+                      unsigned uExStyl = 0,
+                      const Containers::String& sClass = Containers::String(TRACKBAR_CLASS));
+          void SetValue(unsigned uValue);
+          unsigned GetValue(void) const;
 
 
 };
@@ -468,15 +498,15 @@ class Controls
      public:
 
           Group<Button> Buttons;
-          Group<RadioBox> RadioBoxs;
-          Group<CheckBox> CheckBoxs;
+          Group<RadioBox> Radios;
+          Group<CheckBox> Checks;
           Group<Label> Labels;
-          Group<EditBox> EditBoxs;
+          Group<EditBox> Edits;
           Group<ListBox> Lists;
           Group<ComboBox> Combos;
-          Group<TableBox> TableBoxs;
+          Group<TableBox> Tables;
           Group<Calendar> Calendars;
-          Group<TabBox> TabBoxs;
+          Group<TabBox> Tabs;
 
           Controls(const HWND& hOwn);
           ~Controls(void);
