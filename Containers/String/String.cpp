@@ -3,58 +3,26 @@ using namespace KuszkAPI;
 unsigned KuszkAPI::Containers::String::uFormat = 10;
 
 KuszkAPI::Containers::String::String(const String& sString)
+: String()
 {
-	uDataSize = sizeof(TCHAR);
-
-	pcData = NULL;
-	pcBufor = NULL;
-	pcConvert = NULL;
-
-	uIlosc = 0;
-	cAbstract = 0;
-
 	if (sString.uIlosc) Add(sString.pcData);
 }
 
 KuszkAPI::Containers::String::String(const TCHAR pcString[])
+: String()
 {
-	uDataSize = sizeof(TCHAR);
-
-	pcData = NULL;
-	pcBufor = NULL;
-	pcConvert = NULL;
-
-	uIlosc = 0;
-	cAbstract = 0;
-
 	Add(pcString);
 }
 
 KuszkAPI::Containers::String::String(const DCHAR pcString[])
+: String()
 {
-	uDataSize = sizeof(TCHAR);
-
-	pcData = NULL;
-	pcBufor = NULL;
-	pcConvert = NULL;
-
-	uIlosc = 0;
-	cAbstract = 0;
-
 	Add(pcString);
 }
 
 KuszkAPI::Containers::String::String(const void* pvVoid)
+: String()
 {
-	uDataSize = sizeof(TCHAR);
-
-	pcData = NULL;
-	pcBufor = NULL;
-	pcConvert = NULL;
-
-	uIlosc = 0;
-	cAbstract = 0;
-
 	TCHAR* pcTmp = new TCHAR[MAX_PATH];
 
 	memset(pcTmp, 0, MAX_PATH);
@@ -68,16 +36,8 @@ KuszkAPI::Containers::String::String(const void* pvVoid)
 }
 
 KuszkAPI::Containers::String::String(unsigned uUnsigned)
+: String()
 {
-	uDataSize = sizeof(TCHAR);
-
-	pcData = NULL;
-	pcBufor = NULL;
-	pcConvert = NULL;
-
-	uIlosc = 0;
-	cAbstract = 0;
-
 	TCHAR* pcTmp = new TCHAR[MAX_PATH];
 
 	memset(pcTmp, 0, MAX_PATH);
@@ -93,16 +53,8 @@ KuszkAPI::Containers::String::String(unsigned uUnsigned)
 }
 
 KuszkAPI::Containers::String::String(float fFloat)
+: String()
 {
-	uDataSize = sizeof(TCHAR);
-
-	pcData = NULL;
-	pcBufor = NULL;
-	pcConvert = NULL;
-
-	uIlosc = 0;
-	cAbstract = 0;
-
 	TCHAR* pcTmp = new TCHAR[MAX_PATH];
 
 	memset(pcTmp, 0, MAX_PATH);
@@ -115,16 +67,8 @@ KuszkAPI::Containers::String::String(float fFloat)
 }
 
 KuszkAPI::Containers::String::String(int iInt)
+: String()
 {
-	uDataSize = sizeof(TCHAR);
-
-	pcData = NULL;
-	pcBufor = NULL;
-	pcConvert = NULL;
-
-	uIlosc = 0;
-	cAbstract = 0;
-
 	TCHAR* pcTmp = new TCHAR[64];
 
 	LongToStr(iInt, pcTmp, uFormat);
@@ -138,16 +82,8 @@ KuszkAPI::Containers::String::String(int iInt)
 }
 
 KuszkAPI::Containers::String::String(TCHAR cChar)
+: String()
 {
-	uDataSize = sizeof(TCHAR);
-
-	pcData = NULL;
-	pcBufor = NULL;
-	pcConvert = NULL;
-
-	uIlosc = 0;
-	cAbstract = 0;
-
 	Add(cChar);
 }
 
