@@ -42,7 +42,7 @@ Przykładowa deklaracja użycia szablonu Mapy z parametrem klucza `int`, oraz ty
 
 Oraz przykład deklaracji użycia metody `Read` z klasy Klienta serwera, wraz z zastosowaniem skróconych nazw, gdzie jako parametr danych użyty zostanie typ `char`:
 
-`template unsigned SRV::Read<char>(const ARA<char>&, unsigned);`
+`template unsigned SRV::Read<char>(ARA<char>&, unsigned);`
 
 Oczywiście możesz także w głównym pliku projektu umieścić poniższą dyrektywę:
 
