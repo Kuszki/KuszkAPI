@@ -329,6 +329,33 @@ unsigned KuszkAPI::Containers::Strings::GetMode(void) const
      return lData.GetMode();
 }
 
+bool KuszkAPI::Containers::Strings::ParseQuotes(void)
+{
+     if (All().Count(TEXT('\"')) % 2) return false;
+
+     for (int i = 1; i <= Capacity(); i++) switch ((*this)[i].Count(TEXT('\"'))){
+          case 1:
+               for (int j = i++; i <= Capacity() && j; i++){
+                    (*this)[j] += TEXT(" ");
+                    (*this)[j] += (*this)[i];
+
+                    if ((*this)[i].Contain(TEXT('\"'))){
+                         (*this)[j].Delete(TEXT('\"'), true);
+                         j = 0;
+                    }
+
+                    Delete(i--);
+               }
+               i = 1;
+          break;
+          case 2:
+               (*this)[i].Delete(TEXT('\"'), true);
+          break;
+     }
+
+     return true;
+}
+
 void KuszkAPI::Containers::Strings::Clean(void)
 {
      lData.Clean();

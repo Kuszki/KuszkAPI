@@ -60,6 +60,7 @@ class Strings
           void DeleteFile(const String& sPlik) const;
           void SetMode(unsigned uNewMode);
           unsigned GetMode(void) const;
+          bool ParseQuotes(void);
           void Clean(void);
 
           String& operator[] (int iNumer);
