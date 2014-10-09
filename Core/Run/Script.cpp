@@ -36,7 +36,7 @@ tnResult KuszkAPI::Core::Script<tnResult, tnParam>::operator() (Containers::Stri
           uCode = fPre(sTmp, sCommand, tParam);
      }
 
-     if (!GetQuotes(sCommand)) uCode = SCRIPT_ERROR;
+     if (!sCommand.ParseQuotes()) uCode = SCRIPT_ERROR;
 
      return tLast = fExe(uCode, sCommand, tParam);
 }
@@ -63,35 +63,7 @@ tnResult KuszkAPI::Core::Script<tnResult, tnParam>::operator() (Console& cConsol
           uCode = fPre(sTmp, sCommand, tParam);
      }
 
-     if (!GetQuotes(sCommand)) uCode = SCRIPT_ERROR;
+     if (sCommand.ParseQuotes()) uCode = SCRIPT_ERROR;
 
      return tLast = fExe(uCode, sCommand, tParam);
-}
-
-template<typename tnResult, typename tnParam>
-bool KuszkAPI::Core::Script<tnResult, tnParam>::GetQuotes(Containers::Strings& sParams)
-{
-     if (sParams.All().Count(TEXT('\"')) % 2) return false;
-
-     for (int i = 1; i <= sParams.Capacity(); i++) switch (sParams[i].Count(TEXT('\"'))){
-          case 1:
-               for (int j = i++; i <= sParams.Capacity() && j; i++){
-                    sParams[j] += TEXT(" ");
-                    sParams[j] += sParams[i];
-
-                    if (sParams[i].Contain(TEXT('\"'))){
-                         sParams[j].Delete(TEXT('\"'), true);
-                         j = 0;
-                    }
-
-                    sParams.Delete(i--);
-               }
-               i = 1;
-          break;
-          case 2:
-               sParams[i].Delete(TEXT('\"'), true);
-          break;
-     }
-
-     return true;
 }
