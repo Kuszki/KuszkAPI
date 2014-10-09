@@ -36,8 +36,6 @@ class Script
           tnResult operator() (Console& cConsole,
                                tnParam tParam = tnParam()) const;
 
-          static bool GetQuotes(Containers::Strings& sParams);
-
 };
 // ------------------------------
 

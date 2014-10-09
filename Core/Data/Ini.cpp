@@ -79,6 +79,8 @@ Containers::Strings KuszkAPI::Core::Ini::GetSections() const
 
      unsigned uTmp = GetPrivateProfileString(NULL, NULL, NULL, pcBufor, MAX_PATH, sFile.Str());
 
+     if (!uTmp) return Containers::Strings();
+
      Containers::Vector<char>::Change(pcBufor, uTmp, 0, 10, true);
 
      pcBufor[uTmp - 1] = 0;
@@ -91,6 +93,8 @@ Containers::Strings KuszkAPI::Core::Ini::GetKeys(const Containers::String& sSect
 	TCHAR* pcBufor = new TCHAR[MAX_PATH];
 
      unsigned uTmp = GetPrivateProfileString(sSection.Str(), NULL, NULL, pcBufor, MAX_PATH, sFile.Str());
+
+     if (!uTmp) return Containers::Strings();
 
      Containers::Vector<char>::Change(pcBufor, uTmp, 0, 10, true);
 
