@@ -2,7 +2,7 @@ using namespace KuszkAPI;
 
 KuszkAPI::Forms::TrackBar::TrackBar(const HWND& hOwn, unsigned uCtrId) : BarControl(hOwn, uCtrId) {}
 
-HWND KuszkAPI::Forms::TrackBar::Create(int iXPos, int iYPos, int iSzerokosc, int iWysokosc, short iStart, short iStop, unsigned uStep, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
+const HWND& KuszkAPI::Forms::TrackBar::Create(int iXPos, int iYPos, int iSzerokosc, int iWysokosc, short iStart, short iStop, unsigned uStep, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
 {
      Destroy();
 

@@ -8,7 +8,7 @@ KuszkAPI::Forms::Label::Label(const HWND& hOwn, unsigned uCrtId)
      uImgType = 0;
 }
 
-HWND KuszkAPI::Forms::Label::Create(const Containers::String& sTekst, int iXPos, int iYPos, int iSzerokosc, int iWysokosc, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
+const HWND& KuszkAPI::Forms::Label::Create(const Containers::String& sTekst, int iXPos, int iYPos, int iSzerokosc, int iWysokosc, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
 {
      Destroy();
 
@@ -19,7 +19,7 @@ HWND KuszkAPI::Forms::Label::Create(const Containers::String& sTekst, int iXPos,
      return hUchwyt;
 }
 
-HWND KuszkAPI::Forms::Label::Create(const Containers::String& sResName, int iXPos, int iYPos, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
+const HWND& KuszkAPI::Forms::Label::Create(const Containers::String& sResName, int iXPos, int iYPos, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
 {
      Destroy();
 

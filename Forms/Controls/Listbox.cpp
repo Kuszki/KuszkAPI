@@ -2,7 +2,7 @@ using namespace KuszkAPI;
 
 KuszkAPI::Forms::ListBox::ListBox(const HWND& hOwn, unsigned uCrtId) : ListControl(hOwn, uCrtId) {}
 
-HWND KuszkAPI::Forms::ListBox::Create(int iXPos, int iYPos, int iSzerokosc, int iWysokosc, const Containers::Strings& sLista, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
+const HWND& KuszkAPI::Forms::ListBox::Create(int iXPos, int iYPos, int iSzerokosc, int iWysokosc, const Containers::Strings& sLista, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
 {
       Destroy();
       hUchwyt = CreateWindowEx(uExStyl, sClass.Str(), TEXT("Containers::ListContainers::Box"), uStyl | WS_VISIBLE | WS_CHILD | WS_BORDER, iXPos, iYPos, iSzerokosc, iWysokosc, hOwner, (HMENU) uId, hInstance, NULL);
@@ -30,7 +30,7 @@ void KuszkAPI::Forms::ListBox::DeleteItem(unsigned uNumer)
 void KuszkAPI::Forms::ListBox::SetItems(const Containers::Strings& sLista)
 {
       Clean();
-      
+
       AddItems(sLista);
 }
 

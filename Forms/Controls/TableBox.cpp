@@ -15,7 +15,7 @@ KuszkAPI::Forms::TableBox::~TableBox(void)
      uGroupCount = 0;
 }
 
-HWND KuszkAPI::Forms::TableBox::Create(int iXPos, int iYPos, int iSzerokosc, int iWysokosc, const Containers::Strings& sHeader, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
+const HWND& KuszkAPI::Forms::TableBox::Create(int iXPos, int iYPos, int iSzerokosc, int iWysokosc, const Containers::Strings& sHeader, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
 {
      Destroy();
 

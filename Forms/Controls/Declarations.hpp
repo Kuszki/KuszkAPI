@@ -26,14 +26,14 @@ class Button : public TextControl
           Button(const HWND& hOwn,
                  unsigned uCrtId);
 
-          HWND Create(const Containers::String& sTekst,
-                      int iXPos,
-                      int iYPos,
-                      int iSzerokosc,
-                      int iWysokosc,
-                      unsigned uStyl = 0,
-                      unsigned uExStyl = 0,
-                      const Containers::String& sClass = Containers::String(WC_BUTTON));
+          const HWND& Create(const Containers::String& sTekst,
+                             int iXPos,
+                             int iYPos,
+                             int iSzerokosc,
+                             int iWysokosc,
+                             unsigned uStyl = 0,
+                             unsigned uExStyl = 0,
+                             const Containers::String& sClass = Containers::String(WC_BUTTON));
 
 };
 // ------------------------------
@@ -64,15 +64,15 @@ class RadioBox : public CheckControl
                   unsigned uCrtId);
           ~RadioBox(void);
 
-          HWND Create(const Containers::String& sTekst,
-                      unsigned uCrtId,
-                      int iXPos,
-                      int iYPos,
-                      int iSzerokosc,
-                      int iWysokosc,
-                      unsigned uStyl = 0,
-                      unsigned uExStyl = 0,
-                      const Containers::String& sClass = Containers::String(WC_BUTTON));
+          const HWND& Create(const Containers::String& sTekst,
+                             unsigned uCrtId,
+                             int iXPos,
+                             int iYPos,
+                             int iSzerokosc,
+                             int iWysokosc,
+                             unsigned uStyl = 0,
+                             unsigned uExStyl = 0,
+                             const Containers::String& sClass = Containers::String(WC_BUTTON));
           unsigned GetGroupId(void) const;
 
           virtual void SetCheckBox(bool bZaznacz = true) override;
@@ -89,14 +89,14 @@ class CheckBox : public CheckControl
           CheckBox(const HWND& hOwn,
                   unsigned uCrtId);
 
-          HWND Create(const Containers::String& sTekst,
-                      int iXPos,
-                      int iYPos,
-                      int iSzerokosc,
-                      int iWysokosc,
-                      unsigned uExStyl = 0,
-                      unsigned uStyl = 0,
-                      const Containers::String& sClass = Containers::String(WC_BUTTON));
+          const HWND& Create(const Containers::String& sTekst,
+                             int iXPos,
+                             int iYPos,
+                             int iSzerokosc,
+                             int iWysokosc,
+                             unsigned uExStyl = 0,
+                             unsigned uStyl = 0,
+                             const Containers::String& sClass = Containers::String(WC_BUTTON));
 
           virtual void SetCheckBox(bool bZaznacz = true) override;
 
@@ -118,20 +118,20 @@ class Label : public TextControl
           Label(const HWND& hOwn,
                 unsigned uCrtId);
 
-          HWND Create(const Containers::String& sTekst,
-                      int iXPos,
-                      int iYPos,
-                      int iSzerokosc,
-                      int iWysokosc,
-                      unsigned uStyl = SS_LEFT,
-                      unsigned uExStyl = 0,
-                      const Containers::String& sClass = Containers::String(WC_STATIC));
-          HWND Create(const Containers::String& sResName,
-                      int iXPos,
-                      int iYPos,
-                      unsigned uStyl = SS_ICON,
-                      unsigned uExStyl = 0,
-                      const Containers::String& sClass = Containers::String(WC_STATIC));
+          const HWND& Create(const Containers::String& sTekst,
+                             int iXPos,
+                             int iYPos,
+                             int iSzerokosc,
+                             int iWysokosc,
+                             unsigned uStyl = SS_LEFT,
+                             unsigned uExStyl = 0,
+                             const Containers::String& sClass = Containers::String(WC_STATIC));
+          const HWND& Create(const Containers::String& sResName,
+                             int iXPos,
+                             int iYPos,
+                             unsigned uStyl = SS_ICON,
+                             unsigned uExStyl = 0,
+                             const Containers::String& sClass = Containers::String(WC_STATIC));
           void SetImage(HGDIOBJ hImg);
 
 		virtual void Clean(void) override;
@@ -148,22 +148,22 @@ class EditBox : public TextControl
           EditBox(const HWND& hOwn,
                   unsigned uCrtId);
 
-          HWND Create(int iXPos,
-                      int iYPos,
-                      int iSzerokosc,
-                      int iWysokosc,
-                      const Containers::String& sTekst = Containers::String(),
-                      unsigned uStyl = 0,
-                      unsigned uExStyl = 0,
-                      const Containers::String& sClass = Containers::String(WC_EDIT));
+          const HWND& Create(int iXPos,
+                             int iYPos,
+                             int iSzerokosc,
+                             int iWysokosc,
+                             const Containers::String& sTekst = Containers::String(),
+                             unsigned uStyl = 0,
+                             unsigned uExStyl = 0,
+                             const Containers::String& sClass = Containers::String(WC_EDIT));
           void AddLine(const Containers::String& sTekst,
-                       bool bScrool = true);
+                              bool bScrool = true);
           void AddLines(const Containers::Strings& sTekst,
-                        bool bScrool = true);
+                               bool bScrool = true);
           void SetLine(const Containers::String& sTekst,
-                       unsigned uNumer);
+                              unsigned uNumer);
           void SetLines(const Containers::Strings& sLines,
-                        bool bScrool = true);
+                               bool bScrool = true);
           Containers::String GetLine(unsigned uNumer) const;
           Containers::Strings GetLines(void) const;
           void SetPass(TCHAR cZnak);
@@ -185,14 +185,14 @@ class ListBox : public ListControl
           ListBox(const HWND& hOwn,
                   unsigned uCrtId);
 
-          HWND Create(int iXPos,
-                      int iYPos,
-                      int iSzerokosc,
-                      int iWysokosc,
-                      const Containers::Strings& sLista = Containers::Strings(),
-                      unsigned uStyl = 0,
-                      unsigned uExStyl = 0,
-                      const Containers::String& sClass = Containers::String(WC_LISTBOX));
+          const HWND& Create(int iXPos,
+                             int iYPos,
+                             int iSzerokosc,
+                             int iWysokosc,
+                             const Containers::Strings& sLista = Containers::Strings(),
+                             unsigned uStyl = 0,
+                             unsigned uExStyl = 0,
+                             const Containers::String& sClass = Containers::String(WC_LISTBOX));
           void AddItem(const Containers::String& sTekst);
           void AddItems(const Containers::Strings& sLista);
           void SetItems(const Containers::Strings& sLista);
@@ -231,25 +231,25 @@ class ComboBox : public ListControl
           ComboBox(const HWND& hOwn,
                    unsigned uCrtId);
 
-          HWND Create(int iXPos,
-                      int iYPos,
-                      int iSzerokosc,
-                      int iWysokosc,
-                      const Containers::Strings& sLista = Containers::Strings(),
-                      unsigned uStyl = CBS_DROPDOWNLIST,
-                      unsigned uExStyl = 0,
-                      const Containers::String& sClass = Containers::String(WC_COMBOBOXEX));
+          const HWND& Create(int iXPos,
+                             int iYPos,
+                             int iSzerokosc,
+                             int iWysokosc,
+                             const Containers::Strings& sLista = Containers::Strings(),
+                             unsigned uStyl = CBS_DROPDOWNLIST,
+                             unsigned uExStyl = 0,
+                             const Containers::String& sClass = Containers::String(WC_COMBOBOXEX));
           void AddItem(const Containers::String& sTekst,
-                       unsigned uIkona = 0);
+                              unsigned uIkona = 0);
           void AddItems(const Containers::Strings& sLista,
-                        unsigned uIkona = 0);
+                               unsigned uIkona = 0);
           void SetItem(const Containers::String& sTekst,
-                       unsigned uNumer = 0);
+                              unsigned uNumer = 0);
           void SetItems(const Containers::Strings& sLista,
-                        unsigned uIkona = 0);
+                               unsigned uIkona = 0);
           ItemData GetItemStruct(unsigned uNumer = 0) const;
           void SetItemIcon(unsigned uIkona = 0,
-                           unsigned uNumer = 0);
+                                  unsigned uNumer = 0);
           unsigned GetItemIcon(unsigned uNumer = 0) const;
           void SetImages(bool bEnable);
           void Sort(bool bGrow = true);
@@ -295,51 +295,51 @@ class TableBox : public ListControl
                 unsigned uCrtId);
           ~TableBox(void);
 
-          HWND Create(int iXPos,
-                      int iYPos,
-                      int iSzerokosc,
-                      int iWysokosc,
-                      const Containers::Strings& sHeader = Containers::Strings(),
-                      unsigned uStyl = LVS_REPORT | LVS_SINGLESEL,
-                      unsigned uExStyl = 0,
-                      const Containers::String& sClass = Containers::String(WC_LISTVIEW));
+          const HWND& Create(int iXPos,
+                             int iYPos,
+                             int iSzerokosc,
+                             int iWysokosc,
+                             const Containers::Strings& sHeader = Containers::Strings(),
+                             unsigned uStyl = LVS_REPORT | LVS_SINGLESEL,
+                             unsigned uExStyl = 0,
+                             const Containers::String& sClass = Containers::String(WC_LISTVIEW));
           void AddItem(const Containers::String& sTekst,
-                       const Containers::Strings& sData = Containers::Strings(),
-                       unsigned uGroup = 0,
-                       unsigned uIkona = 0);
+                              const Containers::Strings& sData = Containers::Strings(),
+                              unsigned uGroup = 0,
+                              unsigned uIkona = 0);
           void AddItem(const Containers::Strings& sData,
-                       unsigned uGroup = 0,
-                       unsigned uIkona = 0);
+                              unsigned uGroup = 0,
+                              unsigned uIkona = 0);
           void AddItems(const Containers::Strings& sData,
-                        unsigned uGroup = 0,
-                        unsigned uIcon = 0);
+                               unsigned uGroup = 0,
+                               unsigned uIcon = 0);
           ItemData GetItemStruct(unsigned uNumer = 0) const;
           void SetItemData(const Containers::String& sTekst,
-                           unsigned uXPos,
-                           unsigned uYPos = 0);
+                                  unsigned uXPos,
+                                  unsigned uYPos = 0);
           void SetItemData(const Containers::Strings& sData,
-                           unsigned uNumer = 0);
+                                  unsigned uNumer = 0);
           Containers::Strings GetItemData(unsigned uNumer = 0) const;
           void SetItemIcon(unsigned uIkona,
-                           unsigned uNumer = 0);
+                                  unsigned uNumer = 0);
           unsigned GetItemIcon(unsigned uNumer = 0) const;
           void SetItemGroup(unsigned uGroup,
-                            unsigned uNumer = 0);
+                                   unsigned uNumer = 0);
           unsigned GetItemGroup(unsigned uNumer = 0) const;
           void Select(unsigned uNumer);
           void AddGroup(const Containers::String& sGroup);
           void AddGroups(const Containers::Strings& sGroups);
           void DeleteGroup(unsigned uNumer);
           void SetGroup(const Containers::String& sGroup,
-                        unsigned uNumer);
+                               unsigned uNumer);
           void SetColumn(const Containers::Strings& sLista,
-                         unsigned uNumer);
+                                unsigned uNumer);
           Containers::Strings GetColumn(unsigned uNumer = 0) const;
           void SetHeader(const Containers::Strings& sHeader,
-                         const Containers::Vector<unsigned> vSizes = Containers::Vector<unsigned>(),
-                         const Containers::Vector<unsigned> vIcons = Containers::Vector<unsigned>());
+                                const Containers::Vector<unsigned> vSizes = Containers::Vector<unsigned>(),
+                                const Containers::Vector<unsigned> vIcons = Containers::Vector<unsigned>());
           void SetImages(bool bSmallEnable,
-                         bool bLargeEnable);
+                                bool bLargeEnable);
           unsigned GetColumnCount(void) const;
           void Sort(unsigned uNumer = 1,
                     bool bGrow = true);
@@ -361,22 +361,31 @@ class TableBox : public ListControl
 class TabBox : public ListControl
 {
 
+     protected:
+
+		Containers::Map<unsigned, HWND> mWindows;
+
      public:
 
           TabBox(const HWND& hOwn,
                  unsigned uCrtId);
 
-          HWND Create(int iXPos,
-                      int iYPos,
-                      int iSzerokosc,
-                      int iWysokosc,
-                      const Containers::Strings& sLista = Containers::Strings(),
-                      unsigned uStyl = TCS_MULTILINE,
-                      unsigned uExStyl = 0,
-                      const Containers::String& sClass = Containers::String(WC_TABCONTROL));
+          const HWND& Create(int iXPos,
+                             int iYPos,
+                             int iSzerokosc,
+                             int iWysokosc,
+                             const Containers::Strings& sLista = Containers::Strings(),
+                             unsigned uStyl = TCS_MULTILINE,
+                             unsigned uExStyl = 0,
+                             const Containers::String& sClass = Containers::String(WC_TABCONTROL));
           void AddItem(const Containers::String& sTekst);
           void AddItems(const Containers::Strings& sLista);
           void SetItems(const Containers::Strings& sLista);
+          void AddControl(HWND hWnd,
+                                 unsigned uTab);
+          void DeleteControl(HWND hWnd);
+          void SetTab(unsigned uNumer = 0);
+          unsigned GetTab(void) const;
 
 		virtual void DeleteItem(unsigned uNumer = 0) override;
           virtual Containers::String GetItem(unsigned uNumer = 0) const override;
@@ -397,12 +406,12 @@ class Calendar : public DateControl
           Calendar(const HWND& hOwn,
                    unsigned uCtrId);
 
-          HWND Create(int iXPos,
-                      int iYPos,
-                      const DateTime::Date& dDate = DateTime::Date(true),
-                      unsigned uStyl = 0,
-                      unsigned uExStyl = 0,
-                      const Containers::String& sClass = Containers::String(MONTHCAL_CLASS));
+          const HWND& Create(int iXPos,
+                             int iYPos,
+                             const DateTime::Date& dDate = DateTime::Date(true),
+                             unsigned uStyl = 0,
+                             unsigned uExStyl = 0,
+                             const Containers::String& sClass = Containers::String(MONTHCAL_CLASS));
           void SetDate(const DateTime::Date& dDate);
           DateTime::Date GetDate(void) const;
 
@@ -416,18 +425,18 @@ class ProgressBar : public BarControl
      public:
 
           ProgressBar(const HWND& hOwn,
-                      unsigned uCrtId);
+                             unsigned uCrtId);
 
-          HWND Create(int iXPos,
-                      int iYPos,
-                      int iSzerokosc,
-                      int iWysokosc,
-                      short iStart = 0,
-                      short iStop = 100,
-                      unsigned uStep = 1,
-                      unsigned uStyl = 0,
-                      unsigned uExStyl = 0,
-                      const Containers::String& sClass = Containers::String(PROGRESS_CLASS));
+          const HWND& Create(int iXPos,
+                             int iYPos,
+                             int iSzerokosc,
+                             int iWysokosc,
+                             short iStart = 0,
+                             short iStop = 100,
+                             unsigned uStep = 1,
+                             unsigned uStyl = 0,
+                             unsigned uExStyl = 0,
+                             const Containers::String& sClass = Containers::String(PROGRESS_CLASS));
           void SetValue(unsigned uValue);
           unsigned GetValue(void) const;
           void SetProgress(float fProgress);
@@ -447,16 +456,16 @@ class TrackBar : public BarControl
           TrackBar(const HWND& hOwn,
                    unsigned uCrtId);
 
-          HWND Create(int iXPos,
-                      int iYPos,
-                      int iSzerokosc,
-                      int iWysokosc,
-                      short iStart = 0,
-                      short iStop = 10,
-                      unsigned uStep = 1,
-                      unsigned uStyl = 0,
-                      unsigned uExStyl = 0,
-                      const Containers::String& sClass = Containers::String(TRACKBAR_CLASS));
+          const HWND& Create(int iXPos,
+                             int iYPos,
+                             int iSzerokosc,
+                             int iWysokosc,
+                             short iStart = 0,
+                             short iStop = 10,
+                             unsigned uStep = 1,
+                             unsigned uStyl = 0,
+                             unsigned uExStyl = 0,
+                             const Containers::String& sClass = Containers::String(TRACKBAR_CLASS));
           void SetValue(unsigned uValue);
           unsigned GetValue(void) const;
 
@@ -507,6 +516,8 @@ class Controls
           Group<TableBox> Tables;
           Group<Calendar> Calendars;
           Group<TabBox> Tabs;
+          Group<TrackBar> Tracks;
+          Group<ProgressBar> Bars;
 
           Controls(const HWND& hOwn);
           ~Controls(void);

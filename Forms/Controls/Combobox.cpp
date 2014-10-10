@@ -2,7 +2,7 @@ using namespace KuszkAPI;
 
 KuszkAPI::Forms::ComboBox::ComboBox(const HWND& hOwn, unsigned uCrtId) : ListControl(hOwn, uCrtId), Icons(16, 16) {}
 
-HWND KuszkAPI::Forms::ComboBox::Create(int iXPos, int iYPos, int iSzerokosc, int iWysokosc, const Containers::Strings& sLista, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
+const HWND& KuszkAPI::Forms::ComboBox::Create(int iXPos, int iYPos, int iSzerokosc, int iWysokosc, const Containers::Strings& sLista, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
 {
       Destroy();
       hUchwyt = CreateWindowEx(uExStyl, sClass.Str(), TEXT("ComboContainers::Box"), uStyl | WS_VISIBLE | WS_CHILD, iXPos, iYPos, iSzerokosc, iWysokosc, hOwner, (HMENU) uId, hInstance, NULL);
@@ -49,7 +49,7 @@ void KuszkAPI::Forms::ComboBox::SetItem(const Containers::String& sTekst, unsign
 void KuszkAPI::Forms::ComboBox::SetItems(const Containers::Strings& sLista, unsigned uIkona)
 {
       Clean();
-      
+
       for (int i = 1; i <= sLista.Capacity(); i++) AddItem(sLista.GetData(i), uIkona);
 }
 

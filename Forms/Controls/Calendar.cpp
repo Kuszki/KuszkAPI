@@ -2,7 +2,7 @@ using namespace KuszkAPI;
 
 KuszkAPI::Forms::Calendar::Calendar(const HWND& hOwn, unsigned uCtrId) : DateControl(hOwn, uCtrId) {}
 
-HWND KuszkAPI::Forms::Calendar::Create(int iXPos, int iYPos, const DateTime::Date& dDate, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
+const HWND& KuszkAPI::Forms::Calendar::Create(int iXPos, int iYPos, const DateTime::Date& dDate, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
 {
       Destroy();
       hUchwyt = CreateWindowEx(uExStyl, sClass.Str(), TEXT("Calendar"), uStyl | WS_VISIBLE | WS_CHILD | MCS_DAYSTATE, iXPos, iYPos, 0, 0, hOwner, (HMENU) uId, hInstance, NULL);

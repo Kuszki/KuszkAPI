@@ -13,7 +13,7 @@ KuszkAPI::Forms::RadioBox::~RadioBox(void)
      for (int i = 1; i <= bData.Capacity(); i++) if (bData[i].hUchwyt == hUchwyt) bData.Delete(i);
 }
 
-HWND KuszkAPI::Forms::RadioBox::Create(const Containers::String& sTekst, unsigned uGrpId, int iXPos, int iYPos, int iSzerokosc, int iWysokosc, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
+const HWND& KuszkAPI::Forms::RadioBox::Create(const Containers::String& sTekst, unsigned uGrpId, int iXPos, int iYPos, int iSzerokosc, int iWysokosc, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
 {
      Destroy();
      uGroupId = uGrpId;
