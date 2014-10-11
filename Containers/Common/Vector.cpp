@@ -240,7 +240,7 @@ bool KuszkAPI::Containers::Vector<tnData>::Contain(const tnData& tData) const
 }
 
 template<typename tnData>
-bool KuszkAPI::Containers::Vector<tnData>::Change(unsigned uOne, unsigned uTwo)
+bool KuszkAPI::Containers::Vector<tnData>::Swap(unsigned uOne, unsigned uTwo)
 {
 	if (uOne == uTwo || uOne > uIlosc || uTwo > uIlosc || !uIlosc) return false;
 
@@ -298,9 +298,9 @@ bool KuszkAPI::Containers::Vector<tnData>::Sort(Vector<tnData>* pptData[], unsig
 		int iMax = i;
 
 		for (int j = i + 1; j <= uIlosc; j++) if (GetData(j) < GetData(iMax)) iMax = j;
-		for (int j = 0; j < uCount; j++) if (pptData[j] != this) pptData[j]->Change(iMax, i);
+		for (int j = 0; j < uCount; j++) if (pptData[j] != this) pptData[j]->Swap(iMax, i);
 
-		Change(iMax, i);
+		Swap(iMax, i);
 
 	}
 

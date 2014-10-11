@@ -111,8 +111,8 @@ class Vector : public Container
 		const tnData* GetEnd(void) const;
 		unsigned Find(const tnData& tData) const;
 		bool Contain(const tnData& tData) const;
-		bool Change(unsigned uOne,
-				  unsigned uTwo);
+		bool Swap(unsigned uOne,
+				unsigned uTwo);
 		unsigned Change(const tnData& tOld,
 					 const tnData& tNew,
 					 bool bAll = false);
