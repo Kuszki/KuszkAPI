@@ -344,7 +344,7 @@ void KuszkAPI::Forms::TableBox::SetHeader(const Containers::Strings& sHeader, co
           LVCOLUMN lColumn;
 		memset(&lColumn, 0, sizeof(LVCOLUMN));
 
-          lColumn.mask = LVCF_TEXT | LVCF_SUBITEM | LVCF_WIDTH;
+          lColumn.mask = LVCF_FMT | LVCF_TEXT | LVCF_SUBITEM | LVCF_WIDTH;
 
           if (vIcos.Capacity() >= i){
 
@@ -356,6 +356,7 @@ void KuszkAPI::Forms::TableBox::SetHeader(const Containers::Strings& sHeader, co
           lColumn.iSubItem = i - 1;
           lColumn.cx = vSizes.Capacity() >= i ? vSizes.GetData(i) : 100;
           lColumn.pszText = sHeader.GetData(i).Str();
+          lColumn.fmt = (i > 1) ? LVCFMT_RIGHT : LVCFMT_LEFT;
 
           ListView_InsertColumn(hUchwyt, i - 1, &lColumn);
 
