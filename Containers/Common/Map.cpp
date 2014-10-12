@@ -78,6 +78,12 @@ const tnKey& KuszkAPI::Containers::Map<tnData, tnKey>::GetKey(int iNumer) const
 }
 
 template<typename tnData, typename tnKey>
+unsigned KuszkAPI::Containers::Map<tnData, tnKey>::FindKey(const tnKey& tKey) const
+{
+     return lKey.Find(tKey);
+}
+
+template<typename tnData, typename tnKey>
 void KuszkAPI::Containers::Map<tnData, tnKey>::SetDataByInt(const tnData& tData, int iNumer)
 {
      bData[iNumer] = tData;

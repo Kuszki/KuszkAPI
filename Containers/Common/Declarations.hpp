@@ -257,6 +257,7 @@ class Map
 		void SetKey(const tnKey& tKey,
 				  int iNumer);
 		const tnKey& GetKey(int iNumer) const;
+		unsigned FindKey(const tnKey& tKey) const;
 		void SetDataByInt(const tnData& tData,
 					   int iNumer);
 		tnData& GetDataByInt(int iNumer);
