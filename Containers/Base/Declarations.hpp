@@ -30,6 +30,7 @@ class Container
           bool Empty(void) const;
           void SetMode(unsigned uNewMode);
           unsigned GetMode(void) const;
+
           operator bool (void) const;
 
           virtual bool Delete(int iNumer) = 0;

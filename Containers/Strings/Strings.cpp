@@ -7,7 +7,7 @@ KuszkAPI::Containers::Strings::Strings(const Strings& sStrings)
      lData = sStrings.lData;
 }
 
-KuszkAPI::Containers::Strings::Strings(const String& sString, TCHAR cConvert, bool bIgnore)
+KuszkAPI::Containers::Strings::Strings(const Containers::String& sString, TCHAR cConvert, bool bIgnore)
 {
      uIlosc = 0;
 
@@ -24,7 +24,7 @@ KuszkAPI::Containers::Strings::~Strings(void)
      Clean();
 }
 
-unsigned KuszkAPI::Containers::Strings::Add(const String& sString, TCHAR cConvert, bool bIgnore, int iPos, bool bMode)
+unsigned KuszkAPI::Containers::Strings::Add(const Containers::String& sString, TCHAR cConvert, bool bIgnore, int iPos, bool bMode)
 {
      if (cConvert){
 
@@ -88,7 +88,7 @@ bool KuszkAPI::Containers::Strings::Delete(int iNumer)
      } else return false;
 }
 
-unsigned KuszkAPI::Containers::Strings::Delete(const String& sString, bool bAll)
+unsigned KuszkAPI::Containers::Strings::Delete(const Containers::String& sString, bool bAll)
 {
      if (bAll){
 
@@ -123,7 +123,7 @@ const Containers::String& KuszkAPI::Containers::Strings::GetData(int iNumer) con
      return lData.GetData(iNumer);
 }
 
-unsigned KuszkAPI::Containers::Strings::Change(const String& sOld, const String& sNew, bool bAll)
+unsigned KuszkAPI::Containers::Strings::Change(const Containers::String& sOld, const Containers::String& sNew, bool bAll)
 {
      unsigned uTmp = lData.Find(sOld);
 
@@ -157,7 +157,7 @@ bool KuszkAPI::Containers::Strings::Change(unsigned uOne, unsigned uTwo)
      lData.Change(uOne, uTwo);
 }
 
-Containers::String KuszkAPI::Containers::Strings::All(const String& sBreak) const
+Containers::String KuszkAPI::Containers::Strings::All(const Containers::String& sBreak) const
 {
      String sTmp;
 
@@ -177,7 +177,12 @@ unsigned KuszkAPI::Containers::Strings::Capacity(void) const
      return lData.Capacity();
 }
 
-bool KuszkAPI::Containers::Strings::Contain(const String& sString) const
+unsigned KuszkAPI::Containers::Strings::Find(const Containers::String& sString) const
+{
+	return lData.Find(sString);
+}
+
+bool KuszkAPI::Containers::Strings::Contain(const Containers::String& sString) const
 {
      return lData.Contain(sString);
 }
@@ -215,7 +220,7 @@ void KuszkAPI::Containers::Strings::Reverse(void)
      lData.Reverse();
 }
 
-bool KuszkAPI::Containers::Strings::SaveToFile(const String& sPlik, bool bMode) const
+bool KuszkAPI::Containers::Strings::SaveToFile(const Containers::String& sPlik, bool bMode) const
 {
      String sBufor = All();
 
@@ -240,7 +245,7 @@ bool KuszkAPI::Containers::Strings::SaveToFile(const String& sPlik, bool bMode) 
      }
 }
 
-bool KuszkAPI::Containers::Strings::LoadFromFile(const String& sPlik, bool bMode)
+bool KuszkAPI::Containers::Strings::LoadFromFile(const Containers::String& sPlik, bool bMode)
 {
      String sBufor;
 
@@ -285,7 +290,7 @@ bool KuszkAPI::Containers::Strings::LoadFromFile(const String& sPlik, bool bMode
      return true;
 }
 
-bool KuszkAPI::Containers::Strings::AddToFile(const String& sPlik, bool bMode) const
+bool KuszkAPI::Containers::Strings::AddToFile(const Containers::String& sPlik, bool bMode) const
 {
      String sBufor = All();
 
@@ -314,7 +319,7 @@ bool KuszkAPI::Containers::Strings::AddToFile(const String& sPlik, bool bMode) c
      }
 }
 
-void KuszkAPI::Containers::Strings::DeleteFile(const String& sPlik) const
+void KuszkAPI::Containers::Strings::DeleteFile(const Containers::String& sPlik) const
 {
      DeleteFile(sPlik.Str());
 }
@@ -368,19 +373,19 @@ Containers::String& KuszkAPI::Containers::Strings::operator[] (int iNumer)
      return lData[iNumer];
 }
 
-Containers::String& KuszkAPI::Containers::Strings::operator[] (const String& sString)
+Containers::String& KuszkAPI::Containers::Strings::operator[] (const Containers::String& sString)
 {
      return lData[lData.Find(sString)];
 }
 
-Containers::Strings& KuszkAPI::Containers::Strings::operator<< (const String& sString)
+Containers::Strings& KuszkAPI::Containers::Strings::operator<< (const Containers::String& sString)
 {
      Add(sString);
 
      return *this;
 }
 
-Containers::Strings& KuszkAPI::Containers::Strings::operator>> (String& sString)
+Containers::Strings& KuszkAPI::Containers::Strings::operator>> (Containers::String& sString)
 {
      if (!uIlosc) return *this;
 

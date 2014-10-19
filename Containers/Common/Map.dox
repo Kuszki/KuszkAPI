@@ -191,3 +191,9 @@ Sprawdza czy element o podanym indeksie istnieje i zwraca jego stałą referencj
 
 Czyści bierzącą organizacje i kopiuje wszystkie elementy wybranej organizacji do bierzącej zachowując ich kolejność.
 */
+/*! \fn KuszkAPI::Containers::Map::operator bool (void)
+    \brief Operator konwersji na typ logiczny.
+    \return Stan kontenera.
+
+Sprawdza stan kontenera i zwraca stan logiczny false gdy kontener jest pusty.
+*/

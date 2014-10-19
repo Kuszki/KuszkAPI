@@ -152,3 +152,9 @@ Containers::Map<tnData, tnKey>& KuszkAPI::Containers::Map<tnData, tnKey>::operat
 
      return *this;
 }
+
+template<typename tnData, typename tnKey>
+KuszkAPI::Containers::Map<tnData, tnKey>::operator bool (void) const
+{
+	return uIlosc;
+}

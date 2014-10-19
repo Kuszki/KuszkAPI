@@ -271,6 +271,8 @@ class Map
 		const tnData& operator[] (const tnKey& tKey) const;
 		Map<tnData, tnKey>& operator= (const Map<tnData, tnKey>& mMap);
 
+		operator bool (void) const;
+
 };
 // ------------------------------
 

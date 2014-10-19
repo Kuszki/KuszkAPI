@@ -19,29 +19,30 @@ class Strings
      public:
 
           Strings(const Strings& sStrings);
-          Strings(const String& sString,
+          Strings(const Containers::String& sString,
                TCHAR cConvert = TEXT('\n'),
                bool bIgnore = false);
           Strings(void);
           ~Strings(void);
 
-          unsigned Add(const String& sString,
+          unsigned Add(const Containers::String& sString,
                        TCHAR cConvert = '\0',
                        bool bIgnore = true,
                        int iPos = LAST,
                        bool bMode = ADD_AFTER);
           bool Delete(int iNumer);
-          unsigned Delete(const String& sString,
+          unsigned Delete(const Containers::String& sString,
                           bool bAll = false);
-          const String& GetData(int iNumer) const;
-          unsigned Change(const String& sOld,
-                         const String& sNew,
+          const Containers::String& GetData(int iNumer) const;
+          unsigned Change(const Containers::String& sOld,
+                         const Containers::String& sNew,
                          bool bAll = false);
           bool Change(unsigned uOne,
                       unsigned uTwo);
-          String All(const String& sBreak = String(TEXT("\n"))) const;
+          Containers::String All(const Containers::String& sBreak = Containers::String(TEXT("\n"))) const;
           unsigned Capacity(void) const;
-          bool Contain(const String& sString) const;
+          unsigned Find(const Containers::String& sString) const;
+          bool Contain(const Containers::String& sString) const;
           bool Empty(void) const;
           bool Sort(bool bGrow = true);
           bool Sort(Strings* ppsStrings[],
@@ -51,22 +52,22 @@ class Strings
                     unsigned uCount,
                     bool bGrow = true);
           void Reverse(void);
-          bool SaveToFile(const String& sPlik,
+          bool SaveToFile(const Containers::String& sPlik,
                           bool bMode = MODE_ASCII) const;
-          bool LoadFromFile(const String& sPlik,
+          bool LoadFromFile(const Containers::String& sPlik,
                             bool bMode = MODE_ASCII);
-          bool AddToFile(const String& sPlik,
+          bool AddToFile(const Containers::String& sPlik,
                          bool bMode = MODE_ASCII) const;
-          void DeleteFile(const String& sPlik) const;
+          void DeleteFile(const Containers::String& sPlik) const;
           void SetMode(unsigned uNewMode);
           unsigned GetMode(void) const;
           bool ParseQuotes(void);
           void Clean(void);
 
-          String& operator[] (int iNumer);
-          String& operator[] (const String& sString);
-          Strings& operator<< (const String& sString);
-          Strings& operator>> (String& sString);
+          Containers::String& operator[] (int iNumer);
+          Containers::String& operator[] (const Containers::String& sString);
+          Strings& operator<< (const Containers::String& sString);
+          Strings& operator>> (Containers::String& sString);
           bool operator== (const Strings& sStrings) const;
           bool operator!= (const Strings& sStrings) const;
           Strings operator+ (const Strings& sStrings) const;
