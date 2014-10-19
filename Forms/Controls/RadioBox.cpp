@@ -13,7 +13,7 @@ KuszkAPI::Forms::RadioBox::~RadioBox(void)
      for (int i = 1; i <= bData.Capacity(); i++) if (bData[i].hUchwyt == hUchwyt) bData.Delete(i);
 }
 
-const HWND& KuszkAPI::Forms::RadioBox::Create(const Containers::String& sTekst, unsigned uGrpId, int iXPos, int iYPos, int iSzerokosc, int iWysokosc, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
+Forms::RadioBox& KuszkAPI::Forms::RadioBox::Create(const Containers::String& sTekst, unsigned uGrpId, int iXPos, int iYPos, int iSzerokosc, int iWysokosc, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
 {
      Destroy();
      uGroupId = uGrpId;
@@ -21,7 +21,7 @@ const HWND& KuszkAPI::Forms::RadioBox::Create(const Containers::String& sTekst, 
      ItemData tTmp = {hUchwyt, hOwner, uGroupId};
      bData.Add(tTmp);
      SetFont();
-     return hUchwyt;
+     return *this;
 }
 
 unsigned KuszkAPI::Forms::RadioBox::GetGroupId(void) const
@@ -29,7 +29,7 @@ unsigned KuszkAPI::Forms::RadioBox::GetGroupId(void) const
      return uGroupId;
 }
 
-void KuszkAPI::Forms::RadioBox::SetCheckBox(bool bZaznacz)
+void KuszkAPI::Forms::RadioBox::SetCheck(bool bZaznacz)
 {
      if (GetCheck()) return;
      for (int i = 1; i <= bData.Capacity(); i++) if (bData[i].hUchwyt != hUchwyt && bData[i].hOwner == hOwner && bData[i].uGroupId == uGroupId) Button_SetCheck(bData[i].hUchwyt, BST_UNCHECKED);

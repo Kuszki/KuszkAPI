@@ -15,7 +15,7 @@ KuszkAPI::Forms::TableBox::~TableBox(void)
      uGroupCount = 0;
 }
 
-const HWND& KuszkAPI::Forms::TableBox::Create(int iXPos, int iYPos, int iSzerokosc, int iWysokosc, const Containers::Strings& sHeader, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
+Forms::TableBox& KuszkAPI::Forms::TableBox::Create(int iXPos, int iYPos, int iSzerokosc, int iWysokosc, const Containers::Strings& sHeader, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
 {
      Destroy();
 
@@ -31,7 +31,7 @@ const HWND& KuszkAPI::Forms::TableBox::Create(int iXPos, int iYPos, int iSzeroko
 
      if (sHeader) SetHeader(sHeader);
 
-     return hUchwyt;
+     return *this;
 }
 
 void KuszkAPI::Forms::TableBox::AddItem(const Containers::String& sTekst, const Containers::Strings& sData, unsigned uGroup, unsigned uIkona)

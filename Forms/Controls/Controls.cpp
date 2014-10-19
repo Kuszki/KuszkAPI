@@ -7,9 +7,13 @@ template<typename tnData>
 KuszkAPI::Forms::Controls::Group<tnData>::~Group(void) {}
 
 template<typename tnData>
-void KuszkAPI::Forms::Controls::Group<tnData>::Add(unsigned uId)
+tnData& KuszkAPI::Forms::Controls::Group<tnData>::Add(unsigned uId)
 {
-     if (mControl.Allow(uId)) mControl.Add(new tnData(hOwner, uId), uId);
+     tnData* ptData = new tnData(hOwner, uId);
+
+     if (mControl.Allow(uId)) mControl.Add(ptData, uId);
+
+     return *ptData;
 }
 
 template<typename tnData>

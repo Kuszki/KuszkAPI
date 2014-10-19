@@ -2,7 +2,7 @@ using namespace KuszkAPI;
 
 KuszkAPI::Forms::TabBox::TabBox(const HWND& hOwn, unsigned uCrtId) : ListControl(hOwn, uCrtId) {}
 
-const HWND& KuszkAPI::Forms::TabBox::Create(int iXPos, int iYPos, int iSzerokosc, int iWysokosc, const Containers::Strings& sLista, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
+Forms::TabBox& KuszkAPI::Forms::TabBox::Create(int iXPos, int iYPos, int iSzerokosc, int iWysokosc, const Containers::Strings& sLista, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
 {
      Destroy();
 
@@ -11,7 +11,7 @@ const HWND& KuszkAPI::Forms::TabBox::Create(int iXPos, int iYPos, int iSzerokosc
      SetFont();
      AddItems(sLista);
 
-     return hUchwyt;
+     return *this;
 }
 
 void KuszkAPI::Forms::TabBox::AddItem(const Containers::String& sTekst)
@@ -60,11 +60,11 @@ void KuszkAPI::Forms::TabBox::DeleteControl(HWND hWnd)
 
 void KuszkAPI::Forms::TabBox::SetTab(unsigned uNumer)
 {
-	unsigned uTab = uNumer ? (TabCtrl_GetCurSel(hUchwyt) + 1) : uNumer;
+	unsigned uTab = TabCtrl_GetCurSel(hUchwyt) + 1;
 
-	if (uTab != uNumer) TabCtrl_SetCurSel(hUchwyt, uNumer - 1);
+	if (uNumer && uTab != uNumer) TabCtrl_SetCurSel(hUchwyt, uNumer - 1), uTab = uNumer;
 
-	for (int i = 1; i <= mWindows.Capacity(); i++) ShowWindow(mWindows.GetKey(i), (mWindows.GetDataByInt(i) == uNumer) ? SW_SHOW : SW_HIDE);
+	for (int i = 1; i <= mWindows.Capacity(); i++) ShowWindow(mWindows.GetKey(i), (mWindows.GetDataByInt(i) == uTab) ? SW_SHOW : SW_HIDE);
 }
 
 unsigned KuszkAPI::Forms::TabBox::GetTab(void) const

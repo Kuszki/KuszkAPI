@@ -2,7 +2,7 @@ using namespace KuszkAPI;
 
 KuszkAPI::Forms::EditBox::EditBox(const HWND& hOwn, unsigned uCrtId) : TextControl(hOwn, uCrtId) {}
 
-const HWND& KuszkAPI::Forms::EditBox::Create(int iXPos, int iYPos, int iSzerokosc, int iWysokosc, const Containers::String& sTekst, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
+Forms::EditBox& KuszkAPI::Forms::EditBox::Create(int iXPos, int iYPos, int iSzerokosc, int iWysokosc, const Containers::String& sTekst, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
 {
      Destroy();
 
@@ -11,7 +11,7 @@ const HWND& KuszkAPI::Forms::EditBox::Create(int iXPos, int iYPos, int iSzerokos
      SetFont();
      SetText(sTekst);
 
-     return hUchwyt;
+     return *this;
 }
 
 void KuszkAPI::Forms::EditBox::AddLine(const Containers::String& sTekst, bool bScrool)

@@ -2,7 +2,7 @@ using namespace KuszkAPI;
 
 KuszkAPI::Forms::ProgressBar::ProgressBar(const HWND& hOwn, unsigned uCtrId) : BarControl(hOwn, uCtrId) {}
 
-const HWND& KuszkAPI::Forms::ProgressBar::Create(int iXPos, int iYPos, int iSzerokosc, int iWysokosc, short iStart, short iStop, unsigned uStep, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
+Forms::ProgressBar& KuszkAPI::Forms::ProgressBar::Create(int iXPos, int iYPos, int iSzerokosc, int iWysokosc, short iStart, short iStop, unsigned uStep, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
 {
      Destroy();
 
@@ -18,7 +18,7 @@ const HWND& KuszkAPI::Forms::ProgressBar::Create(int iXPos, int iYPos, int iSzer
 
 	}
 
-     return hUchwyt;
+     return *this;
 }
 
 void KuszkAPI::Forms::ProgressBar::SetValue(unsigned uValue)

@@ -8,7 +8,7 @@ KuszkAPI::Forms::Label::Label(const HWND& hOwn, unsigned uCrtId)
      uImgType = 0;
 }
 
-const HWND& KuszkAPI::Forms::Label::Create(const Containers::String& sTekst, int iXPos, int iYPos, int iSzerokosc, int iWysokosc, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
+Forms::Label& KuszkAPI::Forms::Label::Create(const Containers::String& sTekst, int iXPos, int iYPos, int iSzerokosc, int iWysokosc, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
 {
      Destroy();
 
@@ -16,10 +16,10 @@ const HWND& KuszkAPI::Forms::Label::Create(const Containers::String& sTekst, int
 
      SetFont();
 
-     return hUchwyt;
+     return *this;
 }
 
-const HWND& KuszkAPI::Forms::Label::Create(const Containers::String& sResName, int iXPos, int iYPos, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
+Forms::Label& KuszkAPI::Forms::Label::Create(const Containers::String& sResName, int iXPos, int iYPos, unsigned uStyl, unsigned uExStyl, const Containers::String& sClass)
 {
      Destroy();
 
@@ -28,7 +28,7 @@ const HWND& KuszkAPI::Forms::Label::Create(const Containers::String& sResName, i
 
      hUchwyt = CreateWindowEx(uExStyl, sClass.Str(), sResName.Str(), uStyl | WS_VISIBLE | WS_CHILD, iXPos, iYPos, 0, 0, hOwner, (HMENU) uId, hInstance, NULL);
 
-     return hUchwyt;
+     return *this;
 }
 
 void KuszkAPI::Forms::Label::SetImage(HGDIOBJ hImg)
