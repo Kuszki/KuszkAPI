@@ -75,6 +75,7 @@ SOCKET KuszkAPI::Sockets::Server::Accept(void)
 	sockaddr_in sTmpAdr;
 
 	int iTmp = sizeof(sockaddr_in);
+
 	memset(&sTmpAdr, 0, iTmp);
 
 	SOCKET sTmpSock = accept(sSocket, (sockaddr*) &sTmpAdr, &iTmp);

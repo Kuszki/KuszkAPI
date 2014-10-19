@@ -196,7 +196,7 @@ class CheckControl : public TextControl
 
           operator bool (void) const;
 
-          virtual void SetCheckBox(bool bZaznacz = true) = 0;
+          virtual void SetCheck(bool bZaznacz = true) = 0;
 
 };
 // ------------------------------
