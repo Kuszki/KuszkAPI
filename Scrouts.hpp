@@ -26,6 +26,7 @@ Aby nie dołączać skróconych nazw (na przykład gdy kolidują z użytymi w in
 #define CON KuszkAPI::Core::Console		//!< Skrócona nazwa dla klasy KuszkAPI::Core::Console.
 #define THR KuszkAPI::Core::Threads<INT>	//!< Skrócona nazwa dla klasy KuszkAPI::Core::Threads.
 #define SEC KuszkAPI::Core::Sections<INT>	//!< Skrócona nazwa dla klasy KuszkAPI::Core::Sections.
+#define DLL KuszkAPI::Core::Dll<INT>		//!< Skrócona nazwa dla klasy KuszkAPI::Core::Dll.
 
 #define WND KuszkAPI::Forms::Form			//!< Skrócona nazwa dla klasy KuszkAPI::Forms::Form.
 
