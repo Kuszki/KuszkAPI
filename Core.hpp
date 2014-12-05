@@ -24,6 +24,7 @@ Zawiera wszystkie deklaracje i definicje składowych modułu jądra. Kod źród�
 #include "Core\Data.hpp"
 #include "Core\Run.hpp"
 #include "Core\Threads.hpp"
+#include "Core\Comport.hpp"
 // ------------------------------
 
 #endif
