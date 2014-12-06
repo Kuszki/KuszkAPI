@@ -24,7 +24,7 @@ class Comport
 		bool Opened(void) const;
 		bool Closed(void) const;
 		unsigned WriteString(const Containers::String& sStr);
-		Containers::String ReadString(char cStop = '\n');
+		Containers::String ReadString(char cStop = TEXT('\n'));
 
 		template<typename tnData> unsigned WriteData(const tnData& tData);
 		template<typename tnData> unsigned ReadData(tnData& tData);

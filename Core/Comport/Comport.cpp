@@ -87,7 +87,7 @@ unsigned KuszkAPI::Core::Comport::WriteString(const Containers::String& sStr)
 
 	unsigned uBytes = 0;
 
-	WriteFile(hPort, (LPVOID) sStr.Str(), sStr.Capacity(), (LPDWORD) &uBytes, NULL);
+	WriteFile(hPort, (LPVOID) sStr.Ascii(), sStr.Capacity(), (LPDWORD) &uBytes, NULL);
 
 	return uBytes;
 }
