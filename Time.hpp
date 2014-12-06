@@ -15,14 +15,6 @@ Zawiera wszystkie deklaracje i definicje składowych modułu czasu i daty. Kod �
 #ifndef _KUSZKAPI_TIME_H
 #define _KUSZKAPI_TIME_H
 
-// -------- USED HEADERS --------
-#include <Time.h>
-// ------------------------------
-
-// ----- FORMAT DEFINITIONS -----
-#define ZERO   1
-// ------------------------------
-
 // ------ OWN USED HEADERS ------
 #include "Time\Time.hpp"
 #include "Time\Date.hpp"

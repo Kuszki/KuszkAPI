@@ -24,6 +24,14 @@ namespace KuszkAPI {};
 
 // -------- USED HEADERS --------
 #include <Windows.h>
+#include <Windowsx.h>
+#include <Commctrl.h>
+#include <stdio.h>
+#include <Time.h>
+// ------------------------------
+
+// ------ ENUM DEFINITIONS ------
+#include "Enums.hpp"
 // ------------------------------
 
 // ---- KUSZKAPI DEFINITIONS ----

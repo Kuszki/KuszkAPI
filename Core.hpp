@@ -15,10 +15,6 @@ Zawiera wszystkie deklaracje i definicje składowych modułu jądra. Kod źród�
 #ifndef _KUSZKAPI_CORE_H
 #define _KUSZKAPI_CORE_H
 
-// -------- USED HEADERS --------
-#include <Windows.h>
-// ------------------------------
-
 // ------ OWN USED HEADERS ------
 #include "Core\Parts.hpp"
 #include "Core\Data.hpp"

@@ -15,10 +15,6 @@ Zawiera wszystkie deklaracje i definicje składowych modułu gniazd. Kod źród�
 #ifndef _KUSZKAPI_SOCKETS_H
 #define _KUSZKAPI_SOCKETS_H
 
-// -------- USED HEADERS --------
-#include <Windows.h>
-// ------------------------------
-
 // ------ OWN USED HEADERS ------
 #include "Sockets\Base.hpp"
 #include "Sockets\Client.hpp"

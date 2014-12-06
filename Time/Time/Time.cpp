@@ -10,22 +10,16 @@ KuszkAPI::DateTime::Time::Time(const Time& tTime)
 }
 
 KuszkAPI::DateTime::Time::Time(const TimeDsc& tTime)
+: Time(false)
 {
-     cSeparator = TEXT(':');
-
-     uShowFlag = HOURS | MINUTES | SECONDS | ZERO;
-
      uCzas = tTime.Hour * 3600 + tTime.Min * 60 + tTime.Sec;
 
      Convert();
 }
 
 KuszkAPI::DateTime::Time::Time(unsigned uHour, unsigned uMin, unsigned uSec)
+: Time(false)
 {
-     cSeparator = TEXT(':');
-
-     uShowFlag = HOURS | MINUTES | SECONDS | ZERO;
-
      uCzas = uHour * 3600 + uMin * 60 + uSec;
 
      Convert();
@@ -35,9 +29,10 @@ KuszkAPI::DateTime::Time::Time(bool bNow)
 {
      cSeparator = TEXT(':');
 
-     uShowFlag = HOURS | MINUTES | SECONDS | ZERO;
+     uShowFlag = HOURS | MINUTES | SECONDS | ADD_ZEROS;
+     uCzas = 0;
 
-     if (bNow) Refresh(); else uCzas = 0;
+     if (bNow) Refresh();
 }
 
 KuszkAPI::DateTime::Time::~Time(void)
@@ -103,7 +98,7 @@ Containers::String KuszkAPI::DateTime::Time::Str(TCHAR cFormat, unsigned uFlags)
 
      if (uFlags & HOURS){
 
-          if (uFlags & ZERO) if (tTmp.Hour < 10) sBufor += TEXT('0');
+          if (uFlags & ADD_ZEROS) if (tTmp.Hour < 10) sBufor += TEXT('0');
 
           sBufor += Containers::String((int) tTmp.Hour);
 
@@ -113,7 +108,7 @@ Containers::String KuszkAPI::DateTime::Time::Str(TCHAR cFormat, unsigned uFlags)
 
      if (uFlags & MINUTES){
 
-          if (uFlags & ZERO) if (tTmp.Min < 10) sBufor += TEXT('0');
+          if (uFlags & ADD_ZEROS) if (tTmp.Min < 10) sBufor += TEXT('0');
 
           sBufor += Containers::String((int) tTmp.Min);
 
@@ -123,7 +118,7 @@ Containers::String KuszkAPI::DateTime::Time::Str(TCHAR cFormat, unsigned uFlags)
 
      if (uFlags & SECONDS){
 
-          if (uFlags & ZERO) if (tTmp.Sec < 10) sBufor += TEXT('0');
+          if (uFlags & ADD_ZEROS) if (tTmp.Sec < 10) sBufor += TEXT('0');
 
           sBufor += Containers::String((int) tTmp.Sec);
 

@@ -14,10 +14,6 @@ Zawiera wszystkie deklaracje i definicje składowych modułu aplikacji. Kod źr�
 #ifndef _KUSZKAPI_APP_H
 #define _KUSZKAPI_APP_H
 
-// -------- USED HEADERS --------
-#include <Windows.h>
-// ------------------------------
-
 // ------ OWN USED HEADERS ------
 #include "App\Base.hpp"
 #include "App\Types.hpp"

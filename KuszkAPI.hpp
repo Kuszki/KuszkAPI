@@ -87,15 +87,27 @@ namespace KuszkAPI {};
 
 // -------- USED HEADERS --------
 #include <Windows.h>
+#include <Windowsx.h>
+#include <Commctrl.h>
+#include <stdio.h>
+#include <Time.h>
+// ------------------------------
+
+// ------ ENUM DEFINITIONS ------
+#include "Enums.hpp"
 // ------------------------------
 
 // ---- KUSZKAPI DEFINITIONS ----
+#ifdef KUSZKAPI_NOMODULES
+#define _KUSZKAPI_CPP
+#else
 #include "Containers.hpp"
 #include "Time.hpp"
 #include "Core.hpp"
 #include "Forms.hpp"
 #include "Sockets.hpp"
 #include "App.hpp"
+#endif
 // ------------------------------
 
 // ---- SCROUTS DEFINITIONS -----

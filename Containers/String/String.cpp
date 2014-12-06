@@ -394,7 +394,9 @@ bool KuszkAPI::Containers::String::Change(unsigned uOne, unsigned uTwo)
 {
 	if (uOne == uTwo || uOne > uIlosc || uTwo > uIlosc || !uIlosc) return false;
 
-	Container::Change(pcData[uOne], pcData[uTwo]);
+	TCHAR cBuff = pcData[uOne];
+	pcData[uOne] = pcData[uTwo];
+	pcData[uTwo] = cBuff;
 }
 
 unsigned KuszkAPI::Containers::String::Change(TCHAR cOld, TCHAR cNew, bool bAll)

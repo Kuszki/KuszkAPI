@@ -12,35 +12,21 @@ KuszkAPI::DateTime::Date::Date(const Date& dDate)
 }
 
 KuszkAPI::DateTime::Date::Date(const DateDsc& tDate)
+: Date(false)
 {
-     memset(&tData, 0, sizeof(tm));
-
      tData.tm_mday = tDate.Day;
      tData.tm_mon = tDate.Month - 1;
      tData.tm_year = tDate.Year - 1900;
-
-     cSeparator = TEXT('-');
-
-     uShowFlag = DAY | MONTH | YEAR | ZERO;
-
-     uOrderFlag = WDMY;
 
      mktime(&tData);
 }
 
 KuszkAPI::DateTime::Date::Date(unsigned uDay, unsigned uMonth, unsigned uYear)
+: Date(false)
 {
-     memset(&tData, 0, sizeof(tm));
-
      tData.tm_mday = uDay;
      tData.tm_mon = uMonth - 1;
      tData.tm_year = uYear - 1900;
-
-     cSeparator = TEXT('-');
-
-     uShowFlag = DAY | MONTH | YEAR | ZERO;
-
-     uOrderFlag = WDMY;
 
      mktime(&tData);
 }
@@ -51,8 +37,7 @@ KuszkAPI::DateTime::Date::Date(bool bNow)
 
      cSeparator = TEXT('-');
 
-     uShowFlag = DAY | MONTH | YEAR | ZERO;
-
+     uShowFlag = DAY | MONTH | YEAR | ADD_ZEROS;
      uOrderFlag = WDMY;
 
      if (bNow) Refresh();
@@ -123,7 +108,7 @@ Containers::String KuszkAPI::DateTime::Date::Str(TCHAR cFormat, unsigned uShow, 
 
           if (uShow & DAY){
 
-               if (uShow & ZERO) if (tData.tm_mday < 10) sBufor += TEXT('0');
+               if (uShow & ADD_ZEROS) if (tData.tm_mday < 10) sBufor += TEXT('0');
 
                sBufor += Containers::String((int) tData.tm_mday);
 
@@ -133,7 +118,7 @@ Containers::String KuszkAPI::DateTime::Date::Str(TCHAR cFormat, unsigned uShow, 
 
           if (uShow & MONTH){
 
-               if (uShow & ZERO) if (tData.tm_mon < 10) sBufor += TEXT('0');
+               if (uShow & ADD_ZEROS) if (tData.tm_mon < 10) sBufor += TEXT('0');
                if (uShow & WORDS) sBufor += GetMonthName(tData.tm_mon + 1); else sBufor += Containers::String((int) tData.tm_mon + 1);
                if (uShow & YEAR) if (uShow & WORDS) sBufor += TEXT(' '); else sBufor += cFormat;
 
@@ -161,7 +146,7 @@ Containers::String KuszkAPI::DateTime::Date::Str(TCHAR cFormat, unsigned uShow, 
 
           if (uShow & MONTH){
 
-               if (uShow & ZERO) if (tData.tm_mon < 10) sBufor += TEXT('0');
+               if (uShow & ADD_ZEROS) if (tData.tm_mon < 10) sBufor += TEXT('0');
                if (uShow & WORDS) sBufor += GetMonthName(tData.tm_mon + 1); else sBufor += Containers::String((int) tData.tm_mon + 1);
                if (uShow & DAY) if (uShow & WORDS) sBufor += TEXT(' '); else sBufor += cFormat;
 
@@ -169,7 +154,7 @@ Containers::String KuszkAPI::DateTime::Date::Str(TCHAR cFormat, unsigned uShow, 
 
           if (uShow & DAY){
 
-               if (uShow & ZERO) if (tData.tm_mday < 10) sBufor += TEXT('0');
+               if (uShow & ADD_ZEROS) if (tData.tm_mday < 10) sBufor += TEXT('0');
 
                sBufor += Containers::String((int) tData.tm_mday);
 

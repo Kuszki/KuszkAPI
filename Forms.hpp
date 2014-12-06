@@ -15,12 +15,6 @@ Zawiera wszystkie deklaracje i definicje składowych modułu okienek. Kod źród
 #ifndef _KUSZKAPI_FORMS_H
 #define _KUSZKAPI_FORMS_H
 
-// -------- USED HEADERS --------
-#include <Windows.h>
-#include <Windowsx.h>
-#include <Commctrl.h>
-// ------------------------------
-
 // ------ MISSING HEADERS -------
 #include "Forms\Headers.hpp"
 // ------------------------------
