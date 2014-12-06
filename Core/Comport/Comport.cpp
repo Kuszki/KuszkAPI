@@ -126,3 +126,22 @@ unsigned KuszkAPI::Core::Comport::WriteData(const tnData& tData)
 
 	return uBytes;
 }
+
+Core::Comport& KuszkAPI::Core::Comport::operator<< (const Containers::String& sMessage)
+{
+	WriteString(sMessage);
+
+	return *this;
+}
+
+Core::Comport& KuszkAPI::Core::Comport::operator>> (Containers::String& sMessage)
+{
+	sMessage = ReadString();
+
+	return *this;
+}
+
+Core::Comport::operator bool (void) const
+{
+	return hPort;
+}

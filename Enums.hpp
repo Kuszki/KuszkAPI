@@ -1,7 +1,7 @@
 /*! \file
     \brief Plik dołączający do projektu makra używane jako typy wyliczeniowe.
 
-Po dołączeniu dyrektywą "include" do projektu zostaną dodane wszystkie makra wyliczeniowe używane przez moduły.
+Po dołączeniu dyrektywą "include" do projektu zostaną dodane wszystkie makra wyliczeniowe używane przez wszystkie moduły.
 */
 
 #define WM_CREATEWINDOW	(WM_USER + 1)	//!< Identyfikator zdarzenia utworzenia okna.

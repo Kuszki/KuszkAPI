@@ -29,6 +29,11 @@ class Comport
 		template<typename tnData> unsigned WriteData(const tnData& tData);
 		template<typename tnData> unsigned ReadData(tnData& tData);
 
+		Comport& operator<< (const Containers::String& sMessage);
+		Comport& operator>> (Containers::String& sMessage);
+
+		operator bool (void) const;
+
 };
 // ------------------------------
 
