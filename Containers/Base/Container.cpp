@@ -2,15 +2,11 @@ using namespace KuszkAPI;
 
 KuszkAPI::Containers::Container::Container(void)
 {
-	uIlosc = 0;
-	uMode = MODE_QUEUE;
+	uIlosc	=	0;
+	uMode	=	MODE_QUEUE;
 }
 
-KuszkAPI::Containers::Container::~Container(void)
-{
-	uIlosc = 0;
-	uMode = 0;
-}
+KuszkAPI::Containers::Container::~Container(void) {}
 
 unsigned KuszkAPI::Containers::Container::Capacity(void) const
 {
@@ -19,7 +15,7 @@ unsigned KuszkAPI::Containers::Container::Capacity(void) const
 
 bool KuszkAPI::Containers::Container::Empty(void) const
 {
-	return !(bool) uIlosc;
+	return !uIlosc;
 }
 
 void KuszkAPI::Containers::Container::SetMode(unsigned uNewMode)
@@ -41,9 +37,11 @@ template<typename tnData>
 bool KuszkAPI::Containers::Container::Change(tnData& tOne, tnData& tTwo)
 {
 	if (&tOne == &tTwo) return false;
+
 	tnData tTmp = tOne;
 	tOne = tTwo;
 	tTwo = tTmp;
+
 	return true;
 }
 

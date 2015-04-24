@@ -1,3 +1,7 @@
+# UWAGA
+
+Ten projekt jest przestarzały (`deprecated`) - nie będzie on więcej wspierany.
+
 KuszkAPI
 ==========
 
